@@ -933,8 +933,6 @@ const elements_arr = [
         "atomicweight": 294
     }
 ];
-var elements_obj = {};
-var html_ele_table = document.getElementById('table');
 const ions_arr = [
     {
         "namezh": "銨根離子",
@@ -1192,6 +1190,8 @@ const ions_arr = [
         "aka": "鋁矽酸鹽"
     }
 ];
+var elements_obj = {};
+var html_ele_table = document.getElementById('table');
 var html_ele_result = document.getElementById('result');
 var chemi_arr = [];
 for(var i=0; elements_arr[i]; i++){
@@ -1200,6 +1200,8 @@ for(var i=0; elements_arr[i]; i++){
   var tmp_obj = {};
   tmp_obj['weight'] = elements_arr[i].atomicweight;
   tmp_obj['states'] = elements_arr[i].oxidationstates;
+  tmp_obj['name'] = elements_arr[i].nameen;
+  tmp_obj['aka'] = elements_arr[i].namezh;
   elements_obj[item_name] = tmp_obj;
 }
 for(var i=0; ions_arr[i];i++){
@@ -1225,11 +1227,13 @@ for(var i=0; ions_arr[i];i++){
   var tmp_obj = {};
   tmp_obj['weight'] = result_weight;
   tmp_obj['states'] = ions_arr[i].state;
+  tmp_obj['name'] = ions_arr[i].nameen;
+  tmp_obj['aka'] = ions_arr[i].namezh +" "+ ions_arr[i].aka;
   elements_obj[item_name] = tmp_obj;
 }
-//html_ele_result.innerHTML += JSON.stringify(elements_obj);
+
 autocomplete(document.getElementById("chemi"), chemi_arr);
-//console.log(chemi_arr);
+
 function autocomplete(inp, arr) {
 	var currentFocus;
 	inp.addEventListener("input", function(e) {
@@ -1250,6 +1254,7 @@ function autocomplete(inp, arr) {
 				b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
 				b.addEventListener("click", function(e) {
 					inp.value = this.getElementsByTagName("input")[0].value;
+                    displayEle();
 					closeAllLists();
 				});
 				a.appendChild(b);
@@ -1294,8 +1299,28 @@ function autocomplete(inp, arr) {
 		closeAllLists(e.target);
 	});
 }
-console.log(elements_obj);
+
 function displayEle(){
   var val = document.getElementById('chemi').value;
-  html_ele_result.innerHTML = val+"<br>莫耳質量:"+elements_obj[val].weight+"<br>可能價數:"+elements_obj[val].states;
+  //html_ele_result.innerHTML = val+"<br>莫耳質量:"+elements_obj[val].weight+"<br>可能價數:"+elements_obj[val].states;
+  if(!elements_obj[val]){
+    document.getElementById('panel_formula').innerHTML = "";
+    document.getElementById('panel_weight').innerHTML = "";
+    document.getElementById('panel_name').innerHTML = "";
+    document.getElementById('panel_aka').innerHTML = "";
+    document.getElementById('panel_state').innerHTML = "";
+  }
+  else{
+    document.getElementById('panel_formula').innerHTML = val;
+    document.getElementById('panel_weight').innerHTML = elements_obj[val].weight;
+    document.getElementById('panel_name').innerHTML = elements_obj[val].name;
+    document.getElementById('panel_aka').innerHTML = elements_obj[val].aka;
+    document.getElementById('panel_state').innerHTML = elements_obj[val].states.toString().replace(/,/g,' ');
+  } 
+}
+
+function addEle(){
+  var val = document.getElementById('chemi').value;
+  if(document.getElementById('new_formula').value) document.getElementById('new_formula').value += " · "+val;
+  else document.getElementById('new_formula').value += val;
 }

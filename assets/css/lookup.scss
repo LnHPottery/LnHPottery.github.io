@@ -1,3 +1,9 @@
+body{
+  background: #ecedf1;
+  padding: 32px;
+  font-family: "Work Sans","HelveticaNeue","Helvetica Neue",sans-serif;
+  color: #666;
+}
 input, select, textarea{
   display: inline-block;
   border: 1px solid #509da4;
@@ -7,7 +13,7 @@ input, select, textarea{
   border-radius: 4px;
   padding: 2px 8px;
   margin: 8px auto;
-  width: 64px;
+  width: 95%;
   box-sizing: content-box;
   &.fill_alert{
     border:1px solid #d75c4a;
@@ -45,5 +51,49 @@ input, select, textarea{
   .autocomplete-active {
     background-color: DodgerBlue !important; 
     color: #fffffc; 
+  }
+}
+
+.element_panel{
+  width: 160px;
+  height: 160px;
+  margin:16px;
+  border-radius: 8px; 
+  border: 1px solid white;
+  box-shadow: -4px -4px 8px 0 #fafbff, 4px 4px 8px 0 #a6abbd;
+  position: relative;
+
+  span{position: absolute;}
+  #panel_formula{
+    font-variant-numeric: oldstyle-nums;
+    font-weight: bold;
+    font-size: 56px;
+    text-shadow: 1px 1px 0 #a6abbd;
+    left: 12px;
+    top: 60px;
+  }
+  #panel_name{
+    left: 16px;
+    top: 40px;
+  }
+  #panel_state{
+    right: 16px;
+    top: 14px;
+    width: 16px;
+    text-align: right;
+    font-size: .8em;
+    line-height: 1.2em;
+  }
+  #panel_aka{
+    left: 16px;
+    bottom: 12px;
+  }
+  #panel_weight{
+    left: 16px;
+    top: 14px;
+    width: 100px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }

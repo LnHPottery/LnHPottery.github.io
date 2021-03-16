@@ -2,16 +2,25 @@
 <html>
 <head>
 <title>LnH Pottery</title>
-<link rel="stylesheet" href="/assets/css/lookup.css?v=20210316" />
+<link rel="stylesheet" href="assets/css/lookup.css?v=20210316" />
 </head>
 <body>
   <h2>元素與常見離子查詢</h2>
   <div class="autocomplete">
-    <input id="chemi" name="chemi" type="input" value="" />
+    <input onblur="displayEle()" onchange="displayEle()" onkeyup="displayEle()" id="chemi" name="chemi" type="input" value="" />
   </div>
   <div onclick="displayEle()" style="width: 64px; height:32px; background:#509da4; border-radius:8px; line-height:32px; text-align:center; display: inline-block; margin-left: 24px; color: white;">送出</div>
+  <div onclick="addEle()" style="width: 64px; height:32px; background:#509da4; border-radius:8px; line-height:32px; text-align:center; display: inline-block; margin-left: 8px; color: white;">帶入</div>
   <div id="table"></div>
-  <p>查詢項目 : <span id="result"></span></p>
+  <div class="element_panel">
+    <span id="result"></span>
+    <span id="panel_formula">QQ1</span>
+    <span id="panel_weight">32.540</span>
+    <span id="panel_state">-1</span>
+    <span id="panel_name">name</span>
+    <span id="panel_aka">中文名或同義詞</span>
+  </div>
+  <input id="new_formula" type="text" disabled="" />
 </body>
-<script src="/assets/js/lookup.js"></script>
+<script src="assets/js/lookup.js"></script>
 </html>
