@@ -1,7 +1,7 @@
 body{
   background: #ecedf1;
   padding: 32px;
-  font-family: "Work Sans","HelveticaNeue","Helvetica Neue",sans-serif;
+  font-family:"Helvetica Neue",sans-serif;
   color: #666;
 }
 input, select, textarea{
@@ -20,15 +20,13 @@ input, select, textarea{
     box-shadow: inset 1px 1px 3px 1px rgba(235, 64, 52,0.33);
   }
 }
-
+.formula{ font-variant-numeric: oldstyle-nums; }
 .autocomplete {
   position: relative;
   display: inline-block;
   width: 64px;
   box-sizing: border-box;
-  font-variant-numeric: oldstyle-nums;
   
-  input{ font-variant-numeric: oldstyle-nums; }
   .autocomplete-items {
     position: absolute;
     z-index: 99;
@@ -65,12 +63,11 @@ input, select, textarea{
 
   span{position: absolute;}
   #panel_formula{
-    font-variant-numeric: oldstyle-nums;
-    font-weight: bold;
     font-size: 56px;
     text-shadow: 1px 1px 0 #a6abbd;
     left: 12px;
     top: 60px;
+    letter-spacing: -2px;
   }
   #panel_name{
     left: 16px;
@@ -87,6 +84,14 @@ input, select, textarea{
   #panel_aka{
     left: 16px;
     bottom: 12px;
+    width: 128px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    &:hover{
+      width: auto;
+      background-color: #ecedf1;
+    }
   }
   #panel_weight{
     left: 16px;

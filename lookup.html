@@ -6,21 +6,23 @@
 </head>
 <body>
   <h2>元素與常見離子查詢</h2>
-  <div class="autocomplete">
-    <input onblur="displayEle()" onchange="displayEle()" onkeyup="displayEle()" id="chemi" name="chemi" type="input" value="" />
+  <div class="autocomplete formula">
+    <input onblur="displayEle()" onchange="displayEle()" onkeyup="displayEle()" id="chemi" name="chemi" type="input" value="" class="formula" />
   </div>
-  <div onclick="displayEle()" style="width: 64px; height:32px; background:#509da4; border-radius:8px; line-height:32px; text-align:center; display: inline-block; margin-left: 24px; color: white;">送出</div>
-  <div onclick="addEle()" style="width: 64px; height:32px; background:#509da4; border-radius:8px; line-height:32px; text-align:center; display: inline-block; margin-left: 8px; color: white;">帶入</div>
+  <div onclick="addEle()" style="width: 64px; height:32px; background:#509da4; border-radius:8px; line-height:32px; text-align:center; display: inline-block; margin-left: 24px; color: white;">帶入</div>
   <div id="table"></div>
   <div class="element_panel">
     <span id="result"></span>
-    <span id="panel_formula">QQ1</span>
-    <span id="panel_weight">32.540</span>
-    <span id="panel_state">-1</span>
+    <span id="panel_formula" class="formula">Form</span>
+    <span id="panel_weight">0.0000</span>
+    <span id="panel_state">n</span>
     <span id="panel_name">name</span>
     <span id="panel_aka">中文名或同義詞</span>
   </div>
   <input id="new_formula" type="text" disabled="" />
+  <div id="result_formula" class="formula" style="font-size: 1.2em;line-height: 2em;font-weight: bold;"></div><br>
+  <div onclick="resultWeight()" style="width: 128px; height:32px; background:#509da4; border-radius:8px; line-height:32px; text-align:center; display: inline-block; color: white;">查詢分子量</div>
+  <div onclick="clearEle()" style="width: 64px; height:32px; background:#509da4; border-radius:8px; line-height:32px; text-align:center; display: inline-block; color: white; margin-left: 8px">清除</div>
 </body>
 <script src="assets/js/lookup.js"></script>
 </html>
