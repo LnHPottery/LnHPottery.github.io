@@ -1297,5 +1297,5 @@ function autocomplete(inp, arr) {
 console.log(elements_obj);
 function displayEle(){
   var val = document.getElementById('chemi').value;
-  html_ele_result.innerHTML = val+"<br>莫耳質量:"+elements_obj[val].weight+"<br>可能價數:"+elements_obj[val].state;
+  html_ele_result.innerHTML = val+"<br>莫耳質量:"+elements_obj[val].weight+"<br>可能價數:"+elements_obj[val].states;
 }
