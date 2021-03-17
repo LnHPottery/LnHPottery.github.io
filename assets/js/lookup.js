@@ -1235,7 +1235,6 @@ for(var i=0; ions_arr[i];i++){
 }
 
 autocomplete(document.getElementById("chemi"), chemi_arr);
-document.getElementById("new_formula").blur();
 
 function autocomplete(inp, arr) {
 	var currentFocus;
@@ -1314,7 +1313,7 @@ function displayEle(){
 		document.getElementById('panel_state').innerHTML = "";
 	}
 	else{
-		document.getElementById('panel_formula').innerHTML = val;
+		document.getElementById('panel_formula').innerHTML = val.replace(/(\d+)/g, '<sub>$1</sub>');
 		document.getElementById('panel_weight').innerHTML = elements_obj[val].weight;
 		document.getElementById('panel_name').innerHTML = elements_obj[val].name;
 		document.getElementById('panel_aka').innerHTML = elements_obj[val].aka;
@@ -1349,7 +1348,7 @@ function formateMolecule(){
     document.getElementById('result_formula').innerHTML = "";
     var current_array = document.getElementById('new_formula').value.split(' · ');
     for(var i=0; current_array[i]; i++){
-        if(current_array[i] != current_array[i+1]) document.getElementById('result_formula').innerHTML += current_array[i];
+        if(current_array[i] != current_array[i+1]) document.getElementById('result_formula').innerHTML += current_array[i].replace(/(\d+)/g, '<sub>$1</sub>');
         else {
             var ele_formula = current_array[i];
             var ele_type = elements_obj[current_array[i]].type;
@@ -1360,10 +1359,10 @@ function formateMolecule(){
             }
             switch(ele_type){
                 case "ion":
-                    document.getElementById('result_formula').innerHTML += "("+ele_formula+")"+count;
+                    document.getElementById('result_formula').innerHTML += "("+ele_formula.replace(/(\d+)/g, '<sub>$1</sub>')+")"+"<sub>"+count+"</sub>";
                     break; 
                 case "atom":
-                    document.getElementById('result_formula').innerHTML += ele_formula+count;
+                    document.getElementById('result_formula').innerHTML += ele_formula+"<sub>"+count+"</sub>";
                     break; 
             }
         }
