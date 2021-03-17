@@ -1317,22 +1317,33 @@ function displayEle(){
 		document.getElementById('panel_weight').innerHTML = elements_obj[val].weight;
 		document.getElementById('panel_name').innerHTML = elements_obj[val].name;
 		document.getElementById('panel_aka').innerHTML = elements_obj[val].aka;
-		document.getElementById('panel_state').innerHTML = elements_obj[val].states.toString().replace(/,/g,' ');
+		document.getElementById('panel_state').innerHTML = formateState(elements_obj[val].states);
 	} 
 }
 
 function addEle(){
     var val = document.getElementById('chemi').value;
-    var current_array = document.getElementById('new_formula').value.split(' · ');
     if(document.getElementById('new_formula').value) document.getElementById('new_formula').value += " · "+val;
 	else document.getElementById('new_formula').value += val;
     formateMolecule();
 }
 
+function backEle(){
+    var current_array = document.getElementById('new_formula').value.split(' · ');
+    if(document.getElementById('new_formula').value){
+        current_array.pop();
+        document.getElementById('new_formula').value = current_array.join(" · ");
+        formateMolecule();
+    }
+    else clearEle();   
+}
+
 function clearEle(){
     document.getElementById('new_formula').value = "";
     document.getElementById('result_formula').innerHTML = "";
+    document.getElementById('result_weight').innerHTML = "";
 }
+
 function formateMolecule(){
     document.getElementById('result_formula').innerHTML = "";
     var current_array = document.getElementById('new_formula').value.split(' · ');
@@ -1356,10 +1367,25 @@ function formateMolecule(){
             }
         }
     }
+    document.getElementById('result_weight').innerHTML = '';
 }
+
+function formateState(str){
+    var tmp_arr = str.split(", ").reverse();
+    var zero_pos = -1;
+    for(var i=0; tmp_arr[i]; i++){
+        if(Number(tmp_arr[i]) >= 0) tmp_arr[i] = "+" + tmp_arr[i];
+        //else if(Number(tmp_arr[i]) == 0) zero_pos = i;
+    }
+    //if(zero_pos >= 0) tmp_arr.splice(zero_pos, 1);
+    return tmp_arr.join(" ");
+}
+
 function resultWeight(){
     var current_array = document.getElementById('new_formula').value.split(' · ');
     var result = 0;
     for(var i=0; current_array[i]; i++) result += Number(elements_obj[current_array[i]].weight);
-    alert(result);
+    document.getElementById("result_weight").innerHTML = " : "+result;
 }
+
+function clearQuery() { document.getElementById('chemi').value = ""; }
