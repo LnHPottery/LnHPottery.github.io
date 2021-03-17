@@ -1249,7 +1249,7 @@ function autocomplete(inp, arr) {
 		this.parentNode.appendChild(a);
 		for (i = 0; i < arr.length; i++) {
 			if(arr[i] === undefined) ;
-			else if(arr[i].substr(0, val.length) == val) {
+			else if(arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
 				b = document.createElement("DIV");
 				b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
 				b.innerHTML += arr[i].substr(val.length);
