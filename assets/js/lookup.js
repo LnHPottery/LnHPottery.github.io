@@ -1322,6 +1322,7 @@ function displayEle(){
 }
 
 function addEle(){
+    if(!document.getElementById('chemi').value) return false;
     var val = document.getElementById('chemi').value;
     if(document.getElementById('new_formula').value) document.getElementById('new_formula').value += " · "+val;
 	else document.getElementById('new_formula').value += val;
@@ -1342,13 +1343,19 @@ function clearEle(){
     document.getElementById('new_formula').value = "";
     document.getElementById('result_formula').innerHTML = "";
     document.getElementById('result_weight').innerHTML = "";
+    document.getElementById('result_formula').dataset.val = "";
+    document.getElementById('result_weight').dataset.val = "";
 }
 
 function formateMolecule(){
     document.getElementById('result_formula').innerHTML = "";
+    document.getElementById('result_formula').dataset.val = "";
     var current_array = document.getElementById('new_formula').value.split(' · ');
     for(var i=0; current_array[i]; i++){
-        if(current_array[i] != current_array[i+1]) document.getElementById('result_formula').innerHTML += current_array[i].replace(/(\d+)/g, '<sub>$1</sub>');
+        if(current_array[i] != current_array[i+1]) {
+        	document.getElementById('result_formula').dataset.val += current_array[i];
+        	document.getElementById('result_formula').innerHTML += current_array[i].replace(/(\d+)/g, '<sub>$1</sub>');
+        }
         else {
             var ele_formula = current_array[i];
             var ele_type = elements_obj[current_array[i]].type;
@@ -1359,9 +1366,11 @@ function formateMolecule(){
             }
             switch(ele_type){
                 case "ion":
+                	document.getElementById('result_formula').dataset.val += "("+ele_formula+")"+count;
                     document.getElementById('result_formula').innerHTML += "("+ele_formula.replace(/(\d+)/g, '<sub>$1</sub>')+")"+"<sub>"+count+"</sub>";
                     break; 
                 case "atom":
+                	document.getElementById('result_formula').dataset.val += ele_formula+count;
                     document.getElementById('result_formula').innerHTML += ele_formula+"<sub>"+count+"</sub>";
                     break; 
             }
@@ -1386,7 +1395,20 @@ function resultWeight(){
     var current_array = document.getElementById('new_formula').value.split(' · ');
     var result = 0;
     for(var i=0; current_array[i]; i++) result += Number(elements_obj[current_array[i]].weight);
-    document.getElementById("result_weight").innerHTML = " : "+result;
+    document.getElementById("result_weight").dataset.val = result;
+    document.getElementById("result_weight").innerHTML = result+' <i>M</i><sub>mol</sub>';
 }
 
-function clearQuery() { document.getElementById('chemi').value = ""; }
+function clearQuery(){ document.getElementById('chemi').value = ""; }
+
+function addMaterial(){
+	if(document.getElementById('result_weight').innerHTML == "") return false;
+	var mat_str = getCookie("materials");
+	/*if(mat_str.indexOf(document.getElementById('result_formula').dataset.val)){
+		alert("already exist");
+		return false;
+	}*/
+	setCookie("materials", mat_str+document.getElementById('result_formula').dataset.val+":"+document.getElementById('result_weight').dataset.val+",");
+	document.getElementById('material_plate').innerHTML = getCookie("materials").split(',').length - 1;
+
+}
