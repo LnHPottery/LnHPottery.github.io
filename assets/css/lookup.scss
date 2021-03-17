@@ -1,6 +1,6 @@
 body{
   background: #ecedf1;
-  padding: 32px;
+  padding: 16px 32px;
   font-family: sans-serif;
   color: #666;
 }
@@ -34,7 +34,7 @@ input, select, textarea{
   text-align:center; 
   display: inline-block;
   cursor: pointer;
-  box-shadow: -4px -4px 4px 0 rgba(255, 255, 255, .7), 4px 4px 4px 0 rgba(174, 174, 192, .2);
+  box-shadow: -3px -3px 3px 0 rgba(255, 255, 255, .7), 3px 3px 3px 0 rgba(174, 174, 192, .2);
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */
@@ -80,7 +80,7 @@ input, select, textarea{
 .element_panel{
   width: 160px;
   height: 160px;
-  margin:16px;
+  margin: 32px 8px;
   border-radius: 8px; 
   border: 1px solid white;
   box-shadow: -6px -6px 6px 0 rgba(255, 255, 255, .7), 6px 6px 6px 0 rgba(174, 174, 192, .2);

@@ -1235,6 +1235,7 @@ for(var i=0; ions_arr[i];i++){
 }
 
 autocomplete(document.getElementById("chemi"), chemi_arr);
+document.getElementById("new_formula").blur();
 
 function autocomplete(inp, arr) {
 	var currentFocus;
@@ -1382,6 +1383,7 @@ function formateState(str){
 }
 
 function resultWeight(){
+    if(!document.getElementById('new_formula').value) return false;
     var current_array = document.getElementById('new_formula').value.split(' · ');
     var result = 0;
     for(var i=0; current_array[i]; i++) result += Number(elements_obj[current_array[i]].weight);
