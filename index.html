@@ -21,21 +21,17 @@
             }
             @keyframes opc {
                 0% { opacity: 0; }
-                99% { opacity: 0; }
+                95% { opacity: 0; }
                 100% { opacity: 1; }
             }
-            @keyframes scaleSize {
-                0% { transform: scale(0); }
-                99% { transform: scale(0); }
-                100% { transform: scale(1); }
-            }
             @keyframes scaleBounce {
-                0% { transform: scale(1); }
-                18% { transform: scale(1.005) skew(0.02deg, -0.005deg); }
-                43% { transform: scale(0.995) skew(0deg, -0.1deg); }
-                59% { transform: scale(1.015) skew(-0.005turn, 0deg); }
-                84% { transform: scale(.99) skew(-0.01deg, 0.01turn); }
-                100% { transform: scale(1); }
+                0% { transform: scale(1) skew(0deg, 0deg) translate(0,0); }
+                18% { transform: scale(0.98) skew(-1deg, 1deg) translate(0,-1%); }
+                43% { transform: scale(1.01) skew(0deg, -4deg) translate(-1%,-1%); }
+                59% { transform: scale(.97) skew(0deg, 0deg) translate(0,-1%); }
+                73% { transform: scale(.97) skew(0deg, -8deg) translate(-1%,0); }
+                84% { transform: scale(1.01) skew(1deg, -3deg) translate(0,-1%); }
+                100% { transform: scale(1) skew(0deg, 0deg) translate(0,0); }
             }
             @keyframes rotateLnH {
                 0% { transform: rotate(-100deg); }
@@ -92,7 +88,7 @@
             #line_block polygon.top, #line_block polygon.bottom { animation: opacityBlank 3s linear; }
             #color_block {
                 transform-origin: 40% 60%;
-                animation: scaleSize 3.6s ease-in, scaleBounce 5s infinite;
+                animation: scaleBounce 6s infinite;
             }
             #color_block ellipse{ animation: opc 3.6s ease-in; }
             #lnnh_block {
