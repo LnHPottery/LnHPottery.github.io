@@ -9,7 +9,10 @@
 </head>
 <body>
     <div style="max-width: 480px; margin: 0 auto">
-        <div id="material_plate"></div>
+        <div id="material_plate" onload="getMaterial()">
+            <div id="material_count"></div>
+            <div id="material_list"></div>
+        </div>
         <h2>元素與常見離子查詢</h2>
         <div class="autocomplete">
             <input onblur="displayEle()" onchange="displayEle()" onkeyup="displayEle()" id="chemi" name="chemi" type="input" value="" style="border-radius:4px 18px 18px 4px;" />
@@ -33,6 +36,7 @@
             分子式 : <span id="result_formula" data-val=""></span><br>
             莫耳質量 : <span id="result_weight" data-val=""></span><br>
         </div>
+        <input id="cus_name" type="text" style="width: calc(100% - 6px)" /><br><br>
         <div onclick="addMaterial()" class="btn icon material" style="width: 144px;">加入常用素材</div>
     </div>
 </body>
