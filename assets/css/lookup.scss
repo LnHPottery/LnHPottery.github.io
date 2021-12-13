@@ -24,6 +24,22 @@ input, select, textarea{
   }
   &:focus{ outline: none; }
 }
+#menu{
+  text-align: center;
+  margin: 24px 0 0px;
+}
+#menu a{
+  color: #333;
+  font-weight: bold;
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 16px;
+  margin: 0 4px 0 0;
+  cursor: pointer;
+}
+#menu a:hover{
+  text-decoration: line-through;
+}
 .formula{ font-variant-numeric: oldstyle-nums; }
 .btn{
   font-weight: bold;
