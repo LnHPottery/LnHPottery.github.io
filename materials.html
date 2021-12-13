@@ -9,7 +9,7 @@
 </head>
 <body>
     <div style="max-width: 480px; margin: 0 auto">
-        <div id="material_plate" onload="getMaterial()">
+        <div id="material_plate">
             <div id="material_count"></div>
             <div id="material_list"></div>
         </div>
@@ -42,4 +42,9 @@
 </body>
 <script src="assets/js/cookieStorage.js"></script>
 <script src="assets/js/lookup.js"></script>
+<script>
+    (function(){
+        getMaterial()
+    })();
+</script>
 </html>
