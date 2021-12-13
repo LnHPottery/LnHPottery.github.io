@@ -1408,10 +1408,12 @@ function addMaterial(){
 		alert("already exist");
 		return false;
 	} */
-	setCookie("materials", mat_str+document.getElementById('cus_name').value ? document.getElementById('cus_name').value : document.getElementById('result_formula').dataset.val+":"+document.getElementById('result_formula').dataset.val+":"+document.getElementById('result_weight').dataset.val+",");
+	setCookie("materials", mat_str + (document.getElementById('cus_name').value ? document.getElementById('cus_name').value : document.getElementById('result_formula').dataset.val) + ":" + document.getElementById('result_formula').dataset.val + ":" + document.getElementById('result_weight').dataset.val+",");
 	document.getElementById('material_count').innerHTML = getCookie("materials").split(',').length - 1;
-	document.getElementById('material_list').innerHTML += document.getElementById('cus_name').value ? document.getElementById('cus_name').value : document.getElementById('result_formula').dataset.val + "<br>";
-	// document.getElementById('new_formula').value = "";
+	document.getElementById('material_list').innerHTML += (document.getElementById('cus_name').value ? document.getElementById('cus_name').value : document.getElementById('result_formula').dataset.val) + "<br>";
+	document.getElementById('new_formula').value = "";
+	document.getElementById('result_formula').innerHTML = "";
+	document.getElementById('result_weight').innerHTML = "";
 }
 function getMaterial(){
 	document.getElementById('material_count').innerHTML = getCookie("materials").split(',').length - 1;
