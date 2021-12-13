@@ -1233,6 +1233,17 @@ for(var i=0; ions_arr[i];i++){
 	tmp_obj['type'] = "ion";
 	elements_obj[item_name] = tmp_obj;
 }
+for(var i=0; getCookie("materials").split(',')[i];i++){
+	chemi_arr.push(getCookie("materials").split(',')[i][1]);
+	var item_name = getCookie("materials").split(',')[i][1];
+	var tmp_obj = {};
+	tmp_obj['weight'] = getCookie("materials").split(',')[i][2];
+	tmp_obj['states'] = '';
+	tmp_obj['name'] = getCookie("materials").split(',')[0];
+	tmp_obj['aka'] = '';
+	tmp_obj['type'] = "material";
+	elements_obj[item_name] = tmp_obj;
+}
 
 autocomplete(document.getElementById("chemi"), chemi_arr);
 
@@ -1372,6 +1383,10 @@ function formateMolecule(){
                 case "atom":
                 	document.getElementById('result_formula').dataset.val += ele_formula+count;
                     document.getElementById('result_formula').innerHTML += ele_formula+"<sub>"+count+"</sub>";
+                    break; 
+                case "material":
+                	document.getElementById('result_formula').dataset.val += "("+ele_formula+")"+count;
+                    document.getElementById('result_formula').innerHTML += "("+ele_formula.replace(/(\d+)/g, '<sub>$1</sub>')+")"+"<sub>"+count+"</sub>";
                     break; 
             }
         }
