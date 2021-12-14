@@ -1405,7 +1405,11 @@ function clearQuery(){ document.getElementById('chemi').value = ""; }
 function addMaterial(base){
 	if(base == "raw"){
 		if(raw_material_obj.error) alert(raw_material_obj.error);
-		else setCookie("raws", raw_material_obj);
+		else {
+			var raws_str = getCookie("raws");
+			setCookie("raws", raws_str + JSON.stringify(raw_material_obj) + ",");
+			document.getElementById('new_raw_name').value = '';
+		}
 	}
 	else{
 		if(document.getElementById('result_weight').innerHTML == "") return false;
@@ -1473,6 +1477,9 @@ function displayMat(){
 		colour_arr[i][2] = (Number(colour_arr[i][1])/rate).toFixed(4);
 		document.getElementById('new_material_colour').innerHTML += (Number(colour_arr[i][1])/rate).toFixed(4) + " "+ colour_arr[i][0] + "<br>";
 	}
-	if(check >= 90) raw_material_obj = {name:document.getElementById('new_raw_name'), ro:ro_arr, r2o3:r2o3_arr, ro2:ro2_arr, colour:colour_arr, note:document.getElementById('new_raw_note')};
-	else raw_material_obj = {error:'原料百分比總和不足90%'};
+	if(check > 90 && document.getElementById('new_raw_name').value.length > 0 && check < 110) raw_material_obj = {name:document.getElementById('new_raw_name').value, ro:ro_arr, r2o3:r2o3_arr, ro2:ro2_arr, colour:colour_arr, note:document.getElementById('new_raw_note').value};
+	else if(check > 90 && document.getElementById('new_raw_name').value.length > 0 && check < 110) raw_material_obj = {error:'原料百分比總和不足90%'};
+	else if(check > 90 && document.getElementById('new_raw_name').value.length > 0 && check < 110) raw_material_obj = {error:'缺少原料名稱(必填)'};
+	else if(check > 90 && document.getElementById('new_raw_name').value.length > 0 && check < 110) raw_material_obj = {error:'原料百分比總和超過110%'};
+	else raw_material_obj = {error:'錯誤原因不明'};
 }
