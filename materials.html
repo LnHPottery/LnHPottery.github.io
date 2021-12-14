@@ -13,7 +13,7 @@
         <a href="/formula">Formula / 釉式</a>
         <a href="/ref">Reference / 參考資料</a>
     </div>
-    <div style="max-width: 480px; margin: 0 auto; padding-bottom: 32px; border-bottom: 2px solid;">
+    <div style="max-width: 640px; margin: 0 auto; padding-bottom: 32px; border-bottom: 2px solid;">
         <h2>元素與常見離子查詢</h2>
         <div class="autocomplete">
             <input onblur="displayEle()" onchange="displayEle()" onkeyup="displayEle()" id="chemi" name="chemi" type="input" value="" style="border-radius:4px 18px 18px 4px;" />
@@ -38,24 +38,29 @@
             莫耳質量 : <span id="result_weight" data-val=""></span><br>
             素材顯示名稱(opt.) : <input id="cus_name" type="text" style="width: calc(100% - 200px)" /><br>
         </div>
-        <div onclick="addMaterial('ro')" class="btn icon material" style="width: 144px;">加入鹼性素材</div>
-        <div onclick="addMaterial('r2o3')" class="btn icon material" style="width: 144px;">加入中性素材</div>
-        <div onclick="addMaterial('ro2')" class="btn icon material" style="width: 144px;">加入酸性素材</div>
-        <div onclick="addMaterial('colour')" class="btn icon material" style="width: 144px;">加入發色素材</div>
+        <div onclick="addMaterial('ro')" class="btn" style="width: 144px; margin-right: 12px;">加入鹼性素材</div>
+        <div onclick="addMaterial('r2o3')" class="btn" style="width: 144px; margin-right: 12px;">加入中性素材</div>
+        <div onclick="addMaterial('ro2')" class="btn" style="width: 144px; margin-right: 12px;">加入酸性素材</div>
+        <div onclick="addMaterial('colour')" class="btn" style="width: 144px; margin-right: 12px;">加入發色素材</div>
     </div>
-    <div style="max-width: 480px; margin: 0 auto; padding-bottom: 32px;">
+    <div style="max-width: 640px; margin: 0 auto; padding-bottom: 32px;">
         <h2>原料比重與賽格式</h2>
         <div id="material_plate">
             <div id="material_list"></div>
         </div>
         <div id="new_material" style="font-size:16px; vertical-align: top;width: 100%; margin-top: 16px;">
-            <span id="new_material_ro" style="width:22%;display: inline-block;border: 1px solid;background: white;min-height: 32px;line-height: 24px;vertical-align: top;"></span> + 
-            <span id="new_material_r2o3" style="width:22%;display: inline-block;border: 1px solid;background: white;min-height: 32px;line-height: 24px;vertical-align: top;"></span> + 
-            <span id="new_material_ro2" style="width:22%;display: inline-block;border: 1px solid;background: white;min-height: 32px;line-height: 24px;vertical-align: top;"></span> + 
-            <span id="new_material_colour" style="width:22%;display: inline-block;border: 1px solid;background: white;min-height: 32px;line-height: 24px;vertical-align: top;"></span>
+            <span id="new_material_ro" style="width:22%;display: inline-block;border: 1px solid;background: white;min-height: 32px;line-height: 24px;vertical-align: top; border-radius: 4px;"></span> + 
+            <span id="new_material_r2o3" style="width:22%;display: inline-block;border: 1px solid;background: white;min-height: 32px;line-height: 24px;vertical-align: top; border-radius: 4px;"></span> + 
+            <span id="new_material_ro2" style="width:22%;display: inline-block;border: 1px solid;background: white;min-height: 32px;line-height: 24px;vertical-align: top; border-radius: 4px;"></span> + 
+            <span id="new_material_colour" style="width:22%;display: inline-block;border: 1px solid;background: white;min-height: 32px;line-height: 24px;vertical-align: top; border-radius: 4px;"></span>
         </div>
     </div>
 </body>
+<style>
+    .btn.ro {border-left: 8px solid #22577A}
+    .btn.r2o3 {border-left: 8px solid #57CC99}
+    .btn.ro2 {border-left: 8px solid #E63E6D}
+</style>
 <script src="assets/js/cookieStorage.js"></script>
 <script src="assets/js/lookup.js"></script>
 <script>
