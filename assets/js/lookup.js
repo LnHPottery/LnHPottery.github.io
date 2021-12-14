@@ -1417,6 +1417,6 @@ function addMaterial(){
 function getMaterial(){
 	document.getElementById('material_list').innerHTML = "";
 	for(var i = 0; getCookie("materials").split(',')[i]; i++){
-		document.getElementById('material_list').innerHTML += "<div class='btn' data-val='"+getCookie("materials").split(',')[i].split(':')[2]+"' data-name='"+getCookie("materials").split(',')[i].split(':')[1]+"'>" + getCookie("materials").split(',')[i].split(':')[0] + " | <input type='text' /></div>";
+		document.getElementById('material_list').innerHTML += "<div class='btn' data-val='"+getCookie("materials").split(',')[i].split(':')[2]+"' data-name='"+getCookie("materials").split(',')[i].split(':')[1]+"'>" + getCookie("materials").split(',')[i].split(':')[0].replace(/(\d+)/g, '<sub>$1</sub>') + " | <input type='text' /></div>";
 	}
 }
