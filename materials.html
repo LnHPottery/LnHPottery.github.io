@@ -44,7 +44,7 @@
         <div onclick="addMaterial('colour')" class="btn" style="width: 144px; margin-right: 12px;">加入發色素材</div>
     </div>
     <div style="max-width: 640px; margin: 0 auto; padding-bottom: 32px;">
-        <h2>原料比重與賽格式</h2>
+        <h2>原料比重(%)轉賽格式</h2>
         <div id="material_plate">
             <div id="material_list"></div>
         </div>
@@ -54,6 +54,9 @@
             <span id="new_material_ro2" style="width:22%;display: inline-block;border: 1px solid;background: white;min-height: 32px;line-height: 24px;vertical-align: top; border-radius: 4px;"></span> + 
             <span id="new_material_colour" style="width:22%;display: inline-block;border: 1px solid;background: white;min-height: 32px;line-height: 24px;vertical-align: top; border-radius: 4px;"></span>
         </div>
+        <input id="new_raw_name" type="text" style="width: 100%" />
+        <input id="new_raw_note" type="text" style="width: 100%" />
+        <div onclick="addMaterial('raw')" class="btn" style="width: 144px; margin-right: 12px;">加入原料筆記</div>
     </div>
 </body>
 <style>
