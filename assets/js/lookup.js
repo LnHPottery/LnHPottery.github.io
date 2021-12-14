@@ -1235,12 +1235,12 @@ for(var i=0; ions_arr[i];i++){
 	elements_obj[item_name] = tmp_obj;
 }
 for(var i=0; cus_arr[i];i++){
-	chemi_arr.push(cus_arr[i].split(';')[1]);
-	var item_name = cus_arr[i].split(';')[1];
+	chemi_arr.push(cus_arr[i].split(':')[1]);
+	var item_name = cus_arr[i].split(':')[1];
 	var tmp_obj = {};
-	tmp_obj['weight'] = cus_arr[i].split(';')[2];
+	tmp_obj['weight'] = cus_arr[i].split(':')[2];
 	tmp_obj['states'] = '';
-	tmp_obj['name'] = cus_arr[i].split(';')[0];
+	tmp_obj['name'] = cus_arr[i].split(':')[0];
 	tmp_obj['aka'] = '';
 	tmp_obj['type'] = "material";
 	elements_obj[item_name] = tmp_obj;
