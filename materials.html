@@ -54,8 +54,10 @@
             <span id="new_material_ro2" style="width:22%;display: inline-block;border: 1px solid;background: white;min-height: 32px;line-height: 24px;vertical-align: top; border-radius: 4px;"></span> + 
             <span id="new_material_colour" style="width:22%;display: inline-block;border: 1px solid;background: white;min-height: 32px;line-height: 24px;vertical-align: top; border-radius: 4px;"></span>
         </div>
-        <input id="new_raw_name" type="text" style="width: 100%" />
-        <input id="new_raw_note" type="text" style="width: 100%" />
+        <div style="font-size: 1.2em;line-height: 2em;font-weight: bold; margin: 24px auto;">
+            原料名稱 : <input id="new_raw_name" type="text" style="width: calc(100% - 100px); margin-bottom: 16px" />
+            備註資訊(opt.) : <input id="new_raw_note" type="text" style="width: calc(100% - 148px)" />
+        </div>
         <div onclick="addMaterial('raw')" class="btn" style="width: 144px; margin-right: 12px;">加入原料筆記</div>
     </div>
 </body>
