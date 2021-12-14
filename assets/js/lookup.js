@@ -1190,6 +1190,7 @@ const ions_arr = [
 		"aka": "鋁矽酸鹽"
 	}
 ];
+var cus_arr = getCookie("materials").split(',');
 var elements_obj = {};
 var html_ele_table = document.getElementById('table');
 var html_ele_result = document.getElementById('result');
@@ -1233,13 +1234,13 @@ for(var i=0; ions_arr[i];i++){
 	tmp_obj['type'] = "ion";
 	elements_obj[item_name] = tmp_obj;
 }
-for(var i=0; getCookie("materials").split(',')[i];i++){
-	chemi_arr.push(getCookie("materials").split(',')[i][1]);
-	var item_name = getCookie("materials").split(',')[i][1];
+for(var i=0; cus_arr[i];i++){
+	chemi_arr.push(cus_arr[i].split(';')[1]);
+	var item_name = cus_arr[i].split(';')[1];
 	var tmp_obj = {};
-	tmp_obj['weight'] = getCookie("materials").split(',')[i][2];
+	tmp_obj['weight'] = cus_arr[i].split(';')[2];
 	tmp_obj['states'] = '';
-	tmp_obj['name'] = getCookie("materials").split(',')[0];
+	tmp_obj['name'] = cus_arr[i].split(';')[0];
 	tmp_obj['aka'] = '';
 	tmp_obj['type'] = "material";
 	elements_obj[item_name] = tmp_obj;
@@ -1424,16 +1425,16 @@ function addMaterial(){
 		return false;
 	} */
 	setCookie("materials", mat_str + (document.getElementById('cus_name').value ? document.getElementById('cus_name').value : document.getElementById('result_formula').dataset.val) + ":" + document.getElementById('result_formula').dataset.val + ":" + document.getElementById('result_weight').dataset.val+",");
-	document.getElementById('material_count').innerHTML = getCookie("materials").split(',').length - 1;
+	document.getElementById('material_count').innerHTML = cus_arr.length - 1;
 	document.getElementById('material_list').innerHTML += (document.getElementById('cus_name').value ? document.getElementById('cus_name').value : document.getElementById('result_formula').dataset.val) + "<br>";
 	document.getElementById('new_formula').value = "";
 	document.getElementById('result_formula').innerHTML = "";
 	document.getElementById('result_weight').innerHTML = "";
 }
 function getMaterial(){
-	document.getElementById('material_count').innerHTML = getCookie("materials").split(',').length - 1;
-	for(var i = 0; getCookie("materials").split(',')[i]; i++){
-		document.getElementById('material_list').innerHTML += getCookie("materials").split(',')[i].split(':')[0] + "<br>";
+	document.getElementById('material_count').innerHTML = cus_arr.length - 1;
+	for(var i = 0; cus_arr[i]; i++){
+		document.getElementById('material_list').innerHTML += cus_arr[i].split(':')[0] + "<br>";
 	}
 
 }
