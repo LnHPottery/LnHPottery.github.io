@@ -13,11 +13,7 @@
         <a href="/formula">Formula / 釉式</a>
         <a href="/ref">Reference / 參考資料</a>
     </div>
-    <div style="max-width: 480px; margin: 0 auto">
-        <div id="material_plate">
-            <div id="material_count"></div>
-            <div id="material_list"></div>
-        </div>
+    <div style="max-width: 480px; margin: 0 auto; padding-bottom: 32px; border-bottom: 2px solid;">
         <h2>元素與常見離子查詢</h2>
         <div class="autocomplete">
             <input onblur="displayEle()" onchange="displayEle()" onkeyup="displayEle()" id="chemi" name="chemi" type="input" value="" style="border-radius:4px 18px 18px 4px;" />
@@ -43,6 +39,12 @@
             素材顯示名稱(opt.) : <input id="cus_name" type="text" style="width: calc(100% - 200px)" /><br>
         </div>
         <div onclick="addMaterial()" class="btn icon material" style="width: 144px;">加入常用素材</div>
+    </div>
+    <div style="max-width: 480px; margin: 0 auto; padding-bottom: 32px;">
+        <h2>原料比重與賽格式</h2>
+        <div id="material_plate">
+            <div id="material_list"></div>
+        </div>
     </div>
 </body>
 <script src="assets/js/cookieStorage.js"></script>
