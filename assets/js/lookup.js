@@ -1417,18 +1417,41 @@ function addMaterial(base){
 function getMaterial(){
 	document.getElementById('material_list').innerHTML = "";
 	for(var i = 0; getCookie("materials").split(',')[i]; i++){
-		document.getElementById('material_list').innerHTML += "<div class='btn "+getCookie("materials").split(',')[i].split(':')[3]+"' data-val='"+getCookie("materials").split(',')[i].split(':')[2]+"' data-name='"+getCookie("materials").split(',')[i].split(':')[1]+"'>" + getCookie("materials").split(',')[i].split(':')[0].replace(/(\d+)/g, '<sub>$1</sub>') + " | <input type='text' onblur='displayMat()' onchange='displayMat()' onkeyup='displayMat()' /></div>";
+		document.getElementById('material_list').innerHTML += "<div class='btn "+getCookie("materials").split(',')[i].split(':')[3]+"' data-val='"+getCookie("materials").split(',')[i].split(':')[2]+"' data-name='"+getCookie("materials").split(',')[i].split(':')[1]+"' data-base='"+getCookie("materials").split(',')[i].split(':')[3]+"'>" + getCookie("materials").split(',')[i].split(':')[0].replace(/(\d+)/g, '<sub>$1</sub>') + " | <input type='text' onblur='displayMat()' onchange='displayMat()' onkeyup='displayMat()' /> % </div>";
 	}
 }
 function displayMat(){
 	var tmp_arr = document.getElementById('material_list').getElementsByTagName('div');
+	var ro_arr = [], r2o3_arr = [], ro2_arr = [], colour_arr = [];
 	var result_str = "";
+	var rate = 0;
+
+	document.getElementById('new_material_ro').innerHTML = "";
+	document.getElementById('new_material_ro').innerHTML = "";
+	document.getElementById('new_material_ro').innerHTML = "";
+	document.getElementById('new_material_ro').innerHTML = "";
+
 	for(var i=0; tmp_arr[i]; i++){
 		if(tmp_arr[i].getElementsByTagName('input')[0].value <= 0) continue;
-		else{
-			result_str += (tmp_arr[i].getElementsByTagName('input')[0].value / tmp_arr[i].dataset.val).toFixed(4) + ' ' + tmp_arr[i].dataset.name + ' · ';
+		else if(tmp_arr[i].dataset.base == 'ro'){
+			rate += Number((tmp_arr[i].getElementsByTagName('input')[0].value / tmp_arr[i].dataset.val).toFixed(4));
+			ro_arr.push([tmp_arr[i].dataset.name, (tmp_arr[i].getElementsByTagName('input')[0].value / tmp_arr[i].dataset.val).toFixed(4)]);
 		}
+		else if(tmp_arr[i].dataset.base == 'r2o3'){
+			r2o3_arr.push([tmp_arr[i].dataset.name, (tmp_arr[i].getElementsByTagName('input')[0].value / tmp_arr[i].dataset.val).toFixed(4)]);
+		}
+		else if(tmp_arr[i].dataset.base == 'ro2'){
+			ro2_arr.push([tmp_arr[i].dataset.name, (tmp_arr[i].getElementsByTagName('input')[0].value / tmp_arr[i].dataset.val).toFixed(4)]);
+		}
+		else if(tmp_arr[i].dataset.base == 'colour'){
+			colour_arr.push([tmp_arr[i].dataset.name, (tmp_arr[i].getElementsByTagName('input')[0].value / tmp_arr[i].dataset.val).toFixed(4)]);
+		}
+		else alert("HOW YOU MAKE IT?!!!")
 	}
 	//document.getElementById('new_material').value = result_str;
-	console.log(result_str)
+	console.log(rate, ro_arr, r2o3_arr, ro2_arr, colour_arr);
+	for(var i=0; ro_arr[i]; i++) document.getElementById('new_material_ro').innerHTML += (Number(ro_arr[i][1])/rate).toFixed(4) + " " + ro_arr[i][0] + "<br>";
+	for(var i=0; r2o3_arr[i]; i++) document.getElementById('new_material_r2o3').innerHTML += (Number(r2o3_arr[i][1])/rate).toFixed(4) + " "+ r2o3_arr[i][0] + "<br>";
+	for(var i=0; ro2_arr[i]; i++) document.getElementById('new_material_ro2').innerHTML += (Number(ro2_arr[i][1])/rate).toFixed(4) + " "+ ro2_arr[i][0] + "<br>";
+	for(var i=0; colour_arr[i]; i++) document.getElementById('new_material_colour').innerHTML += (Number(colour_arr[i][1])/rate).toFixed(4) + " "+ colour_arr[i][0] + "<br>";
 }
