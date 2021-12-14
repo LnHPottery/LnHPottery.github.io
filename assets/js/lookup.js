@@ -1386,8 +1386,8 @@ function formateMolecule(){
                     document.getElementById('result_formula').innerHTML += ele_formula+"<sub>"+count+"</sub>";
                     break; 
                 case "material":
-                	document.getElementById('result_formula').dataset.val += "("+ele_formula+")"+count;
-                    document.getElementById('result_formula').innerHTML += "("+ele_formula.replace(/(\d+)/g, '<sub>$1</sub>')+")"+"<sub>"+count+"</sub>";
+                	document.getElementById('result_formula').dataset.val ? document.getElementById('result_formula').dataset.val += "·"+count+ele_formula : document.getElementById('result_formula').dataset.val += count+ele_formula;
+                    document.getElementById('result_formula').innerHTML ? document.getElementById('result_formula').innerHTML += "·"+count+ele_formula.replace(/(\d+)/g, '<sub>$1</sub>')+")" : document.getElementById('result_formula').innerHTML += count+ele_formula.replace(/(\d+)/g, '<sub>$1</sub>')+")";
                     break; 
             }
         }
