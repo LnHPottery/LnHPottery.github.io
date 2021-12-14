@@ -1409,15 +1409,14 @@ function addMaterial(){
 		return false;
 	}
 	setCookie("materials", mat_str + (document.getElementById('cus_name').value ? document.getElementById('cus_name').value : document.getElementById('result_formula').dataset.val) + ":" + document.getElementById('result_formula').dataset.val + ":" + document.getElementById('result_weight').dataset.val+",");
-	document.getElementById('material_count').innerHTML = getCookie("materials").split(',').length - 1;
 	document.getElementById('material_list').innerHTML += (document.getElementById('cus_name').value ? document.getElementById('cus_name').value : document.getElementById('result_formula').dataset.val) + "<br>";
 	document.getElementById('new_formula').value = "";
 	document.getElementById('result_formula').innerHTML = "";
 	document.getElementById('result_weight').innerHTML = "";
 }
 function getMaterial(){
-	document.getElementById('material_count').innerHTML = getCookie("materials").split(',').length - 1;
+	document.getElementById('material_list').innerHTML = "";
 	for(var i = 0; getCookie("materials").split(',')[i]; i++){
-		document.getElementById('material_list').innerHTML += getCookie("materials").split(',')[i].split(':')[0] + "<br>";
+		document.getElementById('material_list').innerHTML += "<div class='btn' data-val='"+getCookie("materials").split(',')[i].split(':')[2]+"' data-name='"+getCookie("materials").split(',')[i].split(':')[1]+"'>" + getCookie("materials").split(',')[i].split(':')[0] + " | <input type='text' /></div>";
 	}
 }
