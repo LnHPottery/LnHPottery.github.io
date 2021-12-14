@@ -1401,14 +1401,14 @@ function resultWeight(){
 
 function clearQuery(){ document.getElementById('chemi').value = ""; }
 
-function addMaterial(){
+function addMaterial(base){
 	if(document.getElementById('result_weight').innerHTML == "") return false;
 	var mat_str = getCookie("materials");
 	if(mat_str.indexOf(document.getElementById('result_formula').dataset.val) >= 0){
 		alert("already exist");
 		return false;
 	}
-	setCookie("materials", mat_str + (document.getElementById('cus_name').value ? document.getElementById('cus_name').value : document.getElementById('result_formula').dataset.val) + ":" + document.getElementById('result_formula').dataset.val + ":" + document.getElementById('result_weight').dataset.val+",");
+	setCookie("materials", mat_str + (document.getElementById('cus_name').value ? document.getElementById('cus_name').value : document.getElementById('result_formula').dataset.val) + ":" + document.getElementById('result_formula').dataset.val + ":" + document.getElementById('result_weight').dataset.val + ":" + base + ",");
 	document.getElementById('new_formula').value = "";
 	document.getElementById('result_formula').innerHTML = "";
 	document.getElementById('result_weight').innerHTML = "";
@@ -1417,6 +1417,18 @@ function addMaterial(){
 function getMaterial(){
 	document.getElementById('material_list').innerHTML = "";
 	for(var i = 0; getCookie("materials").split(',')[i]; i++){
-		document.getElementById('material_list').innerHTML += "<div class='btn' data-val='"+getCookie("materials").split(',')[i].split(':')[2]+"' data-name='"+getCookie("materials").split(',')[i].split(':')[1]+"'>" + getCookie("materials").split(',')[i].split(':')[0].replace(/(\d+)/g, '<sub>$1</sub>') + " | <input type='text' /></div>";
+		document.getElementById('material_list').innerHTML += "<div class='btn "+getCookie("materials").split(',')[i].split(':')[3]+"' data-val='"+getCookie("materials").split(',')[i].split(':')[2]+"' data-name='"+getCookie("materials").split(',')[i].split(':')[1]+"'>" + getCookie("materials").split(',')[i].split(':')[0].replace(/(\d+)/g, '<sub>$1</sub>') + " | <input type='text' onblur='displayMat()' onchange='displayMat()' onkeyup='displayMat()' /></div>";
 	}
+}
+function displayMat(){
+	var tmp_arr = document.getElementById('material_list').getElementsByTagName('div');
+	var result_str = "";
+	for(var i=0; tmp_arr[i]; i++){
+		if(tmp_arr[i].getElementsByTagName('input')[0].value <= 0) continue;
+		else{
+			result_str += (tmp_arr[i].getElementsByTagName('input')[0].value / tmp_arr[i].dataset.val).toFixed(4) + ' ' + tmp_arr[i].dataset.name + ' · ';
+		}
+	}
+	//document.getElementById('new_material').value = result_str;
+	console.log(result_str)
 }
