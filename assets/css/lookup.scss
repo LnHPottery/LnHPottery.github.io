@@ -20,7 +20,6 @@ input, select, textarea{
 
   &.fill_alert{
     border:1px solid rgba(174, 174, 192, .2);
-    box-shadow: inset 1px 1px 3px 1px rgba(235, 64, 52,0.33);
   }
   &:focus{ outline: none; }
 }
@@ -55,24 +54,16 @@ input, select, textarea{
 .btn{
   font-weight: bold;
   height:36px; 
-  border: 1px solid rgba(255,255,255,.9);
+  border: 1px solid #494949;
   border-radius:8px;
   box-sizing: border-box;
   line-height:36px; 
   text-align:center; 
   display: inline-block;
   cursor: pointer;
-  box-shadow: -3px -3px 3px 0 rgba(255, 255, 255, .7), 3px 3px 3px 0 rgba(174, 174, 192, .2);
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
+
   &:hover{
-    color: #fb5e01;
-    box-shadow: inset -2px -2px 2px 0 rgba(255, 255, 255, .7), inset 2px 2px 2px 0 rgba(174, 174, 192, .2);
+    color: #e62422;
   }
   &.icon{
     background-size: 24px 24px;
@@ -121,8 +112,9 @@ input, select, textarea{
   margin: 32px 8px;
   border-radius: 8px; 
   border: 1px solid white;
-  box-shadow: -6px -6px 6px 0 rgba(255, 255, 255, .7), 6px 6px 6px 0 rgba(174, 174, 192, .2);
   position: relative;
+  background-color: #494949;
+  color: #f1eae3;
 
   span{position: absolute;}
   #panel_formula{
@@ -187,3 +179,168 @@ input, select, textarea{
     }
   }
 }
+
+body{background: #f1eae3}
+.frame{
+  vertical-align: top;
+  background-repeat: no-repeat;
+  padding-top: 64px;
+  background-position:
+    top 64px left 400px,
+    top 234px left 300px,
+    top 408px left 200px,
+    top 580px left 100px,
+    bottom left -236px,
+    bottom left -34px,
+    bottom left 165px,
+    bottom left 365px,
+    bottom 60px left 100px,
+    bottom 60px left 300px,
+    bottom 60px left 500px,
+    bottom 60px left 700px;
+  background-size:
+    100px 100%,
+    300px 100%,
+    500px 100%,
+    700px 100%,
+    100% 64px,
+    100% 238px,
+    100% 412px,
+    100% 584px,
+    352px 100%,
+    252px 100%,
+    152px 100%,
+    52px 100%;
+  background-image:
+    linear-gradient(180deg, transparent 0px, #fbc117 0px, #fbc117 2px, transparent 2px),
+    linear-gradient(180deg, transparent 0px, #fbc117 0px, #fbc117 2px, transparent 2px),
+    linear-gradient(180deg, transparent 0px, #fbc117 0px, #fbc117 2px, transparent 2px),
+    linear-gradient(180deg, transparent 0px, #fbc117 0px, #fbc117 2px, transparent 2px),
+    
+    linear-gradient(60deg, transparent 319px, #fb5e01 319px, #fb5e01 321px, transparent 321px),
+    linear-gradient(60deg, transparent 319px, #fb5e01 319px, #fb5e01 321px, transparent 321px),
+    linear-gradient(60deg, transparent 319px, #fb5e01 319px, #fb5e01 321px, transparent 321px),
+    linear-gradient(60deg, transparent 319px, #fb5e01 319px, #fb5e01 321px, transparent 321px),
+     
+    linear-gradient(120deg, transparent 319px, #005a5a 319px, #005a5a 321px, transparent 321px),linear-gradient(120deg, transparent 319px, #005a5a 319px, #005a5a 321px, transparent 321px),
+    linear-gradient(120deg, transparent 319px, #005a5a 319px, #005a5a 321px, transparent 321px),
+    linear-gradient(120deg, transparent 319px, #005a5a 319px, #005a5a 321px, transparent 321px);
+}
+body{background: #f1eae3}
+.frame{
+  vertical-align: top;
+  background-repeat: no-repeat;
+  padding-top: 64px;
+  background-position:
+    top 64px left 400px,
+    top 234px left 300px,
+    top 408px left 200px,
+    top 580px left 100px,
+    bottom 66px left -268px,
+    bottom 66px left -68px,
+    bottom 66px left 130px,
+    bottom 66px left 330px,
+    bottom 60px left 100px,
+    bottom 60px left 300px,
+    bottom 60px left 500px,
+    bottom 60px left 700px;
+  background-size:
+    100px 100%,
+    300px 100%,
+    500px 100%,
+    700px 100%,
+    100% 64px,
+    100% 238px,
+    100% 412px,
+    100% 584px,
+    352px 100%,
+    242px 100%,
+    142px 100%,
+    42px 100%;
+  background-image:
+    linear-gradient(180deg, transparent 0px, #fbc117 0px, #fbc117 2px, transparent 2px),
+    linear-gradient(180deg, transparent 0px, #fbc117 0px, #fbc117 2px, transparent 2px),
+    linear-gradient(180deg, transparent 0px, #fbc117 0px, #fbc117 2px, transparent 2px),
+    linear-gradient(180deg, transparent 0px, #fbc117 0px, #fbc117 2px, transparent 2px),
+    
+    linear-gradient(60deg, transparent 319px, #fb5e01 319px, #fb5e01 321px, transparent 321px),
+    linear-gradient(60deg, transparent 319px, #fb5e01 319px, #fb5e01 321px, transparent 321px),
+    linear-gradient(60deg, transparent 319px, #fb5e01 319px, #fb5e01 321px, transparent 321px),
+    linear-gradient(60deg, transparent 319px, #fb5e01 319px, #fb5e01 321px, transparent 321px),
+     
+    linear-gradient(120deg, transparent 319px, #005a5a 319px, #005a5a 321px, transparent 321px),linear-gradient(120deg, transparent 319px, #005a5a 319px, #005a5a 321px, transparent 321px),
+    linear-gradient(120deg, transparent 319px, #005a5a 319px, #005a5a 321px, transparent 321px),
+    linear-gradient(120deg, transparent 319px, #005a5a 319px, #005a5a 321px, transparent 321px);
+}
+.triangle{
+  vertical-align: top;
+  color: transparent;
+  text-align: left;
+  display:inline-block;
+  margin:0 -2px;
+  padding:0;
+  width: 100px;
+  height: 173.2px;
+  box-sizing: border-box;
+  position: relative;
+  color:#494949;
+
+  &.short{ height: 64px; }
+  span{
+    position: absolute;
+    width: 120px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #f1eae3;
+    border-radius: 16px;
+    padding: 4px 8px 2px;
+    box-sizing: border-box;
+    
+    &.point{
+      font-size: 28px;
+      width:32px;
+      height:32px;
+      text-align: center;
+      top: -16px;
+      left: 84px;
+      background: #f1eae3;
+      color: #494949;
+      cursor: pointer;
+      z-index: 3;
+      padding: 0;
+    }
+  }
+  &.ro2{ 
+    .m_0{
+      background-color: #fb5e01; 
+      left:-152px;
+      top: 33px;
+    }
+    .m_33, .m_66, .m_100{
+      background-color: #fb5e01; 
+      left:-56px;
+      top:76px;
+    }
+  }
+  &.r2o3{ 
+    .m_0, .m_33, .m_66, .m_100{
+      background-color: #fbc117;
+      left:16px;
+      top:-14px;
+    }
+  }
+  &.ro{ 
+    .m_0{
+      background-color: #005a5a;
+      left:-64px;
+      top:32px;
+    }
+    .m_33, .m_66, .m_100{
+      background-color: #005a5a;
+      left:-56px;
+      top:68px;
+    }
+  }
+}
+
+
