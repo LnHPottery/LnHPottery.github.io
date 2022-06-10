@@ -1,9 +1,9 @@
-body{
-  background: #ecedf1;
-  padding: 8px 32px;
+html, body{
+  background: #f1eae3;
+  padding: 0;
   margin: 0;
   font-family: sans-serif;
-  color: #666;
+  color: #494949;
 }
 input, select, textarea{
   display: inline-block;
@@ -25,20 +25,31 @@ input, select, textarea{
   &:focus{ outline: none; }
 }
 #menu{
+  width: 960px;
+  max-width: 90%;
   text-align: center;
-  margin: 24px 0 0px;
-}
-#menu a{
-  color: #333;
-  font-weight: bold;
-  display: inline-block;
-  text-decoration: none;
-  padding: 12px 16px;
-  margin: 0 4px 0 0;
-  cursor: pointer;
-}
-#menu a:hover{
-  text-decoration: line-through;
+  margin: 0;
+  padding: 20px 0 16px;
+  background-color: #494949;
+  border-radius: 0 0 32px 0;
+
+  a{
+    color: #f1eae3;
+    font-weight: bold;
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 16px;
+    margin: 0 4px 0 0;
+    cursor: pointer;
+    &.on{
+      color: #e75d60;
+      text-decoration: line-through;
+    }
+    &:hover{
+      color: #e75d60;
+      text-decoration: line-through;
+    }
+  }
 }
 .formula{ font-variant-numeric: oldstyle-nums; }
 .btn{
@@ -60,7 +71,7 @@ input, select, textarea{
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
   &:hover{
-    color: #ed9b4f;
+    color: #fb5e01;
     box-shadow: inset -2px -2px 2px 0 rgba(255, 255, 255, .7), inset 2px 2px 2px 0 rgba(174, 174, 192, .2);
   }
   &.icon{
@@ -142,7 +153,7 @@ input, select, textarea{
     text-overflow: ellipsis;
     &:hover{
       width: auto;
-      background-color: #ecedf1;
+      background-color: #f1eae3;
     }
   }
   #panel_weight{
@@ -154,7 +165,7 @@ input, select, textarea{
     text-overflow: ellipsis;
     &:hover{
       width: auto;
-      background-color: #ecedf1;
+      background-color: #f1eae3;
     }
   }
 }
