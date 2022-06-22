@@ -295,9 +295,10 @@ body{background: #f1eae3}
     width: 120px;
     font-size: 16px;
     font-weight: bold;
+    text-align: center;
     color: #f1eae3;
     border-radius: 16px;
-    padding: 4px 8px 2px;
+    padding: 2px 8px;
     box-sizing: border-box;
     
     &.point{
