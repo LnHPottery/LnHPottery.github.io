@@ -13,8 +13,30 @@
         <a class="on" href="/formula">Formula / 釉式</a>
         <a href="/ref">Reference / 參考資料</a>
     </div>
-    <div style="margin: 64px auto; text-align: center;">
-        <div style="width:900px; margin-left: 84px; text-align: left;display: inline-block;">
+    <div id="material_plate" style="margin: 32px 0px 0px 32px;">
+      <div id="material_list">
+            <div class="btn ro">
+                <span style="position: absolute; font-size: 6px;">RO(鹼)</span>
+                <input value="" id="name_ro" type="text" style="margin-right: 2px; margin-left: -8px; width: 128px; text-align:right;" onchange="updateNameValue('ro')"> | 
+                m. <input value="0" id="min_ro" type="number" style="margin-right: 12px;" onchange="updateHintValue('ro_min')">
+                M. <input value="0" id="max_ro" type="number" style="margin-right: -8px;" onchange="updateHintValue('ro_max')">
+            </div><br>
+            <div class="btn ro2">
+                <span style="position: absolute; font-size: 6px;">RO<sub>2</sub>(酸)</span>
+                <input value="" id="name_ro2" type="text" style="margin-right: 2px; margin-left: -8px; width: 128px; text-align:right;" onchange="updateNameValue('ro2')"> | 
+                m. <input value="0" id="min_ro2" type="number" style="margin-right: 12px;" onchange="updateHintValue('ro2_min')">
+                M. <input value="0" id="max_ro2" type="number" style="margin-right: -8px;" onchange="updateHintValue('ro2_max')">
+            </div><br>
+            <div class="btn r2o3">
+                <span style="position: absolute; font-size: 6px;">R<sub>2</sub>O<sub>3</sub>(中)</span>
+                <input value="" id="name_r2o3" type="text" style="margin-right: 2px; margin-left: -8px; width: 128px; text-align:right;" onchange="updateNameValue('r2o3')"> | 
+                m. <input value="0" id="min_r2o3" type="number" style="margin-right: 12px;" onchange="updateHintValue('r2o3_min')">
+                M. <input value="0" id="max_r2o3" type="number" style="margin-right: -8px;" onchange="updateHintValue('r2o3_max')">
+            </div>
+      </div>
+    </div>
+    <div class="triangleTest" style="margin: -32px auto 32px; text-align: center;">
+        <div style="width:900px; text-align: left;display: inline-block;">
             <div class="triangle short"></div>
             <div class="triangle short"></div>
             <div class="triangle short"></div>
@@ -25,7 +47,7 @@
                 <div class="triangle"></div>
                 <div class="triangle"></div>
                 <div class="triangle ro2"><span class="m_33">33%</span></div>
-                <div class="triangle"><span class="point r1">1</span></div>
+                <div class="triangle"><span onclick="displayData('r1')" class="point r1">1</span></div>
                 <div class="triangle"></div>
                 <div class="triangle r2o3"><span class="m_100">100%</span></div>
                 <div class="triangle ro"><span class="m_33">33%</span></div>
@@ -33,29 +55,29 @@
                 <div class="triangle"></div>
                 <div class="triangle"></div>
                 <div class="triangle ro2"><span class="m_66">66%</span></div>
-                <div class="triangle"><span class="point r2">2</span></div>
+                <div class="triangle"><span onclick="displayData('r2')" class="point r2">2</span></div>
                 <div class="triangle "></div>
-                <div class="triangle"><span class="point r3">3</span></div>
+                <div class="triangle"><span onclick="displayData('r3')" class="point r3">3</span></div>
                 <div class="triangle "></div>
                 <div class="triangle r2o3"><span class="m_66">66%</span></div>
                 <div class="triangle ro"><span class="m_66">66%</span></div>
                 <div class="triangle"></div>
                 <div class="triangle ro2"><span class="m_100">100%</span></div>
-                <div class="triangle"><span class="point r4">4</span></div>
+                <div class="triangle"><span onclick="displayData('r4')" class="point r4">4</span></div>
                 <div class="triangle "></div>
-                <div class="triangle"><span class="point r5">5</span></div>
+                <div class="triangle"><span onclick="displayData('r5')" class="point r5">5</span></div>
                 <div class="triangle"></div>
-                <div class="triangle"><span class="point r6">6</span></div>
+                <div class="triangle"><span onclick="displayData('r6')" class="point r6">6</span></div>
                 <div class="triangle"></div>
                 <div class="triangle r2o3"><span class="m_33">33%</span></div>
                 <div class="triangle ro"><span class="m_100">100%</span></div>
-                <div class="triangle short"><span class="point r7">7</span></div>
+                <div class="triangle short"><span onclick="displayData('r7')" class="point r7">7</span></div>
                 <div class="triangle short"></div>
-                <div class="triangle short"><span class="point r8">8</span></div>
+                <div class="triangle short"><span onclick="displayData('r8')" class="point r8">8</span></div>
                 <div class="triangle short"></div>
-                <div class="triangle short"><span class="point r9">9</span></div>
+                <div class="triangle short"><span onclick="displayData('r9')" class="point r9">9</span></div>
                 <div class="triangle short"></div>
-                <div class="triangle short"><span class="point r10">10</span></div>
+                <div class="triangle short"><span onclick="displayData('r10')" class="point r10">10</span></div>
                 <div class="triangle short"></div>
                 <div class="triangle r2o3 short"><span class="m_0">0%</span></div>
             </div>
@@ -64,4 +86,152 @@
     </div>
 </body>
 <script src="assets/js/cookieStorage.js"></script>
+<script>
+    var diffValue = 0, diff33 = 0, diff66 = 0, selectedPt = '';
+    function displayData(pt){
+        selectedPt = (selectedPt == pt) ? '':pt;
+        if(!selectedPt) {
+            for(let i = 0; document.getElementsByClassName('m_0')[i]; i++){
+                document.getElementsByClassName('m_0')[i].style = "display: inline-block";
+                document.getElementsByClassName('m_33')[i].style = "display: inline-block";
+                document.getElementsByClassName('m_66')[i].style = "display: inline-block";
+                document.getElementsByClassName('m_100')[i].style = "display: inline-block";
+            }
+            return false;
+        }
+        for(let i = 0; document.getElementsByClassName('m_0')[i]; i++){
+            document.getElementsByClassName('m_0')[i].style = "display: none";
+            document.getElementsByClassName('m_33')[i].style = "display: none";
+            document.getElementsByClassName('m_66')[i].style = "display: none";
+            document.getElementsByClassName('m_100')[i].style = "display: none";
+        }
+        switch(pt){
+            case 'r1':
+                document.getElementsByClassName('m_0')[0].style = "display: inline-block";
+                document.getElementsByClassName('m_0')[1].style = "display: inline-block";
+                document.getElementsByClassName('m_100')[0].style = "display: inline-block";
+                break;
+            case 'r2':
+                document.getElementsByClassName('m_33')[0].style = "display: inline-block";
+                document.getElementsByClassName('m_0')[1].style = "display: inline-block";
+                document.getElementsByClassName('m_66')[1].style = "display: inline-block";
+                break;
+            case 'r3':
+                document.getElementsByClassName('m_0')[0].style = "display: inline-block";
+                document.getElementsByClassName('m_33')[1].style = "display: inline-block";
+                document.getElementsByClassName('m_66')[1].style = "display: inline-block";
+                break;
+            case 'r4':
+                document.getElementsByClassName('m_0')[1].style = "display: inline-block";
+                document.getElementsByClassName('m_33')[2].style = "display: inline-block";
+                document.getElementsByClassName('m_66')[0].style = "display: inline-block";
+                break;
+            case 'r5':
+                document.getElementsByClassName('m_33')[0].style = "display: inline-block";
+                document.getElementsByClassName('m_33')[1].style = "display: inline-block";
+                document.getElementsByClassName('m_33')[2].style = "display: inline-block";
+                break;
+            case 'r6':
+                document.getElementsByClassName('m_0')[0].style = "display: inline-block";
+                document.getElementsByClassName('m_66')[2].style = "display: inline-block";
+                document.getElementsByClassName('m_33')[2].style = "display: inline-block";
+                break;
+            case 'r7':
+                document.getElementsByClassName('m_0')[1].style = "display: inline-block";
+                document.getElementsByClassName('m_0')[2].style = "display: inline-block";
+                document.getElementsByClassName('m_100')[1].style = "display: inline-block";
+                break;
+            case 'r8':
+                document.getElementsByClassName('m_0')[2].style = "display: inline-block";
+                document.getElementsByClassName('m_33')[1].style = "display: inline-block";
+                document.getElementsByClassName('m_66')[0].style = "display: inline-block";
+                break;
+            case 'r9':
+                document.getElementsByClassName('m_0')[2].style = "display: inline-block";
+                document.getElementsByClassName('m_33')[0].style = "display: inline-block";
+                document.getElementsByClassName('m_66')[2].style = "display: inline-block";
+                break;
+            case 'r10':
+                document.getElementsByClassName('m_0')[0].style = "display: inline-block";
+                document.getElementsByClassName('m_0')[2].style = "display: inline-block";
+                document.getElementsByClassName('m_100')[2].style = "display: inline-block";
+                break;
+        }
+    }
+    function updateHintValue(m_type){
+        switch(m_type){
+            case 'ro_max':
+                diffValue = document.getElementById('max_ro').value - document.getElementById('min_ro').value;
+                document.getElementById('max_ro2').value = Number(document.getElementById('min_ro2').value) + diffValue;
+                document.getElementById('max_r2o3').value = Number(document.getElementById('min_r2o3').value) + diffValue;
+                break;
+            case 'ro2_max':
+                diffValue = document.getElementById('max_ro2').value - document.getElementById('min_ro2').value;
+                document.getElementById('max_ro').value = Number(document.getElementById('min_ro').value) + diffValue;
+                document.getElementById('max_r2o3').value = Number(document.getElementById('min_r2o3').value) + diffValue;
+                break;
+            case 'r2o3_max':
+                diffValue = document.getElementById('max_r2o3').value - document.getElementById('min_r2o3').value;
+                document.getElementById('max_ro').value = Number(document.getElementById('min_ro').value) + diffValue;
+                document.getElementById('max_ro2').value = Number(document.getElementById('min_ro2').value) + diffValue;
+                break;
+            case 'ro_min':
+                document.getElementById('max_ro').value = diffValue + Number(document.getElementById('min_ro').value);
+                break;
+            case 'ro2_min':
+                document.getElementById('max_ro2').value = diffValue + Number(document.getElementById('min_ro2').value);
+                break;
+            case 'r2o3_min':
+                document.getElementById('max_r2o3').value = diffValue + Number(document.getElementById('min_r2o3').value);
+                break;
+        }
+        diff33 = (diffValue / 3).toFixed(1);
+        diff66 = diffValue - diff33;
+        updateNameValue();
+    }
+    function updateNameValue(m_type){
+        let m_name;
+        if(!m_type){
+            m_name = document.getElementById('name_ro').value;
+            document.getElementsByClassName('m_0')[1].innerHTML = m_name + ":" + document.getElementById('min_ro').value;
+            document.getElementsByClassName('m_33')[1].innerHTML = m_name + ":" + Number(Number(document.getElementById('min_ro').value) + Number(diff33));
+            document.getElementsByClassName('m_66')[2].innerHTML = m_name + ":" + Number(Number(document.getElementById('min_ro').value) + Number(diff66));
+            document.getElementsByClassName('m_100')[2].innerHTML = m_name + ":" + Number(Number(document.getElementById('min_ro').value) + Number(diffValue));
+            m_name = document.getElementById('name_ro2').value;
+            document.getElementsByClassName('m_0')[0].innerHTML = m_name + ":" + document.getElementById('min_ro2').value;
+            document.getElementsByClassName('m_33')[0].innerHTML = m_name + ":" + Number(Number(document.getElementById('min_ro2').value) + Number(diff33));
+            document.getElementsByClassName('m_66')[0].innerHTML = m_name + ":" + Number(Number(document.getElementById('min_ro2').value) + Number(diff66));
+            document.getElementsByClassName('m_100')[1].innerHTML = m_name + ":" + Number(Number(document.getElementById('min_ro2').value) + Number(diffValue));
+            m_name = document.getElementById('name_r2o3').value;
+            document.getElementsByClassName('m_0')[2].innerHTML = m_name + ":" + document.getElementById('min_r2o3').value;
+            document.getElementsByClassName('m_33')[2].innerHTML = m_name + ":" + Number(Number(document.getElementById('min_r2o3').value) + Number(diff33));
+            document.getElementsByClassName('m_66')[1].innerHTML = m_name + ":" + Number(Number(document.getElementById('min_r2o3').value) + Number(diff66));
+            document.getElementsByClassName('m_100')[0].innerHTML = m_name + ":" + Number(Number(document.getElementById('min_r2o3').value) + Number(diffValue));
+            return false;
+        }
+        switch(m_type){
+            case 'ro':
+                m_name = document.getElementById('name_ro').value;
+                document.getElementsByClassName('m_0')[1].innerHTML = m_name + ":" + document.getElementById('min_ro').value;
+                document.getElementsByClassName('m_33')[1].innerHTML = m_name + ":" + Number(Number(document.getElementById('min_ro').value) + diff33);
+                document.getElementsByClassName('m_66')[2].innerHTML = m_name + ":" + Number(Number(document.getElementById('min_ro').value) + diff66);
+                document.getElementsByClassName('m_100')[2].innerHTML = m_name + ":" + Number(Number(document.getElementById('min_ro').value) + diffValue);
+                break;
+            case 'ro2':
+                m_name = document.getElementById('name_ro2').value;
+                document.getElementsByClassName('m_0')[0].innerHTML = m_name + ":" + document.getElementById('min_ro2').value;
+                document.getElementsByClassName('m_33')[0].innerHTML = m_name + ":" + Number(Number(document.getElementById('min_ro2').value) + diff33);
+                document.getElementsByClassName('m_66')[0].innerHTML = m_name + ":" + Number(Number(document.getElementById('min_ro2').value) + diff66);
+                document.getElementsByClassName('m_100')[1].innerHTML = m_name + ":" + Number(Number(document.getElementById('min_ro2').value) + diffValue);
+                break;
+            case 'r2o3':
+                m_name = document.getElementById('name_r2o3').value;
+                document.getElementsByClassName('m_0')[2].innerHTML = m_name + ":" + document.getElementById('min_r2o3').value;
+                document.getElementsByClassName('m_33')[2].innerHTML = m_name + ":" + Number(Number(document.getElementById('min_r2o3').value) + diff33);
+                document.getElementsByClassName('m_66')[1].innerHTML = m_name + ":" + Number(Number(document.getElementById('min_r2o3').value) + diff66);
+                document.getElementsByClassName('m_100')[0].innerHTML = m_name + ":" + Number(Number(document.getElementById('min_r2o3').value) + diffValue);
+                break;
+        }
+    }
+</script>
 </html>

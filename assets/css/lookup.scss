@@ -168,6 +168,7 @@ input, select, textarea{
   .btn{
     padding: 0 12px;
     margin: 4px 8px;
+    position: relative;
     input {
       display: inline-block;
       width:64px;
@@ -178,6 +179,9 @@ input, select, textarea{
       border-radius: 4px 8px 8px 4px;
     }
   }
+  .btn.ro {border-left: 8px solid #005a5a}
+  .btn.r2o3 {border-left: 8px solid #fbc117}
+  .btn.ro2 {border-left: 8px solid #fb5e01}
 }
 
 body{background: #f1eae3}
@@ -342,5 +346,19 @@ body{background: #f1eae3}
     }
   }
 }
-
+@media screen and (max-width: 1024px){
+  .triangleTest{
+    zoom: 0.8;
+  }
+}
+@media screen and (max-width: 760px){
+  .triangleTest{
+    zoom: 0.6;
+  }
+}
+@media screen and (max-width: 560px){
+  .triangleTest{
+    zoom: 0.4;
+  }
+}
 
