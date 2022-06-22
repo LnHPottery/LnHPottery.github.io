@@ -349,17 +349,20 @@ body{background: #f1eae3}
 }
 @media screen and (max-width: 1024px){
   .triangleTest{
-    zoom: 0.8;
+    transform: scale(.8);
+    transform-origin: top left;
   }
 }
 @media screen and (max-width: 760px){
   .triangleTest{
-    zoom: 0.6;
+    transform: scale(.6);
+    transform-origin: top left;
   }
 }
 @media screen and (max-width: 560px){
   .triangleTest{
-    zoom: 0.4;
+    transform: scale(.4);
+    transform-origin: top left;
   }
 }
 
