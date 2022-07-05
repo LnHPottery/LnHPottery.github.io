@@ -13,61 +13,42 @@
         <a class="on" href="/formula">Formula / 釉式</a>
         <a href="/ref">Reference / 參考資料</a>
     </div>
-    <div id="material_plate">
-      <div id="material_list">
-            <div class="btn ro">
-                <input value="" id="name_ro" type="text" style="margin-right: 2px; margin-left: -8px; width: 96px; text-align:right;" onchange="updateNameValue('ro')"> | 
-                m. <input value="0" id="min_ro" type="number" style="margin-right: 12px;" onchange="updateHintValue('ro_min')">
-                M. <input value="0" id="max_ro" type="number" style="margin-right: -8px;" onchange="updateHintValue('ro_max')">
-            </div><br>
-            <div class="btn ro2">
-                <input value="" id="name_ro2" type="text" style="margin-right: 2px; margin-left: -8px; width: 96px; text-align:right;" onchange="updateNameValue('ro2')"> | 
-                m. <input value="0" id="min_ro2" type="number" style="margin-right: 12px;" onchange="updateHintValue('ro2_min')">
-                M. <input value="0" id="max_ro2" type="number" style="margin-right: -8px;" onchange="updateHintValue('ro2_max')">
-            </div><br>
-            <div class="btn r2o3">
-                <input value="" id="name_r2o3" type="text" style="margin-right: 2px; margin-left: -8px; width: 96px; text-align:right;" onchange="updateNameValue('r2o3')"> | 
-                m. <input value="0" id="min_r2o3" type="number" style="margin-right: 12px;" onchange="updateHintValue('r2o3_min')">
-                M. <input value="0" id="max_r2o3" type="number" style="margin-right: -8px;" onchange="updateHintValue('r2o3_max')">
-            </div><br>
-      </div>
-    </div>
-    <div class="triangleTest" style="margin: 0 auto 32px; text-align: center;">
+    <div class="triangleTest" style="margin-left:auto; margin-right:auto; text-align: center;">
         <div style="width:900px; text-align: left;display: inline-block;">
             <div class="triangle short"></div>
             <div class="triangle short"></div>
             <div class="triangle short"></div>
             <div class="triangle short"></div>
-            <div class="triangle ro2 short"><span class="m_0">0%</span></div>
-            <div class="triangle ro short"><span class="m_0">0%</span></div>
+            <div class="triangle ro2 short"><span class="m_0">-</span></div>
+            <div class="triangle ro short"><span class="m_0">-</span></div>
             <div class="frame">
                 <div class="triangle"></div>
                 <div class="triangle"></div>
-                <div class="triangle ro2"><span class="m_33">33%</span></div>
+                <div class="triangle ro2"><span class="m_33">-</span></div>
                 <div class="triangle"><span onclick="displayData('r1')" class="point r1">1</span></div>
                 <div class="triangle"></div>
-                <div class="triangle r2o3"><span class="m_100">100%</span></div>
-                <div class="triangle ro"><span class="m_33">33%</span></div>
+                <div class="triangle r2o3"><span class="m_100">-</span></div>
+                <div class="triangle ro"><span class="m_33">-</span></div>
                 <div class="triangle"></div>
                 <div class="triangle"></div>
                 <div class="triangle"></div>
-                <div class="triangle ro2"><span class="m_66">66%</span></div>
+                <div class="triangle ro2"><span class="m_66">-</span></div>
                 <div class="triangle"><span onclick="displayData('r2')" class="point r2">2</span></div>
                 <div class="triangle "></div>
                 <div class="triangle"><span onclick="displayData('r3')" class="point r3">3</span></div>
                 <div class="triangle "></div>
-                <div class="triangle r2o3"><span class="m_66">66%</span></div>
-                <div class="triangle ro"><span class="m_66">66%</span></div>
+                <div class="triangle r2o3"><span class="m_66">-</span></div>
+                <div class="triangle ro"><span class="m_66">-</span></div>
                 <div class="triangle"></div>
-                <div class="triangle ro2"><span class="m_100">100%</span></div>
+                <div class="triangle ro2"><span class="m_100">-</span></div>
                 <div class="triangle"><span onclick="displayData('r4')" class="point r4">4</span></div>
                 <div class="triangle "></div>
                 <div class="triangle"><span onclick="displayData('r5')" class="point r5">5</span></div>
                 <div class="triangle"></div>
                 <div class="triangle"><span onclick="displayData('r6')" class="point r6">6</span></div>
                 <div class="triangle"></div>
-                <div class="triangle r2o3"><span class="m_33">33%</span></div>
-                <div class="triangle ro"><span class="m_100">100%</span></div>
+                <div class="triangle r2o3"><span class="m_33">-</span></div>
+                <div class="triangle ro"><span class="m_100">-</span></div>
                 <div class="triangle short"><span onclick="displayData('r7')" class="point r7">7</span></div>
                 <div class="triangle short"></div>
                 <div class="triangle short"><span onclick="displayData('r8')" class="point r8">8</span></div>
@@ -76,10 +57,28 @@
                 <div class="triangle short"></div>
                 <div class="triangle short"><span onclick="displayData('r10')" class="point r10">10</span></div>
                 <div class="triangle short"></div>
-                <div class="triangle r2o3 short"><span class="m_0">0%</span></div>
+                <div class="triangle r2o3 short"><span class="m_0">-</span></div>
             </div>
         </div>
-        <br><br><br>
+    </div><br>
+    <div id="material_plate">
+      <div id="material_list">
+            <div class="btn ro">
+                <input value="" placeholder="材料:G" id="name_ro" type="text" style="margin-right: 2px; margin-left: -8px; width: 96px; text-align:right;" onchange="updateNameValue('ro')"> | 
+                m. <input value="0" id="min_ro" type="number" style="margin-right: 12px;" onchange="updateHintValue('ro_min')">
+                M. <input value="0" id="max_ro" type="number" style="margin-right: -8px;" onchange="updateHintValue('ro_max')">
+            </div><br>
+            <div class="btn ro2">
+                <input value="" placeholder="材料:R" id="name_ro2" type="text" style="margin-right: 2px; margin-left: -8px; width: 96px; text-align:right;" onchange="updateNameValue('ro2')"> | 
+                m. <input value="0" id="min_ro2" type="number" style="margin-right: 12px;" onchange="updateHintValue('ro2_min')">
+                M. <input value="0" id="max_ro2" type="number" style="margin-right: -8px;" onchange="updateHintValue('ro2_max')">
+            </div><br>
+            <div class="btn r2o3">
+                <input value="" placeholder="材料:Y" id="name_r2o3" type="text" style="margin-right: 2px; margin-left: -8px; width: 96px; text-align:right;" onchange="updateNameValue('r2o3')"> | 
+                m. <input value="0" id="min_r2o3" type="number" style="margin-right: 12px;" onchange="updateHintValue('r2o3_min')">
+                M. <input value="0" id="max_r2o3" type="number" style="margin-right: -8px;" onchange="updateHintValue('r2o3_max')">
+            </div>
+      </div>
     </div>
 </body>
 <script src="assets/js/cookieStorage.js"></script>
@@ -94,6 +93,10 @@
                 document.getElementsByClassName('m_66')[i].style = "display: inline-block";
                 document.getElementsByClassName('m_100')[i].style = "display: inline-block";
             }
+            for(let i = 0; i < 10; i++){
+                document.getElementsByClassName('r'+(i+1))[0].style.boxShadow = "none";
+                document.getElementsByClassName('r'+(i+1))[0].style.color = "#494949";
+            }
             return false;
         }
         for(let i = 0; document.getElementsByClassName('m_0')[i]; i++){
@@ -102,56 +105,80 @@
             document.getElementsByClassName('m_66')[i].style = "display: none";
             document.getElementsByClassName('m_100')[i].style = "display: none";
         }
+        for(let i = 0; i < 10; i++){
+            document.getElementsByClassName('r'+(i+1))[0].style.boxShadow = "none";
+            document.getElementsByClassName('r'+(i+1))[0].style.color = "#494949";
+        }
         switch(pt){
             case 'r1':
                 document.getElementsByClassName('m_0')[0].style = "display: inline-block";
                 document.getElementsByClassName('m_0')[1].style = "display: inline-block";
                 document.getElementsByClassName('m_100')[0].style = "display: inline-block";
+                document.getElementsByClassName('r1')[0].style.boxShadow = "0px 0px 0px 4px #e75d60";
+                document.getElementsByClassName('r1')[0].style.color = "#e75d60";
                 break;
             case 'r2':
                 document.getElementsByClassName('m_33')[0].style = "display: inline-block";
                 document.getElementsByClassName('m_0')[1].style = "display: inline-block";
                 document.getElementsByClassName('m_66')[1].style = "display: inline-block";
+                document.getElementsByClassName('r2')[0].style.boxShadow = "0px 0px 0px 4px #e75d60";
+                document.getElementsByClassName('r2')[0].style.color = "#e75d60";
                 break;
             case 'r3':
                 document.getElementsByClassName('m_0')[0].style = "display: inline-block";
                 document.getElementsByClassName('m_33')[1].style = "display: inline-block";
                 document.getElementsByClassName('m_66')[1].style = "display: inline-block";
+                document.getElementsByClassName('r3')[0].style.boxShadow = "0px 0px 0px 4px #e75d60";
+                document.getElementsByClassName('r3')[0].style.color = "#e75d60";
                 break;
             case 'r4':
                 document.getElementsByClassName('m_0')[1].style = "display: inline-block";
                 document.getElementsByClassName('m_33')[2].style = "display: inline-block";
                 document.getElementsByClassName('m_66')[0].style = "display: inline-block";
+                document.getElementsByClassName('r4')[0].style.boxShadow = "0px 0px 0px 4px #e75d60";
+                document.getElementsByClassName('r4')[0].style.color = "#e75d60";
                 break;
             case 'r5':
                 document.getElementsByClassName('m_33')[0].style = "display: inline-block";
                 document.getElementsByClassName('m_33')[1].style = "display: inline-block";
                 document.getElementsByClassName('m_33')[2].style = "display: inline-block";
+                document.getElementsByClassName('r5')[0].style.boxShadow = "0px 0px 0px 4px #e75d60";
+                document.getElementsByClassName('r5')[0].style.color = "#e75d60";
                 break;
             case 'r6':
                 document.getElementsByClassName('m_0')[0].style = "display: inline-block";
                 document.getElementsByClassName('m_66')[2].style = "display: inline-block";
                 document.getElementsByClassName('m_33')[2].style = "display: inline-block";
+                document.getElementsByClassName('r6')[0].style.boxShadow = "0px 0px 0px 4px #e75d60";
+                document.getElementsByClassName('r6')[0].style.color = "#e75d60";
                 break;
             case 'r7':
                 document.getElementsByClassName('m_0')[1].style = "display: inline-block";
                 document.getElementsByClassName('m_0')[2].style = "display: inline-block";
                 document.getElementsByClassName('m_100')[1].style = "display: inline-block";
+                document.getElementsByClassName('r7')[0].style.boxShadow = "0px 0px 0px 4px #e75d60";
+                document.getElementsByClassName('r7')[0].style.color = "#e75d60";
                 break;
             case 'r8':
                 document.getElementsByClassName('m_0')[2].style = "display: inline-block";
                 document.getElementsByClassName('m_33')[1].style = "display: inline-block";
                 document.getElementsByClassName('m_66')[0].style = "display: inline-block";
+                document.getElementsByClassName('r8')[0].style.boxShadow = "0px 0px 0px 4px #e75d60";
+                document.getElementsByClassName('r8')[0].style.color = "#e75d60";
                 break;
             case 'r9':
                 document.getElementsByClassName('m_0')[2].style = "display: inline-block";
                 document.getElementsByClassName('m_33')[0].style = "display: inline-block";
                 document.getElementsByClassName('m_66')[2].style = "display: inline-block";
+                document.getElementsByClassName('r9')[0].style.boxShadow = "0px 0px 0px 4px #e75d60";
+                document.getElementsByClassName('r9')[0].style.color = "#e75d60";
                 break;
             case 'r10':
                 document.getElementsByClassName('m_0')[0].style = "display: inline-block";
                 document.getElementsByClassName('m_0')[2].style = "display: inline-block";
                 document.getElementsByClassName('m_100')[2].style = "display: inline-block";
+                document.getElementsByClassName('r10')[0].style.boxShadow = "0px 0px 0px 4px #e75d60";
+                document.getElementsByClassName('r10')[0].style.color = "#e75d60";
                 break;
         }
     }
@@ -189,17 +216,17 @@
     function updateNameValue(m_type){
         let m_name;
         if(!m_type){
-            m_name = document.getElementById('name_ro').value;
+            m_name = document.getElementById('name_ro').value ? document.getElementById('name_ro').value : "G";
             document.getElementsByClassName('m_0')[1].innerHTML = m_name + ":" + document.getElementById('min_ro').value;
             document.getElementsByClassName('m_33')[1].innerHTML = m_name + ":" + Number(Number(document.getElementById('min_ro').value) + Number(diff33));
             document.getElementsByClassName('m_66')[2].innerHTML = m_name + ":" + Number(Number(document.getElementById('min_ro').value) + Number(diff66));
             document.getElementsByClassName('m_100')[2].innerHTML = m_name + ":" + Number(Number(document.getElementById('min_ro').value) + Number(diffValue));
-            m_name = document.getElementById('name_ro2').value;
+            m_name = document.getElementById('name_ro2').value ? document.getElementById('name_ro2').value : "R";
             document.getElementsByClassName('m_0')[0].innerHTML = m_name + ":" + document.getElementById('min_ro2').value;
             document.getElementsByClassName('m_33')[0].innerHTML = m_name + ":" + Number(Number(document.getElementById('min_ro2').value) + Number(diff33));
             document.getElementsByClassName('m_66')[0].innerHTML = m_name + ":" + Number(Number(document.getElementById('min_ro2').value) + Number(diff66));
             document.getElementsByClassName('m_100')[1].innerHTML = m_name + ":" + Number(Number(document.getElementById('min_ro2').value) + Number(diffValue));
-            m_name = document.getElementById('name_r2o3').value;
+            m_name = document.getElementById('name_r2o3').value ? document.getElementById('name_r2o3').value : "Y";
             document.getElementsByClassName('m_0')[2].innerHTML = m_name + ":" + document.getElementById('min_r2o3').value;
             document.getElementsByClassName('m_33')[2].innerHTML = m_name + ":" + Number(Number(document.getElementById('min_r2o3').value) + Number(diff33));
             document.getElementsByClassName('m_66')[1].innerHTML = m_name + ":" + Number(Number(document.getElementById('min_r2o3').value) + Number(diff66));
@@ -208,21 +235,21 @@
         }
         switch(m_type){
             case 'ro':
-                m_name = document.getElementById('name_ro').value;
+                m_name = document.getElementById('name_ro').value ? document.getElementById('name_ro').value : "G";
                 document.getElementsByClassName('m_0')[1].innerHTML = m_name + ":" + document.getElementById('min_ro').value;
                 document.getElementsByClassName('m_33')[1].innerHTML = m_name + ":" + Number(Number(document.getElementById('min_ro').value) + diff33);
                 document.getElementsByClassName('m_66')[2].innerHTML = m_name + ":" + Number(Number(document.getElementById('min_ro').value) + diff66);
                 document.getElementsByClassName('m_100')[2].innerHTML = m_name + ":" + Number(Number(document.getElementById('min_ro').value) + diffValue);
                 break;
             case 'ro2':
-                m_name = document.getElementById('name_ro2').value;
+                m_name = document.getElementById('name_ro2').value ? document.getElementById('name_ro2').value : "R";
                 document.getElementsByClassName('m_0')[0].innerHTML = m_name + ":" + document.getElementById('min_ro2').value;
                 document.getElementsByClassName('m_33')[0].innerHTML = m_name + ":" + Number(Number(document.getElementById('min_ro2').value) + diff33);
                 document.getElementsByClassName('m_66')[0].innerHTML = m_name + ":" + Number(Number(document.getElementById('min_ro2').value) + diff66);
                 document.getElementsByClassName('m_100')[1].innerHTML = m_name + ":" + Number(Number(document.getElementById('min_ro2').value) + diffValue);
                 break;
             case 'r2o3':
-                m_name = document.getElementById('name_r2o3').value;
+                m_name = document.getElementById('name_r2o3').value ? document.getElementById('name_r2o3').value : "Y";
                 document.getElementsByClassName('m_0')[2].innerHTML = m_name + ":" + document.getElementById('min_r2o3').value;
                 document.getElementsByClassName('m_33')[2].innerHTML = m_name + ":" + Number(Number(document.getElementById('min_r2o3').value) + diff33);
                 document.getElementsByClassName('m_66')[1].innerHTML = m_name + ":" + Number(Number(document.getElementById('min_r2o3').value) + diff66);

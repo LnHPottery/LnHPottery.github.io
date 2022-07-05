@@ -1,12 +1,21 @@
 html, body{
-  background: #f1eae3;
+  background-color: #494949;
+  background: linear-gradient(180deg, #494949 4px, #f1eae3 4px, #f1eae3 100%);
+  background-repeat: no-repeat;
   padding: 0;
   margin: 0;
   font-family: sans-serif;
   color: #494949;
-}
-html{
-  background: #494949;
+  box-sizing: border-box;
+  min-height: 99.9vh;
+  overflow-y: auto;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 input, select, textarea{
   display: inline-block;
@@ -67,7 +76,7 @@ input, select, textarea{
   cursor: pointer;
 
   &:hover{
-    color: #e62422;
+    color: #e75d60;
   }
   &.icon{
     background-size: 24px 24px;
@@ -165,9 +174,12 @@ input, select, textarea{
     }
   }
 }
+.triangleTest{ margin-top: 24px; }
 #material_plate{
   line-height: 24px;
   border-radius: 18px;
+  margin-top: -16px;
+  text-align: center;
 
   .btn{
     padding: 0 12px;
@@ -187,54 +199,6 @@ input, select, textarea{
   .btn.r2o3 {border-left: 8px solid #fbc117}
   .btn.ro2 {border-left: 8px solid #fb5e01}
 }
-
-body{background: #f1eae3}
-.frame{
-  vertical-align: top;
-  background-repeat: no-repeat;
-  padding-top: 64px;
-  background-position:
-    top 64px left 400px,
-    top 234px left 300px,
-    top 408px left 200px,
-    top 580px left 100px,
-    bottom left -236px,
-    bottom left -34px,
-    bottom left 165px,
-    bottom left 365px,
-    bottom 60px left 100px,
-    bottom 60px left 300px,
-    bottom 60px left 500px,
-    bottom 60px left 700px;
-  background-size:
-    100px 100%,
-    300px 100%,
-    500px 100%,
-    700px 100%,
-    100% 64px,
-    100% 238px,
-    100% 412px,
-    100% 584px,
-    352px 100%,
-    252px 100%,
-    152px 100%,
-    52px 100%;
-  background-image:
-    linear-gradient(180deg, transparent 0px, #fbc117 0px, #fbc117 2px, transparent 2px),
-    linear-gradient(180deg, transparent 0px, #fbc117 0px, #fbc117 2px, transparent 2px),
-    linear-gradient(180deg, transparent 0px, #fbc117 0px, #fbc117 2px, transparent 2px),
-    linear-gradient(180deg, transparent 0px, #fbc117 0px, #fbc117 2px, transparent 2px),
-    
-    linear-gradient(60deg, transparent 319px, #fb5e01 319px, #fb5e01 321px, transparent 321px),
-    linear-gradient(60deg, transparent 319px, #fb5e01 319px, #fb5e01 321px, transparent 321px),
-    linear-gradient(60deg, transparent 319px, #fb5e01 319px, #fb5e01 321px, transparent 321px),
-    linear-gradient(60deg, transparent 319px, #fb5e01 319px, #fb5e01 321px, transparent 321px),
-     
-    linear-gradient(120deg, transparent 319px, #005a5a 319px, #005a5a 321px, transparent 321px),linear-gradient(120deg, transparent 319px, #005a5a 319px, #005a5a 321px, transparent 321px),
-    linear-gradient(120deg, transparent 319px, #005a5a 319px, #005a5a 321px, transparent 321px),
-    linear-gradient(120deg, transparent 319px, #005a5a 319px, #005a5a 321px, transparent 321px);
-}
-body{background: #f1eae3}
 .frame{
   vertical-align: top;
   background-repeat: no-repeat;
@@ -297,7 +261,7 @@ body{background: #f1eae3}
   span{
     position: absolute;
     width: 120px;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     text-align: center;
     color: #f1eae3;
@@ -352,9 +316,15 @@ body{background: #f1eae3}
   }
 }
 @media screen and (max-width: 1024px){
+  #material_plate{
+    margin-top: -12px;
+  }
   .triangleTest{
-    transform: scale(.8);
-    transform-origin: top left;
+    zoom:.8;
+    .m_0, .m_33, .m_66, .m_100{
+      font-size: 24px;
+      width: 150px;
+    }
   }
 }
 @media screen and (max-width: 760px){
@@ -363,29 +333,44 @@ body{background: #f1eae3}
   }
   #menu{
     position: fixed;
+    z-index: 99;
     top: 0;
-    left: 0;
+    left: 1%;
     transform: translateX(0);
-    max-width: 100%;
+    max-width: 98%;
     border-radius: 0 0 16px 16px;
     padding: 8px 0;
     text-align: center;
     a{
-      font-size: 14px;
+      font-size: 12px;
       color: #f1eae3;
       padding: 4px 8px 4px 8px;
       margin: 0;
     }
   }
+  #material_plate{
+    margin-top: 0px;
+  }
   .triangleTest{
-    transform: scale(.6);
-    transform-origin: top left;
+    margin-top: 48px;
+    zoom:.6;
+    .m_0, .m_33, .m_66, .m_100{
+      font-size: 32px;
+      width: 160px;
+    }
   }
 }
 @media screen and (max-width: 560px){
+  #material_plate{
+    margin-top: 0px;
+  }
   .triangleTest{
-    transform: scale(.4);
-    transform-origin: top left;
+    margin-top: 64px;
+    zoom:.36;
+    .m_0, .m_33, .m_66, .m_100{
+      font-size: 42px;
+      width: 180px;
+    }
   }
 }
 
