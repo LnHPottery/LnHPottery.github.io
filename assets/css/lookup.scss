@@ -5,6 +5,9 @@ html, body{
   font-family: sans-serif;
   color: #494949;
 }
+html{
+  background: #494949;
+}
 input, select, textarea{
   display: inline-block;
   border: none;
@@ -27,10 +30,11 @@ input, select, textarea{
   width: 960px;
   max-width: 90%;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
+  transform: translateX(-10vw);
   padding: 20px 0 16px;
   background-color: #494949;
-  border-radius: 0 0 32px 0;
+  border-radius: 0 0 32px 32px;
 
   a{
     color: #f1eae3;
@@ -354,6 +358,25 @@ body{background: #f1eae3}
   }
 }
 @media screen and (max-width: 760px){
+  body{
+    padding-top: 32px;
+  }
+  #menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+    max-width: 100%;
+    border-radius: 0 0 16px 16px;
+    padding: 8px 0;
+    text-align: center;
+    a{
+      font-size: 14px;
+      color: #f1eae3;
+      padding: 4px 8px 4px 8px;
+      margin: 0;
+    }
+  }
   .triangleTest{
     transform: scale(.6);
     transform-origin: top left;
