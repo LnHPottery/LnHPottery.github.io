@@ -18,6 +18,10 @@
         table .cate{
             font-weight: bold; text-align:center; background: #494949; color: #f1eae3;
         }
+        table tr:not(.cate){
+            line-height: 32px;
+            box-shadow: 0px 2px 0px 0px;
+        }
     </style>
 </head>
 <body>
@@ -26,11 +30,11 @@
         <a href="/formula">Formula / 釉式</a>
         <a class="on" href="/ref">Reference / 參考資料</a>
     </div>
-    <div style="max-width: 960px; margin: 0 auto">
-        <h2>參考資料 - <a href="https://glazes.com.tw/46164/調配陶藝釉藥原料的中英日對照表/">藝釉堂(調配陶藝釉藥原料的中英日對照表)</a></h2>
-        <div>
-            <input type="text" value="" placeholder="查詢原料名稱(中/EN/日)" oninput="updateDis(this.value)"/><br><br>
-            <table width="980">
+    <div style="max-width: 960px; margin: 0 auto; width: 95%;">
+        <h2>參考資料 - <a href="https://glazes.com.tw/46164/調配陶藝釉藥原料的中英日對照表/">釉藥堂(調配陶藝釉藥原料的中英日對照表)</a></h2>
+        <input type="text" value="" placeholder="查詢原料名稱(中/EN/日)" oninput="updateDis(this.value)"/><br><br>
+        <div style="overflow-x: auto;">
+            <table width="960px">
                 <thead>
                     <tr style="font-weight: bold; font-size: 18px;">
                         <td width="285">中文陶藝配方</td>
@@ -45,7 +49,7 @@
                     </tr>
                     <tr>
                         <td>石英粉/硅石粉</td>
-                        <td width="313">Silica、Flint、Quartze</td>
+                        <td width="313">Silica, Flint, Quartze</td>
                         <td>珪石粉</td>
                         <td>SiO2</td>
                     </tr>
@@ -57,13 +61,13 @@
                     </tr>
                     <tr>
                         <td>釜戶長石(丸昭)鈉長石</td>
-                        <td width="313">F.F. Feldspar、Soda Feldspar</td>
+                        <td width="313">F.F. Feldspar, Soda Feldspar</td>
                         <td>釜戸長石</td>
                         <td></td>
                     </tr>
                     <tr>
                         <td>霞石正長石A200(鈉長石)</td>
-                        <td width="313">Nepheline syenite、Soda Feldspar、Neph Sy</td>
+                        <td width="313">Nepheline syenite, Soda Feldspar, Neph Sy</td>
                         <td>霞石閃長岩(ネフェリンサイヤナイト)</td>
                         <td></td>
                     </tr>
@@ -75,13 +79,13 @@
                     </tr>
                     <tr>
                         <td>澳洲鉀長石</td>
-                        <td width="313">Australia Potassium Feldspar、Potash Feldspar</td>
+                        <td width="313">Australia Potassium Feldspar, Potash Feldspar</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
                         <td>印度鉀長石</td>
-                        <td width="313">India Potassium Feldspar、Potash Feldspar</td>
+                        <td width="313">India Potassium Feldspar, Potash Feldspar</td>
                         <td>インド長石</td>
                         <td></td>
                     </tr>
@@ -93,7 +97,7 @@
                     </tr>
                     <tr>
                         <td>日本福島長石(鉀長石)</td>
-                        <td width="313">F.D. Feldspar、 Potash Feldspar</td>
+                        <td width="313">F.D. Feldspar,  Potash Feldspar</td>
                         <td>福島長石</td>
                         <td></td>
                     </tr>
@@ -105,19 +109,19 @@
                     </tr>
                     <tr>
                         <td>Custer Feldspar(卡斯特長石)(鉀長石)</td>
-                        <td width="313">Custer Feldspar、Custer Spar</td>
+                        <td width="313">Custer Feldspar, Custer Spar</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
                         <td>福島硅石粉/石英粉</td>
-                        <td width="313">F.D. Silica、Silica、Flint、Quartze</td>
+                        <td width="313">F.D. Silica, Silica, Flint, Quartze</td>
                         <td>福島珪石</td>
                         <td>SiO2</td>
                     </tr>
                     <tr>
                         <td>Cornwall Stone (康沃爾石)</td>
-                        <td width="313">Cornwall Stone、Cornish Stone、China Stone、Corn Stn、China-stone</td>
+                        <td width="313">Cornwall Stone, Cornish Stone, China Stone, Corn Stn, China-stone</td>
                         <td></td>
                         <td></td>
                     </tr>
@@ -129,7 +133,7 @@
                     </tr>
                     <tr>
                         <td>MINSPAR 200鈉長石(替代F4長石)</td>
-                        <td width="313">Minspar 200、NC-4 Feldspar、F-4 feldspar</td>
+                        <td width="313">Minspar 200, NC-4 Feldspar, F-4 feldspar</td>
                         <td></td>
                         <td></td>
                     </tr>
@@ -162,7 +166,7 @@
                     </tr>
                     <tr>
                         <td>英國高嶺土/白土</td>
-                        <td>Standard Porcelain Clay、China Clay</td>
+                        <td>Standard Porcelain Clay, China Clay</td>
                         <td></td>
                         <td></td>
                     </tr>
@@ -180,7 +184,7 @@
                     </tr>
                     <tr>
                         <td>日本蛙目土粉</td>
-                        <td>Japan Ball Clay&nbsp; (Powder)</td>
+                        <td>Japan Ball Clay (Powder)</td>
                         <td></td>
                         <td></td>
                     </tr>
@@ -210,7 +214,7 @@
                     </tr>
                     <tr>
                         <td>皂土/膨潤土/火山黏土</td>
-                        <td>Bentonite、Montmorillonite</td>
+                        <td>Bentonite, Montmorillonite</td>
                         <td>ベントナイト</td>
                         <td></td>
                     </tr>
@@ -222,7 +226,7 @@
                     </tr>
                     <tr>
                         <td>EPK 美國高嶺土</td>
-                        <td>EPK Kaolin、EPK</td>
+                        <td>EPK Kaolin, EPK</td>
                         <td></td>
                         <td></td>
                     </tr>
@@ -246,13 +250,13 @@
                     </tr>
                     <tr>
                         <td>英國高嶺土/瓷土(中國瓷土)</td>
-                        <td>Grolleg Kaolin、China Clay</td>
+                        <td>Grolleg Kaolin, China Clay</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
                         <td>美國田納西州球狀粘土</td>
-                        <td>TENN #1 BALL CLAY、Tennessee #1 (SGP #1)</td>
+                        <td>TENN #1 BALL CLAY, Tennessee #1 (SGP #1)</td>
                         <td></td>
                         <td></td>
                     </tr>
@@ -297,37 +301,37 @@
                     </tr>
                     <tr>
                         <td>輕質碳酸鈣/石灰石</td>
-                        <td width="313">Calcium Carbonate、Whiting、Carbonate of Lime、Aragonite、Calcite、CaCO3</td>
+                        <td width="313">Calcium Carbonate, Whiting, Carbonate of Lime, Aragonite, Calcite, CaCO3</td>
                         <td>白石灰</td>
                         <td>CaCO3</td>
                     </tr>
                     <tr>
                         <td>重質碳酸鈣/石灰石</td>
-                        <td width="313">Calcium Carbonate、Whiting、Carbonate of Lime、Aragonite、Calcite、CaCO3</td>
+                        <td width="313">Calcium Carbonate, Whiting, Carbonate of Lime, Aragonite, Calcite, CaCO3</td>
                         <td>白石灰</td>
                         <td>CaCO3</td>
                     </tr>
                     <tr>
                         <td>東德碳酸鋇</td>
-                        <td width="313">Barium Carbonate、Barium Carb、Witherite</td>
+                        <td width="313">Barium Carbonate, Barium Carb, Witherite</td>
                         <td>炭酸バリウム</td>
                         <td>BaO</td>
                     </tr>
                     <tr>
                         <td>西德碳酸鋇</td>
-                        <td width="313">Barium Carbonate、Barium Carb、Witherite</td>
+                        <td width="313">Barium Carbonate, Barium Carb, Witherite</td>
                         <td>炭酸バリウム</td>
                         <td>BaO</td>
                     </tr>
                     <tr>
                         <td>鍛燒氧化鋅</td>
-                        <td width="313">Zinc Oxide、ZnO、Zincite、Zinc 99</td>
+                        <td width="313">Zinc Oxide, ZnO, Zincite, Zinc 99</td>
                         <td>酸化亜鉛(亜鉛華　焼)</td>
                         <td>ZnO</td>
                     </tr>
                     <tr>
                         <td>合成骨灰/磷酸鈣(粉)</td>
-                        <td width="313">Bone&nbsp; Ash</td>
+                        <td width="313">Bone Ash</td>
                         <td>リン酸カルシウム(合成骨灰)</td>
                         <td>P2O5</td>
                     </tr>
@@ -339,49 +343,49 @@
                     </tr>
                     <tr>
                         <td>煅燒滑石</td>
-                        <td width="313">Calcined Talc、Magnesium Silicate、 Steatite、 French Chalk、Hydrated talc</td>
-                        <td>燒成タルク、YAKI-TARUKU</td>
+                        <td width="313">Calcined Talc, Magnesium Silicate,  Steatite,  French Chalk, Hydrated talc</td>
+                        <td>燒成タルク, YAKI-TARUKU</td>
                         <td></td>
                     </tr>
                     <tr>
                         <td>白雲石</td>
-                        <td width="313">Dolomite、Calcium Magnesium Carbonate、Raw Limestone</td>
+                        <td width="313">Dolomite, Calcium Magnesium Carbonate, Raw Limestone</td>
                         <td>ドロマイト</td>
                         <td></td>
                     </tr>
                     <tr>
                         <td>碳酸鎂</td>
-                        <td width="313">Magnesium carbonate、 Hydrated Magnesium Carbonate Mineral、Hydromagnesite</td>
+                        <td width="313">Magnesium carbonate,  Hydrated Magnesium Carbonate Mineral, Hydromagnesite</td>
                         <td>炭酸マグネシウム</td>
                         <td>MgO</td>
                     </tr>
                     <tr>
                         <td>氧化鋁(細-270目)</td>
-                        <td width="313">Alumina Oxide、Alumina</td>
+                        <td width="313">Alumina Oxide, Alumina</td>
                         <td>酸化アルミナ</td>
                         <td>Al2O3</td>
                     </tr>
                     <tr>
                         <td>碳酸鍶</td>
-                        <td width="313">Strontium Carbonate、Strontianite</td>
+                        <td width="313">Strontium Carbonate, Strontianite</td>
                         <td>炭酸ストロンチウム</td>
                         <td>SrO</td>
                     </tr>
                     <tr>
                         <td>矽灰石</td>
-                        <td width="313">Wollastonite、Wolastonite</td>
+                        <td width="313">Wollastonite, Wolastonite</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
                         <td>碳酸鋰</td>
-                        <td width="313">Lithium carbonate、Lith Carb、Li2CO3</td>
+                        <td width="313">Lithium carbonate, Lith Carb, Li2CO3</td>
                         <td>炭酸リチウム</td>
                         <td>Li2CO3</td>
                     </tr>
                     <tr>
                         <td>美國硬硼酸鈣</td>
-                        <td width="313">Gerstley Borate、Colemanite、Calcium Borate、 Borocalcite</td>
+                        <td width="313">Gerstley Borate, Colemanite, Calcium Borate,  Borocalcite</td>
                         <td></td>
                         <td></td>
                     </tr>
@@ -399,26 +403,26 @@
                     </tr>
                     <tr>
                         <td>氧化鉍</td>
-                        <td width="313">Bismuth oxide、Bismuth(III) oxide、bismite、 Bismuth trioxide</td>
+                        <td width="313">Bismuth oxide, Bismuth(III) oxide, bismite,  Bismuth trioxide</td>
                         <td></td>
                         <td>Bi2O3</td>
                     </tr>
                     <tr>
                         <td>日本氧化鋁SA-11</td>
-                        <td width="313">Alumina Oxide、Alumina</td>
+                        <td width="313">Alumina Oxide, Alumina</td>
                         <td>酸化アルミナ</td>
                         <td>Al2O3</td>
                     </tr>
                     <tr>
                         <td>日本氧化鋁SA-32</td>
-                        <td width="313">Alumina Oxide、Alumina</td>
+                        <td width="313">Alumina Oxide, Alumina</td>
                         <td>酸化アルミナ</td>
                         <td>Al2O3</td>
                     </tr>
                     <tr>
                         <td>日本煅燒滑石</td>
-                        <td width="313">Calcined Talc、Magnesium Silicate、 Steatite、 French Chalk、Hydrated talc</td>
-                        <td>燒成タルク、YAKI-TARUKU</td>
+                        <td width="313">Calcined Talc, Magnesium Silicate,  Steatite,  French Chalk, Hydrated talc</td>
+                        <td>燒成タルク, YAKI-TARUKU</td>
                         <td></td>
                     </tr>
                     <tr>
@@ -440,14 +444,8 @@
                         <td></td>
                     </tr>
                     <tr>
-                        <td>蘇打灰(碳酸鈉、純鹼)</td>
+                        <td>蘇打灰(碳酸鈉, 純鹼)</td>
                         <td width="313">Soda Ash</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
                         <td></td>
                         <td></td>
                     </tr>
@@ -456,56 +454,55 @@
                     </tr>
                     <tr>
                         <td>紅氧化鐵225</td>
-                        <td width="313">Iron Oxide(Red)、Ferric Oxide、Red Iron Oxide<br>
-                    、RIO、Iron(III) oxide、Fe2O3、Hematite</td>
+                        <td width="313">Iron Oxide(Red), Ferric Oxide, Red Iron Oxide, RIO, Iron(III) oxide, Fe2O3, Hematite</td>
                         <td>酸化鉄(酸化第二鉄)</td>
                         <td>Fe2O3</td>
                     </tr>
                     <tr>
                         <td>黃氧化鐵420</td>
-                        <td width="313">Iron Oxide(Yellow)、Iron(III) oxide、 hydrated iron oxide、 iron(III) hydroxide、 yellow iron oxide</td>
+                        <td width="313">Iron Oxide(Yellow), Iron(III) oxide,  hydrated iron oxide,  iron(III) hydroxide,  yellow iron oxide</td>
                         <td></td>
                         <td>Fe2O3</td>
                     </tr>
                     <tr>
                         <td>黑氧化鐵M318</td>
-                        <td width="313">Iron Oxide(Black)、Fe3O4、Black Iron Oxide、 BIO、Magnetite Powder、Iron(II,III) Oxide</td>
+                        <td width="313">Iron Oxide(Black), Fe3O4, Black Iron Oxide,  BIO, Magnetite Powder, Iron(II,III) Oxide</td>
                         <td></td>
                         <td>Fe3O4</td>
                     </tr>
                     <tr>
                         <td>氧化銅</td>
-                        <td width="313">Copper Oxide、Copper (II) Oxide、 Black Copper Oxide、BCO</td>
+                        <td width="313">Copper Oxide, Copper (II) Oxide,  Black Copper Oxide, BCO</td>
                         <td>酸化第二銅</td>
                         <td>Cu</td>
                     </tr>
                     <tr>
                         <td>碳酸銅</td>
-                        <td width="313">Copper Carbonate、Synthetic Malachite、CuCO3</td>
+                        <td width="313">Copper Carbonate, Synthetic Malachite, CuCO3</td>
                         <td>炭酸銅</td>
                         <td>CuCO3</td>
                     </tr>
                     <tr>
                         <td>氧化鈦</td>
-                        <td width="313">Titanium Oxide、Titanium Dioxide、Titania</td>
+                        <td width="313">Titanium Oxide, Titanium Dioxide, Titania</td>
                         <td>酸化チタン</td>
                         <td>TiO2</td>
                     </tr>
                     <tr>
                         <td>氧化錳</td>
-                        <td width="313">Manganese Oxide、MnO, Manganese(II) Oxide</td>
+                        <td width="313">Manganese Oxide, MnO, Manganese(II) Oxide</td>
                         <td>二酸化マンガン</td>
                         <td>MnO</td>
                     </tr>
                     <tr>
                         <td>氧化鈷72%</td>
-                        <td width="313">Cobalt Oxide、Cobalt(II) oxide、 Cobaltosic Oxide、CoO</td>
+                        <td width="313">Cobalt Oxide, Cobalt(II) oxide,  Cobaltosic Oxide, CoO</td>
                         <td>酸化コバルト</td>
                         <td>CoO</td>
                     </tr>
                     <tr>
                         <td>氧化鈷76%</td>
-                        <td width="313">Cobalt Oxide、Cobalt(II) oxide、 Cobaltosic Oxide、CoO</td>
+                        <td width="313">Cobalt Oxide, Cobalt(II) oxide,  Cobaltosic Oxide, CoO</td>
                         <td>酸化コバルト</td>
                         <td>CoO</td>
                     </tr>
@@ -517,67 +514,67 @@
                     </tr>
                     <tr>
                         <td>氧化鉻</td>
-                        <td width="313">Chromium Oxide、Chrome Oxide、Chromium (III) Oxide、Cr2O3</td>
+                        <td width="313">Chromium Oxide, Chrome Oxide, Chromium (III) Oxide, Cr2O3</td>
                         <td>酸化クローム</td>
                         <td>Cr2O3</td>
                     </tr>
                     <tr>
                         <td>氧化錫</td>
-                        <td width="313">Stannic Oxide、Tin(IV) Oxide、Tin Dioxide、 SnO2</td>
+                        <td width="313">Stannic Oxide, Tin(IV) Oxide, Tin Dioxide,  SnO2</td>
                         <td>酸化スズ</td>
                         <td>SnO2</td>
                     </tr>
                     <tr>
                         <td>氧化鎳</td>
-                        <td width="313">Nickel Oxide Black、Ni2O3、Nickelic Oxide、 Nickel sesquioxide、Nickel (III) oxide、 Nickel Oxide</td>
+                        <td width="313">Nickel Oxide Black, Ni2O3, Nickelic Oxide,  Nickel sesquioxide, Nickel (III) oxide,  Nickel Oxide</td>
                         <td>酸化ニッケル</td>
                         <td>Ni2O3</td>
                     </tr>
                     <tr>
                         <td>矽酸鋯</td>
-                        <td width="313">Zirconium Silicate、Zircopax</td>
+                        <td width="313">Zirconium Silicate, Zircopax</td>
                         <td>珪酸ジルコン</td>
                         <td>ZrO2</td>
                     </tr>
                     <tr>
                         <td>鉻鐵礦</td>
-                        <td width="313">Ferric Chromate、Chromite、Chromate of Iron</td>
+                        <td width="313">Ferric Chromate, Chromite, Chromate of Iron</td>
                         <td></td>
                         <td>Cr2O3+FeO</td>
                     </tr>
                     <tr>
                         <td>釩酸銨</td>
-                        <td width="313">Ammonium&nbsp; etavanadate</td>
+                        <td width="313">Ammonium etavanadate</td>
                         <td></td>
                         <td>V2O3</td>
                     </tr>
                     <tr>
                         <td>金紅石粉</td>
-                        <td width="313">Rutile Powder&nbsp; 、Rutile</td>
+                        <td width="313">Rutile Powder, Rutile</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
                         <td>五氧化二釩</td>
-                        <td width="313">Vanadium Pentoxide、Vanadium (V) Oxide</td>
+                        <td width="313">Vanadium Pentoxide, Vanadium (V) Oxide</td>
                         <td></td>
                         <td>V2O5</td>
                     </tr>
                     <tr>
                         <td>氧化鉬</td>
-                        <td width="313">Molybdenum Oxide、Molybdenum Trioxide</td>
+                        <td width="313">Molybdenum Oxide, Molybdenum Trioxide</td>
                         <td></td>
                         <td>MoO3</td>
                     </tr>
                     <tr>
                         <td>氧化鎢</td>
-                        <td width="313">Tungsten oxide、Tungsten(VI) oxide、 Tungsten Oxide、Tungsten Trioxide</td>
+                        <td width="313">Tungsten oxide, Tungsten(VI) oxide,  Tungsten Oxide, Tungsten Trioxide</td>
                         <td></td>
                         <td>WO3</td>
                     </tr>
                     <tr>
                         <td>氧化銻</td>
-                        <td width="313">Antimony oxide、Antimony Trioxide、 Senarmonite</td>
+                        <td width="313">Antimony oxide, Antimony Trioxide,  Senarmonite</td>
                         <td></td>
                         <td>Sb2O3</td>
                     </tr>
@@ -595,7 +592,7 @@
                     </tr>
                     <tr>
                         <td>美國雪松高地黃金粉</td>
-                        <td width="313">GOLDART、Cedar Heights Goldart</td>
+                        <td width="313">GOLDART, Cedar Heights Goldart</td>
                         <td></td>
                         <td></td>
                     </tr>
@@ -643,15 +640,9 @@
                     </tr>
                     <tr>
                         <td>碳酸鈷</td>
-                        <td width="313">Cobalt Carbonate、Spherocobaltite, CoCO3, Cobalt(II) carbonate</td>
+                        <td width="313">Cobalt Carbonate, Spherocobaltite, CoCO3, Cobalt(II) carbonate</td>
                         <td></td>
                         <td>CoCO3</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
                     </tr>
                     <tr class="cate">
                         <td colspan="4">天然灰/合成灰 Wood Ash</td>
@@ -740,12 +731,6 @@
                         <td></td>
                         <td></td>
                     </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
                     <tr class="cate">
                         <td colspan="4">熔塊/玻璃粉 Frit</td>
                     </tr>
@@ -785,12 +770,6 @@
                         <td></td>
                         <td></td>
                     </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
                     <tr class="cate">
                         <td colspan="4">顆粒/斑點/耐火度調整</td>
                     </tr>
@@ -814,13 +793,13 @@
                     </tr>
                     <tr>
                         <td>煆燒藍晶石325目</td>
-                        <td>Virginia Mullite (Kyanite)&nbsp; M325#</td>
+                        <td>Virginia Mullite (Kyanite) M325#</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
                         <td>煆燒藍晶石35目</td>
-                        <td>Virginia Mullite (Kyanite)&nbsp; M35#</td>
+                        <td>Virginia Mullite (Kyanite) M35#</td>
                         <td></td>
                         <td></td>
                     </tr>
@@ -838,13 +817,13 @@
                     </tr>
                     <tr>
                         <td>石英砂/硅石砂16-24目</td>
-                        <td>Silica Powder&nbsp; #16~24</td>
+                        <td>Silica Powder #16~24</td>
                         <td>珪砂(16～24メッシュ)</td>
                         <td></td>
                     </tr>
                     <tr>
                         <td>石英砂/硅石砂100目</td>
-                        <td>Silica Powder&nbsp; #100</td>
+                        <td>Silica Powder #100</td>
                         <td>珪砂(100メッシュ)</td>
                         <td></td>
                     </tr>
