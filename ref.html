@@ -15,6 +15,9 @@
         body a:hover{
             text-decoration: line-through;
         }
+        table .cate{
+            font-weight: bold; text-align:center; background: #494949; color: #f1eae3;
+        }
     </style>
 </head>
 <body>
@@ -26,437 +29,419 @@
     <div style="max-width: 960px; margin: 0 auto">
         <h2>參考資料</h2>
         <div>
-            <a href="https://glazes.com.tw/46164/%E8%AA%BF%E9%85%8D%E9%99%B6%E8%97%9D%E9%87%89%E8%97%A5%E5%8E%9F%E6%96%99%E7%9A%84%E4%B8%AD%E8%8B%B1%E6%97%A5%E5%B0%8D%E7%85%A7%E8%A1%A8/">藝釉堂(調配陶藝釉藥原料的中英日對照表)</a>
+            <input type="text" value="" placeholder="查詢原料名稱(中/EN/日)" oninput="updateDis(this.value)"/><br><br>
+            <a href="https://glazes.com.tw/46164/調配陶藝釉藥原料的中英日對照表/">藝釉堂(調配陶藝釉藥原料的中英日對照表)</a>            
             <table width="980"><br><br>
-                <tbody>
-                    <tr>
+                <thead>
+                    <tr style="font-weight: bold; font-size: 18px;">
                         <td width="285">中文陶藝配方</td>
                         <td width="313">英文陶藝配方</td>
                         <td width="295">日文陶藝配方</td>
                         <td width="87">化學簡稱</td>
                     </tr>
-                    <tr>
-                        <td>長石類礦物/硅石</td>
-                        <td>Feldspar Clay</td>
-                        <td></td>
-                        <td></td>
+                </thead>
+                <tbody id="tableBody">
+                    <tr class="cate">
+                        <td colspan="4">長石類礦物/硅石 Feldspar Clay</td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/feldspar-and-silica/30462/f001-%e7%9f%b3%e8%8b%b1%e7%b2%89-%e7%a1%85%e7%9f%b3%e7%b2%89-1kg%e9%9b%b6%e5%94%ae/">F001-石英粉/硅石粉</a></td>
+                        <td>石英粉/硅石粉</td>
                         <td width="313">Silica、Flint、Quartze</td>
                         <td>珪石粉</td>
                         <td>SiO2</td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/feldspar-and-silica/30470/f002-%e6%97%a5%e5%8c%96%e9%95%b7%e7%9f%b3%e9%89%80%e9%88%89%e5%b9%b3%e5%9d%87%e9%95%b7%e7%9f%b3-1kg%e9%9b%b6%e5%94%ae/">F002-日化長石(鉀鈉平均長石)</a></td>
+                        <td>日化長石(鉀鈉平均長石)</td>
                         <td width="313">Nikka Feldspar</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/feldspar-and-silica/30477/f003-%e9%87%9c%e6%88%b6%e9%95%b7%e7%9f%b3%e4%b8%b8%e6%98%ad%e9%88%89%e9%95%b7%e7%9f%b3-1kg%e9%9b%b6%e5%94%ae/">F003-釜戶長石(丸昭)鈉長石</a></td>
+                        <td>釜戶長石(丸昭)鈉長石</td>
                         <td width="313">F.F. Feldspar、Soda Feldspar</td>
                         <td>釜戸長石</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/feldspar-and-silica/30491/f005-%e9%9c%9e%e7%9f%b3%e6%ad%a3%e9%95%b7%e7%9f%b3a200%e9%88%89%e9%95%b7%e7%9f%b3-1kg%e9%9b%b6%e5%94%ae/">F005-霞石正長石A200(鈉長石)</a></td>
+                        <td>霞石正長石A200(鈉長石)</td>
                         <td width="313">Nepheline syenite、Soda Feldspar、Neph Sy</td>
                         <td>霞石閃長岩(ネフェリンサイヤナイト)</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/feldspar-and-silica/30498/f007-%e8%91%89%e9%95%b7%e7%9f%b3%e9%8b%b0%e9%95%b7%e7%9f%b3-1kg%e9%9b%b6%e5%94%ae/">F007-葉長石(鋰長石)</a></td>
+                        <td>葉長石(鋰長石)</td>
                         <td width="313">Petalite</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/feldspar-and-silica/30505/f008-%e6%be%b3%e6%b4%b2%e9%89%80%e9%95%b7%e7%9f%b3-1kg%e9%9b%b6%e5%94%ae/">F008-澳洲鉀長石</a></td>
+                        <td>澳洲鉀長石</td>
                         <td width="313">Australia Potassium Feldspar、Potash Feldspar</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/feldspar-and-silica/30512/f009-%e5%8d%b0%e5%ba%a6%e9%89%80%e9%95%b7%e7%9f%b3-1kg%e9%9b%b6%e5%94%ae/">F009-印度鉀長石</a></td>
+                        <td>印度鉀長石</td>
                         <td width="313">India Potassium Feldspar、Potash Feldspar</td>
                         <td>インド長石</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/feldspar-and-silica/30526/f011-%e6%97%a5%e6%9c%ac%e9%95%b7%e7%9f%b3sh-1%e9%89%80%e9%88%89%e5%b9%b3%e5%9d%87%e9%95%b7%e7%9f%b3-1kg%e9%9b%b6%e5%94%ae/">F011-日本長石SH-1(鉀鈉平均長石)</a></td>
+                        <td>日本長石SH-1(鉀鈉平均長石)</td>
                         <td width="313">Japan Feldspar</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/feldspar-and-silica/30533/f012-%e6%97%a5%e6%9c%ac%e7%a6%8f%e5%b3%b6%e9%95%b7%e7%9f%b3%e9%89%80%e9%95%b7%e7%9f%b3-1kg%e9%9b%b6%e5%94%ae/">F012-日本福島長石(鉀長石)</a></td>
+                        <td>日本福島長石(鉀長石)</td>
                         <td width="313">F.D. Feldspar、 Potash Feldspar</td>
                         <td>福島長石</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/feldspar-and-silica/30542/f013-%e6%97%a5%e6%9c%ac%e6%96%b0%e5%b9%b3%e6%b4%a5%e9%95%b7%e7%9f%b3%e9%89%80%e9%88%89%e5%b9%b3%e5%9d%87%e9%95%b7%e7%9f%b3-1kg%e9%9b%b6%e5%94%ae/">F013-日本新平津長石(鉀鈉平均長石)</a></td>
+                        <td>日本新平津長石(鉀鈉平均長石)</td>
                         <td width="313">Japan Feldspar</td>
                         <td>平津長石</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/feldspar-and-silica/45659/f015-custer-feldspar-%e5%8d%a1%e6%96%af%e7%89%b9%e9%95%b7%e7%9f%b3%e9%89%80%e9%95%b7%e7%9f%b3-1kg%e9%9b%b6%e5%94%ae/">F015-Custer Feldspar(卡斯特長石)(鉀長石)</a></td>
+                        <td>Custer Feldspar(卡斯特長石)(鉀長石)</td>
                         <td width="313">Custer Feldspar、Custer Spar</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/feldspar-and-silica/58849/f016-%e6%97%a5%e6%9c%ac%e7%a6%8f%e5%b3%b6%e7%a1%85%e7%9f%b3-%e7%9f%b3%e8%8b%b1%e7%b2%89-1kg%e9%9b%b6%e5%94%ae/">F016-福島硅石粉/石英粉</a></td>
+                        <td>福島硅石粉/石英粉</td>
                         <td width="313">F.D. Silica、Silica、Flint、Quartze</td>
                         <td>福島珪石</td>
                         <td>SiO2</td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/feldspar-and-silica/59127/f017-cornwall-stone-%e5%ba%b7%e6%b2%83%e7%88%be%e7%9f%b3-1kg%e9%9b%b6%e5%94%ae/">F017-Cornwall Stone (康沃爾石)</a></td>
+                        <td>Cornwall Stone (康沃爾石)</td>
                         <td width="313">Cornwall Stone、Cornish Stone、China Stone、Corn Stn、China-stone</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/feldspar-and-silica/73485/f018-%e6%97%a5%e6%9c%ac%e4%b8%89%e9%9b%b2%e9%95%b7%e7%9f%b3%e9%89%80%e9%88%89%e5%b9%b3%e5%9d%87%e9%95%b7%e7%9f%b3-1kg%e9%9b%b6%e5%94%ae/">F018-日本三雲長石(鉀鈉平均長石)</a></td>
+                        <td>日本三雲長石(鉀鈉平均長石)</td>
                         <td width="313"></td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/feldspar-and-silica/113139/f019-minspar-200%e9%88%89%e9%95%b7%e7%9f%b3%e6%9b%bf%e4%bb%a3f4%e9%95%b7%e7%9f%b3-1kg%e9%9b%b6%e5%94%ae/">F019-MINSPAR 200鈉長石(替代F4長石)</a></td>
+                        <td>MINSPAR 200鈉長石(替代F4長石)</td>
                         <td width="313">Minspar 200、NC-4 Feldspar、F-4 feldspar</td>
                         <td></td>
                         <td></td>
                     </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                    <tr class="cate">
+                        <td colspan="4">高嶺土/陶石/黏土質類 CLAY (Slip)</td>
                     </tr>
                     <tr>
-                        <td>高嶺土/陶石/黏土質類</td>
-                        <td>CLAY (Slip)</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/kaolin-clay/30549/c001-%e7%be%8e%e5%9c%8b%e9%ab%98%e5%b6%ba%e5%9c%9f-1kg%e9%9b%b6%e5%94%ae/">C001-美國高嶺土</a></td>
+                        <td>美國高嶺土</td>
                         <td>U.S.A Kaolin Clay</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/kaolin-clay/30556/c003-%e7%b4%90%e8%a5%bf%e8%98%ad%e9%ab%98%e5%b6%ba%e5%9c%9f-1kg%e9%9b%b6%e5%94%ae/">C003-紐西蘭高嶺土</a></td>
+                        <td>紐西蘭高嶺土</td>
                         <td>New Zealand Kaolin Clay</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/kaolin-clay/30563/c004-%e7%be%8e%e5%9c%8b%e9%8d%9b%e7%87%92%e9%ab%98%e5%b6%ba%e5%9c%9f%e9%9b%aa%e7%99%bd%e5%9c%9f-1kg%e9%9b%b6%e5%94%ae/">C004-美國鍛燒高嶺土/雪白土</a></td>
+                        <td>美國鍛燒高嶺土/雪白土</td>
                         <td>SNOW*TEX® 45 calcined kaolin</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/kaolin-clay/31770/c005-%e6%9c%9d%e9%ae%ae%e9%ab%98%e5%b6%ba%e5%9c%9f-1kg%e9%9b%b6%e5%94%ae/">C005-朝鮮高嶺土</a></td>
+                        <td>朝鮮高嶺土</td>
                         <td>Korea Kaolin</td>
                         <td>朝鮮カオリン(金剛カオリン)</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/kaolin-clay/30570/c006-%e8%8b%b1%e5%9c%8b%e9%ab%98%e5%b6%ba%e5%9c%9f%e7%99%bd%e5%9c%9f-1kg%e9%9b%b6%e5%94%ae/">C006-英國高嶺土/白土</a></td>
+                        <td>英國高嶺土/白土</td>
                         <td>Standard Porcelain Clay、China Clay</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/kaolin-clay/30797/c007-%e5%8d%b0%e5%ba%a6%e9%ab%98%e5%b6%ba%e5%9c%9f-1kg%e9%9b%b6%e5%94%ae/">C007-印度高嶺土</a></td>
+                        <td>印度高嶺土</td>
                         <td>India Kaolin Clay</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/kaolin-clay/30801/c008-%e6%97%a5%e6%9c%ac%e8%9b%99%e7%9b%ae%e5%9c%9f%e5%a1%8a-1kg%e9%9b%b6%e5%94%ae/">C008-日本蛙目土塊</a></td>
+                        <td>日本蛙目土塊</td>
                         <td>Japan Ball Clay</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/kaolin-clay/30803/c009-%e6%97%a5%e6%9c%ac%e8%9b%99%e7%9b%ae%e5%9c%9f%e7%b2%89-1kg%e9%9b%b6%e5%94%ae/">C009-日本蛙目土粉</a></td>
+                        <td>日本蛙目土粉</td>
                         <td>Japan Ball Clay&nbsp; (Powder)</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/kaolin-clay/30805/c010-%e7%90%83%e7%8b%80%e9%bb%8f%e5%9c%9f%e7%b2%89-1kg%e9%9b%b6%e5%94%ae/">C010-球狀黏土粉</a></td>
+                        <td>球狀黏土粉</td>
                         <td>China ball clay</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/kaolin-clay/30807/cc011-%e6%b0%b4%e6%b4%97%e9%bb%91%e5%9c%9f%e7%b2%89-1kg%e9%9b%b6%e5%94%ae/">C011-水洗黑土粉</a></td>
+                        <td>水洗黑土粉</td>
                         <td>China ball Clay Washed</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/kaolin-clay/30809/c012-%e9%99%b6%e7%9f%b3%e7%b2%89-1kg%e9%9b%b6%e5%94%ae/">C012-陶石粉</a></td>
+                        <td>陶石粉</td>
                         <td>Pottery stone</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/kaolin-clay/30811/c013-%e6%97%a5%e6%9c%ac%e5%a4%a9%e8%8d%89%e9%99%b6%e7%9f%b3%e6%9c%aa%e8%84%ab%e9%90%b5-1kg%e9%9b%b6%e5%94%ae/">C013-日本天草陶石(未脫鐵)</a></td>
+                        <td>日本天草陶石(未脫鐵)</td>
                         <td>Japan Pottery stone</td>
                         <td>天草陶石</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/kaolin-clay/30813/c014-%e7%9a%82%e5%9c%9f-%e8%86%a8%e6%bd%a4%e5%9c%9f-%e7%81%ab%e5%b1%b1%e9%bb%8f%e5%9c%9f-1kg%e9%9b%b6%e5%94%ae/">C014-皂土/膨潤土/火山黏土</a></td>
+                        <td>皂土/膨潤土/火山黏土</td>
                         <td>Bentonite、Montmorillonite</td>
                         <td>ベントナイト</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td>C015-矽藻土</td>
+                        <td>矽藻土</td>
                         <td></td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/kaolin-clay/45250/c016-epk-kaolin-%e7%be%8e%e5%9c%8b%e9%ab%98%e5%b6%ba%e5%9c%9f-1kg%e9%9b%b6%e5%94%ae/">C016-EPK 美國高嶺土</a></td>
+                        <td>EPK 美國高嶺土</td>
                         <td>EPK Kaolin、EPK</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/kaolin-clay/45245/c018-tile-6-kaolin-%e7%be%8e%e5%9c%8b6%e8%99%9f%e7%93%b7%e7%a3%9a%e9%ab%98%e5%b6%ba%e5%9c%9f-1kg%e9%9b%b6%e5%94%ae/">C018-美國6號瓷磚高嶺土</a></td>
+                        <td>美國6號瓷磚高嶺土</td>
                         <td>Tile #6 Kaolin</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/kaolin-clay/59125/c019-om-4-ball-clay-%e7%90%83%e7%8b%80%e7%b2%98%e5%9c%9f-1kg%e9%9b%b6%e5%94%ae/">C019-美國OM #4 Ball Clay 球狀粘土</a></td>
+                        <td>美國OM #4 Ball Clay 球狀粘土</td>
                         <td>OM #4 Ball Clay</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/kaolin-clay/45243/c020-sagger-xx-ball-clay-%e7%90%83%e7%8b%80%e7%b2%98%e5%9c%9f-1kg%e9%9b%b6%e5%94%ae/">C020-美國Sagger XX 球狀粘土</a></td>
+                        <td>美國Sagger XX 球狀粘土</td>
                         <td>Sagger XX Ball Clay</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td>C021-英國高嶺土/瓷土(中國瓷土)</td>
+                        <td>英國高嶺土/瓷土(中國瓷土)</td>
                         <td>Grolleg Kaolin、China Clay</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td>C022-美國田納西州球狀粘土</td>
+                        <td>美國田納西州球狀粘土</td>
                         <td>TENN #1 BALL CLAY、Tennessee #1 (SGP #1)</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td>C023-美國肯塔基州球狀粘土</td>
+                        <td>美國肯塔基州球狀粘土</td>
                         <td>KENTUCKY STONE</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td>C024-美國FOUNDRY HILL球狀粘土</td>
+                        <td>美國FOUNDRY HILL球狀粘土</td>
                         <td>FOUNDRY HILL BALL CLAY</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td>C025-美國C&amp;C球狀粘土</td>
+                        <td>美國C&amp;C球狀粘土</td>
                         <td>C&amp;C Ball Clay</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td>C026-美國紅土</td>
+                        <td>美國紅土</td>
                         <td>LATERITE RED CLAY</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td>C027-日本極上天草陶石(特等)</td>
+                        <td>日本極上天草陶石(特等)</td>
                         <td></td>
                         <td>極上天草陶石(特等)</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/kaolin-clay/73474/c028-%e4%b8%89%e4%b9%8b%e7%9f%b3%e8%a0%9f%e7%9f%b3%e4%b8%89%e3%83%84%e7%9f%b3%e8%9d%8b%e7%9f%b3-1kg%e9%9b%b6%e5%94%ae/">C028-三之石蠟石(三ツ石蝋石)</a></td>
+                        <td>三之石蠟石(三ツ石蝋石)</td>
                         <td></td>
                         <td>三ツ石蝋石</td>
                         <td></td>
                     </tr>
-                    <tr>
-                        <td><u>　</u></td>
-                        <td><u>　</u></td>
-                        <td></td>
-                        <td></td>
+                    <tr class="cate">
+                        <td colspan="4">媒熔劑 Pottery Material</td>
                     </tr>
                     <tr>
-                        <td>媒熔劑</td>
-                        <td>Pottery Material</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-flux/30850/g001-%e8%bc%95%e8%b3%aa%e7%a2%b3%e9%85%b8%e9%88%a3%e7%9f%b3%e7%81%b0%e7%9f%b3-1kg%e9%9b%b6%e5%94%ae/">G001-輕質碳酸鈣/石灰石</a></td>
+                        <td>輕質碳酸鈣/石灰石</td>
                         <td width="313">Calcium Carbonate、Whiting、Carbonate of Lime、Aragonite、Calcite、CaCO3</td>
                         <td>白石灰</td>
                         <td>CaCO3</td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-flux/30854/g002-%e9%87%8d%e8%b3%aa%e7%a2%b3%e9%85%b8%e9%88%a3%e7%9f%b3%e7%81%b0%e7%9f%b3-1kg%e9%9b%b6%e5%94%ae/">G002-重質碳酸鈣/石灰石</a></td>
+                        <td>重質碳酸鈣/石灰石</td>
                         <td width="313">Calcium Carbonate、Whiting、Carbonate of Lime、Aragonite、Calcite、CaCO3</td>
                         <td>白石灰</td>
                         <td>CaCO3</td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-flux/30856/g003-%e6%9d%b1%e5%be%b7%e7%a2%b3%e9%85%b8%e9%8b%87-1kg%e9%9b%b6%e5%94%ae/">G003-東德碳酸鋇</a></td>
+                        <td>東德碳酸鋇</td>
                         <td width="313">Barium Carbonate、Barium Carb、Witherite</td>
                         <td>炭酸バリウム</td>
                         <td>BaO</td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-flux/30859/g004-%e8%a5%bf%e5%be%b7%e7%a2%b3%e9%85%b8%e9%8b%87-1kg%e9%9b%b6%e5%94%ae/">G004-西德碳酸鋇</a></td>
+                        <td>西德碳酸鋇</td>
                         <td width="313">Barium Carbonate、Barium Carb、Witherite</td>
                         <td>炭酸バリウム</td>
                         <td>BaO</td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-flux/30861/g005-%e9%8d%9b%e7%87%92%e6%b0%a7%e5%8c%96%e9%8b%85-1kg%e9%9b%b6%e5%94%ae/">G005-鍛燒氧化鋅</a></td>
+                        <td>鍛燒氧化鋅</td>
                         <td width="313">Zinc Oxide、ZnO、Zincite、Zinc 99</td>
                         <td>酸化亜鉛(亜鉛華　焼)</td>
                         <td>ZnO</td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-flux/30863/g006-%e5%90%88%e6%88%90%e9%aa%a8%e7%81%b0%e7%a3%b7%e9%85%b8%e9%88%a3%e7%b2%89-1kg%e9%9b%b6%e5%94%ae/">G006-合成骨灰/磷酸鈣(粉)</a></td>
+                        <td>合成骨灰/磷酸鈣(粉)</td>
                         <td width="313">Bone&nbsp; Ash</td>
                         <td>リン酸カルシウム(合成骨灰)</td>
                         <td>P2O5</td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-flux/30865/g007-%e5%a4%a9%e7%84%b6%e9%aa%a8%e7%81%b0%e7%a3%b7%e9%85%b8%e9%88%a3%e5%a1%8a-1kg%e9%9b%b6%e5%94%ae/">G007-天然骨灰/磷酸鈣(塊)</a></td>
+                        <td>天然骨灰/磷酸鈣(塊)</td>
                         <td width="313">Natural Bone Ash</td>
                         <td>天然骨灰</td>
                         <td>P2O5</td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-flux/30874/g008-%e7%85%85%e7%87%92%e6%bb%91%e7%9f%b3-1kg%e9%9b%b6%e5%94%ae/">G008-煅燒滑石</a></td>
+                        <td>煅燒滑石</td>
                         <td width="313">Calcined Talc、Magnesium Silicate、 Steatite、 French Chalk、Hydrated talc</td>
                         <td>燒成タルク、YAKI-TARUKU</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-flux/30876/g009-%e7%99%bd%e9%9b%b2%e7%9f%b3-1kg%e9%9b%b6%e5%94%ae/">G009-白雲石</a></td>
+                        <td>白雲石</td>
                         <td width="313">Dolomite、Calcium Magnesium Carbonate、Raw Limestone</td>
                         <td>ドロマイト</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-flux/30878/g011-%e7%a2%b3%e9%85%b8%e9%8e%82-1kg%e9%9b%b6%e5%94%ae/">G011-碳酸鎂</a></td>
+                        <td>碳酸鎂</td>
                         <td width="313">Magnesium carbonate、 Hydrated Magnesium Carbonate Mineral、Hydromagnesite</td>
                         <td>炭酸マグネシウム</td>
                         <td>MgO</td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-flux/30883/g012-%e6%b0%a7%e5%8c%96%e9%8b%81%e7%b4%b0-270%e7%9b%ae-1kg%e9%9b%b6%e5%94%ae/">G012-氧化鋁(細-270目)</a></td>
+                        <td>氧化鋁(細-270目)</td>
                         <td width="313">Alumina Oxide、Alumina</td>
                         <td>酸化アルミナ</td>
                         <td>Al2O3</td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-flux/30925/g014-%e7%a2%b3%e9%85%b8%e9%8d%b6-1kg%e9%9b%b6%e5%94%ae/">G014-碳酸鍶</a></td>
+                        <td>碳酸鍶</td>
                         <td width="313">Strontium Carbonate、Strontianite</td>
                         <td>炭酸ストロンチウム</td>
                         <td>SrO</td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-flux/30927/g015-%e7%9f%bd%e7%81%b0%e7%9f%b3-1kg%e9%9b%b6%e5%94%ae/">G015-矽灰石</a></td>
+                        <td>矽灰石</td>
                         <td width="313">Wollastonite、Wolastonite</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-flux/30932/g016-%e7%a2%b3%e9%85%b8%e9%8b%b0-100g%e9%9b%b6%e5%94%ae/">G016-碳酸鋰</a></td>
+                        <td>碳酸鋰</td>
                         <td width="313">Lithium carbonate、Lith Carb、Li2CO3</td>
                         <td>炭酸リチウム</td>
                         <td>Li2CO3</td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-flux/33024/g017-%e7%be%8e%e5%9c%8b%e7%a1%ac%e7%a1%bc%e9%85%b8%e9%88%a3gerstley-borate-1kg%e9%9b%b6%e5%94%ae/">G017-美國硬硼酸鈣</a></td>
+                        <td>美國硬硼酸鈣</td>
                         <td width="313">Gerstley Borate、Colemanite、Calcium Borate、 Borocalcite</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-flux/30966/g018-%e9%8b%b0%e8%bc%9d%e7%9f%b3-1kg%e9%9b%b6%e5%94%ae/">G018-鋰輝石</a></td>
+                        <td>鋰輝石</td>
                         <td width="313">Spodumene</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-flux/58840/g019-%e7%a1%bc%e7%a0%82-1kg%e9%9b%b6%e5%94%ae/">G019-硼砂</a></td>
+                        <td>硼砂</td>
                         <td width="313">Borax</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-flux/49494973/g020-%e6%b0%a7%e5%8c%96%e9%89%8d-100g%e9%9b%b6%e5%94%ae/">G020-氧化鉍</a></td>
+                        <td>氧化鉍</td>
                         <td width="313">Bismuth oxide、Bismuth(III) oxide、bismite、 Bismuth trioxide</td>
                         <td></td>
                         <td>Bi2O3</td>
                     </tr>
                     <tr>
-                        <td>G021-日本氧化鋁SA-11</td>
+                        <td>日本氧化鋁SA-11</td>
                         <td width="313">Alumina Oxide、Alumina</td>
                         <td>酸化アルミナ</td>
                         <td>Al2O3</td>
                     </tr>
                     <tr>
-                        <td>G022-日本氧化鋁SA-32</td>
+                        <td>日本氧化鋁SA-32</td>
                         <td width="313">Alumina Oxide、Alumina</td>
                         <td>酸化アルミナ</td>
                         <td>Al2O3</td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-flux/58844/g023-%e6%97%a5%e6%9c%ac%e7%85%85%e7%87%92%e6%bb%91%e7%9f%b3-1kg%e9%9b%b6%e5%94%ae/">C023-日本煅燒滑石</a></td>
+                        <td>日本煅燒滑石</td>
                         <td width="313">Calcined Talc、Magnesium Silicate、 Steatite、 French Chalk、Hydrated talc</td>
                         <td>燒成タルク、YAKI-TARUKU</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-flux/73479/g024-%e6%bb%bf%e5%b7%9e%e6%bb%91%e7%9f%b3-1kg%e9%9b%b6%e5%94%ae/">G024-滿州滑石</a></td>
+                        <td>滿州滑石</td>
                         <td width="313"></td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-flux/73482/g025-%e6%97%a5%e6%9c%ac%e9%bc%a0%e7%9f%b3%e7%81%b0-1kg%e9%9b%b6%e5%94%ae/">G025-日本鼠石灰</a></td>
+                        <td>日本鼠石灰</td>
                         <td width="313"></td>
                         <td>鼠石灰</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td>G025-日本菱鎂礦</td>
+                        <td>日本菱鎂礦</td>
                         <td width="313"></td>
                         <td>マグネサイト</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td>G027-蘇打灰(碳酸鈉、純鹼)</td>
+                        <td>蘇打灰(碳酸鈉、純鹼)</td>
                         <td width="313">Soda Ash</td>
                         <td></td>
                         <td></td>
@@ -467,201 +452,198 @@
                         <td></td>
                         <td></td>
                     </tr>
-                    <tr>
-                        <td>發色原料/著色劑/金屬氧化物</td>
-                        <td>Metal Oxides Powders</td>
-                        <td>着色剤（酸化金属類）</td>
-                        <td>Fe2O3</td>
+                    <tr class="cate">
+                        <td colspan="4">發色原料/著色劑/金屬氧化物 Metal Oxides Powders 着色剤（酸化金属類）</td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-metal-oxide/30968/a001-%e7%b4%85%e6%b0%a7%e5%8c%96%e9%90%b5225-1kg%e9%9b%b6%e5%94%ae/">A001-紅氧化鐵225</a></td>
+                        <td>紅氧化鐵225</td>
                         <td width="313">Iron Oxide(Red)、Ferric Oxide、Red Iron Oxide<br>
                     、RIO、Iron(III) oxide、Fe2O3、Hematite</td>
                         <td>酸化鉄(酸化第二鉄)</td>
                         <td>Fe2O3</td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-metal-oxide/30970/a002-%e9%bb%83%e6%b0%a7%e5%8c%96%e9%90%b5420-1kg%e9%9b%b6%e5%94%ae/">A002-黃氧化鐵420</a></td>
+                        <td>黃氧化鐵420</td>
                         <td width="313">Iron Oxide(Yellow)、Iron(III) oxide、 hydrated iron oxide、 iron(III) hydroxide、 yellow iron oxide</td>
                         <td></td>
                         <td>Fe2O3</td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-metal-oxide/30972/a003-%e9%bb%91%e6%b0%a7%e5%8c%96%e9%90%b5m318-1kg%e9%9b%b6%e5%94%ae/">A003-黑氧化鐵M318</a></td>
+                        <td>黑氧化鐵M318</td>
                         <td width="313">Iron Oxide(Black)、Fe3O4、Black Iron Oxide、 BIO、Magnetite Powder、Iron(II,III) Oxide</td>
                         <td></td>
                         <td>Fe3O4</td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-metal-oxide/30974/a004-%e6%b0%a7%e5%8c%96%e9%8a%85-1kg%e9%9b%b6%e5%94%ae/">A004-氧化銅</a></td>
+                        <td>氧化銅</td>
                         <td width="313">Copper Oxide、Copper (II) Oxide、 Black Copper Oxide、BCO</td>
                         <td>酸化第二銅</td>
                         <td>Cu</td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-metal-oxide/30976/a005-%e7%a2%b3%e9%85%b8%e9%8a%85-1kg%e9%9b%b6%e5%94%ae/">A005-碳酸銅</a></td>
+                        <td>碳酸銅</td>
                         <td width="313">Copper Carbonate、Synthetic Malachite、CuCO3</td>
                         <td>炭酸銅</td>
                         <td>CuCO3</td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-metal-oxide/30978/a006-%e6%b0%a7%e5%8c%96%e9%88%a6-1kg%e9%9b%b6%e5%94%ae/">A006-氧化鈦</a></td>
+                        <td>氧化鈦</td>
                         <td width="313">Titanium Oxide、Titanium Dioxide、Titania</td>
                         <td>酸化チタン</td>
                         <td>TiO2</td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-metal-oxide/30988/a007-%e6%b0%a7%e5%8c%96%e9%8c%b3-1kg%e9%9b%b6%e5%94%ae/">A007-氧化錳</a></td>
+                        <td>氧化錳</td>
                         <td width="313">Manganese Oxide、MnO, Manganese(II) Oxide</td>
                         <td>二酸化マンガン</td>
                         <td>MnO</td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-metal-oxide/31133/a008-%e6%b0%a7%e5%8c%96%e9%88%b772-100g%e9%9b%b6%e5%94%ae/">A008-氧化鈷72%</a></td>
+                        <td>氧化鈷72%</td>
                         <td width="313">Cobalt Oxide、Cobalt(II) oxide、 Cobaltosic Oxide、CoO</td>
                         <td>酸化コバルト</td>
                         <td>CoO</td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-metal-oxide/31135/a009-%e6%b0%a7%e5%8c%96%e9%88%b776-100g%e9%9b%b6%e5%94%ae/">A009-氧化鈷76%</a></td>
+                        <td>氧化鈷76%</td>
                         <td width="313">Cobalt Oxide、Cobalt(II) oxide、 Cobaltosic Oxide、CoO</td>
                         <td>酸化コバルト</td>
                         <td>CoO</td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-metal-oxide/31136/a010-%e7%a2%b3%e9%85%b8%e9%8c%b3-1kg%e9%9b%b6%e5%94%ae/">A010-碳酸錳</a></td>
+                        <td>碳酸錳</td>
                         <td width="313">Manganese Carbonate</td>
                         <td>炭酸マンガン</td>
                         <td>MnO+CO2</td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-metal-oxide/31138/a011-%e6%b0%a7%e5%8c%96%e9%89%bb-1kg%e9%9b%b6%e5%94%ae/">A011-氧化鉻</a></td>
+                        <td>氧化鉻</td>
                         <td width="313">Chromium Oxide、Chrome Oxide、Chromium (III) Oxide、Cr2O3</td>
                         <td>酸化クローム</td>
                         <td>Cr2O3</td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-metal-oxide/31142/a012-%e6%b0%a7%e5%8c%96%e9%8c%ab-100g%e9%9b%b6%e5%94%ae/">A012-氧化錫</a></td>
+                        <td>氧化錫</td>
                         <td width="313">Stannic Oxide、Tin(IV) Oxide、Tin Dioxide、 SnO2</td>
                         <td>酸化スズ</td>
                         <td>SnO2</td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-metal-oxide/31183/a013-%e6%b0%a7%e5%8c%96%e9%8e%b3-100g%e9%9b%b6%e5%94%ae/">A013-氧化鎳</a></td>
+                        <td>氧化鎳</td>
                         <td width="313">Nickel Oxide Black、Ni2O3、Nickelic Oxide、 Nickel sesquioxide、Nickel (III) oxide、 Nickel Oxide</td>
                         <td>酸化ニッケル</td>
                         <td>Ni2O3</td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-metal-oxide/31184/a014-%e7%9f%bd%e9%85%b8%e9%8b%af-1kg%e9%9b%b6%e5%94%ae/">A014-矽酸鋯</a></td>
+                        <td>矽酸鋯</td>
                         <td width="313">Zirconium Silicate、Zircopax</td>
                         <td>珪酸ジルコン</td>
                         <td>ZrO2</td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-metal-oxide/32641/a015-%e9%89%bb%e9%90%b5%e7%a4%a6-1kg%e9%9b%b6%e5%94%ae/">A015-鉻鐵礦</a></td>
+                        <td>鉻鐵礦</td>
                         <td width="313">Ferric Chromate、Chromite、Chromate of Iron</td>
                         <td></td>
                         <td>Cr2O3+FeO</td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-metal-oxide/33251/a016-%e9%87%a9%e9%85%b8%e9%8a%a8-100g%e9%9b%b6%e5%94%ae/">A016-釩酸銨</a></td>
+                        <td>釩酸銨</td>
                         <td width="313">Ammonium&nbsp; etavanadate</td>
                         <td></td>
                         <td>V2O3</td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-metal-oxide/31186/a017-%e9%87%91%e7%b4%85%e7%9f%b3%e7%b2%89-1kg%e9%9b%b6%e5%94%ae/">A017-金紅石粉</a></td>
+                        <td>金紅石粉</td>
                         <td width="313">Rutile Powder&nbsp; 、Rutile</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-metal-oxide/33256/a018-%e4%ba%94%e6%b0%a7%e5%8c%96%e4%ba%8c%e9%87%a9-100g%e9%9b%b6%e5%94%ae/">A018-五氧化二釩</a></td>
+                        <td>五氧化二釩</td>
                         <td width="313">Vanadium Pentoxide、Vanadium (V) Oxide</td>
                         <td></td>
                         <td>V2O5</td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-metal-oxide/33259/a020-%e6%b0%a7%e5%8c%96%e9%89%ac-100g%e9%9b%b6%e5%94%ae/">A020-氧化鉬</a></td>
+                        <td>氧化鉬</td>
                         <td width="313">Molybdenum Oxide、Molybdenum Trioxide</td>
                         <td></td>
                         <td>MoO3</td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-metal-oxide/33262/a021-%e6%b0%a7%e5%8c%96%e9%8e%a2-100g%e9%9b%b6%e5%94%ae/">A021-氧化鎢</a></td>
+                        <td>氧化鎢</td>
                         <td width="313">Tungsten oxide、Tungsten(VI) oxide、 Tungsten Oxide、Tungsten Trioxide</td>
                         <td></td>
                         <td>WO3</td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-metal-oxide/31188/a022-%e6%b0%a7%e5%8c%96%e9%8a%bb-1kg%e9%9b%b6%e5%94%ae/">A022-氧化銻</a></td>
+                        <td>氧化銻</td>
                         <td width="313">Antimony oxide、Antimony Trioxide、 Senarmonite</td>
                         <td></td>
                         <td>Sb2O3</td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-metal-oxide/33246/a025-%e7%be%8e%e5%9c%8b%e7%b4%85%e5%9c%9f%e7%b2%89red-art-clay-1kg%e9%9b%b6%e5%94%ae/">A025-美國紅土粉</a></td>
+                        <td>美國紅土粉</td>
                         <td width="313">Red Art Clay</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-metal-oxide/31189/a026-%e7%a3%81%e7%a0%82%e9%90%b5%e9%bb%91%e6%b5%9c-1kg%e9%9b%b6%e5%94%ae/">A026-日本磁砂鐵(黑浜)</a></td>
+                        <td>日本磁砂鐵(黑浜)</td>
                         <td width="313"></td>
                         <td>黒浜(磁砂鉄)</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-metal-oxide/113101/a028-%e7%be%8e%e5%9c%8b%e9%9b%aa%e6%9d%be%e9%ab%98%e5%9c%b0%e9%bb%83%e9%87%91%e7%b2%89goldart-1kg%e9%9b%b6%e5%94%ae/">A028-美國雪松高地黃金粉</a></td>
+                        <td>美國雪松高地黃金粉</td>
                         <td width="313">GOLDART、Cedar Heights Goldart</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td>A029-美國氧化錳顆粒60-80目</td>
+                        <td>美國氧化錳顆粒60-80目</td>
                         <td width="313"></td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td>A030-日本鬼板土</td>
+                        <td>日本鬼板土</td>
                         <td width="313"></td>
                         <td>鬼板土</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td>A031-日本京都加茂川</td>
+                        <td>日本京都加茂川</td>
                         <td width="313"></td>
                         <td>京都加茂川</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td>A032-日本益子赤粉</td>
+                        <td>日本益子赤粉</td>
                         <td width="313"></td>
                         <td>益子赤粉</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td>A033-日本来待石粉</td>
+                        <td>日本来待石粉</td>
                         <td width="313"></td>
                         <td>来待石粉</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td>A034-日本悦洞黄土</td>
+                        <td>日本悦洞黄土</td>
                         <td width="313"></td>
                         <td>悦洞黄土</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td>A035-日本京都黄土(IGK)</td>
+                        <td>日本京都黄土(IGK)</td>
                         <td width="313"></td>
                         <td>京都黄土(IGK)</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/ceramic-metal-oxide/111083/a036-%e7%a2%b3%e9%85%b8%e9%88%b7-1kg%e9%9b%b6%e5%94%ae/">A036-碳酸鈷</a></td>
+                        <td>碳酸鈷</td>
                         <td width="313">Cobalt Carbonate、Spherocobaltite, CoCO3, Cobalt(II) carbonate</td>
                         <td></td>
                         <td>CoCO3</td>
@@ -672,92 +654,89 @@
                         <td></td>
                         <td></td>
                     </tr>
-                    <tr>
-                        <td>天然灰/合成灰</td>
-                        <td>Wood Ash</td>
-                        <td></td>
-                        <td></td>
+                    <tr class="cate">
+                        <td colspan="4">天然灰/合成灰 Wood Ash</td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/natural-ash-and-synthetic-ash/31191/w001-%e5%90%88%e6%88%90%e7%a8%bb%e8%8d%89%e7%81%b0-1kg%e9%9b%b6%e5%94%ae/">W001-日本合成稻草灰(藁灰)</a></td>
+                        <td>日本合成稻草灰(藁灰)</td>
                         <td>Wood Ash (Japan Tai ash)</td>
                         <td>合成ワラ灰</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/natural-ash-and-synthetic-ash/31193/w002-%e5%90%88%e6%88%90%e7%a8%bb%e6%ae%bc%e7%81%b0-1kg%e9%9b%b6%e5%94%ae/">W002-日本合成稻殼灰</a></td>
+                        <td>日本合成稻殼灰</td>
                         <td>Wood Ash (Japan Tai ash)</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/natural-ash-and-synthetic-ash/31195/w003-%e5%90%88%e6%88%90%e6%a0%97%e7%9a%ae%e7%81%b0-1kg%e9%9b%b6%e5%94%ae/">W003-日本合成栗皮灰</a></td>
+                        <td>日本合成栗皮灰</td>
                         <td>Wood Ash (Japan Tai ash)</td>
                         <td>合成栗皮灰</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/natural-ash-and-synthetic-ash/31197/w004-%e5%90%88%e6%88%90%e6%9f%9e%e7%81%b0-1kg%e9%9b%b6%e5%94%ae/">W004-日本合成柞灰</a></td>
+                        <td>日本合成柞灰</td>
                         <td>Wood Ash (Japan Tai ash)</td>
                         <td>合成柞灰</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/natural-ash-and-synthetic-ash/31199/w005-%e5%90%88%e6%88%90%e5%9c%9f%e7%81%b0-1kg%e9%9b%b6%e5%94%ae/">W005-日本合成土灰</a></td>
+                        <td>日本合成土灰</td>
                         <td>Wood Ash (Japan Tai ash)</td>
                         <td>合成土灰</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td>W006-日本合成松灰</td>
+                        <td>日本合成松灰</td>
                         <td></td>
                         <td>松灰</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td>W007-日本合成木灰</td>
+                        <td>日本合成木灰</td>
                         <td></td>
                         <td>土灰</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td>W008-日本合成樫灰</td>
+                        <td>日本合成樫灰</td>
                         <td></td>
                         <td>樫灰</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td>W009-臺灣合成土灰</td>
+                        <td>臺灣合成土灰</td>
                         <td></td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td>W010-臺灣天然土灰(雜木與植物)</td>
+                        <td>臺灣天然土灰(雜木與植物)</td>
                         <td></td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/natural-ash-and-synthetic-ash/73371/w011-%e6%97%a5%e6%9c%ac%e5%a4%a9%e7%84%b6%e7%a8%bb%e8%8d%89%e7%81%b0%e8%97%81%e7%81%b0-%e5%a4%a9%e7%84%b6%e3%83%af%e3%83%a9%e7%81%b0-1kg%e9%9b%b6%e5%94%ae/">W011-日本天然稻草灰(藁灰)/天然ワラ灰</a></td>
+                        <td>日本天然稻草灰(藁灰)/天然ワラ灰</td>
                         <td></td>
                         <td>粉末天然ワラ灰</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/natural-ash-and-synthetic-ash/59190/w012-%e6%97%a5%e6%9c%ac%e6%b0%b4%e7%b0%b8%e5%a4%a9%e7%84%b6%e6%9c%a8%e7%81%b0%e6%b0%b4%e6%b4%97-1kg%e9%9b%b6%e5%94%ae/">W012-日本水簸天然木灰(水洗)</a></td>
+                        <td>日本水簸天然木灰(水洗)</td>
                         <td>Wood Ash (Japan Tai ash)</td>
                         <td>水簸天然木灰(天然土灰)</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/natural-ash-and-synthetic-ash/59195/w013-%e6%97%a5%e6%9c%ac%e5%a4%a9%e7%84%b6%e7%89%b9%e8%a3%bd%e6%a8%ab%e7%81%b0%e6%a9%a1%e6%9c%a8%e7%81%b0-1kg%e9%9b%b6%e5%94%ae/">W013-日本天然特製樫灰(橡木灰)</a></td>
+                        <td>日本天然特製樫灰(橡木灰)</td>
                         <td>Wood Ash (Japan Tai ash)</td>
                         <td>特製樫灰</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/natural-ash-and-synthetic-ash/73383/w014-%e6%97%a5%e6%9c%ac%e5%a4%a9%e7%84%b6%e7%89%b9%e8%a3%bd%e6%9d%be%e7%81%b0-15kg1%e5%8c%85/">W014-日本天然特製松灰</a></td>
+                        <td>日本天然特製松灰</td>
                         <td>Wood Ash (Japan Tai ash)</td>
                         <td></td>
                         <td></td>
@@ -768,44 +747,41 @@
                         <td></td>
                         <td></td>
                     </tr>
-                    <tr>
-                        <td>熔塊/玻璃粉</td>
-                        <td>Frit</td>
-                        <td></td>
-                        <td></td>
+                    <tr class="cate">
+                        <td colspan="4">熔塊/玻璃粉 Frit</td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/frit/43643/h001-ferro-frit-3124-%e9%ab%98%e9%88%a3%e7%a1%bc%e7%9f%bd%e9%85%b8%e7%8e%bb%e7%92%83%e7%b2%89-%e7%86%94%e5%a1%8a-1kg%e9%9b%b6%e5%94%ae/">H001-Ferro Frit 3124 玻璃粉/熔塊</a></td>
+                        <td>Ferro Frit 3124 玻璃粉/熔塊</td>
                         <td>Frit 3124</td>
                         <td>無鉛玻璃料</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/frit/31778/h002-ferro-frit-3134-%e9%ab%98%e9%88%89%e9%88%a3%e7%a1%bc%e7%8e%bb%e7%92%83%e7%b2%89-%e7%86%94%e5%a1%8a-1kg%e9%9b%b6%e5%94%ae/">H002-Ferro Frit 3134玻璃粉/熔塊</a></td>
+                        <td>Ferro Frit 3134玻璃粉/熔塊</td>
                         <td>Frit 3134</td>
                         <td>無鉛玻璃料</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/frit/31774/h003-ferro-frit-3110-%e9%ab%98%e9%88%a3%e9%88%89%ef%bc%8e%e8%aa%bf%e9%85%8d%e7%b5%90%e6%99%b6%e9%87%89%e7%8e%bb%e7%92%83%e7%b2%89-%e7%86%94%e5%a1%8a-1kg%e9%9b%b6%e5%94%ae/">H003-Ferro Frit 3110玻璃粉/熔塊</a></td>
+                        <td>Ferro Frit 3110玻璃粉/熔塊</td>
                         <td>Frit 3110</td>
                         <td>無鉛玻璃料</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/frit/31916/h004-frit-488%e9%ab%98%e7%9f%bd%e9%85%b8%e9%88%89%e7%a1%bc%e7%8e%bb%e7%92%83%e7%b2%89-%e7%86%94%e5%a1%8a-1kg%e9%9b%b6%e5%94%ae/">H004-Frit 488玻璃粉/熔塊</a></td>
+                        <td>Frit 488玻璃粉/熔塊</td>
                         <td>Frit 488</td>
                         <td>無鉛玻璃料</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/frit/73493/h005-%e6%97%a5%e6%9c%ac%e5%9f%ba%e7%a4%8e3%e5%8f%b7%e9%87%89%e7%9f%b3%e7%81%b0%e7%84%a1%e9%8b%85%e9%80%8f%e6%98%8e%e9%87%89%e7%b2%89%e7%8b%80-1kg%e9%9b%b6%e5%94%ae/">H005-日本基礎3号釉(石灰無鋅透明釉)</a></td>
+                        <td>日本基礎3号釉(石灰無鋅透明釉)</td>
                         <td></td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/frit/73488/h006-%e6%97%a5%e6%9c%ac%e5%9f%ba%e7%a4%8e8%e5%8f%b7%e9%87%89%e4%b9%b3%e6%bf%81%e7%99%bd%e9%87%89%e7%b2%89%e7%8b%80-1kg%e9%9b%b6%e5%94%ae/">H006-日本基礎8号釉(乳濁白釉)</a></td>
+                        <td>日本基礎8号釉(乳濁白釉)</td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -816,104 +792,92 @@
                         <td></td>
                         <td></td>
                     </tr>
+                    <tr class="cate">
+                        <td colspan="4">顆粒/斑點/耐火度調整</td>
+                    </tr>
                     <tr>
-                        <td>顆粒/斑點/耐火度調整</td>
+                        <td>斑點粒</td>
                         <td></td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/granule-and-refractory/42162/s001-%e6%96%91%e9%bb%9e%e7%b2%92-1kg%e9%9b%b6%e5%94%ae/">S001-斑點粒</a></td>
+                        <td>熟料35目</td>
                         <td></td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/granule-and-refractory/31748/s002-%e7%86%9f%e6%96%9935%e7%9b%ae-1kg%e9%9b%b6%e5%94%ae/">S002-熟料35目</a></td>
+                        <td>熟料22目</td>
                         <td></td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/granule-and-refractory/73394/s003-%e7%86%9f%e6%96%9922%e7%9b%ae-1kg%e9%9b%b6%e5%94%ae/">S003-熟料22目</a></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/granule-and-refractory/31751/s006-%e7%85%86%e7%87%92%e8%97%8d%e6%99%b6%e7%9f%b3325%e7%9b%ae-1kg%e9%9b%b6%e5%94%ae/">S006-煆燒藍晶石325目</a></td>
+                        <td>煆燒藍晶石325目</td>
                         <td>Virginia Mullite (Kyanite)&nbsp; M325#</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/granule-and-refractory/31755/s007-%e7%85%86%e7%87%92%e8%97%8d%e6%99%b6%e7%9f%b335%e7%9b%ae-1kg%e9%9b%b6%e5%94%ae/">S007-煆燒藍晶石35目</a></td>
+                        <td>煆燒藍晶石35目</td>
                         <td>Virginia Mullite (Kyanite)&nbsp; M35#</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/granule-and-refractory/31759/s008-%e5%a0%87%e9%9d%92%e7%9f%b3200%e7%9b%ae-1kg%e9%9b%b6%e5%94%ae/">S008-堇青石200目</a></td>
+                        <td>堇青石200目</td>
                         <td>Cordierite</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/granule-and-refractory/31762/s009-%e5%a0%87%e9%9d%92%e7%9f%b316%e7%9b%ae-1kg%e9%9b%b6%e5%94%ae/">S009-堇青石16目</a></td>
+                        <td>堇青石16目</td>
                         <td>Cordierite</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/granule-and-refractory/31767/s011-%e7%9f%b3%e8%8b%b1%e7%a0%82-%e7%a1%85%e7%9f%b3%e7%a0%8216-24%e7%9b%ae-1kg%e9%9b%b6%e5%94%ae/">S011-石英砂/硅石砂16-24目</a></td>
+                        <td>石英砂/硅石砂16-24目</td>
                         <td>Silica Powder&nbsp; #16~24</td>
                         <td>珪砂(16～24メッシュ)</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/granule-and-refractory/31878/s012-%e7%9f%b3%e8%8b%b1%e7%a0%82-%e7%a1%85%e7%9f%b3%e7%a0%82100%e7%9b%ae-1kg%e9%9b%b6%e5%94%ae/">S012-石英砂/硅石砂100目</a></td>
+                        <td>石英砂/硅石砂100目</td>
                         <td>Silica Powder&nbsp; #100</td>
                         <td>珪砂(100メッシュ)</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/granule-and-refractory/45231/s014-hawthorne-bond-fire-clay-40-mesh-%e9%9c%8d%e6%a1%91%e8%80%90%e7%81%ab%e6%b3%a540%e7%9b%ae-1kg%e9%9b%b6%e5%94%ae/">S014-霍桑耐火泥40目</a></td>
+                        <td>霍桑耐火泥40目</td>
                         <td>Hawthorne Bond Fire Clay 40 MESH</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td>S015-日本長石粒</td>
+                        <td>日本長石粒</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="cate">
+                        <td colspan="4">懸浮劑/黏著劑/解膠劑</td>
+                    </tr>
+                    <tr>
+                        <td>水玻璃(解膠劑)</td>
                         <td></td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>懸浮劑/黏著劑/解膠劑</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/suspending-agent-and-adhesive/32656/pa07-%e6%b0%b4%e7%8e%bb%e7%92%83%e8%a7%a3%e8%86%a0%e5%8a%91/">PA07-水玻璃(解膠劑)</a></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/suspending-agent-and-adhesive/32653/pa12-%e4%bb%99%e6%b0%b4%e8%a7%a3%e8%86%a0%e5%8a%91/">PA12-仙水(解膠劑)</a></td>
+                        <td>仙水(解膠劑)</td>
                         <td>Deflocculant</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td><a href="https://glazes.com.tw/shop/ceramic-raw-materials/suspending-agent-and-adhesive/59122/x001-%e9%ab%98%e9%bb%8f%e5%ba%a6cmc%e7%be%a7%e7%94%b2%e5%9f%ba%e7%ba%96%e7%b6%ad%e7%b4%a0%e9%bb%8f%e7%a8%a0%e5%8a%91/">X001-高黏度CMC羧甲基纖維素(黏稠劑)</a></td>
+                        <td>高黏度CMC羧甲基纖維素(黏稠劑)</td>
                         <td>Carboxymethyl Cellulose</td>
                         <td></td>
                         <td></td>
@@ -924,4 +888,19 @@
     </div>
 </body>
 <script src="assets/js/cookieStorage.js"></script>
+<script>
+    function updateDis(str){
+        let str_lo = str.toLowerCase();
+        let tr_list = document.getElementById("tableBody").getElementsByTagName("tr");
+        let cate_index = 0;
+        for(let i = 0; tr_list[i]; i++){
+            if(tr_list[i].className.indexOf('cate') >= 0) cate_index = i;
+            if(tr_list[i].innerHTML.toLowerCase().indexOf(str) >=0 ) {
+                tr_list[cate_index].style.display = "table-row";
+                tr_list[i].style.display = "table-row";
+            }
+            else tr_list[i].style.display = "none";
+        }
+    }
+</script>
 </html>
