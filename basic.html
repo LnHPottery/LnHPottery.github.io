@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LnH Pottery - 關於釉藥化學</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes" />
+    <meta charset="utf-8" />
+    <link rel="icon" href="/assets/lnh_txt.ico" />
+    <link rel="stylesheet" href="assets/css/lookup.css?v=20210316" />
+</head>
+<body>
+    <div id="menu">
+        <a class="on" style="display:none" href=""></a>
+        <a href="/triangle">Triangle(tiny) / 三角試驗(小)</a>
+        <a href="/materials">Materials / 原料表</a>
+    </div>
+    <div style="max-width: 640px; margin: 0 auto; padding-bottom: 32px; border-bottom: 2px solid; width: 95%;">
+        <h2>元素與常見離子查詢</h2>
+        <div class="autocomplete">
+            <input onblur="displayEle()" onchange="displayEle()" onkeyup="displayEle()" id="chemi" name="chemi" type="input" value="" style="border-radius:4px 18px 18px 4px;" />
+            <div onclick="clearQuery()" style="width: 32px;margin-left: -40px;margin-right: -30px;display: inline-block;vertical-align: -12px;cursor: pointer;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#e75d60" width="32px" height="32px"><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm4.3 14.3c-.39.39-1.02.39-1.41 0L12 13.41 9.11 16.3c-.39.39-1.02.39-1.41 0-.39-.39-.39-1.02 0-1.41L10.59 12 7.7 9.11c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0L12 10.59l2.89-2.89c.39-.39 1.02-.39 1.41 0 .39.39.39 1.02 0 1.41L13.41 12l2.89 2.89c.38.38.38 1.02 0 1.41z"/></svg></div>
+        </div>
+        <div onclick="addEle()" class="btn" style="width: 128px; margin-left: 12px; vertical-align: -1px;">帶入分子式</div>
+        <div id="table"></div>
+        <div class="element_panel">
+            <span id="result"></span>
+            <span id="panel_formula">Form</span>
+            <span id="panel_state">價數</span>
+            <span id="panel_weight">莫耳質量</span>
+            <span id="panel_name">name</span>
+            <span id="panel_aka">中文名或同義詞</span>
+        </div>
+        <input id="new_formula" type="text" readonly="readonly" style="width: calc(100% - 6px)" />
+        <div onclick="backEle()" style="width: 32px;margin-left: -42px;display: inline-block;vertical-align: -12px; cursor: pointer; margin-bottom: 16px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#e75d60" width="32px" height="32px"><path d="M22 3H7c-.69 0-1.23.35-1.59.88L.37 11.45c-.22.34-.22.77 0 1.11l5.04 7.56c.36.52.9.88 1.59.88h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-3.7 13.3c-.39.39-1.02.39-1.41 0L14 13.41l-2.89 2.89c-.39.39-1.02.39-1.41 0-.39-.39-.39-1.02 0-1.41L12.59 12 9.7 9.11c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0L14 10.59l2.89-2.89c.39-.39 1.02-.39 1.41 0 .39.39.39 1.02 0 1.41L15.41 12l2.89 2.89c.38.38.38 1.02 0 1.41z"/></svg></div>
+        <div onclick="resultWeight()" class="btn" style="width: 160px;">計算分子莫耳質量</div>
+        <div onclick="clearEle()" class="btn" style="width: 64px; margin-left: 12px">清除</div>
+        <div style="font-size: 1.2em;line-height: 2em;font-weight: bold; margin: 16px 0 8px ;">
+            分子式 : <span id="result_formula" data-val=""></span><br>
+            莫耳質量 : <span id="result_weight" data-val=""></span><br>
+            素材顯示名稱(opt.) : <input id="cus_name" type="text" style="width: calc(100% - 200px)" /><br>
+        </div>
+        <div onclick="addMaterial('ro')" class="btn" style="width: 144px; margin-right: 12px;">加入鹼性素材</div>
+        <div onclick="addMaterial('r2o3')" class="btn" style="width: 144px; margin-right: 12px;">加入中性素材</div>
+        <div onclick="addMaterial('ro2')" class="btn" style="width: 144px; margin-right: 12px;">加入酸性素材</div>
+        <div onclick="addMaterial('colour')" class="btn" style="width: 144px; margin-right: 12px;">加入發色素材</div>
+    </div>
+    <div style="max-width: 640px; margin: 0 auto; padding-bottom: 32px; width: 95%;">
+        <h2>原料比重(%)轉賽格式</h2>
+        <div id="material_plate">
+            <div id="material_list"></div>
+        </div>
+        <div id="new_material" style="font-size:16px; vertical-align: top;width: 100%; margin-top: 16px;">
+            <span id="new_material_ro" style="width:22%;display: inline-block;border: 1px solid;background: white;min-height: 32px;line-height: 24px;vertical-align: top; border-radius: 4px;"></span> + 
+            <span id="new_material_r2o3" style="width:22%;display: inline-block;border: 1px solid;background: white;min-height: 32px;line-height: 24px;vertical-align: top; border-radius: 4px;"></span> + 
+            <span id="new_material_ro2" style="width:22%;display: inline-block;border: 1px solid;background: white;min-height: 32px;line-height: 24px;vertical-align: top; border-radius: 4px;"></span> + 
+            <span id="new_material_colour" style="width:22%;display: inline-block;border: 1px solid;background: white;min-height: 32px;line-height: 24px;vertical-align: top; border-radius: 4px;"></span>
+        </div>
+        <div style="font-size: 1.2em;line-height: 2em;font-weight: bold; margin: 24px auto;">
+            原料名稱 : <input id="new_raw_name" type="text" style="width: calc(100% - 100px); margin-bottom: 16px" />
+            備註資訊(opt.) : <input id="new_raw_note" type="text" style="width: calc(100% - 148px)" />
+        </div>
+        <div onclick="addMaterial('raw')" class="btn" style="width: 144px; margin-right: 12px;">加入原料筆記</div>
+    </div>
+</body>
+<script src="assets/js/cookieStorage.js"></script>
+<script src="assets/js/lookup.js"></script>
+<script>
+    (function(){
+        getMaterial()
+    })();
+</script>
+</html>
