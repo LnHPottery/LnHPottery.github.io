@@ -876,7 +876,7 @@
         let cate_index = 0;
         for(let i = 0; tr_list[i]; i++){
             if(tr_list[i].className.indexOf('cate') >= 0) cate_index = i;
-            if(tr_list[i].innerHTML.toLowerCase().indexOf(str) >=0 ) {
+            if(tr_list[i].innerHTML.toLowerCase().indexOf(str_lo) >=0 ) {
                 tr_list[cate_index].style.display = "table-row";
                 tr_list[i].style.display = "table-row";
             }
