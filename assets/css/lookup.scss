@@ -1,7 +1,4 @@
 html, body{
-  background-color: #494949;
-  background: linear-gradient(180deg, #494949 4px, #f1eae3 4px, #f1eae3 100%);
-  background-repeat: no-repeat;
   padding: 0;
   margin: 0;
   font-family: sans-serif;
@@ -16,6 +13,14 @@ html, body{
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
+}
+html{ background: #494949; }
+body{
+  background: #494949;
+  background-color: #494949;
+  background-image: linear-gradient(180deg, #494949 4px, #f1eae3 4px, #f1eae3 100%);
+  background-repeat: no-repeat;
+  padding-top: 84px;
 }
 input, select, textarea{
   display: inline-block;
@@ -36,11 +41,15 @@ input, select, textarea{
   &:focus{ outline: none; }
 }
 #menu{
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 50%;
   width: 960px;
   max-width: 90%;
   text-align: center;
   margin: 0 auto;
-  transform: translateX(-10vw);
+  transform: translateX(-70%);
   padding: 20px 0 16px;
   background-color: #494949;
   border-radius: 0 0 32px 32px;
