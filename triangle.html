@@ -88,6 +88,10 @@
                 <li id="m_ro"><span class="hint ro"></span><span class="name">G</span><span class="pct"></span><span class="qty">--</span></li>
                 <li id="m_ro2"><span class="hint ro2"></span><span class="name">R</span><span class="pct"></span><span class="qty">--</span></li>
                 <li id="m_r2o3"><span class="hint r2o3"></span><span class="name">Y</span><span class="pct"></span><span class="qty">--</span></li>
+                <li style="border-bottom: none; font-weight:bold; text-align:center;">
+                    <span style="width:45%; display: inline-block;">總重: <span id="m_sum"></span></span>
+                    <span style="width:45%; display: inline-block;">建議水量: <span id="m_water"></span></span>
+                </li>
             </ul>
       </div>
     </div>
@@ -320,6 +324,7 @@
         let newM = document.createElement("li");
         newM.innerHTML = '<span class="hint remove" onclick="removeFixed(this)"></span><span class="name">'+f_name+'</span><span class="pct">--</span><span class="qty">'+f_value+'</span>';
         parent.before(newM);
+        displayData('');
     }
     function updatePercentage(){
         let totalWeight = diffWeight + fixedWeight;
@@ -328,6 +333,8 @@
         for(let i = 0; pct_list[i]; i++){
             pct_list[i].innerHTML = (Number(pct_list[i].parentNode.getElementsByClassName("qty")[0].innerHTML)*100 / totalWeight).toFixed(2);
         }
+        document.getElementById("m_sum").innerHTML = (totalWeight).toFixed(1);
+        document.getElementById("m_water").innerHTML = (totalWeight*0.8).toFixed(1);
     }
     (function(){
         updateNameValue();
