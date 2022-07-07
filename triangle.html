@@ -307,6 +307,7 @@
         switch(m_type){
             case 'ro':
                 m_name = document.getElementById('name_ro').value ? document.getElementById('name_ro').value : "G";
+                document.getElementById("m_ro").getElementsByClassName("name")[0].innerHTML = m_name;
                 document.getElementsByClassName('m_0')[1].innerHTML = m_name + ":" + document.getElementById('min_ro').value;
                 document.getElementsByClassName('m_33')[1].innerHTML = m_name + ":" + Number(Number(document.getElementById('min_ro').value) + diff33);
                 document.getElementsByClassName('m_66')[2].innerHTML = m_name + ":" + Number(Number(document.getElementById('min_ro').value) + diff66);
@@ -314,6 +315,7 @@
                 break;
             case 'ro2':
                 m_name = document.getElementById('name_ro2').value ? document.getElementById('name_ro2').value : "R";
+                document.getElementById("m_ro2").getElementsByClassName("name")[0].innerHTML = m_name;
                 document.getElementsByClassName('m_0')[0].innerHTML = m_name + ":" + document.getElementById('min_ro2').value;
                 document.getElementsByClassName('m_33')[0].innerHTML = m_name + ":" + Number(Number(document.getElementById('min_ro2').value) + diff33);
                 document.getElementsByClassName('m_66')[0].innerHTML = m_name + ":" + Number(Number(document.getElementById('min_ro2').value) + diff66);
@@ -321,6 +323,7 @@
                 break;
             case 'r2o3':
                 m_name = document.getElementById('name_r2o3').value ? document.getElementById('name_r2o3').value : "Y";
+                document.getElementById("m_r2o3").getElementsByClassName("name")[0].innerHTML = m_name;
                 document.getElementsByClassName('m_0')[2].innerHTML = m_name + ":" + document.getElementById('min_r2o3').value;
                 document.getElementsByClassName('m_33')[2].innerHTML = m_name + ":" + Number(Number(document.getElementById('min_r2o3').value) + diff33);
                 document.getElementsByClassName('m_66')[1].innerHTML = m_name + ":" + Number(Number(document.getElementById('min_r2o3').value) + diff66);
