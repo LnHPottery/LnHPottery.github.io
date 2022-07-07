@@ -226,7 +226,7 @@ input, select, textarea{
   position: fixed;
   top: 84px;
   left: 50%;
-  transform: translateX(-150%);
+  transform: translateX(-144%);
   line-height: 24px;
   border-radius: 18px;
   text-align: center;
@@ -435,6 +435,11 @@ input, select, textarea{
       left:-56px;
       top:68px;
     }
+  }
+}
+@media screen and (max-height: 1024px){
+  .triangleTest{
+    zoom:.72;
   }
 }
 @media screen and (max-width: 1024px){
