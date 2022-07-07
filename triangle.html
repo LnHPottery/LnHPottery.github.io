@@ -14,8 +14,8 @@
         <a href="/materials">Materials / 原料表</a>
     </div>
     <div class="triangleTest">
-        <div style="width:960px; text-align: left;display: inline-block; margin-right: -24px;">
-            <div class="triangle short"></div><!--
+        <div style="width:960px; text-align: left;display: inline-block; margin-right: -24px;"><!--
+            --><div class="triangle short"></div><!--
             --><div class="triangle short"></div><!--
             --><div class="triangle short"></div><!--
             --><div class="triangle short"></div><!--
@@ -62,35 +62,38 @@
         </div>
     </div><br>
     <div id="material_plate">
-        <div style="text-align: center;">*輸入材料名稱, 最小值(m) 與 最大值(M)<br>點選數字 1~10 取得不同試片之對應分量</div>
         <div id="material_list">
-            <div class="btn ro">
-                <input value="" placeholder="材料:G" id="name_ro" type="text" style="margin-right: 2px; margin-left: -8px; width: 96px; text-align:right;" onchange="updateNameValue('ro')"> | 
-                m. <input value="0" id="min_ro" type="number" style="margin-right: 12px;" onchange="updateHintValue('ro_min')">
-                M. <input value="0" id="max_ro" type="number" style="margin-right: -8px;" onchange="updateHintValue('ro_max')">
-            </div><br>
-            <div class="btn ro2">
-                <input value="" placeholder="材料:R" id="name_ro2" type="text" style="margin-right: 2px; margin-left: -8px; width: 96px; text-align:right;" onchange="updateNameValue('ro2')"> | 
-                m. <input value="0" id="min_ro2" type="number" style="margin-right: 12px;" onchange="updateHintValue('ro2_min')">
-                M. <input value="0" id="max_ro2" type="number" style="margin-right: -8px;" onchange="updateHintValue('ro2_max')">
-            </div><br>
-            <div class="btn r2o3">
-                <input value="" placeholder="材料:Y" id="name_r2o3" type="text" style="margin-right: 2px; margin-left: -8px; width: 96px; text-align:right;" onchange="updateNameValue('r2o3')"> | 
-                m. <input value="0" id="min_r2o3" type="number" style="margin-right: 12px;" onchange="updateHintValue('r2o3_min')">
-                M. <input value="0" id="max_r2o3" type="number" style="margin-right: -8px;" onchange="updateHintValue('r2o3_max')">
-            </div><br>
-            <div class="btn" style="border-left: 8px solid #494949;">
-                <input value="" placeholder="(固定分量)" id="name_fixed" type="text" style="margin-right: 2px; margin-left: -8px; width: 96px; text-align:right;"> | 
-                Qty. <input value="" id="qty_fixed" type="number" style="margin-right: 12px;"><span style="font-size: 12px;font-weight: bold;vertical-align: 1px;background: #494949;color: #f1eae3;padding: 6px 12px 4px;border-radius: 8px;cursor: pointer;" onclick="addMaterial()">新增項目</span>
+            <div id="inputPanel">
+                <div style="text-align: center;">*輸入材料名稱, 最小值(m) 與 最大值(M)<br>點選數字 1~10 取得不同試片之對應分量</div>
+                <div class="btn ro">
+                    <input value="" placeholder="材料:G" id="name_ro" type="text" style="margin-right: 2px; margin-left: -8px; width: 96px; text-align:right;" onchange="updateNameValue('ro')"> | 
+                    m. <input value="0" id="min_ro" type="number" style="margin-right: 12px;" onchange="updateHintValue('ro_min')">
+                    M. <input value="0" id="max_ro" type="number" style="margin-right: -8px;" onchange="updateHintValue('ro_max')">
+                </div><br>
+                <div class="btn ro2">
+                    <input value="" placeholder="材料:R" id="name_ro2" type="text" style="margin-right: 2px; margin-left: -8px; width: 96px; text-align:right;" onchange="updateNameValue('ro2')"> | 
+                    m. <input value="0" id="min_ro2" type="number" style="margin-right: 12px;" onchange="updateHintValue('ro2_min')">
+                    M. <input value="0" id="max_ro2" type="number" style="margin-right: -8px;" onchange="updateHintValue('ro2_max')">
+                </div><br>
+                <div class="btn r2o3">
+                    <input value="" placeholder="材料:Y" id="name_r2o3" type="text" style="margin-right: 2px; margin-left: -8px; width: 96px; text-align:right;" onchange="updateNameValue('r2o3')"> | 
+                    m. <input value="0" id="min_r2o3" type="number" style="margin-right: 12px;" onchange="updateHintValue('r2o3_min')">
+                    M. <input value="0" id="max_r2o3" type="number" style="margin-right: -8px;" onchange="updateHintValue('r2o3_max')">
+                </div><br>
+                <div class="btn" style="border-left: 8px solid #494949;">
+                    <input value="" placeholder="(固定分量)" id="name_fixed" type="text" style="margin-right: 2px; margin-left: -8px; width: 96px; text-align:right;"> | 
+                    Qty. <input value="" id="qty_fixed" type="number" style="margin-right: 12px;"><span style="font-size: 12px;font-weight: bold;vertical-align: 1px;background: #494949;color: #f1eae3;padding: 6px 12px 4px;border-radius: 8px;cursor: pointer;" onclick="addMaterial()">新增項目</span>
+                </div>
+                <span style="display:block; width:90%; height:2px; border-top: 2px solid; margin:8px auto;"></span>
             </div>
-            <span style="display:block; width:90%; height:2px; border-top: 2px solid; margin:8px auto;"></span>
             <ul>
                 <li id="m_ro"><span class="hint ro"></span><span class="name">G</span><span class="pct"></span><span class="qty">--</span></li>
                 <li id="m_ro2"><span class="hint ro2"></span><span class="name">R</span><span class="pct"></span><span class="qty">--</span></li>
                 <li id="m_r2o3"><span class="hint r2o3"></span><span class="name">Y</span><span class="pct"></span><span class="qty">--</span></li>
                 <li style="border-bottom: none; font-weight:bold; text-align:center;">
-                    <span style="width:45%; display: inline-block;">總重: <span id="m_sum"></span></span>
-                    <span style="width:45%; display: inline-block;">建議水量: <span id="m_water"></span></span>
+                    <span id="m_pt" style="width: 16%; height: 32px; background-color: #e75d60; display: inline-block; border-radius: 16px;line-height: 32px; color: #f1eae3">#</span>
+                    <span style="width:40%; display: inline-block;">總重: <span id="m_sum">--</span></span>
+                    <span style="width:40%; display: inline-block;">建議水量: <span id="m_water">--</span></span>
                 </li>
             </ul>
       </div>
@@ -103,6 +106,7 @@
     function displayData(pt){
         selectedPt = (selectedPt == pt) ? '':pt;
         if(!selectedPt || pt.length == 0) {
+            document.getElementById("inputPanel").style = "display: inline-block";
             for(let i = 0; document.getElementsByClassName('m_0')[i]; i++){
                 document.getElementsByClassName('m_0')[i].style = "display: inline-block";
                 document.getElementsByClassName('m_33')[i].style = "display: inline-block";
@@ -113,12 +117,16 @@
                 document.getElementsByClassName('r'+(i+1))[0].style.color = "#494949";
                 document.getElementsByClassName('r'+(i+1))[0].style.background = "#f1eae3";
             }
+            document.getElementById("m_pt").innerHTML = "#";
+            document.getElementById("m_sum").innerHTML = "--";
+            document.getElementById("m_water").innerHTML = "--";
             document.getElementById("m_ro").getElementsByClassName("qty")[0].innerHTML = "--";
             document.getElementById("m_ro2").getElementsByClassName("qty")[0].innerHTML = "--";
             document.getElementById("m_r2o3").getElementsByClassName("qty")[0].innerHTML = "--";
             for(let i = 0; document.getElementsByClassName('pct')[i]; i++) document.getElementsByClassName('pct')[i].innerHTML = "--";
             return false;
         }
+        if(Number(fixedWeight + diffWeight) > 0) document.getElementById("inputPanel").style = "display: none";
         for(let i = 0; document.getElementsByClassName('m_0')[i]; i++){
             document.getElementsByClassName('m_0')[i].style = "display: none";
             document.getElementsByClassName('m_33')[i].style = "display: none";
@@ -131,6 +139,7 @@
         }
         switch(pt){
             case 'r1':
+                document.getElementById("m_pt").innerHTML = "# 1";
                 document.getElementsByClassName('m_0')[0].style = "display: inline-block";
                 document.getElementsByClassName('m_0')[1].style = "display: inline-block";
                 document.getElementsByClassName('m_100')[0].style = "display: inline-block";
@@ -141,6 +150,7 @@
                 document.getElementById("m_r2o3").getElementsByClassName("qty")[0].innerHTML = Number(Number(document.getElementById('min_r2o3').value) + diffValue);
                 break;
             case 'r2':
+                document.getElementById("m_pt").innerHTML = "# 2";
                 document.getElementsByClassName('m_33')[0].style = "display: inline-block";
                 document.getElementsByClassName('m_0')[1].style = "display: inline-block";
                 document.getElementsByClassName('m_66')[1].style = "display: inline-block";
@@ -151,6 +161,7 @@
                 document.getElementById("m_r2o3").getElementsByClassName("qty")[0].innerHTML = Number(Number(document.getElementById('min_r2o3').value) + diff66);
                 break;
             case 'r3':
+                document.getElementById("m_pt").innerHTML = "# 3";
                 document.getElementsByClassName('m_0')[0].style = "display: inline-block";
                 document.getElementsByClassName('m_33')[1].style = "display: inline-block";
                 document.getElementsByClassName('m_66')[1].style = "display: inline-block";
@@ -161,6 +172,7 @@
                 document.getElementById("m_r2o3").getElementsByClassName("qty")[0].innerHTML = Number(Number(document.getElementById('min_r2o3').value) + diff66);
                 break;
             case 'r4':
+                document.getElementById("m_pt").innerHTML = "# 4";
                 document.getElementsByClassName('m_0')[1].style = "display: inline-block";
                 document.getElementsByClassName('m_33')[2].style = "display: inline-block";
                 document.getElementsByClassName('m_66')[0].style = "display: inline-block";
@@ -171,6 +183,7 @@
                 document.getElementById("m_r2o3").getElementsByClassName("qty")[0].innerHTML = Number(Number(document.getElementById('min_r2o3').value) + diff33);
                 break;
             case 'r5':
+                document.getElementById("m_pt").innerHTML = "# 5";
                 document.getElementsByClassName('m_33')[0].style = "display: inline-block";
                 document.getElementsByClassName('m_33')[1].style = "display: inline-block";
                 document.getElementsByClassName('m_33')[2].style = "display: inline-block";
@@ -181,6 +194,7 @@
                 document.getElementById("m_r2o3").getElementsByClassName("qty")[0].innerHTML = Number(Number(document.getElementById('min_r2o3').value) + diff33);
                 break;
             case 'r6':
+                document.getElementById("m_pt").innerHTML = "# 6";
                 document.getElementsByClassName('m_0')[0].style = "display: inline-block";
                 document.getElementsByClassName('m_66')[2].style = "display: inline-block";
                 document.getElementsByClassName('m_33')[2].style = "display: inline-block";
@@ -191,6 +205,7 @@
                 document.getElementById("m_r2o3").getElementsByClassName("qty")[0].innerHTML = Number(Number(document.getElementById('min_r2o3').value) + diff33);
                 break;
             case 'r7':
+                document.getElementById("m_pt").innerHTML = "# 7";
                 document.getElementsByClassName('m_0')[1].style = "display: inline-block";
                 document.getElementsByClassName('m_0')[2].style = "display: inline-block";
                 document.getElementsByClassName('m_100')[1].style = "display: inline-block";
@@ -201,6 +216,7 @@
                 document.getElementById("m_r2o3").getElementsByClassName("qty")[0].innerHTML = document.getElementById('min_r2o3').value;
                 break;
             case 'r8':
+                document.getElementById("m_pt").innerHTML = "# 8";
                 document.getElementsByClassName('m_0')[2].style = "display: inline-block";
                 document.getElementsByClassName('m_33')[1].style = "display: inline-block";
                 document.getElementsByClassName('m_66')[0].style = "display: inline-block";
@@ -211,6 +227,7 @@
                 document.getElementById("m_r2o3").getElementsByClassName("qty")[0].innerHTML = document.getElementById('min_r2o3').value;
                 break;
             case 'r9':
+                document.getElementById("m_pt").innerHTML = "# 9";
                 document.getElementsByClassName('m_0')[2].style = "display: inline-block";
                 document.getElementsByClassName('m_33')[0].style = "display: inline-block";
                 document.getElementsByClassName('m_66')[2].style = "display: inline-block";
@@ -221,6 +238,7 @@
                 document.getElementById("m_r2o3").getElementsByClassName("qty")[0].innerHTML = document.getElementById('min_r2o3').value;
                 break;
             case 'r10':
+                document.getElementById("m_pt").innerHTML = "#10";
                 document.getElementsByClassName('m_0')[0].style = "display: inline-block";
                 document.getElementsByClassName('m_0')[2].style = "display: inline-block";
                 document.getElementsByClassName('m_100')[2].style = "display: inline-block";
