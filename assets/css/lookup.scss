@@ -24,6 +24,7 @@ body{
   border: 4px solid #494949;
   border-radius: 12px;
   height: 100vh;
+  overflow-x: hidden;
 }
 input, select, textarea{
   display: inline-block;
