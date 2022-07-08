@@ -217,7 +217,8 @@ input, select, textarea{
 .triangleTest{
   position: fixed;
   right: 0;
-  bottom: 48px;
+  bottom: 50%;
+  transform: translateY(50%);
   margin: 0 auto; 
   max-width: 1080px;
   text-align: center;
@@ -453,7 +454,7 @@ input, select, textarea{
   .triangleTest{
     position: relative;
     right: -5%;
-    transform: translateX(0);
+    transform: translateY(0);
     top: 0;
     bottom: auto;
     zoom:.8;

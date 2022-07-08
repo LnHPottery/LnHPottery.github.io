@@ -86,6 +86,8 @@
                 </div>
                 <span style="display:block; width:90%; height:2px; border-top: 2px solid; margin:8px auto;"></span>
             </div>
+            <input id="name_recipe" value="" type="text" placeholder="配方名稱" style="width: 90%; margin-bottom:8px" />
+            <span style="margin-left: -104px;font-size: 12px;font-weight: bold;vertical-align: 1px;background: #494949;color: #f1eae3;padding: 6px 12px 4px;border-radius: 8px;cursor: pointer;" onclick="saveRecipe()">儲存測試配方</span>
             <ul>
                 <li id="m_ro"><span class="hint ro"></span><span class="name">G</span><span class="pct"></span><span class="qty">--</span></li>
                 <li id="m_ro2"><span class="hint ro2"></span><span class="name">R</span><span class="pct"></span><span class="qty">--</span></li>
@@ -103,6 +105,12 @@
 <script src="assets/js/tohome.js"></script>
 <script>    
     var diffValue = 0, diff33 = 0, diff66 = 0, selectedPt = '', fixedWeight = 0, diffWeight = 0;
+    var recipe_obj = {
+        fixed:[ {name:"霞石正長石", qty:36}, {name:"石英", qty:32}],
+        ro:{name:"鍛燒滑石", min:20, max:26},
+        ro2:{name:"鍛燒氧化鋅", min:4, max:10},
+        r2o3:{name:"氧化銅", min:2, max:8}
+    };
     function displayData(pt){
         selectedPt = (selectedPt == pt) ? '':pt;
         if(!selectedPt || pt.length == 0) {
@@ -253,6 +261,10 @@
     }
     function updateHintValue(m_type){
         switch(m_type){
+            case '':
+                console.log("!!!!!!!!!!!!!!!!!!!!!!");
+                diffValue = document.getElementById('max_ro').value - document.getElementById('min_ro').value;
+                break;
             case 'ro_max':
                 diffValue = document.getElementById('max_ro').value - document.getElementById('min_ro').value;
                 document.getElementById('max_ro2').value = Number(document.getElementById('min_ro2').value) + diffValue;
@@ -358,7 +370,38 @@
         document.getElementById("m_water").innerHTML = (totalWeight*0.8).toFixed(1);
     }
     (function(){
-        updateNameValue();
+        if(JSON.stringify(recipe_obj).length > 0){
+            diffValue = 0, diff33 = 0, diff66 = 0, selectedPt = '', fixedWeight = 0, diffWeight = 0;
+            /* recipe_obj = {
+                fixed:[ {name:"霞石正長石", qty:36}, {name:"石英", qty:32}],
+                ro:{name:"鍛燒滑石", min:20, max:26},
+                ro2:{name:"鍛燒氧化鋅", min:4, max:10},
+                r2o3:{name:"氧化銅", min:2, max:8}
+            } */
+            for(let i = 0; recipe_obj.fixed[i]; i++){
+                let f_name = recipe_obj.fixed[i].name;
+                let f_value = recipe_obj.fixed[i].qty;
+                fixedWeight += Number(f_value);
+                let parent = document.getElementById("m_ro");
+                let newM = document.createElement("li");
+                newM.innerHTML = '<span class="hint remove" onclick="removeFixed(this)"></span><span class="name">'+f_name+'</span><span class="pct">--</span><span class="qty">'+f_value+'</span>';
+                parent.before(newM);
+            }
+            document.getElementById("name_ro").value = recipe_obj.ro.name;
+            document.getElementById("name_ro2").value = recipe_obj.ro2.name;
+            document.getElementById("name_r2o3").value = recipe_obj.r2o3.name;
+
+            document.getElementById("min_ro").value = recipe_obj.ro.min;
+            document.getElementById("min_ro2").value = recipe_obj.ro2.min;
+            document.getElementById("min_r2o3").value = recipe_obj.r2o3.min;
+
+            document.getElementById("max_ro").value = recipe_obj.ro.max;
+            document.getElementById("max_ro2").value = recipe_obj.ro2.max;
+            document.getElementById("max_r2o3").value = recipe_obj.r2o3.max;
+
+            updateHintValue('');
+        }
+        else updateNameValue();
     })();
 </script>
 </html>
