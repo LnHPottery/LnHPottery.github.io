@@ -1,0 +1,1224 @@
+{
+  "Pinot Noir": {
+    "Color": "Black",
+    "Climate": [
+      "Cool",
+      "Moderate"
+    ],
+    "Acidity": [
+      "High"
+    ],
+    "Tannins": [
+      "Low",
+      "Medium"
+    ],
+    "Sweetness": "",
+    "Body": "",
+    "Flavour": [
+      "Red fruit: strawberry, raspberry, red cherry"
+    ],
+    "Oak": "Careful use of oak",
+    "Characteristics": [
+      "Thin skin",
+      "Typically single varietal",
+      "Used to make sparkling wines"
+    ],
+    "Aging": [
+      "Mushroom",
+      "Forest floor"
+    ],
+    "Countries_and_Regions": {
+      "Australia": [
+        {"region": ["Southeastern Australia", "Mornington Peninsula"], "characteristics": "light and fragrant to riper with cooked-red-fruit flavours (red plum, strawberry) and medium tannins"},
+        {"region": ["Southeastern Australia", "Yarra Valley"], "characteristics": "light and fragrant to riper with cooked-red-fruit flavours (red plum, strawberry) and medium tannins"}
+      ],
+      "Chile": [
+        {"region": ["Casablanca Valley"], "characteristics": "flavours of cooked strawberries"}
+      ],
+      "France": [
+        {"region": ["Burgundy"], "characteristics": ""},
+        {"region": ["Burgundy", "Côte d'Or", "Côte de Beaune", "Beaune"], "characteristics": "more flavour intensity, complexity and length"},
+        {"region": ["Burgundy", "Côte d'Or", "Côte de Beaune", "Pommard"], "characteristics": "more flavour intensity, complexity and length"},
+        {"region": ["Burgundy", "Côte d'Or", "Côte de Nuits", "Gevrey-Chambertin"], "characteristics": "more flavour intensity, complexity and length"},
+        {"region": ["Burgundy", "Côte d'Or", "Côte de Nuits", "Nuits-Saint-Georges"], "characteristics": "more flavour intensity, complexity and length"}
+      ],
+      "New Zealand": [
+        {"region": ["North Island", "Martinborough"], "characteristics": ""},
+        {"region": ["South Island", "Central Otago"], "characteristics": "ripest and most powerfully flavoured Pinot Noir in NZ; pronounced fruit flavours (strawberry, red cherry), medium to full body and medium tannins; often oaked and needs aging"},
+        {"region": ["South Island", "Marlborough"], "characteristics": ""}
+      ],
+      "South Africa": [
+        {"region": ["Western Cape", "Walker Bay"], "characteristics": "vibrant red fruit"}
+      ],
+      "USA": [
+        {"region": ["California", "Central Coast", "Santa Barbara County"], "characteristics": "ripe red-fruit flavours (strawberry, red cherry), notable flavours from oak (vanilla)"},
+        {"region": ["California", "Northern California", "Carneros"], "characteristics": "ripe red-fruit flavours (strawberry, red cherry), notable flavours from oak (vanilla)"},
+        {"region": ["California", "Northern California", "Sonoma"], "characteristics": "ripe red-fruit flavours (strawberry, red cherry), notable flavours from oak (vanilla)"},
+        {"region": ["Oregon"], "characteristics": "complex, fresh, red fruit flavours, subtle oak flavours (smoke, cloves)"}
+      ]
+    }
+  },
+  "Zinfandel / Primitivo": {
+    "Color": "Black",
+    "Climate": [
+      "Warm"
+    ],
+    "Acidity": [
+      "Medium",
+      "High"
+    ],
+    "Tannins": [
+      "Medium",
+      "High"
+    ],
+    "Sweetness": "",
+    "Body": "",
+    "Flavour": [
+      "Red fruits (strawberries, raspberries)",
+      "Black fruits (plums, black cherries)"
+    ],
+    "Oak": "Red wines often oaked",
+    "Characteristics": [
+      "High sugar levels",
+      "Ripens unevenly",
+      "Rose and red wines"
+    ],
+    "Aging": [
+      "Earth",
+      "Meat"
+    ],
+    "Countries_and_Regions": {
+      "Italy": [
+        {"region": ["Puglia"], "characteristics": "soft, fruity, dry"}
+      ],
+      "USA": [
+        {"region": ["California"], "characteristics": "medium-sweet rosé (White Zinfandel); red: pronounced aromas of black fruit (blackberry, black plum), dried fruit (raisin, prune) and oak (vanilla, coffee)"}
+      ]
+    }
+  },
+  "Riesling": {
+    "Color": "White",
+    "Climate": [
+      "Cool",
+      "Moderate"
+    ],
+    "Acidity": [
+      "High"
+    ],
+    "Tannins": "",
+    "Sweetness": [
+      "Dry",
+      "Off-dry",
+      "Medium",
+      "Sweet"
+    ],
+    "Body": [
+      "Light",
+      "Medium",
+      "Full"
+    ],
+    "Flavour": [
+      "Just ripe: green fruit (apple, pear), citrus (lemon, lime) and floral (blossom)",
+      "Extra ripe: stone fruit (peach, apricot), tropical fruit (mango, pineapple) and dried fruit (apricot)"
+    ],
+    "Oak": "Unoaked",
+    "Characteristics": [
+      "Susceptible to botrytus/noble rot",
+      "Aromatic variety",
+      "Many harvest options"
+    ],
+    "Aging": [
+      "Honey",
+      "Petrol"
+    ],
+    "Countries_and_Regions": {
+      "Australia": [
+        {"region": ["South Australia", "Clare Valley"], "characteristics": "dry, pronounced aromas of lime, peach, blossom and petrol"},
+        {"region": ["South Australia", "Eden Valley"], "characteristics": "dry, pronounced aromas of lime, peach, blossom and petrol"}
+      ],
+      "France": [
+        {"region": ["Alsace", "Alsace"], "characteristics": "dry, pronounced aromas and flavours (ripe citrus and stone fruit); medium body, high acidity"}
+      ],
+      "Germany": [
+        {"region": ["Mosel"], "characteristics": "lighter in body; medium sweetness to balance very high acidity"},
+        {"region": ["Pfalz"], "characteristics": "dry, medium-bodied"},
+        {"region": ["Rheingau"], "characteristics": "drier and more body than Mosel"}
+      ]
+    }
+  },
+  "Chenin blanc": {
+    "Color": "White",
+    "Climate": [
+      "Cool",
+      "Moderate",
+      "Warm"
+    ],
+    "Acidity": [
+      "High"
+    ],
+    "Tannins": "",
+    "Sweetness": [
+      "Dry",
+      "Off-dry",
+      "Medium",
+      "Sweet"
+    ],
+    "Body": "",
+    "Flavour": [
+      "Just ripe: green fruit (apple) and citrus (lemon)",
+      "Extra ripe: stone fruit (peach) and tropical fruit (pineapple, mango)"
+    ],
+    "Oak": "Oaked or unoaked",
+    "Characteristics": [
+      "Versatile: climates",
+      "Susceptible to botrytis/noble rot",
+      "Many harvest options"
+    ],
+    "Aging": [
+      "Dried fruit",
+      "Honey",
+      "Nuts"
+    ],
+    "Countries_and_Regions": {
+      "France": [
+        {"region": ["Loire Valley", "Vouvray"], "characteristics": "dry: fresh apple flavours, off-dry, medium labelled Demi-Sec; sweeter made from extra-ripe or botrytis-affected grapes with stone fruit or tropical fruit aromas; unoaked"}
+      ],
+      "South Africa": [
+        {"region": ["Western Cape", "Walker Bay"], "characteristics": ""}
+      ]
+    }
+  },
+  "Sémillon / semillon": {
+    "Color": "White",
+    "Climate": [
+      "Moderate",
+      "Warm"
+    ],
+    "Acidity": [
+      "Medium",
+      "High"
+    ],
+    "Tannins": "",
+    "Sweetness": [
+      "Dry",
+      "Off-dry",
+      "Medium",
+      "Sweet"
+    ],
+    "Body": [
+      "Light",
+      "Medium",
+      "Full"
+    ],
+    "Flavour": [
+      "Young: apple, lemon, grass",
+      "Developed: honey, nuts, raisins"
+    ],
+    "Oak": "Oaked or unoaked",
+    "Characteristics": [
+      "Susceptible to botrytis/noble rot",
+      "Many harvest options",
+      "Sometimes blended (sauvignon blanc)"
+    ],
+    "Aging": [
+      "Can age"
+    ],
+    "Countries_and_Regions": {
+      "Australia": [
+        {"region": ["South Australia", "Barossa Valley"], "characteristics": ""},
+        {"region": ["Southeastern Australia", "Hunter Valley"], "characteristics": "dry, single-varietal, light body, light alcohol"}
+      ],
+      "France": [
+        {"region": ["Bordeaux"], "characteristics": "commonly blended with Sauvingon Blanc"},
+        {"region": ["Bordeaux", "Left Bank", "Graves", "Sauternes"], "characteristics": "sweet wines made from grapes affected by botrytis"}
+      ]
+    }
+  },
+  "Furmint": {
+    "Color": "White",
+    "Climate": [
+      "Moderate"
+    ],
+    "Acidity": [
+      "High"
+    ],
+    "Tannins": "",
+    "Sweetness": [
+      "Dry",
+      "Off-dry",
+      "Medium",
+      "Sweet"
+    ],
+    "Body": "",
+    "Flavour": [],
+    "Oak": "Oaked or unoaked",
+    "Characteristics": [
+      "Susceptible to botrytis/noble rot"
+    ],
+    "Aging": [
+      "Dried fruit",
+      "Caramel",
+      "Nuts"
+    ],
+    "Countries_and_Regions": {
+      "Hungary": [
+        {"region": ["Tokaj"], "characteristics": "Tokaji Aszú: sweet from grapes affected by botrytis"}
+      ]
+    }
+  },
+  "Chardonnay": {
+    "Color": "White",
+    "Climate": [
+      "Cool",
+      "Moderate",
+      "Warm"
+    ],
+    "Acidity": [
+      "Medium",
+      "High"
+    ],
+    "Tannins": "",
+    "Sweetness": "",
+    "Body": [
+      "Light",
+      "Medium",
+      "Full"
+    ],
+    "Flavour": [
+      "Cool: green fruit (apple, pear), citrus (lemon, lime) and wet stones",
+      "Moderate: lemon, stone fruits (peach) and sometimes tropical fruit (melon)",
+      "Warm: stone fruit (peach), tropical fruit (pineapple, banana)"
+    ],
+    "Oak": "Oaked or unoaked",
+    "Characteristics": [
+      "Versatile: range of climats",
+      "Range of winemaking techniques",
+      "Used to make sparkling wines"
+    ],
+    "Aging": [
+      "Hazelnut",
+      "Mushroom"
+    ],
+    "Countries_and_Regions": {
+      "Australia": [
+        {"region": ["South Australia", "Adelaide Hills"], "characteristics": "medium, high acidity; carefully balanced with oak"},
+        {"region": ["Southeastern Australia"], "characteristics": ""},
+        {"region": ["Southeastern Australia", "Yarra Valley"], "characteristics": "medium, high acidity; carefully balanced with oak"},
+        {"region": ["Western Australia", "Margaret River"], "characteristics": "medium to full body, ripe stone fruit (peach) and tropical fruit flavours (pineapple)"}
+      ],
+      "Chile": [
+        {"region": ["Casablanca Valley"], "characteristics": ""},
+        {"region": ["Central Valley"], "characteristics": ""}
+      ],
+      "France": [
+        {"region": ["Burgundy"], "characteristics": "simple, apple and lemon, high acidity"},
+        {"region": ["Burgundy", "Chablis"], "characteristics": "dry, high acidity, flavours: apple, lemon, wet stones; unoaked"},
+        {"region": ["Burgundy", "Côte d'Or", "Côte de Beaune", "Meursault"], "characteristics": "oak or aging on lees is common"},
+        {"region": ["Burgundy", "Côte d'Or", "Côte de Beaune", "Puligny-Montrachet"], "characteristics": "oak or aging on lees is common"},
+        {"region": ["Burgundy", "Mâconnais", "Mâcon"], "characteristics": "fruity, unoaked"},
+        {"region": ["Burgundy", "Mâconnais", "Pouilly-Fuissé"], "characteristics": "concentrated, often oaked"},
+        {"region": ["South of France"], "characteristics": ""}
+      ],
+      "New Zealand": [
+        {"region": ["New Zealand", "North Island", "Hawke's Bay"], "characteristics": "full body; pronounced stone fruit flavours"},
+        {"region": ["South Island", "Marlborough"], "characteristics": "ripe lemon, peach, melon; high acidity, subtle oak"}
+      ],
+      "South Africa": [
+        {"region": ["Western Cape"], "characteristics": ""},
+        {"region": ["Western Cape", "Walker Bay"], "characteristics": "high acidity, ripe stone fruit, tropical fruit and oak"}
+      ],
+      "USA": [
+        {"region": ["California", "Central Coast", "Santa Barbara County"], "characteristics": "tropical fruit flavours, high alcohol, flavours from new oak"},
+        {"region": ["California", "Northern California", "Carneros"], "characteristics": ""},
+        {"region": ["California", "Northern California", "Napa Valley"], "characteristics": "full-bodied, pronounced tropical-fruit flavours; vanilla from new oak"},
+        {"region": ["California", "Northern California", "Sonoma"], "characteristics": ""},
+        {"region": ["Oregon"], "characteristics": "high acidity"}
+      ]
+    }
+  },
+  "Sauvignon blanc": {
+    "Color": "White",
+    "Climate": [
+      "Cool",
+      "Moderate"
+    ],
+    "Acidity": [
+      "High"
+    ],
+    "Tannins": "",
+    "Sweetness": [
+      "Dry"
+    ],
+    "Body": [
+      "Light",
+      "Medium"
+    ],
+    "Flavour": [
+      "Herbaceous, floral (grass, green bell pepper, asparagus)",
+      "Just ripe: green fruits (apple, gooseberry), wet stones",
+      "Ripe: tropical fruit (passion fruit)"
+    ],
+    "Oak": "Typically unoaked",
+    "Characteristics": [
+      "Aromatic variety",
+      "Typically single varietal",
+      "Sometimes blended with sémillon/semillon"
+    ],
+    "Aging": [
+      "For early drinking"
+    ],
+    "Countries_and_Regions": {
+      "Australia": [
+        {"region": ["South Australia", "Adelaide Hills"], "characteristics": "fresh and fruity, sometimes blended with Semillon"},
+        {"region": ["Western Australia", "Margaret River"], "characteristics": "concentrated herbaceous aromas (grass); , sometimes blended with Semillon; some matured in oak"}
+      ],
+      "Chile": [
+        {"region": ["Casablanca Valley"], "characteristics": ""},
+        {"region": ["Central Valley"], "characteristics": ""}
+      ],
+      "France": [
+        {"region": ["Bordeaux", "Left Bank", "Graves"], "characteristics": "more concentrated and complex; blends with Sémillon; often matured in oak"},
+        {"region": ["Bordeaux", "Left Bank", "Graves", "Pessac-Léognan"], "characteristics": "more concentrated and complex; blends with Sémillon; often matured in oak"},
+        {"region": ["Loire Valley", "Pouilly–Fumé"], "characteristics": "dry, high acidity, green fruit (apple), herbaceous notes (asparagus, grass), sometimes wet stones"},
+        {"region": ["Loire Valley", "Sancerre"], "characteristics": "dry, high acidity, green fruit (apple), herbaceous notes (asparagus, grass), sometimes wet stones"},
+        {"region": ["Loire Valley", "Touraine"], "characteristics": "fruity, inexpensive"},
+        {"region": ["South of France"], "characteristics": "dry, high acidity, tropical fruit flavours (passion fruit) and herbaceous notes (grass)"}
+      ],
+      "New Zealand": [
+        {"region": ["South Island", "Marlborough"], "characteristics": "all styles, experimental approach"}
+      ],
+      "South Africa": [
+        {"region": ["Western Cape", "Constantia"], "characteristics": "refreshing with ripe-tropical-fruit and herbaceous aromas"},
+        {"region": ["Western Cape", "Elgin"], "characteristics": "green fruit flavours (apple) and sometimes wet stones"}
+      ],
+      "USA": [
+        {"region": ["California", "Northern California", "Napa Valley"], "characteristics": "oak to add body and flavour (smoke)"}
+      ]
+    }
+  },
+  "Pinot grigio / Pinot gris": {
+    "Color": "Rose",
+    "Climate": [
+      "Cool",
+      "Moderate"
+    ],
+    "Acidity": [
+      "High",
+      "Medium"
+    ],
+    "Tannins": "",
+    "Sweetness": [
+      "Dry",
+      "Off-dry",
+      "Medium"
+    ],
+    "Body": [
+      "Light",
+      "Full"
+    ],
+    "Flavour": [
+      "Green apple",
+      "Lemon",
+      "Stone fruit (peach)",
+      "Tropical fruit (mango, banana)"
+    ],
+    "Oak": "Typically unoaked",
+    "Characteristics": [
+      "Simple",
+      "Complex"
+    ],
+    "Aging": [
+      "For early drinking",
+      "Honey",
+      "Ginger"
+    ],
+    "Countries_and_Regions": {
+      "Italy": [
+        {"region": ["Friuli-Venezia Giulia"], "characteristics": "more complex, fuller-body"},
+        {"region": ["Veneto", "Veneto"], "characteristics": "short finish, acceptable to good quality"},
+        {"region": ["Veneto", "delle Venezie"], "characteristics": "short finish, acceptable to good quality"}
+      ],
+      "France": [
+        {"region": ["Alsace", "Alsace"], "characteristics": "extra-ripe, medium acidity, medium to full body, pronounced flavour"}
+      ]
+    }
+  },
+  "Gewurztraminer": {
+    "Color": "Rose",
+    "Climate": [
+      "Cool",
+      "Moderate"
+    ],
+    "Acidity": [
+      "Low",
+      "Medium"
+    ],
+    "Tannins": "",
+    "Sweetness": [
+      "Dry",
+      "Off-dry",
+      "Medium",
+      "Sweet"
+    ],
+    "Body": [
+      "Full"
+    ],
+    "Flavour": [
+      "Floral (rose)",
+      "Stone fruit (peach, apricot)",
+      "Tropical fruit (lychee)"
+    ],
+    "Oak": "Typically unoaked",
+    "Characteristics": [
+      "Aromatic variety"
+    ],
+    "Aging": [
+      "Honey",
+      "Dried fruit"
+    ],
+    "Countries_and_Regions": {
+      "France": [
+        {"region": ["Alsace", "Alsace"], "characteristics": ""}
+      ]
+    }
+  },
+  "Viognier": {
+    "Color": "White",
+    "Climate": [
+      "Moderate"
+    ],
+    "Acidity": [
+      "Low",
+      "Medium"
+    ],
+    "Tannins": "",
+    "Sweetness": [
+      "Dry"
+    ],
+    "Body": [
+      "Medium",
+      "Full"
+    ],
+    "Flavour": [
+      "Floral (blossom)",
+      "Stone fruit (peach, apricot)"
+    ],
+    "Oak": "Oaked or unoaked",
+    "Characteristics": [
+      "Single varietal or blended"
+    ],
+    "Aging": [],
+    "Countries_and_Regions": {
+      "France": [
+        {"region": ["Côtes du Rhône", "Northern Rhône", "Condrieu"], "characteristics": "single-varietal, ligh flavours of oak (vanilla)"}
+      ]
+    }
+  },
+  "Albariño": {
+    "Color": "White",
+    "Climate": [
+      "Moderate"
+    ],
+    "Acidity": [
+      "High"
+    ],
+    "Tannins": "",
+    "Sweetness": [
+      "Dry"
+    ],
+    "Body": [
+      "Medium"
+    ],
+    "Flavour": [
+      "Citrus (lemon, grapefruit)",
+      "Stone fruit (peach, apricot)"
+    ],
+    "Oak": "Oaked or unoaked",
+    "Characteristics": [],
+    "Aging": [
+      "For early drinking"
+    ],
+    "Countries_and_Regions": {
+      "Spain": [
+        {"region": ["Rías Baixas"], "characteristics": ""}
+      ]
+    }
+  },
+  "Cabernet sauvignon": {
+    "Color": "Black",
+    "Climate": [
+      "Moderate",
+      "Warm"
+    ],
+    "Acidity": [
+      "High"
+    ],
+    "Tannins": [
+      "High"
+    ],
+    "Sweetness": "",
+    "Body": [
+      "Medium",
+      "Full"
+    ],
+    "Flavour": [
+      "Herbaceous (green ball pepper), mint",
+      "Black fruit (blackcurrant, black cherry)"
+    ],
+    "Oak": "Oak maturation is common",
+    "Characteristics": [
+      "Single varietal or blended",
+      "Simple or complex"
+    ],
+    "Aging": [
+      "Dried fruit",
+      "Earth",
+      "Forest floor"
+    ],
+    "Countries_and_Regions": {
+      "Australia": [
+        {"region": ["South Australia", "Coonawarra"], "characteristics": "distinctive herbal (mint), black fruit and oak (smoke and cedar)"},
+        {"region": ["Western Australia", "Margaret River"], "characteristics": "ripe black-fruit aromas, subtle oak"}
+      ],
+      "Chile": [
+        {"region": ["Central Valley", "Colchagua Valley"], "characteristics": "distinctive herbal (mint) and herbaceous (green ball pepper), black fruit, oak"},
+        {"region": ["Central Valley", "Maipo Valley"], "characteristics": "distinctive herbal (mint) and herbaceous (green ball pepper), black fruit, oak"}
+      ],
+      "France": [
+        {"region": ["Bordeaux", "Left Bank", "Graves"], "characteristics": ""},
+        {"region": ["Bordeaux", "Left Bank", "Graves", "Pessac-Léognan"], "characteristics": ""},
+        {"region": ["Bordeaux", "Left Bank", "Médoc"], "characteristics": ""},
+        {"region": ["Bordeaux", "Left Bank", "Médoc", "Haut-Médoc"], "characteristics": ""},
+        {"region": ["Bordeaux", "Left Bank", "Médoc", "Haut-Médoc", "Margaux"], "characteristics": ""},
+        {"region": ["Bordeaux", "Left Bank", "Médoc", "Haut-Médoc", "Pauillac"], "characteristics": ""},
+        {"region": ["South of France"], "characteristics": ""}
+      ],
+      "New Zealand": [
+        {"region": ["New Zealand", "North Island", "Hawke's Bay"], "characteristics": ""}
+      ],
+      "South Africa": [
+        {"region": ["Western Cape", "Stellenbosch"], "characteristics": "used in Cape Blend"}
+      ],
+      "USA": [
+        {"region": ["California", "Northern California", "Napa Valley"], "characteristics": "ripest and full-bodied"},
+        {"region": ["California", "Northern California", "Napa Valley", "Calistoga"], "characteristics": "ripest and full-bodied"},
+        {"region": ["California", "Northern California", "Napa Valley", "Oakville"], "characteristics": "ripest and full-bodied"},
+        {"region": ["California", "Northern California", "Napa Valley", "Rutherford"], "characteristics": "ripest and full-bodied"},
+        {"region": ["California", "Northern California", "Sonoma"], "characteristics": "ripest and full-bodied"}
+      ]
+    }
+  },
+  "Merlot": {
+    "Color": "Black",
+    "Climate": [
+      "Moderate",
+      "Warm"
+    ],
+    "Acidity": [
+      "Medium"
+    ],
+    "Tannins": [
+      "Medium"
+    ],
+    "Sweetness": "",
+    "Body": [
+      "Light",
+      "Medium",
+      "Full"
+    ],
+    "Flavour": [
+      "Just ripe: herbaceous (green ball pepper), red fruit (strawberry, red plum)",
+      "Ripe: black fruit (cooked blackberry, black plum)"
+    ],
+    "Oak": "Oaked or unoaked",
+    "Characteristics": [
+      "Single varietal or blended",
+      "Simple or complex"
+    ],
+    "Aging": [
+      "Dried fruit",
+      "Tobacco"
+    ],
+    "Countries_and_Regions": {
+      "Australia": [
+        {"region": ["Western Australia", "Margaret River"], "characteristics": ""}
+      ],
+      "Chile": [
+        {"region": ["Central Valley"], "characteristics": "soft, medium-bodied"}
+      ],
+      "France": [
+        {"region": ["Bordeaux", "Left Bank", "Graves"], "characteristics": ""},
+        {"region": ["Bordeaux", "Left Bank", "Graves", "Pessac-Léognan"], "characteristics": ""},
+        {"region": ["Bordeaux", "Left Bank", "Médoc"], "characteristics": ""},
+        {"region": ["Bordeaux", "Left Bank", "Médoc", "Haut-Médoc"], "characteristics": ""},
+        {"region": ["Bordeaux", "Left Bank", "Médoc", "Haut-Médoc", "Margaux"], "characteristics": ""},
+        {"region": ["Bordeaux", "Left Bank", "Médoc", "Haut-Médoc", "Pauillac"], "characteristics": ""},
+        {"region": ["Bordeaux", "Right Bank", "Pomerol"], "characteristics": ""},
+        {"region": ["Bordeaux", "Right Bank", "Saint-Émilion"], "characteristics": ""},
+        {"region": ["South of France"], "characteristics": ""}
+      ],
+      "New Zealand": [
+        {"region": ["New Zealand", "North Island", "Hawke's Bay"], "characteristics": "from light and fruity to full-bodied"}
+      ],
+      "South Africa": [
+        {"region": ["Western Cape", "Stellenbosch"], "characteristics": "complex, age-worthy"}
+      ],
+      "USA": [
+        {"region": ["California"], "characteristics": "oak (vanilla, coconut, smoke)"},
+        {"region": ["California", "Northern California", "Napa Valley"], "characteristics": "oak (vanilla, coconut, smoke)"},
+        {"region": ["California", "Northern California", "Sonoma"], "characteristics": "oak (vanilla, coconut, smoke)"}
+      ]
+    }
+  },
+  "Syrah / Shiraz": {
+    "Color": "Black",
+    "Climate": [
+      "Moderate",
+      "Warm"
+    ],
+    "Acidity": [
+      "Medium",
+      "High"
+    ],
+    "Tannins": [
+      "Medium",
+      "High"
+    ],
+    "Sweetness": "",
+    "Body": [
+      "Medium",
+      "Full"
+    ],
+    "Flavour": [
+      "Black fruit (black cherry, blackberry)",
+      "Herbal",
+      "Black pepper"
+    ],
+    "Oak": "Oak maturation is common",
+    "Characteristics": [
+      "Single varietal or blended"
+    ],
+    "Aging": [
+      "Dried fruit",
+      "Leather",
+      "Meat",
+      "Earth"
+    ],
+    "Countries_and_Regions": {
+      "Australia": [
+        {"region": ["South Australia", "Barossa Valley"], "characteristics": "old vines, concentrated fruits, full-bodied, high, ripe tannins, cooked-black-fruit flavours (blackberry, black cherry), black peppery, oak (vanilla, coffee)"},
+        {"region": ["Southeastern Australia"], "characteristics": ""},
+        {"region": ["Southeastern Australia", "Hunter Valley"], "characteristics": "medium-bodied, medium to high tannins, fresh-black-fruit flavours"}
+      ],
+      "France": [
+        {"region": ["Côtes du Rhône", "Northern Rhône"], "characteristics": ""},
+        {"region": ["Côtes du Rhône", "Northern Rhône", "Crozes-Hermitage"], "characteristics": "less intense, cheaper"},
+        {"region": ["Côtes du Rhône", "Northern Rhône", "Côte-Rotie"], "characteristics": "complex and peppery, sometimes small amounts of Viognier"},
+        {"region": ["Côtes du Rhône", "Northern Rhône", "Hermitage"], "characteristics": ""},
+        {"region": ["South of France", "Minervois AOC"], "characteristics": "blended"},
+        {"region": ["South of France", "Pays d'Oc IGP"], "characteristics": "single-varietal"}
+      ]
+    }
+  },
+  "Gamay": {
+    "Color": "Black",
+    "Climate": [
+      "Moderate"
+    ],
+    "Acidity": [
+      "High"
+    ],
+    "Tannins": [
+      "Low",
+      "Medium"
+    ],
+    "Sweetness": "",
+    "Body": [
+      "Light"
+    ],
+    "Flavour": [
+      "Red fruit: raspberry, red cherry, red plum"
+    ],
+    "Oak": "Typically unoaked",
+    "Characteristics": [
+      "Carbonic maceration give aromas and flavours of banana and candy"
+    ],
+    "Aging": [
+      "For early drinking"
+    ],
+    "Countries_and_Regions": {
+      "France": [
+        {"region": ["Beaujolais"], "characteristics": ""},
+        {"region": ["Beaujolais", "Fleurie"], "characteristics": ""}
+      ]
+    }
+  },
+  "Grenache / Garnacha": {
+    "Color": "Black",
+    "Climate": [
+      "Warm"
+    ],
+    "Acidity": [
+      "Low"
+    ],
+    "Tannins": [
+      "Low",
+      "Medium"
+    ],
+    "Sweetness": "",
+    "Body": "",
+    "Flavour": [
+      "Red fruit: strawberry, red plum, red cherry",
+      "Spice: white pepper, liquorice"
+    ],
+    "Oak": "Oaked or unoaked",
+    "Characteristics": [
+      "Thin skin",
+      "High sugar levels",
+      "Often blended",
+      "Red or rosé wine"
+    ],
+    "Aging": [
+      "Earth",
+      "Meat",
+      "Dried fruit",
+      "Caramel"
+    ],
+    "Countries_and_Regions": {
+      "Australia": [
+        {"region": ["South Australia", "Barossa Valley"], "characteristics": "old vines: concentrated red-fruit and spice flavours"},
+        {"region": ["South Australia", "McLaren Vale"], "characteristics": "old vines: concentrated red-fruit and spice flavours"}
+      ],
+      "France": [
+        {"region": ["Côtes du Rhône"], "characteristics": ""},
+        {"region": ["Côtes du Rhône", "Southern Rhône", "Châteauneuf-du-Pape"], "characteristics": "full-bodied, high alcohol levels"},
+        {"region": ["South of France", "Minervois AOC"], "characteristics": "blended"}
+      ],
+      "Spain": [
+        {"region": ["Catalunya", "Priorat"], "characteristics": "old vines: the most powerful full-bodied"},
+        {"region": ["Navarra"], "characteristics": "dry rosé wines"},
+        {"region": ["Rioja"], "characteristics": ""}
+      ]
+    }
+  },
+  "Tempranillo": {
+    "Color": "Black",
+    "Climate": [
+      "Moderate",
+      "Warm"
+    ],
+    "Acidity": [
+      "Medium"
+    ],
+    "Tannins": [
+      "Medium"
+    ],
+    "Sweetness": "",
+    "Body": [
+      "Light",
+      "Medium",
+      "Full"
+    ],
+    "Flavour": [
+      "Red fruit: strawberry, raspberry, red cherry",
+      "Black fruit: blackberry, black plum"
+    ],
+    "Oak": "Oaked or unoaked",
+    "Characteristics": [
+      "Simple or complex",
+      "Blended or single varietal"
+    ],
+    "Aging": [
+      "Dried fruit",
+      "Leather",
+      "Mushroom"
+    ],
+    "Countries_and_Regions": {
+      "Spain": [
+        {"region": ["Catalunya"], "characteristics": "from simple fruity and light to powerful oak-aged"},
+        {"region": ["Ribera del Duero"], "characteristics": "full-bodied, fresh black-fruit flavours"},
+        {"region": ["Rioja"], "characteristics": "sometimes blended with Garnacha"}
+      ]
+    }
+  },
+  "Carmenère": {
+    "Color": "Black",
+    "Climate": [
+      "Warm"
+    ],
+    "Acidity": [
+      "Medium",
+      "High"
+    ],
+    "Tannins": [
+      "High"
+    ],
+    "Sweetness": "",
+    "Body": [
+      "Full"
+    ],
+    "Flavour": [
+      "Herbaceous: green ball pepper",
+      "Herbal: eucalyptus",
+      "Black fruit: blackberry"
+    ],
+    "Oak": "Often oaked",
+    "Characteristics": [
+      "Blended or single varietal"
+    ],
+    "Aging": [
+      "Leather",
+      "Earth"
+    ],
+    "Countries_and_Regions": {
+      "Chile": [
+        {"region": ["Central Valley"], "characteristics": ""}
+      ]
+    }
+  },
+  "Malbec": {
+    "Color": "Black",
+    "Climate": [
+      "Warm"
+    ],
+    "Acidity": [],
+    "Tannins": [
+      "High"
+    ],
+    "Sweetness": "",
+    "Body": [
+      "Full"
+    ],
+    "Flavour": [
+      "Black fruit: blackberry, black plum"
+    ],
+    "Oak": "Often oaked",
+    "Characteristics": [
+      "Blended or single varietal"
+    ],
+    "Aging": [
+      "Dried fruit",
+      "Meat"
+    ],
+    "Countries_and_Regions": {
+      "Argentina": [
+        {"region": ["Mendoza"], "characteristics": ""}
+      ]
+    }
+  },
+  "Pinotage": {
+    "Color": "Black",
+    "Climate": [
+      "Warm"
+    ],
+    "Acidity": [
+      "High"
+    ],
+    "Tannins": [
+      "Medium"
+    ],
+    "Sweetness": "",
+    "Body": [
+      "Medium",
+      "Full"
+    ],
+    "Flavour": [
+      "Red fruit: strawberry, raspberry, red cherry"
+    ],
+    "Oak": "Often oaked",
+    "Characteristics": [
+      "Blended or single varietal",
+      "Takes on strong flavours from oak: coffee, chocolate, smoke"
+    ],
+    "Aging": [
+      "Can age"
+    ],
+    "Countries_and_Regions": {
+      "South Africa": [
+        {"region": ["Western Cape"], "characteristics": ""}
+      ]
+    }
+  },
+  "Cortese": {
+    "Color": "White",
+    "Climate": [],
+    "Acidity": [
+      "High"
+    ],
+    "Tannins": "",
+    "Sweetness": [
+      "Dry"
+    ],
+    "Body": [
+      "Light"
+    ],
+    "Flavour": [
+      "Floral: blossom",
+      "Green fruit: apple, pear",
+      "Citrus fruit: lemon"
+    ],
+    "Oak": "Unoaked",
+    "Characteristics": [],
+    "Aging": [
+      "For early drinking"
+    ],
+    "Countries_and_Regions": {
+      "Italy": [
+        {"region": ["Piemonte", "Gavi"], "characteristics": ""}
+      ]
+    }
+  },
+  "Garganega": {
+    "Color": "White",
+    "Climate": [],
+    "Acidity": [
+      "High"
+    ],
+    "Tannins": "",
+    "Sweetness": [
+      "Dry",
+      "Sweet"
+    ],
+    "Body": [
+      "Medium"
+    ],
+    "Flavour": [
+      "Green fruit: apple, pear",
+      "Citrus fruit: lemon",
+      "Stone fruit: peach"
+    ],
+    "Oak": "Unoaked",
+    "Characteristics": [],
+    "Aging": [
+      "Honey",
+      "Almond"
+    ],
+    "Countries_and_Regions": {
+      "Italy": [
+        {"region": ["Veneto", "Recioto di Soave"], "characteristics": "sweet, appassimento"},
+        {"region": ["Veneto", "Soave"], "characteristics": ""}
+      ]
+    }
+  },
+  "Verdicchio": {
+    "Color": "White",
+    "Climate": [],
+    "Acidity": [
+      "High"
+    ],
+    "Tannins": "",
+    "Sweetness": [
+      "Dry"
+    ],
+    "Body": [
+      "Medium"
+    ],
+    "Flavour": [
+      "Green fruit: apple, pear",
+      "Citrus fruit: lemon",
+      "Herbal: fennel"
+    ],
+    "Oak": "Unoaked",
+    "Characteristics": [],
+    "Aging": [
+      "Honey",
+      "Nuts"
+    ],
+    "Countries_and_Regions": {
+      "Italy": [
+        {"region": ["Marche", "Verdicchio dei Castelli di Jesi"], "characteristics": ""}
+      ]
+    }
+  },
+  "Fiano": {
+    "Color": "White",
+    "Climate": [],
+    "Acidity": [
+      "Medium"
+    ],
+    "Tannins": "",
+    "Sweetness": [
+      "Dry"
+    ],
+    "Body": [
+      "Medium",
+      "Full"
+    ],
+    "Flavour": [
+      "Stone fruit: peach",
+      "Tropical fruit: melon, mango"
+    ],
+    "Oak": "Oaked or unoaked",
+    "Characteristics": [
+      "Can be aged on lees"
+    ],
+    "Aging": [
+      "Honey",
+      "Nuts"
+    ],
+    "Countries_and_Regions": {
+      "Italy": [
+        {"region": ["Campania", "Fiano di Avellino"], "characteristics": ""}
+      ]
+    }
+  },
+  "Nebbiolo": {
+    "Color": "Black",
+    "Climate": [],
+    "Acidity": [
+      "High"
+    ],
+    "Tannins": [
+      "High"
+    ],
+    "Sweetness": "",
+    "Body": [
+      "Full"
+    ],
+    "Flavour": [
+      "Red fruit: red cherry, red plum",
+      "Floral: rose, violet",
+      "Herbal: dried herbs"
+    ],
+    "Oak": "Oak maturation is common",
+    "Characteristics": [
+      "Typically single varietal"
+    ],
+    "Aging": [
+      "Mushroom",
+      "Tobacco",
+      "Leather"
+    ],
+    "Countries_and_Regions": {
+      "Italy": [
+        {"region": ["Piemonte", "Barbaresco"], "characteristics": ""},
+        {"region": ["Piemonte", "Barolo"], "characteristics": ""}
+      ]
+    }
+  },
+  "Barbera": {
+    "Color": "Black",
+    "Climate": [],
+    "Acidity": [
+      "High"
+    ],
+    "Tannins": [
+      "Low",
+      "Medium"
+    ],
+    "Sweetness": "",
+    "Body": "",
+    "Flavour": [
+      "Red fruit: red cherry, red plum",
+      "Spice: black pepper"
+    ],
+    "Oak": "Oaked or unoaked",
+    "Characteristics": [
+      "Typically single varietal",
+      "Simple or complex"
+    ],
+    "Aging": [
+      "Can be for early drinking",
+      "Can age"
+    ],
+    "Countries_and_Regions": {
+      "Italy": [
+        {"region": ["Piemonte", "Barbera d'Asti"], "characteristics": ""}
+      ]
+    }
+  },
+  "Corvina": {
+    "Color": "Black",
+    "Climate": [],
+    "Acidity": [
+      "High"
+    ],
+    "Tannins": [
+      "Low",
+      "Medium"
+    ],
+    "Sweetness": "",
+    "Body": [
+      "Light",
+      "Medium",
+      "Full"
+    ],
+    "Flavour": [
+      "Red fruit: red cherry, red plum"
+    ],
+    "Oak": "Basic: usually unoaked",
+    "Characteristics": [
+      "Often blended (local varieties)",
+      "Appassimento method sometimes used"
+    ],
+    "Aging": [
+      "Can be for early drinking",
+      "Can age"
+    ],
+    "Countries_and_Regions": {
+      "Italy": [
+        {"region": ["Veneto", "Amarone della Valpolicella"], "characteristics": "partially dried fruits; dry to off-dry, high alcohol, high tannins, pronounced flavours and dried fruit (prunes, raisins, figs)"},
+        {"region": ["Veneto", "Recioto della Valpolicella"], "characteristics": "sweet from partially dried grapes"},
+        {"region": ["Veneto", "Valpolicella"], "characteristics": ""}
+      ]
+    }
+  },
+  "Sangiovese": {
+    "Color": "Black",
+    "Climate": [],
+    "Acidity": [
+      "High"
+    ],
+    "Tannins": [
+      "High"
+    ],
+    "Sweetness": "",
+    "Body": [
+      "Medium",
+      "Full"
+    ],
+    "Flavour": [
+      "Red fruit: red cherry, red plum",
+      "Herbal: dried herbs"
+    ],
+    "Oak": "Often oaked",
+    "Characteristics": [
+      "Often blended (local and international varieties)"
+    ],
+    "Aging": [
+      "Can be for early drinking",
+      "Can age"
+    ],
+    "Countries_and_Regions": {
+      "Italy": [
+        {"region": ["Tuscany", "Brunello di Montalcino"], "characteristics": "powerful, full-bodied, very high tannins - must mature in oak"},
+        {"region": ["Tuscany", "Chianti"], "characteristics": ""}
+      ]
+    }
+  },
+  "Montepulciano": {
+    "Color": "Black",
+    "Climate": [],
+    "Acidity": [
+      "Medium"
+    ],
+    "Tannins": [
+      "High"
+    ],
+    "Sweetness": "",
+    "Body": "",
+    "Flavour": [
+      "Black fruit: black plum, black cherry"
+    ],
+    "Oak": "Oaked or unoaked",
+    "Characteristics": [],
+    "Aging": [
+      "For early drinking"
+    ],
+    "Countries_and_Regions": {
+      "Italy": [
+        {"region": ["Tuscany", "Montepulciano d'Abruzzo"], "characteristics": ""}
+      ]
+    }
+  }
+}
