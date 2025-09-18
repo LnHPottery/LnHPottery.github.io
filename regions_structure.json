@@ -1,0 +1,903 @@
+{
+  "Argentina": {
+    "Mendoza": {
+
+    }
+  },
+  "Australia": {
+    "South Australia": {
+      "Adelaide Hills": {
+        "Grape": {
+          "Chardonnay": [
+            "medium",
+            "high acidity",
+            "carefully balanced with oak"
+          ],
+          "Sauvignon blanc": [
+            "fresh and fruity",
+            "sometimes blended with Semillon"
+          ]
+        }
+      },
+      "Barossa Valley": {
+        "Grape": {
+          "Grenache / Garnacha": [
+            "old vines: concentrated red-fruit and spice flavours"
+          ],
+          "Syrah / Shiraz": [
+            "old vines",
+            "concentrated fruits",
+            "full-bodied",
+            "high",
+            "ripe tannins",
+            "cooked-black-fruit flavours (blackberry, black cherry)",
+            "black peppery",
+            "oak (vanilla, coffee)"
+          ],
+          "Sémillon / semillon": []
+        }
+      },
+      "Clare Valley": {
+        "Grape": {
+          "Riesling": [
+            "dry",
+            "pronounced aromas of lime",
+            "peach",
+            "blossom and petrol"
+          ]
+        }
+      },
+      "Coonawarra": {
+        "Grape": {
+          "Cabernet sauvignon": [
+            "distinctive herbal (mint)",
+            "black fruit and oak (smoke and cedar)"
+          ]
+        }
+      },
+      "Eden Valley": {
+        "Grape": {
+          "Riesling": [
+            "dry",
+            "pronounced aromas of lime",
+            "peach",
+            "blossom and petrol"
+          ]
+        }
+      },
+      "McLaren Vale": {
+        "Grape": {
+          "Grenache / Garnacha": [
+            "old vines: concentrated red-fruit and spice flavours"
+          ]
+        }
+      }
+    },
+    "Southeastern Australia": {
+      "Grape": {
+        "Chardonnay": [],
+        "Syrah / Shiraz": []
+      },
+      "Hunter Valley": {
+        "Grape": {
+          "Syrah / Shiraz": [
+            "medium-bodied",
+            "medium to high tannins",
+            "fresh-black-fruit flavours"
+          ],
+          "Sémillon / semillon": [
+            "dry",
+            "single-varietal",
+            "light body",
+            "light alcohol"
+          ]
+        }
+      },
+      "Mornington Peninsula": {
+        "Grape": {
+          "Pinot Noir": [
+            "light and fragrant to riper with cooked-red-fruit flavours (red plum, strawberry) and medium tannins"
+          ]
+        }
+      },
+      "Yarra Valley": {
+        "Grape": {
+          "Chardonnay": [
+            "medium",
+            "high acidity",
+            "carefully balanced with oak"
+          ],
+          "Pinot Noir": [
+            "light and fragrant to riper with cooked-red-fruit flavours (red plum, strawberry) and medium tannins"
+          ]
+        }
+      }
+    },
+    "Western Australia": {
+      "Margaret River": {
+        "Grape": {
+          "Cabernet sauvignon": [
+            "ripe black-fruit aromas",
+            "subtle oak"
+          ],
+          "Chardonnay": [
+            "medium to full body",
+            "ripe stone fruit (peach) and tropical fruit flavours (pineapple)"
+          ],
+          "Merlot": [],
+          "Sauvignon blanc": [
+            "concentrated herbaceous aromas (grass)",
+            "sometimes blended with Semillon",
+            "some matured in oak"
+          ]
+        }
+      }
+    }
+  },
+  "Chile": {
+    "Casablanca Valley": {
+      "Grape": {
+        "Chardonnay": [],
+        "Pinot Noir": [
+          "flavours of cooked strawberries"
+        ],
+        "Sauvignon blanc": [],
+        "Carmenère": []
+      }
+    },
+    "Central Valley": {
+      "Grape": {
+        "Chardonnay": [],
+        "Merlot": [
+          "soft",
+          "medium-bodied"
+        ],
+        "Sauvignon blanc": []
+      },
+      "Colchagua Valley": {
+        "Grape": {
+          "Cabernet sauvignon": [
+            "distinctive herbal (mint) and herbaceous (green ball pepper)",
+            "black fruit",
+            "oak"
+          ]
+        }
+      },
+      "Maipo Valley": {
+        "Grape": {
+          "Cabernet sauvignon": [
+            "distinctive herbal (mint) and herbaceous (green ball pepper)",
+            "black fruit",
+            "oak"
+          ]
+        }
+      }
+    }
+  },
+  "France": {
+    "Alsace": {
+      "Alsace": {
+        "Grape": {
+          "Gewürztraminer": [],
+          "Pinot gris": [
+            "extra-ripe",
+            "medium acidity",
+            "medium to full body",
+            "pronounced flavour"
+          ],
+          "Riesling": [
+            "dry",
+            "pronounced aromas and flavours (ripe citrus and stone fruit)",
+            "medium body",
+            "high acidity"
+          ]
+        }
+      }
+    },
+    "Beaujolais": {
+      "Grape": {
+        "Gamay": []
+      },
+      "Fleurie": {
+        "Grape": {
+          "Gamay": []
+        }
+      }
+    },
+    "Bordeaux": {
+      "Grape": {
+        "Sémillon / semillon": [
+          "commonly blended with Sauvignon Blanc"
+        ],
+        "Cabernet sauvignon": []
+      },
+      "Left Bank": {
+        "Graves": {
+          "Grape": {
+            "Merlot": [],
+            "Sauvignon blanc": [
+              "more concentrated and complex",
+              "blends with Sémillon",
+              "often matured in oak"
+            ],
+            "Cabernet sauvignon": []
+          },
+          "Pessac-Léognan": {
+            "Merlot": [],
+            "Sauvignon blanc": [
+              "more concentrated and complex",
+              "blends with Sémillon",
+              "often matured in oak"
+            ],
+            "Cabernet sauvignon": []
+          },
+          "Sauternes": {
+            "Sémillon / semillon": [
+              "sweet wines made from grapes affected by botrytis"
+            ]
+          }
+        },
+        "Médoc": {
+          "Grape": {
+            "Cabernet sauvignon": [],
+            "Merlot": []
+          },
+          "Haut-Médoc": {
+            "Grape": {
+              "Cabernet sauvignon": [],
+              "Merlot": []
+            },
+            "Margaux": {
+              "Grape": {
+                "Cabernet sauvignon": [],
+                "Merlot": []
+              }
+            },
+            "Pauillac": {
+              "Grape": {
+                "Cabernet sauvignon": [],
+                "Merlot": []
+              }
+            }
+          }
+        }
+      },
+      "Right Bank": {
+        "Pomerol": {
+          "Grape": {
+            "Merlot": []
+          }
+        },
+        "Saint-Émilion": {
+          "Grape": {
+            "Merlot": []
+          }
+        }
+      }
+    },
+    "Burgundy": {
+      "Grape": {
+        "Chardonnay": [
+          "simple",
+          "apple and lemon",
+          "high acidity"
+        ],
+        "Pinot Noir": []
+      },
+      "Chablis": {
+        "Grape": {
+          "Chardonnay": [
+            "dry",
+            "high acidity",
+            "flavours: apple, lemon, wet stones",
+            "unoaked"
+          ]
+        }
+      },
+      "Côte d'Or": {
+        "Côte de Beaune": {
+          "Beaune": {
+            "Grape": {
+              "Pinot Noir": [
+                "more flavour intensity",
+                "complexity and length"
+              ]
+            }
+          },
+          "Meursault": {
+            "Grape": {
+              "Chardonnay": [
+                "oak or aging on lees is common"
+              ]
+            }
+          },
+          "Pommard": {
+            "Grape": {
+              "Pinot Noir": [
+                "more flavour intensity",
+                "complexity and length"
+              ]
+            }
+          },
+          "Puligny-Montrachet": {
+            "Grape": {
+              "Chardonnay": [
+                "oak or aging on lees is common"
+              ]
+            }
+          }
+        },
+        "Côte de Nuits": {
+          "Gevrey-Chambertin": {
+            "Grape": {
+              "Pinot Noir": [
+                "more flavour intensity",
+                "complexity and length"
+              ]
+            }
+          },
+          "Nuits-Saint-Georges": {
+            "Grape": {
+              "Pinot Noir": [
+                "more flavour intensity",
+                "complexity and length"
+              ]
+            }
+          }
+        }
+      },
+      "Mâconnais": {
+        "Mâcon": {
+          "Grape": {
+            "Chardonnay": [
+              "fruity",
+              "unoaked"
+            ]
+          }
+        },
+        "Pouilly-Fuissé": {
+          "Grape": {
+            "Chardonnay": [
+              "concentrated",
+              "often oaked"
+            ]
+          }
+        }
+      }
+    },
+    "Côtes du Rhône": {
+      "Grape": {
+        "Grenache / Garnacha": []
+      },
+      "Northern Rhône": {
+        "Grape": {
+          "Syrah / Shiraz": []
+        },
+        "Condrieu": {
+          "Grape": {
+            "Viognier": [
+              "single-varietal",
+              "light flavours of oak (vanilla)"
+            ]
+          }
+        },
+        "Crozes-Hermitage": {
+          "Grape": {
+            "Syrah / Shiraz": [
+              "less intense",
+              "cheaper"
+            ]
+          }
+        },
+        "Côte-Rotie": {
+          "Grape": {
+            "Syrah / Shiraz": [
+              "complex and peppery",
+              "sometimes small amounts of Viognier"
+            ]
+          }
+        },
+        "Hermitage": {
+          "Grape": {
+            "Syrah / Shiraz": []
+          }
+        }
+      },
+      "Southern Rhône": {
+        "Châteauneuf-du-Pape": {
+          "Grape": {
+            "Grenache / Garnacha": [
+              "full-bodied",
+              "high alcohol levels"
+            ]
+          }
+        }
+      }
+    },
+    "Loire Valley": {
+      "Pouilly–Fumé": {
+        "Grape": {
+          "Sauvignon blanc": [
+            "dry",
+            "high acidity",
+            "green fruit (apple)",
+            "herbaceous notes (asparagus, grass)",
+            "sometimes wet stones"
+          ]
+        }
+      },
+      "Sancerre": {
+        "Grape": {
+          "Sauvignon blanc": [
+            "dry",
+            "high acidity",
+            "green fruit (apple)",
+            "herbaceous notes (asparagus, grass)",
+            "sometimes wet stones"
+          ]
+        }
+      },
+      "Touraine": {
+        "Grape": {
+          "Sauvignon blanc": [
+            "fruity",
+            "inexpensive"
+          ]
+        }
+      },
+      "Vouvray": {
+        "Grape": {
+          "Chenin blanc": [
+            "dry: fresh apple flavours",
+            "off-dry, medium labelled Demi-Sec",
+            "sweeter made from extra-ripe or botrytis-affected grapes with stone fruit or tropical fruit aromas",
+            "unoaked"
+          ],
+          "Cabernet sauvignon": [],
+          "Chardonnay": [],
+          "Merlot": []
+        }
+      }
+    },
+    "South of France": {
+      "Grape": {
+        "Sauvignon blanc": [
+          "dry",
+          "high acidity",
+          "tropical fruit flavours (passion fruit) and herbaceous notes (grass)"
+        ]
+      },
+      "Minervois AOC": {
+        "Grape": {
+          "Grenache / Garnacha": [
+            "blended"
+          ],
+          "Syrah / Shiraz": [
+            "blended"
+          ]
+        }
+      },
+      "Pays d'Oc IGP": {
+        "Grape": {
+          "Syrah / Shiraz": [
+            "single-varietal"
+          ]
+        }
+      }
+    }
+  },
+  "Germany": {
+    "Mosel": {
+      "Grape": {
+        "Riesling": [
+          "lighter in body",
+          "medium sweetness to balance very high acidity"
+        ]
+      }
+    },
+    "Pfalz": {
+      "Grape": {
+        "Riesling": [
+          "dry",
+          "medium-bodied"
+        ]
+      }
+    },
+    "Rheingau": {
+      "Grape": {
+        "Riesling": [
+          "drier and more body than Mosel"
+        ]
+      }
+    }
+  },
+  "Hungary": {
+    "Tokaj": {
+      "Grape": {
+        "Furmint": [
+          "Tokaji Aszú: sweet from grapes affected by botrytis"
+        ]
+      }
+    }
+  },
+  "Italy": {
+    "Campania": {
+      "Fiano di Avellino": {
+        "Grape": {
+          "Fiano": []
+        }
+      }
+    },
+    "Friuli-Venezia Giulia": {
+      "Grape": {
+        "Pinot grigio": [
+          "more complex",
+          "fuller-body"
+        ]
+      }
+    },
+    "Marche": {
+      "Verdicchio dei Castelli di Jesi": {
+        "Grape": {
+          "Verdicchio": []
+        }
+      }
+    },
+    "Piemonte": {
+      "Barbaresco": {
+        "Grape": {
+          "Nebbiolo": []
+        }
+      },
+      "Barbera d'Asti": {
+        "Grape": {
+          "Barbera": []
+        }
+      },
+      "Barolo": {
+        "Grape": {
+          "Nebbiolo": []
+        }
+      },
+      "Gavi": {
+        "Grape": {
+          "Cortese": []
+        }
+      }
+    },
+    "Puglia": {
+      "Grape": {
+        "Zinfandel / Primitivo": [
+          "soft",
+          "fruity",
+          "dry"
+        ]
+      }
+    },
+    "Tuscany": {
+      "Brunello di Montalcino": {
+        "Grape": {
+          "Sangiovese": [
+            "powerful",
+            "full-bodied",
+            "very high tannins - must mature in oak"
+          ]
+        }
+      },
+      "Chianti": {
+        "Grape": {
+          "Sangiovese": []
+        }
+      },
+      "Montepulciano d'Abruzzo": {
+        "Grape": {
+          "Montepulciano": []
+        }
+      }
+    },
+    "Veneto": {
+      "Amarone della Valpolicella": {
+        "Grape": {
+          "Corvina": [
+            "partially dried fruits",
+            "dry to off-dry",
+            "high alcohol",
+            "high tannins",
+            "pronounced flavours and dried fruit (prunes, raisins, figs)"
+          ]
+        }
+      },
+      "Recioto della Valpolicella": {
+        "Grape": {
+          "Corvina": [
+            "sweet from partially dried grapes"
+          ]
+        }
+      },
+      "Recioto di Soave": {
+        "Grape": {
+          "Garganega": [
+            "sweet",
+            "appassimento"
+          ]
+        }
+      },
+      "Soave": {
+        "Grape": {
+          "Garganega": []
+        }
+      },
+      "Valpolicella": {
+        "Grape": {
+          "Corvina": []
+        }
+      },
+      "Veneto": {
+        "Grape": {
+          "Pinot grigio": [
+            "short finish",
+            "acceptable to good quality"
+          ]
+        }
+      },
+      "delle Venezie": {
+        "Grape": {
+          "Pinot grigio": [
+            "short finish",
+            "acceptable to good quality"
+          ]
+        }
+      }
+    }
+  },
+  "New Zealand": {
+    "New Zealand": {
+      "North Island": {
+        "Hawke's Bay": {
+          "Grape": {
+            "Cabernet sauvignon": [],
+            "Chardonnay": [
+              "full body",
+              "pronounced stone fruit flavours"
+            ],
+            "Merlot": [
+              "from light and fruity to full-bodied"
+            ]
+          }
+        }
+      }
+    },
+    "North Island": {
+      "Martinborough": {
+        "Grape": {
+          "Pinot Noir": []
+        }
+      }
+    },
+    "South Island": {
+      "Central Otago": {
+        "Grape": {
+          "Pinot Noir": [
+            "ripest and most powerfully flavoured Pinot Noir in NZ",
+            "pronounced fruit flavours (strawberry, red cherry)",
+            "medium to full body and medium tannins",
+            "often oaked and needs aging"
+          ]
+        }
+      },
+      "Marlborough": {
+        "Grape": {
+          "Chardonnay": [
+            "ripe lemon",
+            "peach",
+            "melon",
+            "high acidity",
+            "subtle oak"
+          ],
+          "Pinot Noir": [],
+          "Sauvignon blanc": [
+            "all styles",
+            "experimental approach"
+          ]
+        }
+      }
+    }
+  },
+  "South Africa": {
+    "Western Cape": {
+      "Grape": {
+        "Chardonnay": [],
+        "Pinotage": []
+      },
+      "Constantia": {
+        "Grape": {
+          "Sauvignon blanc": [
+            "refreshing with ripe-tropical-fruit and herbaceous aromas"
+          ]
+        }
+      },
+      "Elgin": {
+        "Grape": {
+          "Sauvignon blanc": [
+            "green fruit flavours (apple) and sometimes wet stones"
+          ]
+        }
+      },
+      "Stellenbosch": {
+        "Grape": {
+          "Cabernet sauvignon": [
+            "used in Cape Blend"
+          ],
+          "Merlot": [
+            "complex",
+            "age-worthy"
+          ]
+        }
+      },
+      "Walker Bay": {
+        "Grape": {
+          "Chardonnay": [
+            "high acidity",
+            "ripe stone fruit",
+            "tropical fruit and oak"
+          ],
+          "Chenin blanc": [],
+          "Pinot Noir": [
+            "vibrant red fruit"
+          ]
+        }
+      }
+    }
+  },
+  "Spain": {
+    "Catalunya": {
+      "Grape": {
+        "Tempranillo": [
+          "from simple fruity and light to powerful oak-aged"
+        ]
+      },
+      "Priorat": {
+        "Grape": {
+          "Grenache / Garnacha": [
+            "old vines: the most powerful full-bodied"
+          ]
+        }
+      }
+    },
+    "Navarra": {
+      "Grape": {
+        "Grenache / Garnacha": [
+          "dry rosé wines"
+        ]
+      }
+    },
+    "Ribera del Duero": {
+      "Grape": {
+        "Tempranillo": [
+          "full-bodied",
+          "fresh black-fruit flavours"
+        ]
+      }
+    },
+    "Rioja": {
+      "Grape": {
+        "Grenache / Garnacha": [],
+        "Tempranillo": [
+          "sometimes blended with Garnacha"
+        ]
+      }
+    },
+    "Rías Baixas": {
+      "Grape": {
+        "Albariño": []
+      }
+    }
+  },
+  "USA": {
+    "California": {
+      "Grape": {
+        "Merlot": [
+          "oak (vanilla, coconut, smoke)"
+        ],
+        "Zinfandel / Primitivo": [
+          "medium-sweet rosé (White Zinfandel)",
+          "red: pronounced aromas of black fruit (blackberry, black plum)",
+          "dried fruit (raisin, prune) and oak (vanilla, coffee)"
+        ]
+      },
+      "Central Coast": {
+        "Santa Barbara County": {
+          "Grape": {
+            "Chardonnay": [
+              "tropical fruit flavours",
+              "high alcohol",
+              "flavours from new oak"
+            ],
+            "Pinot Noir": [
+              "ripe red-fruit flavours (strawberry, red cherry)",
+              "notable flavours from oak (vanilla)"
+            ]
+          }
+        }
+      },
+      "Northern California": {
+        "Carneros": {
+          "Grape": {
+            "Chardonnay": [],
+            "Pinot Noir": [
+              "ripe red-fruit flavours (strawberry, red cherry)",
+              "notable flavours from oak (vanilla)"
+            ]
+          }
+        },
+        "Napa Valley": {
+          "Grape": {
+            "Cabernet sauvignon": [
+              "ripest and full-bodied"
+            ],
+            "Chardonnay": [
+              "full-bodied",
+              "pronounced tropical-fruit flavours",
+              "vanilla from new oak"
+            ],
+            "Merlot": [
+              "oak (vanilla, coconut, smoke)"
+            ],
+            "Sauvignon blanc": [
+              "oak to add body and flavour (smoke)"
+            ]
+          },
+          "Calistoga": {
+            "Grape": {
+              "Cabernet sauvignon": [
+                "ripest and full-bodied"
+              ]
+            }
+          },
+          "Oakville": {
+            "Grape": {
+              "Cabernet sauvignon": [
+                "ripest and full-bodied"
+              ]
+            }
+          },
+          "Rutherford": {
+            "Grape": {
+              "Cabernet sauvignon": [
+                "ripest and full-bodied"
+              ]
+            }
+          }
+        },
+        "Sonoma": {
+          "Grape": {
+            "Cabernet sauvignon": [
+              "ripest and full-bodied"
+            ],
+            "Chardonnay": [],
+            "Merlot": [
+              "oak (vanilla, coconut, smoke)"
+            ],
+            "Pinot Noir": [
+              "ripe red-fruit flavours (strawberry, red cherry)",
+              "notable flavours from oak (vanilla)"
+            ]
+          }
+        }
+      }
+    },
+    "Oregon": {
+      "Grape": {
+        "Chardonnay": [
+          "high acidity"
+        ],
+        "Pinot Noir": [
+          "complex",
+          "fresh",
+          "red fruit flavours",
+          "subtle oak flavours (smoke, cloves)"
+        ]
+      }
+    }
+  }
+}
