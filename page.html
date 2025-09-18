@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Wine Note</title>
+    <meta name="description" content="Wine Note - 年過 30 的我下課後甚麼都不記得了。">
     <style>
         /* 基本重置樣式 */
         * {
@@ -14,10 +15,13 @@
         }
 
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'SF Pro Display', 'Segoe UI', 'Roboto', sans-serif;
             line-height: 1.6;
             color: #333;
-            background-color: #f8f9fa;
+            background-color: #f5f5f7;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
         a {
@@ -25,41 +29,31 @@
             font-weight: bold;
         }
 
-        /* 容器設置 */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* 標題樣式 */
-        header {
-            background: linear-gradient(135deg, #722f37 0%, #8b4c5c 100%);
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        img {
+            max-width: 100%;
         }
 
         h1 {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             margin-bottom: 0.5rem;
-            font-weight: bold;
+            font-weight: 600;
+            letter-spacing: -0.02em;
         }
 
         .subtitle {
-            font-size: 1.2rem;
-            opacity: 0.9;
+            font-size: 1.4rem;
+            opacity: 0.8;
+            font-weight: 400;
         }
 
         /* 導航列 */
         nav {
-            background-color: #fff;
-            padding: 1rem 0;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            background-color: #f5f5f7;
+            padding: 1.2rem 0;
             position: sticky;
             top: 0;
             z-index: 100;
+            margin: 0;
         }
 
         .nav-container {
@@ -84,7 +78,7 @@
         .hamburger span {
             width: 25px;
             height: 3px;
-            background-color: #722f37;
+            background-color: #1d1d1f;
             margin: 3px 0;
             transition: 0.3s;
             border-radius: 2px;
@@ -108,55 +102,113 @@
             justify-content: center;
             flex-wrap: wrap;
             margin: 0;
+            justify-content: space-between;
         }
 
         nav li {
             margin: 0 1rem;
+            transition: all 0.3s ease;
+            padding: 4px 0;
+            position: relative;
+        }
+
+        nav li:hover {
+            transform: translateY(-2px);
+        }
+
+        nav li:hover a::after{
+            content: '● ● ●';
+            display: block;
+            position: absolute;
+            bottom: -4px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 6px;
         }
 
         nav a {
             text-decoration: none;
-            color: #722f37;
-            font-weight: 500;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-            transition: all 0.3s ease;
-        }
-
-        nav a:hover {
-            background-color: #722f37;
-            color: white;
+            color: #1d1d1f;
+            padding: 0.4rem 1.2rem;
+            font-size: 0.95rem;
+            font-weight: bold;
         }
 
         /* 主要內容區域 */
         main {
-            padding: 3rem 0;
+            padding: 0;
+            position: fixed;
+            top: 72px;
+            left: 0;
+            width: calc(100vw - 48px);
+            margin: 0 24px;
+            box-sizing: border-box;
+            height: calc(100vh - 72px - 64px);            
+            border: 1px solid;
+            border-radius: 4px;
+        }
+
+        /* 容器設置 */
+        .container {
+            width: calc(100% - 4px);
+            height: calc(100% - 4px);
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+
+        section{
+            max-width: 1024px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        /* 區塊標題樣式 */
+        .section-title {
+            text-align: center;
+            color: #1d1d1f;
+            margin: 3rem auto;
+            font-size: 1.2rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+
+        .section-img{
+            width: 480px;
+            display: block;
+            margin: 0 auto;
         }
 
         .content-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
             gap: 2rem;
             margin-top: 2rem;
+            max-width: 90%;
+        }
+
+        .buttons-container {
+            max-width: 90%;
+            margin: 0 auto;
         }
 
         .card {
             background: white;
-            border-radius: 10px;
-            padding: 2rem;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 2.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: all 0.4s ease;
+            border: 1px solid rgba(0,0,0,0.05);
         }
 
         .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            transform: translateY(-8px);
+            box-shadow: 0 16px 40px rgba(0,0,0,0.12);
         }
 
         .card h3 {
-            color: #722f37;
+            color: #1d1d1f;
             margin-bottom: 1rem;
-            font-size: 1.5rem;
+            font-size: 1.6rem;
+            font-weight: 600;
         }
 
         .card p {
@@ -167,36 +219,41 @@
         /* 按鈕樣式 */
         .btn {
             display: inline-block;
-            background: linear-gradient(135deg, #722f37 0%, #8b4c5c 100%);
-            color: white;
-            padding: 0.8rem 2rem;
+            padding: 0 1.2rem 0 .8rem;
             text-decoration: none;
-            border-radius: 25px;
             transition: all 0.3s ease;
-            margin-top: 1rem;
+            margin: 0.8rem 0.2rem ;
             border: none;
             cursor: pointer;
-            font-size: 1rem;
+            font-size: 0.95rem;
+            font-weight: bold;
+            letter-spacing: 0.01em;
+            background: transparent;
+            border-left: 12px solid;
+            color: #666;
         }
 
         .btn:hover {
-            background: linear-gradient(135deg, #8b4c5c 0%, #722f37 100%);
             transform: translateY(-2px);
+            filter: brightness(1.1);
         }
 
         /* 頁腳 */
         footer {
-            background-color: #2c3e50;
+            background: linear-gradient(135deg, #1d1d1f 0%, #424245 100%);
             color: white;
             text-align: center;
-            padding: 2rem 0;
-            margin-top: 3rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: .8em;
+            padding-top: 8px;
         }
 
         /* 響應式設計 - 平板 */
         @media (max-width: 768px) {
             .container {
-                padding: 0 15px;
+                padding: 18px 15px;
             }
 
             h1 {
@@ -215,14 +272,14 @@
                 background-color: #fff;
                 flex-direction: column;
                 align-items: center;
-                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+                box-shadow: 0 2px 2px rgba(0,0,0,0.1);
                 max-height: 0;
                 overflow: hidden;
                 transition: max-height 0.3s ease-in-out;
             }
 
             nav ul.show {
-                max-height: 400px;
+                max-height: 800px;
                 padding: 1rem 0;
             }
 
@@ -252,7 +309,7 @@
         /* 響應式設計 - 手機 */
         @media (max-width: 480px) {
             .container {
-                padding: 0 10px;
+                padding: 12px 10px;
             }
 
             h1 {
@@ -262,11 +319,6 @@
             .subtitle {
                 font-size: 1rem;
             }
-
-            header {
-                padding: 1.5rem 0;
-            }
-
             nav {
                 padding: 0.8rem 0;
             }
@@ -280,17 +332,16 @@
                 top: 100%;
                 left: 0;
                 width: 100%;
-                background-color: #fff;
+                background-color: #f5f5f7;
                 flex-direction: column;
                 align-items: center;
-                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
                 max-height: 0;
                 overflow: hidden;
                 transition: max-height 0.3s ease-in-out;
             }
 
             nav ul.show {
-                max-height: 400px;
+                max-height: 800px;
                 padding: 1rem 0;
             }
 
@@ -318,36 +369,40 @@
             .card h3 {
                 font-size: 1.3rem;
             }
-
-            .btn {
-                text-align: center;
-                margin-top: 1rem;
-                zoom:.8;
-            }
         }
 
         /* 彈出式卡片樣式 */
-        #grape-info {
+        #grape-info, #region-info {
             min-width: 320px;
-            max-width: 640px;
+            max-width: 680px;
+            width: 80vw;
             position: fixed;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            border-radius: 8px;
+            padding: 2.5rem;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
             margin: 0;
             display: none;
-            max-height: 80vh;
+            max-height: 85vh;
             overflow-y: auto;
             z-index: 1000;
-            border: 2px solid #722f37;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        #grape-info ul, #region-info ul{
+            padding-left: 1em;
+            box-sizing: border-box;
+        }
+
+        #grape-info ul li, #region-info ul li{
+            list-style-position: inside;
         }
 
         /* 彈出視窗背景遮罩 */
-        #grape-info-overlay {
+        #grape-info-overlay, #region-info-overlay {
             position: fixed;
             top: 0;
             left: 0;
@@ -360,26 +415,24 @@
 
         /* 關閉按鈕樣式 */
         .close-btn {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            background: #722f37;
+            background: linear-gradient(135deg, #1d1d1f 0%, #424245 100%);
             color: white;
             border: none;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            font-size: 20px;
+            border-radius: 12px;
+            width: 120px;
+            height: 44px;
+            font-size: 15px;
+            font-weight: 500;
             cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            display: block;
+            margin: 0 auto;
             transition: all 0.3s ease;
         }
 
-        .close-btn:hover {
-            background: #8b4c5c;
-            transform: rotate(90deg);
+        .close-btn:hover{
+            background: linear-gradient(135deg, #424245 0%, #1d1d1f 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
         }
 
         /* 彈出動畫 */
@@ -419,19 +472,30 @@
             transition: all 0.3s ease;
             font-weight: 500;
             outline: none;
+            border-radius: 12px;
+            padding: 0.6rem 1.2rem;
+            border: 2px solid #e5e5e7;
+            background: white;
+            color: #1d1d1f;
+            cursor: pointer;
+            font-size: 0.9rem;
         }
 
         .country-tab:hover {
-            background: #8b4c5c !important;
+            background: #f5f5f7 !important;
+            border-color: #d1d1d6 !important;
+            transform: translateY(-1px);
+        }
+
+        .country-tab.active {
+            background: #007aff !important;
             color: white !important;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            border-color: #007aff !important;
         }
 
         .country-tab.active:hover {
-            background: #722f37 !important;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            background: #0056cc !important;
+            border-color: #0056cc !important;
         }
 
         /* 國家內容區域樣式 */
@@ -461,95 +525,135 @@
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1 class="fade-in">Wine Knowledge Hub</h1>
-            <p class="subtitle fade-in">Class Note</p>
-        </div>
-    </header>
-
     <nav>
-        <div class="container">
-            <div class="nav-container">
-                <button class="hamburger" id="hamburger" onclick="toggleNav()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul id="nav-menu">
-                    <li><a href="#home" onclick="closeNav()">首頁</a></li>
-                    <li><a href="#varieties" onclick="closeNav()">葡萄品種</a></li>
-                    <li><a href="#regions" onclick="closeNav()">產區</a></li>
-                    <li><a href="#numbers" onclick="closeNav()">侍酒溫度與重要數據</a></li>
-                    <li><a href="#climate" onclick="closeNav()">氣候</a></li>
-                    <li><a href="#fermentation" onclick="closeNav()">釀造工藝</a></li>
-                </ul>
-            </div>
+        <div class="nav-container">
+            <button class="hamburger" id="hamburger" onclick="toggleNav()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="nav-menu">
+                <li><a href="#home" onclick="closeNav()">首頁</a></li>
+                <li><a href="#varieties" onclick="closeNav()">葡萄品種</a></li>
+                <li><a href="#regions" onclick="closeNav()">產區</a></li>
+                <li><a href="#numbers" onclick="closeNav()">侍酒溫度與重要數據</a></li>
+                <li><a href="#terroir" onclick="closeNav()">風土</a></li>
+                <li><a href="#fermentation" onclick="closeNav()">釀造工藝</a></li>
+            </ul>
         </div>
     </nav>
 
-    <main>
+    <main id="home">
         <div class="container">
-            <section id="varieties" class="fade-in" style="margin-top: 4rem;">
-                <h2 style="text-align: center; color: #722f37; margin-bottom: 3rem; font-size: 2.2rem;">葡萄品種</h2>                
+            <section id="varieties" class="fade-in" style="margin-bottom: 4rem;">
+                <h3 class="section-title">葡萄品種</h3>
+                <img class="section-img" src="images/grapes.png" alt="Common Grape Varieties">
                 <div style="margin-bottom: 3rem;">
-                    <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-bottom: 2rem;">
-                        <button class="btn" onclick="showGrapeInfo('Pinot Noir')" style="background: linear-gradient(135deg, #8b4c5c 0%, #722f37 100%);">✨ Pinot Noir</button>
-                        <button class="btn" onclick="showGrapeInfo('Zinfandel / Primitivo')" style="background: linear-gradient(135deg, #8b4c5c 0%, #722f37 100%);">Zinfandel / Primitivo</button>
-                        <button class="btn" onclick="showGrapeInfo('Cabernet sauvignon')" style="background: linear-gradient(135deg, #8b4c5c 0%, #722f37 100%);">✨ Cabernet Sauvignon</button>
-                        <button class="btn" onclick="showGrapeInfo('Merlot')" style="background: linear-gradient(135deg, #8b4c5c 0%, #722f37 100%);">✨ Merlot</button>
-                        <button class="btn" onclick="showGrapeInfo('Syrah / Shiraz')" style="background: linear-gradient(135deg, #8b4c5c 0%, #722f37 100%);">Syrah / Shiraz</button>
-                        <button class="btn" onclick="showGrapeInfo('Gamay')" style="background: linear-gradient(135deg, #8b4c5c 0%, #722f37 100%);">Gamay</button>
-                        <button class="btn" onclick="showGrapeInfo('Grenache / Garnacha')" style="background: linear-gradient(135deg, #8b4c5c 0%, #722f37 100%);">Grenache / Garnacha</button>
-                        <button class="btn" onclick="showGrapeInfo('Tempranillo')" style="background: linear-gradient(135deg, #8b4c5c 0%, #722f37 100%);">Tempranillo</button>
-                        <button class="btn" onclick="showGrapeInfo('Carmenère')" style="background: linear-gradient(135deg, #8b4c5c 0%, #722f37 100%);">Carmenère</button>
-                        <button class="btn" onclick="showGrapeInfo('Malbec')" style="background: linear-gradient(135deg, #8b4c5c 0%, #722f37 100%);">Malbec</button>
-                        <button class="btn" onclick="showGrapeInfo('Pinotage')" style="background: linear-gradient(135deg, #8b4c5c 0%, #722f37 100%);">Pinotage</button>
-                        <button class="btn" onclick="showGrapeInfo('Nebbiolo')" style="background: linear-gradient(135deg, #8b4c5c 0%, #722f37 100%);">Nebbiolo</button>
-                        <button class="btn" onclick="showGrapeInfo('Barbera')" style="background: linear-gradient(135deg, #8b4c5c 0%, #722f37 100%);">Barbera</button>
-                        <button class="btn" onclick="showGrapeInfo('Corvina')" style="background: linear-gradient(135deg, #8b4c5c 0%, #722f37 100%);">Corvina</button>
-                        <button class="btn" onclick="showGrapeInfo('Sangiovese')" style="background: linear-gradient(135deg, #8b4c5c 0%, #722f37 100%);">Sangiovese</button>
-                        <button class="btn" onclick="showGrapeInfo('Montepulciano')" style="background: linear-gradient(135deg, #8b4c5c 0%, #722f37 100%);">Montepulciano</button>
-                    </div>
-                </div>
-                <div style="margin-bottom: 3rem;">
-                    <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-bottom: 2rem;">
-                        <button class="btn" onclick="showGrapeInfo('Riesling')" style="background: linear-gradient(135deg, #d4af37 0%, #b8941f 100%);">✨ Riesling</button>
-                        <button class="btn" onclick="showGrapeInfo('Chenin blanc')" style="background: linear-gradient(135deg, #d4af37 0%, #b8941f 100%);">Chenin Blanc</button>
-                        <button class="btn" onclick="showGrapeInfo('Sémillon / semillon')" style="background: linear-gradient(135deg, #d4af37 0%, #b8941f 100%);">Sémillon</button>
-                        <button class="btn" onclick="showGrapeInfo('Furmint')" style="background: linear-gradient(135deg, #d4af37 0%, #b8941f 100%);">Furmint</button>
-                        <button class="btn" onclick="showGrapeInfo('Chardonnay')" style="background: linear-gradient(135deg, #d4af37 0%, #b8941f 100%);">✨ Chardonnay</button>
-                        <button class="btn" onclick="showGrapeInfo('Sauvignon blanc')" style="background: linear-gradient(135deg, #d4af37 0%, #b8941f 100%);">✨ Sauvignon Blanc</button>
-                        <button class="btn" onclick="showGrapeInfo('Pinot grigio / Pinot gris')" style="background: linear-gradient(135deg, #d4af37 0%, #b8941f 100%);">Pinot Grigio / Pinot Gris</button>
-                        <button class="btn" onclick="showGrapeInfo('Gewurztraminer')" style="background: linear-gradient(135deg, #d4af37 0%, #b8941f 100%);">Gewürztraminer</button>
-                        <button class="btn" onclick="showGrapeInfo('Viognier')" style="background: linear-gradient(135deg, #d4af37 0%, #b8941f 100%);">Viognier</button>
-                        <button class="btn" onclick="showGrapeInfo('Albariño')" style="background: linear-gradient(135deg, #d4af37 0%, #b8941f 100%);">Albariño</button>
-                        <button class="btn" onclick="showGrapeInfo('Cortese')" style="background: linear-gradient(135deg, #d4af37 0%, #b8941f 100%);">Cortese</button>
-                        <button class="btn" onclick="showGrapeInfo('Garganega')" style="background: linear-gradient(135deg, #d4af37 0%, #b8941f 100%);">Garganega</button>
-                        <button class="btn" onclick="showGrapeInfo('Verdicchio')" style="background: linear-gradient(135deg, #d4af37 0%, #b8941f 100%);">Verdicchio</button>
-                        <button class="btn" onclick="showGrapeInfo('Fiano')" style="background: linear-gradient(135deg, #d4af37 0%, #b8941f 100%);">Fiano</button>
+                    <div id="grape-buttons-container" class="buttons-container card">
+                        <!-- 葡萄品種按鈕將由 JavaScript 動態生成 -->
                     </div>
                 </div>
 
                 <!-- 葡萄品種資訊顯示區域 -->
                 <div id="grape-info-overlay"></div>
                 <div id="grape-info">
-                    <button class="close-btn" onclick="closeGrapeInfo()">&times;</button>
-                    <h3 id="grape-name" style="color: #722f37; margin-bottom: 1rem; font-size: 1.8rem; margin-top: 0.5rem;"></h3>
-                    <div id="grape-details" style="color: #666; line-height: 1.7;"></div>
+                    <h3 id="grape-name" style="color: #1d1d1f; margin-bottom: 1.5rem; font-size: 2rem; margin-top: 0; font-weight: 600; letter-spacing: -0.01em;"></h3>
+                    <div id="grape-details" style="color: #666; line-height: 1.7; padding-bottom: 3rem;"></div>
+                    <button class="close-btn" onclick="closeGrapeInfo()">關閉</button>
                 </div>
             </section>
+
+            <section id="regions" class="fade-in" style="margin-bottom: 4rem;">
+                <h3 class="section-title">產區</h3>
+                <img class="section-img" src="images/regions.png" alt="World Wine Regions Map">
+                <div style="margin-bottom: 3rem;">
+                    <div id="region-buttons-container" class="buttons-container card">
+                        <!-- 產區按鈕將由 JavaScript 動態生成 -->
+                    </div>
+                </div>
+
+                <!-- 產區資訊顯示區域 -->
+                <div id="region-info-overlay"></div>
+                <div id="region-info">
+                    <h3 id="region-name" style="color: #1d1d1f; margin-bottom: 1.5rem; font-size: 2rem; margin-top: 0; font-weight: 600; letter-spacing: -0.01em;"></h3>
+                    <div id="region-details" style="color: #666; line-height: 1.7; padding-bottom: 3rem;"></div>
+                    <button class="close-btn" onclick="closeRegionInfo()">關閉</button>
+                </div>
+            </section>
+
+            <section id="numbers" class="fade-in" style="margin-bottom: 4rem;">
+                <h3 class="section-title">侍酒溫度與重要數據</h3>
+                <img src="images/numbers.png" alt="Wine Serving Temperatures and Key Data" class="section-img">
+                <div class="content-grid">
+                    <div class="card">
+                        <h3>侍酒溫度</h3>
+                        <p>紅葡萄酒：16-18°C<br>白葡萄酒：8-12°C<br>起泡酒：6-10°C</p>
+                    </div>
+                    <div class="card">
+                        <h3>酒精濃度</h3>
+                        <p>一般葡萄酒的酒精濃度約在12-15%之間，甜酒可能較低，強化酒則可達20%以上。</p>
+                    </div>
+                    <div class="card">
+                        <h3>酸度</h3>
+                        <p>葡萄酒的酸度通常以pH值表示，範圍約在3.0至4.0之間，較低的pH值表示較高的酸度。</p>
+                    </div>
+                    <div class="card">
+                        <h3>單寧</h3>
+                        <p>單寧是紅葡萄酒中的重要成分，來自葡萄皮、籽和梗，影響口感和陳年潛力。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="terroir" class="fade-in" style="margin-bottom: 4rem;">
+                <h3 class="section-title">風土</h3>
+                <img src="images/terroir.png" alt="Terroir Elements" class="section-img">
+                <div class="content-grid">
+                    <div class="card">
+                        <h3>氣候</h3>
+                        <p>氣候影響葡萄的成熟度和風味，溫暖氣候通常產生較濃郁的葡萄酒，而涼爽氣候則帶來較高的酸度和清新感。</p>
+                    </div>
+                    <div class="card">
+                        <h3>土壤</h3>
+                        <p>土壤類型影響葡萄根系的發展和水分供應，不同的土壤會賦予葡萄酒不同的礦物質風味。</p>
+                    </div>
+                    <div class="card">
+                        <h3>地形</h3>
+                        <p>坡度和朝向影響陽光照射和排水，這些因素會影響葡萄的生長條件和品質。</p>
+                    </div>
+                    <div class="card">
+                        <h3>人為因素</h3>
+                        <p>農業實踐、葡萄品種選擇和釀造技術也會影響最終葡萄酒的風味和品質。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="fermentation" class="fade-in" style="margin-bottom: 4rem;">
+                <h3 class="section-title">釀造工藝</h3>
+                <img src="images/fermentation.png" alt="Wine Fermentation Process" class="section-img">
+                <div class="content-grid">
+                    <div class="card">
+                        <h3>發酵</h3>
+                        <p>發酵是將葡萄汁轉化為酒精的過程，通常由天然或添加的酵母進行。</p>
+                    </div>
+                    <div class="card">
+                        <h3>陳年</h3>
+                        <p>葡萄酒可以在不銹鋼桶、橡木桶或瓶中陳年，不同的陳年方式會影響風味和質地。</p>
+                    </div>
+                    <div class="card">
+                        <h3>過濾與澄清</h3>
+
         </div>
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Heidi Chang</p>
-            <p>Ref. <a href="https://wset.luksow.com/" target="_blank">https://wset.luksow.com/</a></p>
-        </div>
+        <p>&copy; 2025 Heidi Chang</p>
+        <p>Ref. <a href="https://wset.luksow.com/" target="_blank">https://wset.luksow.com/</a></p>
     </footer>
     <!-- 葡萄品種資料直接嵌入 -->
     <script>
+        // 全域變數用於存儲資料
+        let grapeData = null;
+        let regionData = null;
         // 載入完整的 JSON 資料的函數
         async function loadGrapeData() {
             try {
@@ -558,9 +662,95 @@
                     throw new Error('Network response was not ok ' + response.statusText);
                 }
                 grapeData = await response.json();
+                
+                // 資料載入完成後生成按鈕
+                generateGrapeButtons();
             } catch (error) {
                 console.error('There has been a problem with your fetch operation:', error);
+                // 如果載入失敗，顯示錯誤訊息
+                const container = document.getElementById('grape-buttons-container');
+                if (container) {
+                    container.innerHTML = '<p style="color: #722f37; text-align: center;">葡萄品種資料載入中或載入失敗，請稍後再試...</p>';
+                }
             }
+        }
+
+        // 載入產區資料的函數
+        async function loadRegionData() {
+            try {
+                const response = await fetch('wset_tables_json/regions_structure.json');
+                if (!response.ok) {
+                    throw new Error('Network response was not ok ' + response.statusText);
+                }
+                regionData = await response.json();
+                
+                // 資料載入完成後生成按鈕
+                generateRegionButtons();
+            } catch (error) {
+                console.error('There has been a problem with your fetch operation:', error);
+                // 如果載入失敗，顯示錯誤訊息
+                const container = document.getElementById('region-buttons-container');
+                if (container) {
+                    container.innerHTML = '<p style="color: #722f37; text-align: center;">產區資料載入中或載入失敗，請稍後再試...</p>';
+                }
+            }
+        }
+
+        // 動態生成葡萄品種按鈕
+        function generateGrapeButtons() {
+            const container = document.getElementById('grape-buttons-container');
+            if (!container || !grapeData) return;
+            
+            // 獲取所有葡萄品種名稱並排序
+            const grapeNames = Object.keys(grapeData).sort();
+            
+            let buttonsHTML = '';
+            
+            grapeNames.forEach(grapeName => {
+                const grape = grapeData[grapeName];
+                const isWhiteGrape = grape.Color && grape.Color === 'White';
+                const isRoseGrape = grape.Color && grape.Color === 'Rose';
+                
+                // 根據葡萄顏色選擇按鈕樣式
+                let buttonStyle;
+                if (isWhiteGrape) {
+                    buttonStyle = 'border-left: 12px solid #d4af37'; // 金色漸層
+                } else if (isRoseGrape) {
+                    buttonStyle = 'border-left: 12px solid #e91e63'; // 粉色漸層
+                } else {
+                    buttonStyle = 'border-left: 12px solid #8b4c5c'; // 紅色漸層
+                }
+                
+                // 生成按鈕 HTML
+                buttonsHTML += `
+                    <button class="btn" onclick="showGrapeInfo('${grapeName}')" 
+                            style="${buttonStyle}">${grapeName}
+                    </button>
+                `;
+            });
+            
+            container.innerHTML = buttonsHTML;
+        }
+
+        // 動態生成產區按鈕
+        function generateRegionButtons() {
+            const container = document.getElementById('region-buttons-container');
+            if (!container || !regionData) return;
+            
+            // 獲取所有國家名稱並排序
+            const countries = Object.keys(regionData).sort();
+            
+            let buttonsHTML = '';
+            
+            countries.forEach(country => {
+                // 生成按鈕 HTML
+                buttonsHTML += `
+                    <button class="btn" onclick="showRegionInfo('${country}')">${country}
+                    </button>
+                `;
+            });
+            
+            container.innerHTML = buttonsHTML;
         }
 
         // 葡萄品種資料載入功能
@@ -571,6 +761,17 @@
             } else {
                 // 顯示基本資訊，即使沒有完整資料
                 displayBasicGrapeInfo(grapeName);
+            }
+        }
+
+        // 產區資料載入功能
+        function showRegionInfo(country) {
+            const regionInfo = regionData[country];
+            if (regionInfo) {
+                displayRegionInfo(country, regionInfo);
+            } else {
+                // 顯示基本資訊，即使沒有完整資料
+                displayBasicRegionInfo(country);
             }
         }
         
@@ -633,7 +834,7 @@
             // 產區資訊 - 使用分頁切換
             if (grapeInfo.Countries_and_Regions) {
                 const countries = Object.keys(grapeInfo.Countries_and_Regions);
-                detailsHTML += `<h4 style="color: #722f37; margin-top: 1.5rem; margin-bottom: 1rem;">🌍 主要產區</h4>`;
+                detailsHTML += `<h4 style="color: #1d1d1f; margin-top: 1.5rem; margin-bottom: 1rem; font-weight: 600;">🌍 主要產區</h4>`;
                 
                 if (countries.length > 1) {
                     // 創建國家切換按鈕
@@ -641,8 +842,8 @@
                     countries.forEach((country, index) => {
                         const isActive = index === 0 ? 'active' : '';
                         detailsHTML += `<button class="country-tab ${isActive}" onclick="switchCountry('${country}')" 
-                            style="padding: 0.5rem 1rem; border: 2px solid #722f37; background: ${index === 0 ? '#722f37' : 'white'}; 
-                            color: ${index === 0 ? 'white' : '#722f37'}; border-radius: 20px; cursor: pointer; font-size: 0.9rem; 
+                            style="padding: 0.6rem 1.2rem; border: 2px solid ${index === 0 ? '#007aff' : '#e5e5e7'}; background: ${index === 0 ? '#007aff' : 'white'}; 
+                            color: ${index === 0 ? 'white' : '#1d1d1f'}; border-radius: 12px; cursor: pointer; font-size: 0.9rem; font-weight: 500;
                             transition: all 0.3s ease;">${country}</button>`;
                     });
                     detailsHTML += `</div>`;
@@ -652,7 +853,7 @@
                         const regions = grapeInfo.Countries_and_Regions[country];
                         const displayStyle = index === 0 ? 'block' : 'none';
                         detailsHTML += `<div id="country-${country.replace(/\s+/g, '-')}" class="country-content" style="display: ${displayStyle};">`;
-                        detailsHTML += `<h5 style="color: #8b4c5c; margin-bottom: 0.8rem; font-size: 1.1rem;">${country}</h5>`;
+                        detailsHTML += `<h5 style="color: #424245; margin-bottom: 0.8rem; font-size: 1.1rem; font-weight: 600;">${country}</h5>`;
                         detailsHTML += `<ul>`;
                         regions.forEach(regionInfo => {
                             const regionName = Array.isArray(regionInfo.region) ? regionInfo.region.join(' → ') : regionInfo.region;
@@ -719,6 +920,118 @@
             document.body.style.overflow = 'hidden';
         }
 
+        // 顯示產區資訊
+        function displayRegionInfo(country, regionInfo) {
+            const infoDiv = document.getElementById('region-info');
+            const overlayDiv = document.getElementById('region-info-overlay');
+            const nameElement = document.getElementById('region-name');
+            const detailsElement = document.getElementById('region-details');
+            
+            nameElement.textContent = country;
+            
+            let detailsHTML = '';
+            
+            // 遞迴處理產區結構
+            function processRegion(regionData, level = 0) {
+                let html = '';
+                const indent = '&nbsp;'.repeat(level * 4);
+                
+                // 定義每個層級的圖標
+                const levelIcons = ['🌍', '🏞️', '🍷', '🏛️', '📍'];
+                const currentIcon = levelIcons[Math.min(level, levelIcons.length - 1)];
+                
+                for (const [key, value] of Object.entries(regionData)) {
+                    if (key === 'Grape') {
+                        // 處理葡萄品種資訊
+                        if (Object.keys(value).length > 0) {
+                            html += `<div style="margin-left: ${level * 20}px; margin-bottom: 1rem;">`;
+                            html += `<h5 style="color: #424245; margin-bottom: 0.5rem; font-weight: 600;">🍇 主要葡萄品種:</h5>`;
+                            html += `<ul style="margin-left: 1rem;">`;
+                            
+                            for (const [grape, characteristics] of Object.entries(value)) {
+                                html += `<li style="margin-bottom: 0.3rem;"><strong>${grape}</strong>`;
+                                if (characteristics && characteristics.length > 0) {
+                                    html += `<ul style="margin-left: 1rem; margin-top: 0.2rem;">`;
+                                    characteristics.forEach(char => {
+                                        if (char) html += `<li style="color: #666; font-size: 0.9rem;">${char}</li>`;
+                                    });
+                                    html += `</ul>`;
+                                }
+                                html += `</li>`;
+                            }
+                            html += `</ul></div>`;
+                        }
+                    } else if (typeof value === 'object' && value !== null) {
+                        // 處理子產區
+                        const uniqueId = `region-${level}-${key.replace(/[^a-zA-Z0-9]/g, '_')}-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
+                        
+                        html += `<div style="margin-left: ${level * 20}px; margin-bottom: 1rem;">`;
+                        
+                        if (level === 1) {
+                            // 第二層級（🏞️）設為可收闔 - 默認收合
+                            html += `<h${Math.min(level + 4, 6)} style="color: #1d1d1f; margin-bottom: 0.5rem; cursor: pointer; user-select: none; display: flex; align-items: center; gap: 0.5rem; font-weight: 600;" onclick="toggleRegionSection('${uniqueId}')">
+                                <span class="toggle-arrow" id="arrow-${uniqueId}" style="transition: transform 0.3s ease; font-size: 0.8rem; transform: rotate(-90deg);">▶</span>
+                                ${currentIcon} ${key}
+                            </h${Math.min(level + 4, 6)}>`;
+                            html += `<div id="${uniqueId}" style="overflow: hidden; transition: max-height 0.3s ease; max-height: 0px;">`;
+                            html += processRegion(value, level + 1);
+                            html += `</div>`;
+                        } else {
+                            // 其他層級保持原樣
+                            html += `<h${Math.min(level + 4, 6)} style="color: #1d1d1f; margin-bottom: 0.5rem; font-weight: 600;">${currentIcon} ${key}</h${Math.min(level + 4, 6)}>`;
+                            html += processRegion(value, level + 1);
+                        }
+                        
+                        html += `</div>`;
+                    }
+                }
+                return html;
+            }
+            
+            detailsHTML = processRegion(regionInfo);
+            
+            if (!detailsHTML) {
+                detailsHTML = `<p><em>此產區的詳細資料載入中...</em></p>`;
+            }
+            
+            detailsElement.innerHTML = detailsHTML;
+            
+            // 顯示彈出視窗
+            overlayDiv.style.display = 'block';
+            infoDiv.style.display = 'block';
+            infoDiv.classList.add('popup-show');
+            
+            // 防止背景滾動
+            document.body.style.overflow = 'hidden';
+        }
+
+        // 顯示基本產區資訊（當完整資料不可用時）
+        function displayBasicRegionInfo(country) {
+            const infoDiv = document.getElementById('region-info');
+            const overlayDiv = document.getElementById('region-info-overlay');
+            const nameElement = document.getElementById('region-name');
+            const detailsElement = document.getElementById('region-details');
+            
+            nameElement.textContent = country;
+            
+            let detailsHTML = `
+                <p><strong>🌍 產區:</strong> ${country}</p>
+                <p><em>詳細資料載入中或暫時不可用...</em></p>
+                <p>這是一個重要的葡萄酒產區，以生產高品質的葡萄酒聞名。</p>
+                <p><strong>💡 提示:</strong> 請稍後再試，或查看其他已載入完整資料的產區。</p>
+            `;
+            
+            detailsElement.innerHTML = detailsHTML;
+            
+            // 顯示彈出視窗
+            overlayDiv.style.display = 'block';
+            infoDiv.style.display = 'block';
+            infoDiv.classList.add('popup-show');
+            
+            // 防止背景滾動
+            document.body.style.overflow = 'hidden';
+        }
+
         // 導航選單切換功能
         function toggleNav() {
             const navMenu = document.getElementById('nav-menu');
@@ -747,7 +1060,8 @@
             // 移除所有按鈕的 active 狀態
             document.querySelectorAll('.country-tab').forEach(tab => {
                 tab.style.background = 'white';
-                tab.style.color = '#722f37';
+                tab.style.color = '#1d1d1f';
+                tab.style.borderColor = '#e5e5e7';
                 tab.classList.remove('active');
             });
             
@@ -762,9 +1076,32 @@
                 tab.textContent === country
             );
             if (activeTab) {
-                activeTab.style.background = '#722f37';
+                activeTab.style.background = '#007aff';
                 activeTab.style.color = 'white';
+                activeTab.style.borderColor = '#007aff';
                 activeTab.classList.add('active');
+            }
+        }
+
+        // 切換產區區塊的展開/收起狀態
+        function toggleRegionSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            const arrow = document.getElementById(`arrow-${sectionId}`);
+            
+            if (section && arrow) {
+                const isCollapsed = section.style.maxHeight === '0px';
+                
+                if (isCollapsed) {
+                    // 展開
+                    section.style.maxHeight = '1000px';
+                    arrow.style.transform = 'rotate(0deg)';
+                    arrow.textContent = '▼';
+                } else {
+                    // 收起
+                    section.style.maxHeight = '0px';
+                    arrow.style.transform = 'rotate(-90deg)';
+                    arrow.textContent = '▶';
+                }
             }
         }
 
@@ -772,6 +1109,19 @@
         function closeGrapeInfo() {
             const infoDiv = document.getElementById('grape-info');
             const overlayDiv = document.getElementById('grape-info-overlay');
+            
+            overlayDiv.style.display = 'none';
+            infoDiv.style.display = 'none';
+            infoDiv.classList.remove('popup-show');
+            
+            // 恢復背景滾動
+            document.body.style.overflow = 'auto';
+        }
+
+        // 關閉產區資訊彈出視窗
+        function closeRegionInfo() {
+            const infoDiv = document.getElementById('region-info');
+            const overlayDiv = document.getElementById('region-info-overlay');
             
             overlayDiv.style.display = 'none';
             infoDiv.style.display = 'none';
@@ -802,20 +1152,12 @@
             });
         });
 
-        // 視差滾動效果
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const rate = scrolled * -0.5;
-            const header = document.querySelector('header');
-            if (header) {
-                header.style.transform = `translateY(${rate}px)`;
-            }
-        });
-
         // 頁面載入動畫
         document.addEventListener('DOMContentLoaded', () => {
             // 載入葡萄品種資料
             loadGrapeData();
+            // 載入產區資料
+            loadRegionData();
             
             const cards = document.querySelectorAll('.card');
             cards.forEach((card, index) => {
@@ -824,11 +1166,13 @@
 
             // 點擊背景遮罩關閉彈出視窗
             document.getElementById('grape-info-overlay').addEventListener('click', closeGrapeInfo);
+            document.getElementById('region-info-overlay').addEventListener('click', closeRegionInfo);
             
             // ESC 鍵關閉彈出視窗
             document.addEventListener('keydown', (e) => {
                 if (e.key === 'Escape') {
                     closeGrapeInfo();
+                    closeRegionInfo();
                     closeNav(); // 同時關閉導航選單
                 }
             });
