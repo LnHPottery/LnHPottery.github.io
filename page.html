@@ -40,6 +40,12 @@
             letter-spacing: -0.02em;
         }
 
+        em{
+            color: #666;
+            padding-left: 32px;
+            display: block;
+        }
+
         .subtitle {
             font-size: 1.4rem;
             opacity: 0.8;
@@ -50,9 +56,10 @@
         nav {
             background-color: #f5f5f7;
             padding: 1.2rem 0;
-            position: sticky;
+            position: fixed;
+            width: 100%;
             top: 0;
-            z-index: 100;
+            z-index: 0;
             margin: 0;
         }
 
@@ -143,7 +150,7 @@
             width: calc(100vw - 48px);
             margin: 0 24px;
             box-sizing: border-box;
-            height: calc(100vh - 72px - 64px);            
+            height: calc(100vh - 84px);            
             border: 1px solid;
             border-radius: 4px;
         }
@@ -166,24 +173,25 @@
         .section-title {
             text-align: center;
             color: #1d1d1f;
-            margin: 3rem auto;
-            font-size: 1.2rem;
+            margin: 4rem auto 1rem;
+            font-size: 1.6rem;
             font-weight: 600;
             letter-spacing: -0.02em;
         }
 
         .section-img{
-            width: 480px;
+            width: 280px;
             display: block;
             margin: 0 auto;
         }
 
         .content-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 2rem;
             margin-top: 2rem;
             max-width: 90%;
+            justify-self: center;
         }
 
         .buttons-container {
@@ -204,6 +212,10 @@
             box-shadow: 0 16px 40px rgba(0,0,0,0.12);
         }
 
+        .card > *{
+            white-space: pre-line;
+        }
+
         .card h3 {
             color: #1d1d1f;
             margin-bottom: 1rem;
@@ -214,6 +226,11 @@
         .card p {
             color: #666;
             line-height: 1.7;
+        }
+
+        .card ul ul {
+            margin-bottom: 0.5rem;
+            padding-left: 1.2rem;
         }
 
         /* 按鈕樣式 */
@@ -238,16 +255,25 @@
             filter: brightness(1.1);
         }
 
+        .btn.grape {
+            width: 45%;
+            text-align: left;
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+
         /* 頁腳 */
         footer {
             background: linear-gradient(135deg, #1d1d1f 0%, #424245 100%);
             color: white;
             text-align: center;
-            position: fixed;
+            position: relative;
+            top: 100vh;
             bottom: 0;
             width: 100%;
             font-size: .8em;
-            padding-top: 8px;
+            padding: 8px 0;
+            height: fit-content;
         }
 
         /* 響應式設計 - 平板 */
@@ -320,7 +346,7 @@
                 font-size: 1rem;
             }
             nav {
-                padding: 0.8rem 0;
+                padding: 0.2rem 0;
             }
 
             .hamburger {
@@ -359,7 +385,14 @@
             }
 
             main {
-                padding: 2rem 0;
+                padding: 1rem 0;
+                top: 56px;
+            }
+
+            .btn.grape {
+                width: 100%;
+                margin-left: 0;
+                margin-right: 0;
             }
 
             .card {
@@ -375,7 +408,7 @@
         #grape-info, #region-info {
             min-width: 320px;
             max-width: 680px;
-            width: 80vw;
+            width: 90vw;
             position: fixed;
             top: 50%;
             left: 50%;
@@ -538,7 +571,7 @@
                 <li><a href="#regions" onclick="closeNav()">產區</a></li>
                 <li><a href="#numbers" onclick="closeNav()">侍酒溫度與重要數據</a></li>
                 <li><a href="#terroir" onclick="closeNav()">風土</a></li>
-                <li><a href="#fermentation" onclick="closeNav()">釀造工藝</a></li>
+                <li><a href="#winemaking" onclick="closeNav()">釀造工藝</a></li>
             </ul>
         </div>
     </nav>
@@ -585,22 +618,7 @@
                 <h3 class="section-title">侍酒溫度與重要數據</h3>
                 <img src="images/numbers.png" alt="Wine Serving Temperatures and Key Data" class="section-img">
                 <div class="content-grid">
-                    <div class="card">
-                        <h3>侍酒溫度</h3>
-                        <p>紅葡萄酒：16-18°C<br>白葡萄酒：8-12°C<br>起泡酒：6-10°C</p>
-                    </div>
-                    <div class="card">
-                        <h3>酒精濃度</h3>
-                        <p>一般葡萄酒的酒精濃度約在12-15%之間，甜酒可能較低，強化酒則可達20%以上。</p>
-                    </div>
-                    <div class="card">
-                        <h3>酸度</h3>
-                        <p>葡萄酒的酸度通常以pH值表示，範圍約在3.0至4.0之間，較低的pH值表示較高的酸度。</p>
-                    </div>
-                    <div class="card">
-                        <h3>單寧</h3>
-                        <p>單寧是紅葡萄酒中的重要成分，來自葡萄皮、籽和梗，影響口感和陳年潛力。</p>
-                    </div>
+                    <!-- 內容將由 JavaScript 動態生成 -->
                 </div>
             </section>
 
@@ -608,40 +626,17 @@
                 <h3 class="section-title">風土</h3>
                 <img src="images/terroir.png" alt="Terroir Elements" class="section-img">
                 <div class="content-grid">
-                    <div class="card">
-                        <h3>氣候</h3>
-                        <p>氣候影響葡萄的成熟度和風味，溫暖氣候通常產生較濃郁的葡萄酒，而涼爽氣候則帶來較高的酸度和清新感。</p>
-                    </div>
-                    <div class="card">
-                        <h3>土壤</h3>
-                        <p>土壤類型影響葡萄根系的發展和水分供應，不同的土壤會賦予葡萄酒不同的礦物質風味。</p>
-                    </div>
-                    <div class="card">
-                        <h3>地形</h3>
-                        <p>坡度和朝向影響陽光照射和排水，這些因素會影響葡萄的生長條件和品質。</p>
-                    </div>
-                    <div class="card">
-                        <h3>人為因素</h3>
-                        <p>農業實踐、葡萄品種選擇和釀造技術也會影響最終葡萄酒的風味和品質。</p>
-                    </div>
+                    <!-- 內容將由 JavaScript 動態生成 -->
                 </div>
             </section>
 
-            <section id="fermentation" class="fade-in" style="margin-bottom: 4rem;">
+            <section id="winemaking" class="fade-in" style="margin-bottom: 4rem;">
                 <h3 class="section-title">釀造工藝</h3>
-                <img src="images/fermentation.png" alt="Wine Fermentation Process" class="section-img">
+                <img src="images/winemaking.png" alt="Winemaking" class="section-img">
                 <div class="content-grid">
-                    <div class="card">
-                        <h3>發酵</h3>
-                        <p>發酵是將葡萄汁轉化為酒精的過程，通常由天然或添加的酵母進行。</p>
-                    </div>
-                    <div class="card">
-                        <h3>陳年</h3>
-                        <p>葡萄酒可以在不銹鋼桶、橡木桶或瓶中陳年，不同的陳年方式會影響風味和質地。</p>
-                    </div>
-                    <div class="card">
-                        <h3>過濾與澄清</h3>
-
+                    <!-- 內容將由 JavaScript 動態生成 -->
+                </div>
+            </section>
         </div>
     </main>
 
@@ -654,6 +649,8 @@
         // 全域變數用於存儲資料
         let grapeData = null;
         let regionData = null;
+        let keywordsData = null;
+        let numbersData = null;
         // 載入完整的 JSON 資料的函數
         async function loadGrapeData() {
             try {
@@ -696,13 +693,46 @@
             }
         }
 
+        // 載入關鍵詞資料的函數
+        async function loadKeywordsData() {
+            try {
+                const response = await fetch('wset_tables_json/keywords.json');
+                if (!response.ok) {
+                    throw new Error('Network response was not ok ' + response.statusText);
+                }
+                keywordsData = await response.json();
+                
+                // 資料載入完成後更新 terroir 和 winemaking 區塊
+                updateTerroirSection();
+                updateWinemakingSection();
+            } catch (error) {
+                console.error('There has been a problem with your fetch operation:', error);
+            }
+        }
+
+        // 載入數據資料的函數
+        async function loadNumbersData() {
+            try {
+                const response = await fetch('wset_tables_json/numbers.json');
+                if (!response.ok) {
+                    throw new Error('Network response was not ok ' + response.statusText);
+                }
+                numbersData = await response.json();
+                
+                // 資料載入完成後更新 numbers 區塊
+                updateNumbersSection();
+            } catch (error) {
+                console.error('There has been a problem with your fetch operation:', error);
+            }
+        }
+
         // 動態生成葡萄品種按鈕
         function generateGrapeButtons() {
             const container = document.getElementById('grape-buttons-container');
             if (!container || !grapeData) return;
             
             // 獲取所有葡萄品種名稱並排序
-            const grapeNames = Object.keys(grapeData).sort();
+            const grapeNames = Object.keys(grapeData);
             
             let buttonsHTML = '';
             
@@ -723,7 +753,7 @@
                 
                 // 生成按鈕 HTML
                 buttonsHTML += `
-                    <button class="btn" onclick="showGrapeInfo('${grapeName}')" 
+                    <button class="btn grape" onclick="showGrapeInfo(&quot;${grapeName}&quot;)" 
                             style="${buttonStyle}">${grapeName}
                     </button>
                 `;
@@ -738,7 +768,7 @@
             if (!container || !regionData) return;
             
             // 獲取所有國家名稱並排序
-            const countries = Object.keys(regionData).sort();
+            const countries = Object.keys(regionData);
             
             let buttonsHTML = '';
             
@@ -787,6 +817,9 @@
             let detailsHTML = '';
             
             // 基本資訊
+            if (grapeInfo.Aka) {
+                detailsHTML += `<p><strong>${grapeInfo.Aka.join(', ')}</strong></p><br>`;
+            }
             if (grapeInfo.Color) {
                 detailsHTML += `<p><strong>🎨 顏色:</strong> ${grapeInfo.Color}</p>`;
             }
@@ -859,7 +892,7 @@
                             const regionName = Array.isArray(regionInfo.region) ? regionInfo.region.join(' → ') : regionInfo.region;
                             detailsHTML += `<li style="margin-bottom: 0.5rem;">${regionName}`;
                             if (regionInfo.characteristics) {
-                                detailsHTML += ` <em style="color: #666;">(${regionInfo.characteristics})</em>`;
+                                detailsHTML += `<em>${regionInfo.characteristics}</em>`;
                             }
                             detailsHTML += `</li>`;
                         });
@@ -874,7 +907,7 @@
                         const regionName = Array.isArray(regionInfo.region) ? regionInfo.region.join(' → ') : regionInfo.region;
                         detailsHTML += `<li>${regionName}`;
                         if (regionInfo.characteristics) {
-                            detailsHTML += ` <em>(${regionInfo.characteristics})</em>`;
+                            detailsHTML += `<em>${regionInfo.characteristics}</em>`;
                         }
                         detailsHTML += `</li>`;
                     });
@@ -1105,6 +1138,193 @@
             }
         }
 
+        // 更新 Terroir 區塊內容
+        function updateTerroirSection() {
+            if (!keywordsData) return;
+            
+            const terroirCards = [];
+            
+            // 從 keywords 中提取 terroir 相關內容
+            for (const [term, data] of Object.entries(keywordsData)) {
+                if (data.type === 'terroir') {
+                    terroirCards.push({
+                        title: term,
+                        description: data.description,
+                        aka: data.aka || [],
+                        relatedTerms: data.related_terms || []
+                    });
+                }
+            }
+            
+            // 使用從 keywords.json 載入的卡片
+            const allCards = terroirCards;
+            
+            // 找到 terroir 區塊的 content-grid
+            const terroirSection = document.getElementById('terroir');
+            if (terroirSection) {
+                const contentGrid = terroirSection.querySelector('.content-grid');
+                if (contentGrid) {
+                    let cardsHTML = '';
+                    allCards.forEach(card => {
+                        cardsHTML += `
+                            <div class="card">
+                                <h3>${card.title}</h3>
+                                <p><strong>${card.aka.join(', ')}</strong></p>
+                                <div style="color: #666; line-height: 1.7;">
+                                    <p>${card.description}</p><br>`;
+                        
+                        if (card.relatedTerms && card.relatedTerms.length > 0) {
+                            cardsHTML += `<p><strong>相關概念：</strong> ${card.relatedTerms.join(', ')}</p>`;
+                        }
+                        
+                        cardsHTML += `
+                                </div>
+                            </div>`;
+                    });
+                    contentGrid.innerHTML = cardsHTML;
+                }
+            }
+        }
+
+        // 更新 Winemaking 區塊內容
+        function updateWinemakingSection() {
+            if (!keywordsData) return;
+            
+            const winemakingCards = [];
+            
+            // 從 keywords 中提取 winemaking 相關內容
+            for (const [term, data] of Object.entries(keywordsData)) {
+                if (data.type === 'winemaking') {
+                    winemakingCards.push({
+                        title: term,
+                        description: data.description,
+                        aka: data.aka || [],
+                        relatedTerms: data.related_terms || []
+                    });
+                }
+            }
+            
+            // 使用從 keywords.json 載入的卡片
+            const allCards = winemakingCards;
+            
+            // 找到 winemaking 區塊的 content-grid
+            const winemakingSection = document.getElementById('winemaking');
+            if (winemakingSection) {
+                const contentGrid = winemakingSection.querySelector('.content-grid');
+                if (contentGrid) {
+                    let cardsHTML = '';
+                    allCards.forEach(card => {
+                        cardsHTML += `
+                            <div class="card">
+                                <h3>${card.title}</h3>
+                                <p><strong>${card.aka.join(', ')}</strong></p>
+                                <div style="color: #666; line-height: 1.7;">
+                                    <p>${card.description}</p><br>`;
+                        
+                        if (card.relatedTerms && card.relatedTerms.length > 0) {
+                            cardsHTML += `<p><strong>相關概念：</strong> ${card.relatedTerms.join(', ')}</p>`;
+                        }
+                        
+                        cardsHTML += `
+                                </div>
+                            </div>`;
+                    });
+                    contentGrid.innerHTML = cardsHTML;
+                }
+            }
+        }
+
+        // 更新 Numbers 區塊內容
+        function updateNumbersSection() {
+            if (!numbersData) return;
+            
+            const numbersCards = [];
+            
+            // 遍歷 numbersData 的所有 key，動態生成內容
+            for (const [key, data] of Object.entries(numbersData)) {
+                let cardContent = '';
+                
+                // 動態處理不同的資料結構
+                if (Array.isArray(data)) {
+                    // 處理陣列型資料 (如 serving_temperatures)
+                    cardContent = '<ul>';
+                    data.forEach(item => {
+                        if (typeof item === 'object') {
+                            const keys = Object.keys(item);
+                            const values = keys.map(k => item[k]).join(' - ');
+                            cardContent += `<li>${values}</li>`;
+                        } else {
+                            cardContent += `<li>${item}</li>`;
+                        }
+                    });
+                    cardContent += '</ul>';
+                } else if (typeof data === 'object' && data !== null) {
+                    // 處理物件型資料
+                    cardContent = '<ul>';
+                    
+                    for (const [subKey, subValue] of Object.entries(data)) {
+                        // 跳過描述性欄位
+                        if (subKey === 'description' || subKey === 'notes' || subKey === 'scale notes') {
+                            continue;
+                        }
+                        
+                        if (typeof subValue === 'object' && subValue !== null) {                            
+                                // 處理一般物件資料
+                                cardContent += `<li><strong>${subKey}:</strong><ul>`;
+                                for (const [key, data] of Object.entries(subValue)) {
+                                    if (Array.isArray(data)) {
+                                        // 處理陣列型資料
+                                        cardContent += `<li><strong>${key}:</strong><ul>`;
+                                        data.forEach(item => {
+                                            cardContent += `<li>${item}</li>`;
+                                        });
+                                        cardContent += `</ul></li>`;
+                                    } else {
+                                        // 處理簡單值
+                                        cardContent += `<li><strong>${key}:</strong> ${data}</li>`;
+                                    }
+                                }
+                                cardContent += `</ul></li>`;
+                            
+                        } else {
+                            // 處理簡單值
+                            cardContent += `<li><strong>${subKey}:</strong> ${subValue}</li>`;
+                        }
+                    }
+                    cardContent += '</ul>';
+                } else {
+                    // 處理簡單值
+                    cardContent = `<p>${data}</p>`;
+                }
+                
+                if (cardContent) {
+                    numbersCards.push({
+                        title: key.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase()),
+                        description: cardContent
+                    });
+                }
+            }
+            
+            // 找到 numbers 區塊的 content-grid
+            const numbersSection = document.getElementById('numbers');
+            if (numbersSection) {
+                const contentGrid = numbersSection.querySelector('.content-grid');
+                if (contentGrid) {
+                    let cardsHTML = '';
+                    numbersCards.forEach(card => {
+                        cardsHTML += `
+                            <div class="card">
+                                <h3>${card.title}</h3>
+                                <div style="color: #666; line-height: 1.7;">
+                                    ${card.description}
+                                </div>
+                            </div>`;
+                    });
+                    contentGrid.innerHTML = cardsHTML;
+                }
+            }
+        }
+
         // 關閉葡萄品種資訊彈出視窗
         function closeGrapeInfo() {
             const infoDiv = document.getElementById('grape-info');
@@ -1158,6 +1378,10 @@
             loadGrapeData();
             // 載入產區資料
             loadRegionData();
+            // 載入關鍵詞資料
+            loadKeywordsData();
+            // 載入數據資料
+            loadNumbersData();
             
             const cards = document.querySelectorAll('.card');
             cards.forEach((card, index) => {
