@@ -1,0 +1,86 @@
+{
+  "alcohol": {
+    "low": "below 11%",
+    "medium": "11% - 13.9%",
+    "high": "14%+"
+  },
+  "fortified wines": {
+    "low": "15% - 16.4%",
+    "medium": "16.5% - 18.4%",
+    "high": "18.5%+"
+  },
+  "climate": {
+    "cool": {
+      "celsius": "16.5°C (62°F) or below"
+    },
+    "moderate": {
+      "celsius": "16.5°C - 18.5°C (62°F - 65°F)"
+    },
+    "warm": {
+      "celsius": "18.5°C - 21°C (65°F - 70°F)"
+    }
+  },
+  "fermentation": {
+    "white or rose wines": {
+      "celsius": "12°C - 22°C (54°F - 72°F)",
+      "note": "Fermentation temperature for white or rosé wines"
+    },
+    "red wines": {
+      "celsius": "20°C - 32°C (68°F - 90°F)",
+      "note": "Fermentation temperature for red wines"
+    }
+  },
+  "serving temperatures": {
+    "Well chilled": {
+      "temperature celsius": "6°C - 10°C (43°F - 50°F)",
+      "note": "Sparkling wine"
+    },
+    "Chilled": {
+      "temperature celsius": "7°C - 10°C (45°F - 50°F)",
+      "note": "Light-, medium-bodied white or rosé"
+    },
+    "Lightly chilled": {
+      "temperature celsius": "10°C - 13°C (50°F - 55°F)",
+      "note": "Full-bodied white"
+    },
+    "Room temperature or lightly chilled": {
+      "temperature celsius": "13°C - 18°C (55°F - 64°F)",
+      "note": "Light-bodied red"
+    },
+    "Room temperature": {
+      "temperature celsius": "15°C - 18°C (59°F - 64°F)",
+      "note": "Medium-, full-bodied red"
+    }
+  },
+  "pradikatswein": {
+    "kabinett": {
+      "minimum must weight": "67-82°Oe",
+      "minimum alcohol": "7%",
+      "note": "Lightest style, made from fully ripened grapes"
+    },
+    "spatlese": {
+      "minimum must weight": "76-90°Oe",
+      "minimum alcohol": "7%",
+      "note": "Late harvest, riper grapes with more intensity"
+    },
+    "auslese": {
+      "minimum must weight": "83-100°Oe",
+      "minimum alcohol": "7%",
+      "note": "Select harvest, individually picked bunches"
+    },
+    "beerenauslese eiswein": {
+      "minimum must weight": "110-128°Oe",
+      "minimum alcohol": "5.5%",
+      "note": "Berry selection or ice wine, very sweet and concentrated"
+    },
+    "trockenbeerenauslese": {
+      "minimum must weight": "150-154°Oe",
+      "minimum alcohol": "5.5%",
+      "note": "Dried berry selection, highest quality dessert wine made from botrytis-affected grapes"
+    },
+    "notes": {
+      "must weight dependency": "Minimum must weight depends on grape variety and wine-growing region",
+      "oechsle scale": "°Oe = Oechsle degrees, measuring grape must density/sugar content"
+    }
+  }
+}
