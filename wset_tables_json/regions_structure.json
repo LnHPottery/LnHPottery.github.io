@@ -1224,6 +1224,7 @@
             "Monforte de Lemos", "A Pobra do Brollón", "Quiroga", "Ribas de Sil", "A Pobra de Trives", "Manzaneda", "San Xoán de Río"
           ]
         }
+      }
     }
   },
   "Austria": {
@@ -2327,54 +2328,6 @@
         "Grape": {
           "Chardonnay": [
             "warm climate expression"
-          ]
-        }
-      }
-    },
-    "Wine Styles": {
-      "Amakuchi": {
-        "Description": [
-          "sweet wine style",
-          "historically popular",
-          "sugar added to moderate acidity",
-          "honey commonly used as sweetener"
-        ]
-      },
-      "100% Japanese Wine": {
-        "Description": [
-          "made only from domestically grown grapes",
-          "commands price premium",
-          "rarely exported",
-          "competition category since 2002"
-        ]
-      },
-      "Blended Wines": {
-        "Description": [
-          "may contain imported grape juice or concentrate",
-          "must be labeled as such by law",
-          "represents majority of Japanese wine production"
-        ]
-      }
-    },
-    "Designation System": {
-      "Mark of Origin": {
-        "Description": [
-          "legal designation system similar to AOC",
-          "no nationwide organization",
-          "regional appellation systems developing"
-        ]
-      },
-      "Regional Systems": {
-        "Nagano Appellation Control": {
-          "Description": [
-            "Nagano Prefecture's regional system",
-            "quality control measures"
-          ]
-        },
-        "Koshu Wine Domain Certification": {
-          "Description": [
-            "Koshu city's certification regulation",
-            "origin authentication"
           ]
         }
       }
