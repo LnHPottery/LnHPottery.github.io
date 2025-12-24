@@ -2,61 +2,61 @@
     "Malolactic Fermentation":{
         "type": "winemaking",
         "aka": ["MLF", "Malolactic Conversion", "乳酸發酵", "蘋果酸發酵"],
-        "description": "乳酸發酵是葡萄酒釀造中的二次發酵過程，將酸澀的蘋果酸（青蘋果風味）轉化為柔和的乳酸（奶油風味），通常發生在主發酵後。\n常見於夏多內（產生奶油、黃油風味），幾乎所有紅酒必做。降低酸度，增加圓潤感與酒體，並帶來奶油、堅果、黃油等風味。由乳酸菌（如Oenococcus oeni）進行，需控制溫度（18-22°C）和pH值（3.0-3.5）。\n雖然乳酸發酵能改善酒的口感，但進行蘋果酸乳酸發酵的葡萄酒會因細菌的存在而變得渾濁，也可能帶來不良風味（如醋酸），因此需謹慎管理。",
+        "Description": "乳酸發酵是葡萄酒釀造中的二次發酵過程，將酸澀的蘋果酸（青蘋果風味）轉化為柔和的乳酸（奶油風味），通常發生在主發酵後。\n常見於夏多內（產生奶油、黃油風味），幾乎所有紅酒必做。降低酸度，增加圓潤感與酒體，並帶來奶油、堅果、黃油等風味。由乳酸菌（如Oenococcus oeni）進行，需控制溫度（18-22°C）和pH值（3.0-3.5）。\n雖然乳酸發酵能改善酒的口感，但進行蘋果酸乳酸發酵的葡萄酒會因細菌的存在而變得渾濁，也可能帶來不良風味（如醋酸），因此需謹慎管理。",
         "related_terms": ["Lactic Acid Bacteria", "Oenococcus oeni", "Malic Acid", "Lactic Acid", "Acidity", "pH", "Wine Stability"]
     },
     "Carbonic Maceration":{
         "type": "winemaking",
         "aka": ["Whole Bunch Fermentation", "Whole Grape Fermentation", "碳酸浸漬法"],
-        "description": "二氧化碳浸漬法 是一種在壓榨前即讓整串葡萄發酵的釀酒技術，最常見於法國薄酒萊Beaujolais。此方法將完整葡萄置於充滿二氧化碳的密封容器中，在無氧環境下發酵；桶底因重力壓碎的葡萄則會進行一般發酵。由此釀出的酒單寧較少、口感柔和，可立即飲用，但因缺乏陳年而風味較單薄，例如薄酒萊新酒從採收至裝瓶僅需六週。除了薄酒萊外，朗格多克 Languedoc 和隆河地區 Rhône 也偶爾使用此法，並以 Nouveau 標示，多應用於紅酒釀造。",
+        "Description": "二氧化碳浸漬法 是一種在壓榨前即讓整串葡萄發酵的釀酒技術，最常見於法國薄酒萊Beaujolais。此方法將完整葡萄置於充滿二氧化碳的密封容器中，在無氧環境下發酵；桶底因重力壓碎的葡萄則會進行一般發酵。由此釀出的酒單寧較少、口感柔和，可立即飲用，但因缺乏陳年而風味較單薄，例如薄酒萊新酒從採收至裝瓶僅需六週。除了薄酒萊外，朗格多克 Languedoc 和隆河地區 Rhône 也偶爾使用此法，並以 Nouveau 標示，多應用於紅酒釀造。",
         "related_terms": ["Fermentation", "Carbon Dioxide", "Grape Varieties", "Beaujolais", "Low Tannin", "Fruitiness", "Carignan", "Pinot noir"]
     },
     "Traditional Method":{
         "type": "winemaking",
         "aka": ["Bottle Fermentation", "Méthode Champenoise", "瓶中發酵法"],
-        "description": " 葡萄酒在橡木桶中發酵一次，然後在添加酵母、酵母營養物質和糖（tirage）後在瓶中進行二次發酵。然後必須去除酵母沉澱物。首先進行轉瓶（riddling/remuage），瓶頸朝下，輕輕搖晃，使酒糟移到瓶頸處。最後，將倒置的瓶頸冷卻，使沉澱物凍結成小塊冰，將瓶子直立，打開臨時封蓋，這樣沉澱物就會被瓶內的壓力擠出。然後將酒灌滿瓶子以補充缺少的容量，並裝上普通的香檳軟木塞和瓶口。去除酒糟的過程稱為disgorging。\n歷史上，各個步驟都是手工完成的，但現在大多數葡萄酒的整個流程都已自動化。為了補充剩餘的酒液，通常會添加一定量的溶解在酒中的糖，以使氣泡酒的口感更加順滑。添加的糖稱為 dosage，而添加的液體被稱為 liqueur d'expedition\n許多情況下，葡萄酒會在酒糟上（sur lie）長時間儲存，並在二氧化碳壓力下進行除渣，以獲得更成熟的風味。無年份香檳的酒糟上儲存時間至少為15個月，年份香檳的酒糟上儲存時間至少三年。\n傳統方法適用於香檳、所有標有Crémant、Cava的歐洲葡萄酒、某些品種的Sekt以及其他在標籤上標有méthode traditionnelle、méthode classique或ferred in this bottle 的氣泡酒",
+        "Description": " 葡萄酒在橡木桶中發酵一次，然後在添加酵母、酵母營養物質和糖（tirage）後在瓶中進行二次發酵。然後必須去除酵母沉澱物。首先進行轉瓶（riddling/remuage），瓶頸朝下，輕輕搖晃，使酒糟移到瓶頸處。最後，將倒置的瓶頸冷卻，使沉澱物凍結成小塊冰，將瓶子直立，打開臨時封蓋，這樣沉澱物就會被瓶內的壓力擠出。然後將酒灌滿瓶子以補充缺少的容量，並裝上普通的香檳軟木塞和瓶口。去除酒糟的過程稱為disgorging。\n歷史上，各個步驟都是手工完成的，但現在大多數葡萄酒的整個流程都已自動化。為了補充剩餘的酒液，通常會添加一定量的溶解在酒中的糖，以使氣泡酒的口感更加順滑。添加的糖稱為 dosage，而添加的液體被稱為 liqueur d'expedition\n許多情況下，葡萄酒會在酒糟上（sur lie）長時間儲存，並在二氧化碳壓力下進行除渣，以獲得更成熟的風味。無年份香檳的酒糟上儲存時間至少為15個月，年份香檳的酒糟上儲存時間至少三年。\n傳統方法適用於香檳、所有標有Crémant、Cava的歐洲葡萄酒、某些品種的Sekt以及其他在標籤上標有méthode traditionnelle、méthode classique或ferred in this bottle 的氣泡酒",
         "related_terms": ["Sparkling Wine", "Secondary Fermentation", "Yeast", "Sugar", "Champagne", "Aging on Lees", "Cava"]
     },
     "Charmat Method":{
         "type": "winemaking",
         "aka": ["Tank Method", "Metodo Martinotti", "Cuve Close", "Charmat Fermentation", "大槽發酵"],
-        "description": "於 1895 年由義大利釀酒師 Federico Martinotti (1860–1924) 首次獲得專利。 1907 年，法國發明家 Eugène Charmat 進一步改進了該方法併申請了專利。現在，該方法以 Eugène Charmat 的名字命名，但也被稱為cuve close、metodo Italiano或tank method。葡萄酒在不銹鋼壓力罐中與糖和酵母混合。發酵在密閉系統中進行，因此二氧化碳無法直接逸出到大氣中，而是溶解在葡萄酒中。當糖轉化為酒精和二氧化碳時，酵母被過濾並去除，含有溶解二氧化碳的葡萄酒從密閉的反應容器轉移到瓶中。發酵時間會影響品質；發酵時間越長，葡萄酒的香氣保存得越好，氣泡也越細膩、越持久。這種釀造方法在美國、義大利 (Asti) 以及普羅塞克 (Prosecco) 葡萄酒中廣泛應用，在德國也用於釀造塞克特 (Sekt) 的各種酒。以夏馬法釀造的氣泡酒的生產成本遠低於傳統方法釀造的葡萄酒。",
+        "Description": "於 1895 年由義大利釀酒師 Federico Martinotti (1860–1924) 首次獲得專利。 1907 年，法國發明家 Eugène Charmat 進一步改進了該方法併申請了專利。現在，該方法以 Eugène Charmat 的名字命名，但也被稱為cuve close、metodo Italiano或tank method。葡萄酒在不銹鋼壓力罐中與糖和酵母混合。發酵在密閉系統中進行，因此二氧化碳無法直接逸出到大氣中，而是溶解在葡萄酒中。當糖轉化為酒精和二氧化碳時，酵母被過濾並去除，含有溶解二氧化碳的葡萄酒從密閉的反應容器轉移到瓶中。發酵時間會影響品質；發酵時間越長，葡萄酒的香氣保存得越好，氣泡也越細膩、越持久。這種釀造方法在美國、義大利 (Asti) 以及普羅塞克 (Prosecco) 葡萄酒中廣泛應用，在德國也用於釀造塞克特 (Sekt) 的各種酒。以夏馬法釀造的氣泡酒的生產成本遠低於傳統方法釀造的葡萄酒。",
         "related_terms": ["Sparkling Wine", "Secondary Fermentation", "Yeast", "Sugar", "Prosecco", "Asti", "Sket", "Carbonation"]
     },
     "Mistral":{
         "type": "terroir",
         "aka": ["Mistral Wind", "米斯特拉風"],
-        "description": "密史脫拉風 (加泰隆尼亞語：Mestral，希臘語：Μαΐστρος) ，法國南部從北沿著下隆河谷 (Rhone Valley) 吹的一種乾冷強風，為西北風。它一次能持續幾天，風速經常超過66公里每小時 (41英里每小時) ，有時可超過185公里每小時 (115英里每小時) 。在冬季和春季密史脫拉風最強並最多見，有時能給莊稼造成重大損害。它影響土倫以東的朗格多克(Languedoc)平原和普羅旺斯(Provence)的東北部，在那裡它表現為強烈的西風。它對整個法國地中海沿岸都有重大影響，並經常在科西嘉島和巴利阿里群島之間的地中海地區引發突發風暴。",
+        "Description": "密史脫拉風 (加泰隆尼亞語：Mestral，希臘語：Μαΐστρος) ，法國南部從北沿著下隆河谷 (Rhone Valley) 吹的一種乾冷強風，為西北風。它一次能持續幾天，風速經常超過66公里每小時 (41英里每小時) ，有時可超過185公里每小時 (115英里每小時) 。在冬季和春季密史脫拉風最強並最多見，有時能給莊稼造成重大損害。它影響土倫以東的朗格多克(Languedoc)平原和普羅旺斯(Provence)的東北部，在那裡它表現為強烈的西風。它對整個法國地中海沿岸都有重大影響，並經常在科西嘉島和巴利阿里群島之間的地中海地區引發突發風暴。",
         "related_terms": ["Climate", "Mediterranean", "Southern France", "Rhône Valley", "Weather Patterns", "Viticulture"]
     },
     "Phylloxera":{
         "type": "terroir",
         "aka": ["Grape Phylloxera", "Daktulosphaira vitifoliae", "葡萄根瘤蚜"],
-        "description": "根瘤蚜 (學名：Daktulosphaira vitifoliae) 是一種寄生於葡萄的害蟲，會造成葡萄根的腐爛，令植株死亡。根瘤蚜原產於北美洲東部，因商旅關係帶回歐洲，現在已遍布世界各地，包括加拿大、法國、以色列及中國等。根瘤蚜是一種淺黃色的微型昆蟲，寄生於葡萄的根和葉，視乎其品種而定。\n1863年在法國發現根瘤蚜，在19世紀中至末期，約三分之二的葡萄園受根瘤蚜影響。1869年法國生物學家找到根瘤蚜源頭在美洲，於是利用接枝的方法種植葡萄，令蟲災得以控制。但1894年，西班牙的赫雷斯產區亦爆發了葡萄根瘤蚜蟲災害，令當地遭到沉重打擊，大多數小種植園無法與災害抗爭，不得不永遠荒廢了他們的種植園。",
+        "Description": "根瘤蚜 (學名：Daktulosphaira vitifoliae) 是一種寄生於葡萄的害蟲，會造成葡萄根的腐爛，令植株死亡。根瘤蚜原產於北美洲東部，因商旅關係帶回歐洲，現在已遍布世界各地，包括加拿大、法國、以色列及中國等。根瘤蚜是一種淺黃色的微型昆蟲，寄生於葡萄的根和葉，視乎其品種而定。\n1863年在法國發現根瘤蚜，在19世紀中至末期，約三分之二的葡萄園受根瘤蚜影響。1869年法國生物學家找到根瘤蚜源頭在美洲，於是利用接枝的方法種植葡萄，令蟲災得以控制。但1894年，西班牙的赫雷斯產區亦爆發了葡萄根瘤蚜蟲災害，令當地遭到沉重打擊，大多數小種植園無法與災害抗爭，不得不永遠荒廢了他們的種植園。",
         "related_terms": ["Vineyards", "Grapevines", "Pest Management", "Rootstocks", "Grafting", "Wine Industry"]
     },
     "Noble Rot":{
         "type": "terroir",
         "aka": ["Botrytis cinerea", "貴腐"],
-        "description": "貴腐 (德語：Edelfäule，匈牙利語：Aszúsodás，法語：pourriture noble，義大利語：Muffa nobile，英語：Noble rot) ，是一種被灰葡萄孢菌 (Botrytis cinerea) 感染表皮之後的葡萄狀態。貴腐葡萄製成的葡萄酒，甜度極高，因葡萄需每一粒手工採摘故被稱為逐粒精選酒，而其中最高級的為貴腐甜白酒。由於使葡萄受到感染穿孔而又不全部腐爛需要特定的氣候條件，因此這種葡萄產量極低，得名貴腐。以貴腐葡萄製酒的傳統，源於匈牙利與德國。",
+        "Description": "貴腐 (德語：Edelfäule，匈牙利語：Aszúsodás，法語：pourriture noble，義大利語：Muffa nobile，英語：Noble rot) ，是一種被灰葡萄孢菌 (Botrytis cinerea) 感染表皮之後的葡萄狀態。貴腐葡萄製成的葡萄酒，甜度極高，因葡萄需每一粒手工採摘故被稱為逐粒精選酒，而其中最高級的為貴腐甜白酒。由於使葡萄受到感染穿孔而又不全部腐爛需要特定的氣候條件，因此這種葡萄產量極低，得名貴腐。以貴腐葡萄製酒的傳統，源於匈牙利與德國。",
         "related_terms": ["Dessert Wine", "Sweet Wine", "Sauternes", "Tokaji", "Climate Conditions", "Grape Varieties", "Furmint", "Semillon", "Riesling"]
     },
     "GSM Blend":{
-        "type": "terroir",
+        "type": "winemaking",
         "aka": ["Rhône Blend", "Côtes du Rhône Blend", "隆河混調", "GSM 混調"],
-        "description": "GSM 混調是指以格那希(Grenache)、西拉(Syrah)、慕維得爾(Mourvèdre)三個品種為主的紅酒混調，起源於法國隆河地區的傳統釀造。這個混調的特色在於活潑果香的格那希與深沈胡椒風味的西拉，再加上慕維得爾的複雜性結合。\n\n教皇新堡(Châteauneuf-du-Pape)在1936年建立了法國第一個法定產區制度，並首次將隆河混調法制化，當時允許使用13個品種(包含白葡萄)，現今可使用19個品種。然而格那希、西拉、慕維得爾仍是最重要的三個品種。\n\n這種混調風格在溫暖氣候地區表現優異，如西班牙、南澳、南非、美國部分地區和法國南部。澳洲將此三個品種稱為Grenache、Shiraz、Mataro，並在酒標上按比例順序標示。美國的Tablas Creek酒莊在1990年將隆河品種引入加州Paso Robles，首批插枝來自教皇新堡的Château de Beaucastel酒莊。\n\n典型的GSM混調呈現覆盆子、黑莓風味，伴隨迷迭香、烘焙香料、薰衣草香氣，酒體中至飽滿，中高單寧，中等酸度，酒精度13.5-15%，適合窖藏3-5年。",
+        "Description": "GSM 混調是指以格那希(Grenache)、西拉(Syrah)、慕維得爾(Mourvèdre)三個品種為主的紅酒混調，起源於法國隆河地區的傳統釀造。這個混調的特色在於活潑果香的格那希與深沈胡椒風味的西拉，再加上慕維得爾的複雜性結合。\n\n教皇新堡(Châteauneuf-du-Pape)在1936年建立了法國第一個法定產區制度，並首次將隆河混調法制化，當時允許使用13個品種(包含白葡萄)，現今可使用19個品種。然而格那希、西拉、慕維得爾仍是最重要的三個品種。\n\n這種混調風格在溫暖氣候地區表現優異，如西班牙、南澳、南非、美國部分地區和法國南部。澳洲將此三個品種稱為Grenache、Shiraz、Mataro，並在酒標上按比例順序標示。美國的Tablas Creek酒莊在1990年將隆河品種引入加州Paso Robles，首批插枝來自教皇新堡的Château de Beaucastel酒莊。\n\n典型的GSM混調呈現覆盆子、黑莓風味，伴隨迷迭香、烘焙香料、薰衣草香氣，酒體中至飽滿，中高單寧，中等酸度，酒精度13.5-15%，適合窖藏3-5年。",
         "related_terms": ["Grenache", "Syrah", "Mourvèdre", "Châteauneuf-du-Pape", "Côtes du Rhône", "Red Wine Blend", "Mediterranean Climate", "Rhône Valley", "Australia GSM", "Warm Climate Viticulture"]
     },
     "Bordeaux Blend":{
-        "type": "terroir",
+        "type": "winemaking",
         "aka": ["Bordeaux-style Blend", "波爾多混調", "波爾多風格混調", "Classic Bordeaux Blend"],
-        "description": "波爾多混調是以卡本內蘇維濃(Cabernet Sauvignon)和梅洛(Merlot)為主導的紅酒混調，起源於法國波爾多地區的傳統釀造。這種混調體系允許使用六個主要品種：卡本內蘇維濃、梅洛、卡本內弗朗(Cabernet Franc)、小維多(Petit Verdot)、馬爾貝克(Malbec)，以及偶爾使用的卡美內(Carménère)。\n\n左岸(Left Bank)以卡本內蘇維濃為主導，包括梅多克(Médoc)、上梅多克(Haut-Médoc)的瑪歌(Margaux)、波雅克(Pauillac)等產區，這些地區礫石土壤適合晚熟的卡本內蘇維濃。右岸(Right Bank)以梅洛為主，包括聖愛美濃(Saint-Émilion)和波美侯(Pomerol)，黏土土壤更適合早熟的梅洛。\n\n各品種功能：卡本內蘇維濃提供骨架、單寧和陳年潛力；梅洛增加圓潤度和豐富果味；卡本內弗朗帶來香草和香料複雜性；小維多增加顏色和單寧；馬爾貝克提供深度和結構。這種混調風格已被全世界採用，特別是在加州納帕谷、澳洲瑪格麗特河、智利中央山谷等地區。\n\n典型波爾多混調呈現黑醋栗、黑櫻桃風味，伴隨石墨、巧克力、乾燥香草香氣，酒體飽滿，高單寧，中等酸度，酒精度13.5-15%，陳年潛力10年以上，最適合搭配牛排等紅肉料理。",
+        "Description": "波爾多混調是以卡本內蘇維濃(Cabernet Sauvignon)和梅洛(Merlot)為主導的紅酒混調，起源於法國波爾多地區的傳統釀造。這種混調體系允許使用六個主要品種：卡本內蘇維濃、梅洛、卡本內弗朗(Cabernet Franc)、小維多(Petit Verdot)、馬爾貝克(Malbec)，以及偶爾使用的卡美內(Carménère)。\n\n左岸(Left Bank)以卡本內蘇維濃為主導，包括梅多克(Médoc)、上梅多克(Haut-Médoc)的瑪歌(Margaux)、波雅克(Pauillac)等產區，這些地區礫石土壤適合晚熟的卡本內蘇維濃。右岸(Right Bank)以梅洛為主，包括聖愛美濃(Saint-Émilion)和波美侯(Pomerol)，黏土土壤更適合早熟的梅洛。\n\n各品種功能：卡本內蘇維濃提供骨架、單寧和陳年潛力；梅洛增加圓潤度和豐富果味；卡本內弗朗帶來香草和香料複雜性；小維多增加顏色和單寧；馬爾貝克提供深度和結構。這種混調風格已被全世界採用，特別是在加州納帕谷、澳洲瑪格麗特河、智利中央山谷等地區。\n\n典型波爾多混調呈現黑醋栗、黑櫻桃風味，伴隨石墨、巧克力、乾燥香草香氣，酒體飽滿，高單寧，中等酸度，酒精度13.5-15%，陳年潛力10年以上，最適合搭配牛排等紅肉料理。",
         "related_terms": ["Cabernet Sauvignon", "Merlot", "Cabernet Franc", "Petit Verdot", "Malbec", "Left Bank", "Right Bank", "Médoc", "Pauillac", "Saint-Émilion", "Pomerol", "Red Wine Blend", "Bordeaux", "Napa Valley", "Margaret River"]
     },
     "Cape Blend":{
-        "type": "terroir",
+        "type": "winemaking",
         "aka": ["South African Cape Blend", "開普混調", "南非開普混調", "Pinotage Blend"],
-        "description": "開普混調(Cape Blend)是南非特有的紅酒混調風格，以南非本土主要品種皮諾塔吉(Pinotage)為主導的典型混調，目前沒有法定要求。這種混調包含皮諾塔吉(30-70%)作為主要或主導品種，以及卡本內蘇維濃(Cabernet Sauvignon)、梅洛(Merlot)和西拉(Shiraz/Syrah)的各種組合與運用。\n\n業界普遍認為皮諾塔吉的比例不應過高，以維持混調的平衡性。根據南非法規，若要在酒標上標示某個品種，該品種在混調中的比例必須至少達到20%。首家使用此命名的生產商是拜爾斯克魯夫酒莊(Beyerskloof)。\n\n皮諾塔吉為南非獨有品種，是黑皮諾(Pinot Noir)與神索(Cinsault)的雜交品種，於1925年由史德倫博斯大學的亞伯拉罕·貝霍德(Abraham Perold)教授培育。開普混調結合了皮諾塔吉獨特的煙燻、咖啡、香料風味與國際品種的經典特性，創造出具有南非特色的混調風格。\n\n典型開普混調呈現深色莓果、黑莓、李子風味，伴隨煙燻、咖啡、香料、橡木香氣，酒體中等至飽滿，中高單寧，中等酸度，展現南非西開普地區地中海式氣候的特色，適合與烤肉、野味等料理搭配。",
+        "Description": "開普混調(Cape Blend)是南非特有的紅酒混調風格，以南非本土主要品種皮諾塔吉(Pinotage)為主導的典型混調，目前沒有法定要求。這種混調包含皮諾塔吉(30-70%)作為主要或主導品種，以及卡本內蘇維濃(Cabernet Sauvignon)、梅洛(Merlot)和西拉(Shiraz/Syrah)的各種組合與運用。\n\n業界普遍認為皮諾塔吉的比例不應過高，以維持混調的平衡性。根據南非法規，若要在酒標上標示某個品種，該品種在混調中的比例必須至少達到20%。首家使用此命名的生產商是拜爾斯克魯夫酒莊(Beyerskloof)。\n\n皮諾塔吉為南非獨有品種，是黑皮諾(Pinot Noir)與神索(Cinsault)的雜交品種，於1925年由史德倫博斯大學的亞伯拉罕·貝霍德(Abraham Perold)教授培育。開普混調結合了皮諾塔吉獨特的煙燻、咖啡、香料風味與國際品種的經典特性，創造出具有南非特色的混調風格。\n\n典型開普混調呈現深色莓果、黑莓、李子風味，伴隨煙燻、咖啡、香料、橡木香氣，酒體中等至飽滿，中高單寧，中等酸度，展現南非西開普地區地中海式氣候的特色，適合與烤肉、野味等料理搭配。",
         "related_terms": ["Pinotage", "Cabernet Sauvignon", "Merlot", "Shiraz", "Syrah", "South Africa", "Western Cape", "Stellenbosch", "Beyerskloof", "Red Wine Blend", "Abraham Perold", "Pinot Noir", "Cinsault"]
     }
 }
