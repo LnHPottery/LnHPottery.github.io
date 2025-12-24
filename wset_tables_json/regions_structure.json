@@ -1,5 +1,6 @@
 {
   "France": {
+    "Location": "5.55/46.483/2.484",
     "Alsace": {
       "Location": "7.68/48.417/7.559",
       "Grape": {
@@ -838,6 +839,393 @@
       }
     }
   },
+  "Italy": {
+    "Location": "5.41/41.515/12.621",
+    "Campania": {
+      "Location": "7.64/40.753/14.784",
+      "Fiano di Avellino": {
+        "Grape": {
+          "Fiano": []
+        }
+      }
+    },
+    "Friuli-Venezia Giulia": {
+      "Location": "8.02/46.117/13.12",
+      "Grape": {
+        "Pinot grigio": [
+          "more complex",
+          "fuller-body"
+        ]
+      }
+    },
+    "Marche": {
+      "Location": "7.82/43.332/13.051",
+      "Verdicchio dei Castelli di Jesi": {
+        "Grape": {
+          "Verdicchio": []
+        }
+      }
+    },
+    "Piemonte": {
+      "Location": "7.02/45.231/9.192",
+      "Barbaresco": {
+        "Location": "11.48/44.7075/8.105",
+        "Grape": {
+          "Nebbiolo": []
+        }
+      },
+      "Gavi": {
+        "Location": "9.79/44.648/8.7733",
+        "Grape": {
+          "Cortese": []
+        }
+      },
+      "Langhe": {
+        "Location": "9.14/44.5794/7.9711",
+        "Grape": {
+          "Nebbiolo": [],
+          "Barbera": []
+        },
+        "Barolo": {
+          "Location": "11.41/44.6247/7.9542",
+          "Grape": {
+            "Nebbiolo": []
+          }
+        },
+        "Babera d'Alba": {
+          "Location": "7.02/45.231/9.192",
+          "Grape": {
+            "Barbera": []
+          }
+        }
+      },
+      "Monferrato": {
+        "Location": "8.63/44.8241/8.3906",
+        "Grape": {
+          "Barbera": []
+        },
+        "Barbera d'Asti": {
+          "Location": "8.74/44.851/8.2457",
+          "Grape": {
+            "Barbera": []
+          }
+        },
+        "Asti": {
+          "Location": "9.99/44.7101/8.2361",
+          "Grape": {
+            "Moscato / Muscat": [
+              "sweet sparkling wine"
+            ]
+          }
+        }
+      }
+    },
+    "Puglia": {
+      "Location": "6.95/41.019/16.727",
+      "Grape": {
+        "Zinfandel / Primitivo": [
+          "soft",
+          "fruity",
+          "dry"
+        ]
+      }
+    },
+    "Tuscany": {
+      "Brunello di Montalcino": {
+        "Grape": {
+          "Sangiovese": [
+            "powerful",
+            "full-bodied",
+            "very high tannins - must mature in oak"
+          ]
+        }
+      },
+      "Chianti": {
+        "Grape": {
+          "Sangiovese": []
+        }
+      },
+      "Montepulciano d'Abruzzo": {
+        "Grape": {
+          "Montepulciano": []
+        }
+      }
+    },
+    "Veneto": {
+      "Amarone della Valpolicella": {
+        "Grape": {
+          "Corvina": [
+            "partially dried fruits",
+            "dry to off-dry",
+            "high alcohol",
+            "high tannins",
+            "pronounced flavours and dried fruit (prunes, raisins, figs)"
+          ]
+        }
+      },
+      "Recioto della Valpolicella": {
+        "Grape": {
+          "Corvina": [
+            "sweet from partially dried grapes"
+          ]
+        }
+      },
+      "Recioto di Soave": {
+        "Grape": {
+          "Garganega": [
+            "sweet",
+            "appassimento"
+          ]
+        }
+      },
+      "Soave": {
+        "Grape": {
+          "Garganega": []
+        }
+      },
+      "Valpolicella": {
+        "Grape": {
+          "Corvina": []
+        }
+      },
+      "Veneto": {
+        "Grape": {
+          "Pinot grigio": [
+            "short finish",
+            "acceptable to good quality"
+          ]
+        }
+      },
+      "delle Venezie": {
+        "Grape": {
+          "Pinot grigio": [
+            "short finish",
+            "acceptable to good quality"
+          ]
+        }
+      }
+    }
+  },
+  "Spain": {
+    "Location": "5.04/36.13/-6.92",
+    "Catalunya": {
+      "Location": "7.48/41.654/1.767",
+      "Grape": {
+        "Tempranillo": [
+          "from simple fruity and light to powerful oak-aged"
+        ]
+      },
+      "Priorat": {
+        "Grape": {
+          "Grenache / Garnacha": [
+            "old vines: the most powerful full-bodied"
+          ]
+        }
+      }
+    },
+    "Navarra": {
+      "Location": "8.31/42.377/-1.8",
+      "Grape": {
+        "Grenache / Garnacha": [
+          "dry rosé wines"
+        ]
+      }
+    },
+    "Ribera del Duero": {
+      "Location": "9.05/41.6454/-3.6602",
+      "Grape": {
+        "Tempranillo": [
+          "full-bodied",
+          "fresh black-fruit flavours"
+        ]
+      }
+    },
+    "Rioja": {
+      "Location": "8.49/42.3315/-2.4065",
+      "Grape": {
+        "Grenache / Garnacha": [],
+        "Tempranillo": [
+          "sometimes blended with Garnacha"
+        ]
+      }
+    },
+    "Galicia": {
+      "Location": "7.95/42.8/-8.016",
+      "Rías Baixas": {
+        "Location": "8.12/42.395/-8.524",
+        "Grape": {
+          "Albariño": [
+            "Represents over 90% of all vines planted",
+            "Principal variety for white wines",
+            "Introduced by Cistercian monks in 12th century",
+            "Produces distinctive white wines adapted to Atlantic climate"
+          ],
+          "Loureira blanca": [
+            "Authorized white grape variety",
+            "Aromatic white variety contributing to blends"
+          ],
+          "Treixadura": [
+            "Authorized white grape variety",
+            "Traditional grape used in regional white wines"
+          ],
+          "Caiño blanca": [
+            "Authorized white grape variety",
+            "Indigenous white variety"
+          ],
+          "Torrontés": [
+            "Authorized white grape variety",
+            "Aromatic variety"
+          ],
+          "Godello": [
+            "Authorized white grape variety",
+            "Quality white variety also found in other Galician regions"
+          ],
+          "Caiño tinto": [
+            "Authorized red grape variety",
+            "Native red grape variety part of traditional blends"
+          ],
+          "Espadeiro": [
+            "Authorized red grape variety",
+            "Traditional red variety"
+          ],
+          "Loureira Tinta": [
+            "Authorized red grape variety",
+            "Red version of aromatic Loureira"
+          ],
+          "Sousón": [
+            "Authorized red grape variety",
+            "Indigenous red variety"
+          ],
+          "Mencía": [
+            "Authorized red grape variety",
+            "Important red variety in Galicia"
+          ],
+          "Brancellao": [
+            "Authorized red grape variety",
+            "Traditional red grape contributing to regional blends"
+          ]
+        },
+        "Val do Salnés": {
+          "Location": "Lower reaches of river Umia, centered on Cambados",
+          "Landscape": "Low undulating hills, vineyards on slopes and valley floors",
+          "Soil": "Rocky and alluvial"
+        },
+        "O Rosal": {
+          "Location": "Along Portuguese frontier in basin of river Miño, from Atlantic coast to Tui",
+          "Landscape": "Vineyards planted on terraces on banks of Miño",
+          "Soil": "Alluvial"
+        },
+        "Condado do Tea": {
+          "Location": "From Tui eastwards along Miño valley to neighbouring Ribeiro",
+          "Landscape": "More abrupt terrain with several small river valleys",
+          "Soil": "Granite and slate based"
+        },
+        "Soutomaior": {
+          "Location": "South of Pontevedra city, incorporated into DO in 1996",
+          "Soil": "Light and sandy, covered with granite"
+        },
+        "Ribera de Ulla": {
+          "Location": "North of Pontevedra, incorporated in 2000",
+          "Soil": "Mainly alluvial"
+        }
+      },
+      "Ribeira Sacra": {
+        "Location": "8.79/42.5453/-7.4953",
+        "Grape": {
+          "Mencía": [
+            "principal red variety",
+            "grown on steep terraced slopes called socalcos",
+            "hand-harvested due to impossible mechanization",
+            "produces distinctive red wines"
+          ],
+          "Godello": [
+            "principal white variety",
+            "adapted to steep canyon vineyards",
+            "produces mineral-driven white wines"
+          ],
+          "Brancellao": [
+            "traditional red grape variety",
+            "contributes to regional red wine blends"
+          ],
+          "Merenzao": [
+            "red grape variety (Trousseau)",
+            "adds complexity to red wines"
+          ],
+          "Sousón": [
+            "indigenous red variety",
+            "traditional grape of the region"
+          ],
+          "Caiño Tinto": [
+            "native red grape variety",
+            "part of traditional regional blends"
+          ],
+          "Loureira": [
+            "aromatic white variety",
+            "contributes to white wine blends"
+          ],
+          "Treixadura": [
+            "traditional white grape",
+            "used in regional white wines"
+          ],
+          "Dona Branca": [
+            "indigenous white variety",
+            "adapted to regional terroir"
+          ],
+          "Albariño": [
+            "also grown in Ribeira Sacra",
+            "produces crisp white wines"
+          ],
+          "Torrontés": [
+            "aromatic white variety"
+          ],
+          "Branco Lexítimo": [
+            "traditional white grape"
+          ],
+          "Caíño Branco": [
+            "indigenous white variety"
+          ],
+          "Garnacha Tintorera": [
+            "authorized red variety (Alicante Bouschet)"
+          ],
+          "Tempranillo": [
+            "authorized red variety"
+          ],
+          "Mouratón": [
+            "authorized red variety (Juan García)"
+          ]
+        },
+        "Chantada": {
+          "Location": "7.77/42.62/-7.77",
+           "Municipalities": [
+            "Portomarín", "Taboada", "Chantada", "Carballedo", "A Peroxa"
+          ]
+        },
+        "Amandi": {
+          "Location": "7.50/42.53/-7.50",
+          "Municipalities": [
+            "Sober", "Monforte de Lemos"
+          ]
+        },
+        "Ribeiras do Miño": {
+          "Location": "7.70/42.60/-7.70",
+          "Municipalities": [
+            "Paradela", "O Saviñao", "Pantón", "Sober", "Monforte de Lemos"
+          ]
+        },
+        "Ribeiras do Sil": {
+          "Location": "7.30/42.40/-7.30",
+          "Municipalities": [
+            "A Teixeira", "Parada de Sil", "Castro Caldelas", "Nogueira de Ramuín"
+          ]
+        },
+        "Quiroga-Bibei": {
+          "Location": "7.25/42.47/-7.25",
+          "Municipalities": [
+            "Monforte de Lemos", "A Pobra do Brollón", "Quiroga", "Ribas de Sil", "A Pobra de Trives", "Manzaneda", "San Xoán de Río"
+          ]
+        }
+    }
+  },
   "Austria": {
     "Location": "13.33/47.7167/14.9167",
     "Grape": {
@@ -1224,216 +1612,89 @@
       }
     }
   },
-  "Italy": {
-    "Campania": {
-      "Location": "7.64/40.753/14.784",
-      "Fiano di Avellino": {
-        "Grape": {
-          "Fiano": []
-        }
-      }
-    },
-    "Friuli-Venezia Giulia": {
-      "Location": "8.02/46.117/13.12",
+  "Germany": {
+    "Location": "10.45/51.1657/10.4515",
+    "Mosel": {
       "Grape": {
-        "Pinot grigio": [
-          "more complex",
-          "fuller-body"
+        "Riesling": [
+          "lighter in body",
+          "medium sweetness to balance very high acidity"
         ]
       }
     },
-    "Marche": {
-      "Location": "7.82/43.332/13.051",
-      "Verdicchio dei Castelli di Jesi": {
-        "Grape": {
-          "Verdicchio": []
-        }
-      }
-    },
-    "Piemonte": {
-      "Location": "7.02/45.231/9.192",
-      "Barbaresco": {
-        "Location": "11.48/44.7075/8.105",
-        "Grape": {
-          "Nebbiolo": []
-        }
-      },
-      "Gavi": {
-        "Location": "9.79/44.648/8.7733",
-        "Grape": {
-          "Cortese": []
-        }
-      },
-      "Langhe": {
-        "Location": "9.14/44.5794/7.9711",
-        "Grape": {
-          "Nebbiolo": [],
-          "Barbera": []
-        },
-        "Barolo": {
-          "Location": "11.41/44.6247/7.9542",
-          "Grape": {
-            "Nebbiolo": []
-          }
-        },
-        "Babera d'Alba": {
-          "Location": "7.02/45.231/9.192",
-          "Grape": {
-            "Barbera": []
-          }
-        }
-      },
-      "Monferrato": {
-        "Location": "8.63/44.8241/8.3906",
-        "Grape": {
-          "Barbera": []
-        },
-        "Barbera d'Asti": {
-          "Location": "8.74/44.851/8.2457",
-          "Grape": {
-            "Barbera": []
-          }
-        },
-        "Asti": {
-          "Location": "9.99/44.7101/8.2361",
-          "Grape": {
-            "Moscato / Muscat": [
-              "sweet sparkling wine"
-            ]
-          }
-        }
-      }
-    },
-    "Puglia": {
-      "Location": "6.95/41.019/16.727",
+    "Pfalz": {
       "Grape": {
-        "Zinfandel / Primitivo": [
-          "soft",
-          "fruity",
-          "dry"
+        "Riesling": [
+          "dry",
+          "medium-bodied"
         ]
       }
     },
-    "Tuscany": {
-      "Brunello di Montalcino": {
-        "Grape": {
-          "Sangiovese": [
-            "powerful",
-            "full-bodied",
-            "very high tannins - must mature in oak"
-          ]
-        }
-      },
-      "Chianti": {
-        "Grape": {
-          "Sangiovese": []
-        }
-      },
-      "Montepulciano d'Abruzzo": {
-        "Grape": {
-          "Montepulciano": []
-        }
-      }
-    },
-    "Veneto": {
-      "Amarone della Valpolicella": {
-        "Grape": {
-          "Corvina": [
-            "partially dried fruits",
-            "dry to off-dry",
-            "high alcohol",
-            "high tannins",
-            "pronounced flavours and dried fruit (prunes, raisins, figs)"
-          ]
-        }
-      },
-      "Recioto della Valpolicella": {
-        "Grape": {
-          "Corvina": [
-            "sweet from partially dried grapes"
-          ]
-        }
-      },
-      "Recioto di Soave": {
-        "Grape": {
-          "Garganega": [
-            "sweet",
-            "appassimento"
-          ]
-        }
-      },
-      "Soave": {
-        "Grape": {
-          "Garganega": []
-        }
-      },
-      "Valpolicella": {
-        "Grape": {
-          "Corvina": []
-        }
-      },
-      "Veneto": {
-        "Grape": {
-          "Pinot grigio": [
-            "short finish",
-            "acceptable to good quality"
-          ]
-        }
-      },
-      "delle Venezie": {
-        "Grape": {
-          "Pinot grigio": [
-            "short finish",
-            "acceptable to good quality"
-          ]
-        }
+    "Rheingau": {
+      "Grape": {
+        "Riesling": [
+          "drier and more body than Mosel"
+        ]
       }
     }
   },
-  "Spain": {
-    "Catalunya": {
+  "Hungary": {
+    "Location": "7.31/47.18/19.505",
+    "Tokaj": {
+      "Location": "9.46/48.255/21.3916",
       "Grape": {
-        "Tempranillo": [
-          "from simple fruity and light to powerful oak-aged"
+        "Furmint": [
+          "Tokaji Aszú: sweet from grapes affected by botrytis"
         ]
-      },
-      "Priorat": {
+      }
+    }
+  },
+  "New Zealand": {
+    "Location": "174.8859/-40.9006/174.8859",
+    "North Island": {
+      "Martinborough": {
         "Grape": {
-          "Grenache / Garnacha": [
-            "old vines: the most powerful full-bodied"
+          "Pinot Noir": []
+        }
+      },
+      "Hawke's Bay": {
+        "Grape": {
+          "Cabernet sauvignon": [],
+          "Chardonnay": [
+            "full body",
+            "pronounced stone fruit flavours"
+          ],
+          "Merlot": [
+            "from light and fruity to full-bodied"
           ]
         }
       }
     },
-    "Navarra": {
-      "Grape": {
-        "Grenache / Garnacha": [
-          "dry rosé wines"
-        ]
-      }
-    },
-    "Ribera del Duero": {
-      "Grape": {
-        "Tempranillo": [
-          "full-bodied",
-          "fresh black-fruit flavours"
-        ]
-      }
-    },
-    "Rioja": {
-      "Grape": {
-        "Grenache / Garnacha": [],
-        "Tempranillo": [
-          "sometimes blended with Garnacha"
-        ]
-      }
-    },
-    "Galicia": {
-      "Location": "7.95/42.8/-8.016",
-      "Rías Baixas": {
-        "Location": "8.12/42.395/-8.524",
+    "South Island": {
+      "Central Otago": {
         "Grape": {
-          "Albariño": []
+          "Pinot Noir": [
+            "ripest and most powerfully flavoured Pinot Noir in NZ",
+            "pronounced fruit flavours (strawberry, red cherry)",
+            "medium to full body and medium tannins",
+            "often oaked and needs aging"
+          ]
+        }
+      },
+      "Marlborough": {
+        "Grape": {
+          "Chardonnay": [
+            "ripe lemon",
+            "peach",
+            "melon",
+            "high acidity",
+            "subtle oak"
+          ],
+          "Pinot Noir": [],
+          "Sauvignon blanc": [
+            "all styles",
+            "experimental approach"
+          ]
         }
       }
     }
@@ -1563,93 +1824,6 @@
             "concentrated herbaceous aromas (grass)",
             "sometimes blended with Semillon",
             "some matured in oak"
-          ]
-        }
-      }
-    }
-  },
-  "Germany": {
-    "Mosel": {
-      "Grape": {
-        "Riesling": [
-          "lighter in body",
-          "medium sweetness to balance very high acidity"
-        ]
-      }
-    },
-    "Pfalz": {
-      "Grape": {
-        "Riesling": [
-          "dry",
-          "medium-bodied"
-        ]
-      }
-    },
-    "Rheingau": {
-      "Grape": {
-        "Riesling": [
-          "drier and more body than Mosel"
-        ]
-      }
-    }
-  },
-  "Hungary": {
-    "Tokaj": {
-      "Grape": {
-        "Furmint": [
-          "Tokaji Aszú: sweet from grapes affected by botrytis"
-        ]
-      }
-    }
-  },
-  "New Zealand": {
-    "New Zealand": {
-      "North Island": {
-        "Hawke's Bay": {
-          "Grape": {
-            "Cabernet sauvignon": [],
-            "Chardonnay": [
-              "full body",
-              "pronounced stone fruit flavours"
-            ],
-            "Merlot": [
-              "from light and fruity to full-bodied"
-            ]
-          }
-        }
-      }
-    },
-    "North Island": {
-      "Martinborough": {
-        "Grape": {
-          "Pinot Noir": []
-        }
-      }
-    },
-    "South Island": {
-      "Central Otago": {
-        "Grape": {
-          "Pinot Noir": [
-            "ripest and most powerfully flavoured Pinot Noir in NZ",
-            "pronounced fruit flavours (strawberry, red cherry)",
-            "medium to full body and medium tannins",
-            "often oaked and needs aging"
-          ]
-        }
-      },
-      "Marlborough": {
-        "Grape": {
-          "Chardonnay": [
-            "ripe lemon",
-            "peach",
-            "melon",
-            "high acidity",
-            "subtle oak"
-          ],
-          "Pinot Noir": [],
-          "Sauvignon blanc": [
-            "all styles",
-            "experimental approach"
           ]
         }
       }
@@ -1848,6 +2022,359 @@
             "distinctive herbal (mint) and herbaceous (green ball pepper)",
             "black fruit",
             "oak"
+          ]
+        }
+      }
+    }
+  },
+  "Japan": {
+    "Location": "138.0/36.0/138.0",
+    "Grape": {
+      "Koshu": [
+        "indigenous white wine grape variety",
+        "developed from vines imported from Caucasus via Silk Road around 1000 years ago",
+        "pale straw color",
+        "soft, fruity bouquet with citrus and peach overtones",
+        "clean, delicate and fresh taste",
+        "thick skin able to withstand Japanese summer humidity",
+        "good match for Japanese cuisine"
+      ],
+      "Muscat Bailey A": [
+        "red wine hybrid developed by Zenbei Kawakami (1868-1944)",
+        "cross between Bailey grape and Black Muscat",
+        "grape juice-like flavor",
+        "widely used in sweet amakuchi wines",
+        "can be blended with Western grapes for Bordeaux-style wines"
+      ],
+      "Chardonnay": [
+        "imported variety",
+        "limited production for premium wines"
+      ],
+      "Merlot": [
+        "imported variety", 
+        "limited production for premium wines"
+      ],
+      "Cabernet Sauvignon": [
+        "imported variety",
+        "limited production for premium wines"
+      ],
+      "Müller-Thurgau": [
+        "imported variety",
+        "adapted to Japanese climate"
+      ]
+    },
+    "Terroir": [
+      "challenging climate with high humidity during summer",
+      "elevated horizontal hedging technique (Tanajitate) used",
+      "vines kept 1.5-2 meters above ground for ventilation",
+      "horizontal trellises reduce typhoon wind damage",
+      "steep hillside plantings in mountainous regions for maximum sunlight",
+      "Italian ryegrass planted under vines to prevent soil erosion"
+    ],
+    "Yamanashi Prefecture": {
+      "Location": "138.75/35.75/138.75",
+      "Description": [
+        "largest wine producing region (31% of domestic production)",
+        "birthplace of Japanese viticulture (718 AD in Katsunuma)",
+        "center of Koshu grape cultivation"
+      ],
+      "Grape": {
+        "Koshu": [
+          "primary grape variety",
+          "over 1000 years of cultivation history",
+          "best expression of terroir"
+        ],
+        "Muscat Bailey A": [
+          "widely planted",
+          "sweet wine production"
+        ]
+      },
+      "Koshu Valley": {
+        "Location": "138.75/35.75/138.75",
+        "Description": [
+          "main wine region within Yamanashi Prefecture",
+          "70 of approximately 80 wineries in prefecture",
+          "centers around town of Koshu"
+        ],
+        "Grape": {
+          "Koshu": [
+            "traditional variety",
+            "dry wine production increasing",
+            "international recognition growing"
+          ]
+        },
+        "Notable Wineries": [
+          "Marufuji",
+          "Kizan", 
+          "Katsunuma Jozo",
+          "Grace Wine"
+        ]
+      }
+    },
+    "Hokkaido": {
+      "Location": "143.0/43.5/143.0",
+      "Description": [
+        "17% of domestic wine production",
+        "cooler climate suitable for European varieties",
+        "successful regional planning model"
+      ],
+      "Grape": {
+        "Chardonnay": [
+          "cool climate expression",
+          "high acidity"
+        ],
+        "Pinot Noir": [
+          "cool climate red",
+          "elegant style"
+        ]
+      },
+      "Tokachi": {
+        "Location": "143.5/43.0/143.5",
+        "Description": [
+          "Ikeda town wine production",
+          "recovery from bankruptcy through wine industry",
+          "successful regional development model"
+        ],
+        "Grape": {
+          "Müller-Thurgau": [
+            "adapted to cool climate"
+          ]
+        }
+      },
+      "Furano": {
+        "Location": "142.5/43.5/142.5",
+        "Description": [
+          "tourist destination with wine production",
+          "scenic vineyard locations"
+        ],
+        "Grape": {
+          "Chardonnay": [],
+          "Pinot Noir": []
+        }
+      }
+    },
+    "Nagano Prefecture": {
+      "Location": "138.0/36.0/138.0",
+      "Description": [
+        "23% of domestic wine production",
+        "mountainous terrain with varied microclimates",
+        "Appellation Control System established"
+      ],
+      "Grape": {
+        "Chardonnay": [
+          "mountain terroir expression",
+          "mineral character"
+        ],
+        "Cabernet Sauvignon": [
+          "limited plantings",
+          "premium wine focus"
+        ]
+      },
+      "Shiojiri": {
+        "Location": "138.0/36.0/138.0",
+        "Description": [
+          "main wine production area",
+          "Shinshū Wine region"
+        ],
+        "Grape": {
+          "Chardonnay": [
+            "primary white variety"
+          ],
+          "Merlot": [
+            "red wine production"
+          ]
+        }
+      }
+    },
+    "Yamagata Prefecture": {
+      "Location": "140.0/38.5/140.0",
+      "Description": [
+        "historical wine production during WWII",
+        "suitable soil for fruit cultivation",
+        "home to numerous well-known producers"
+      ],
+      "Grape": {
+        "Delaware": [
+          "American hybrid variety",
+          "declining in popularity"
+        ],
+        "Muscat Bailey A": [
+          "red wine production"
+        ]
+      },
+      "Tendo": {
+        "Location": "140.5/38.5/140.5",
+        "Description": [
+          "Tendō Wine production center"
+        ],
+        "Grape": {
+          "Koshu": [],
+          "Muscat Bailey A": []
+        }
+      },
+      "Takeda Winery": {
+        "Location": "140.0/38.5/140.0",
+        "Description": [
+          "family winery",
+          "100% domestic grape focus",
+          "gaining reputation for quality"
+        ]
+      }
+    },
+    "Niigata Prefecture": {
+      "Location": "139.0/37.5/139.0",
+      "Description": [
+        "birthplace of Muscat Bailey A grape",
+        "Iwanohara Winery historical significance"
+      ],
+      "Grape": {
+        "Muscat Bailey A": [
+          "developed by Zenbei Kawakami",
+          "original breeding location"
+        ],
+        "Black Queen": [
+          "also developed by Kawakami",
+          "red wine variety"
+        ]
+      },
+      "Joetsu": {
+        "Location": "138.5/37.0/138.5",
+        "Description": [
+          "Iwanohara Wine production",
+          "historical grape breeding center"
+        ]
+      }
+    },
+    "Tochigi Prefecture": {
+      "Location": "140.0/36.5/140.0",
+      "Description": [
+        "mountainous terrain viticulture",
+        "steep hillside plantings for sunlight exposure"
+      ],
+      "Grape": {
+        "Chardonnay": [
+          "mountain expression"
+        ]
+      },
+      "Nasushiobara": {
+        "Location": "140.0/37.0/140.0",
+        "Description": [
+          "Nasu Wine production region"
+        ]
+      }
+    },
+    "Shiga Prefecture": {
+      "Location": "136.0/35.0/136.0",
+      "Higashiomi": {
+        "Location": "136.5/35.0/136.5",
+        "Description": [
+          "Hitomi Wine production"
+        ]
+      }
+    },
+    "Kyoto Prefecture": {
+      "Location": "135.5/35.0/135.5",
+      "Kyotanba": {
+        "Location": "135.5/35.5/135.5",
+        "Description": [
+          "Tanba Wine production region"
+        ]
+      }
+    },
+    "Osaka Prefecture": {
+      "Location": "135.5/34.5/135.5",
+      "Kashiwara and Habikino": {
+        "Location": "135.5/34.5/135.5",
+        "Description": [
+          "Kawachi Wine production",
+          "urban viticulture"
+        ]
+      }
+    },
+    "Hyogo Prefecture": {
+      "Location": "135.0/35.0/135.0",
+      "Kobe": {
+        "Location": "135.2/34.7/135.2",
+        "Description": [
+          "city-initiated wine development",
+          "regional agriculture and tourism promotion",
+          "city-brand wine products"
+        ],
+        "Grape": {
+          "Chardonnay": [],
+          "Merlot": []
+        }
+      }
+    },
+    "Miyazaki Prefecture": {
+      "Location": "131.0/32.0/131.0",
+      "Description": [
+        "southernmost wine production",
+        "warm climate viticulture"
+      ],
+      "Aya": {
+        "Location": "131.0/32.0/131.0",
+        "Description": [
+          "Aya Wine production"
+        ]
+      },
+      "Tsuno": {
+        "Location": "131.5/32.5/131.5",
+        "Description": [
+          "Tsuno Wine production",
+          "family winery gaining reputation"
+        ],
+        "Grape": {
+          "Chardonnay": [
+            "warm climate expression"
+          ]
+        }
+      }
+    },
+    "Wine Styles": {
+      "Amakuchi": {
+        "Description": [
+          "sweet wine style",
+          "historically popular",
+          "sugar added to moderate acidity",
+          "honey commonly used as sweetener"
+        ]
+      },
+      "100% Japanese Wine": {
+        "Description": [
+          "made only from domestically grown grapes",
+          "commands price premium",
+          "rarely exported",
+          "competition category since 2002"
+        ]
+      },
+      "Blended Wines": {
+        "Description": [
+          "may contain imported grape juice or concentrate",
+          "must be labeled as such by law",
+          "represents majority of Japanese wine production"
+        ]
+      }
+    },
+    "Designation System": {
+      "Mark of Origin": {
+        "Description": [
+          "legal designation system similar to AOC",
+          "no nationwide organization",
+          "regional appellation systems developing"
+        ]
+      },
+      "Regional Systems": {
+        "Nagano Appellation Control": {
+          "Description": [
+            "Nagano Prefecture's regional system",
+            "quality control measures"
+          ]
+        },
+        "Koshu Wine Domain Certification": {
+          "Description": [
+            "Koshu city's certification regulation",
+            "origin authentication"
           ]
         }
       }
