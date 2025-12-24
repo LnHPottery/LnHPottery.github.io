@@ -1181,7 +1181,7 @@
       "Red fruit: strawberry, raspberry, red cherry",
       "Black fruit: blackcurrant (lesser extent)",
       "Garnet color when young",
-      "Farmyard aromas (traditional Burgundy style)",
+      "Farmyard aromas (traditional Bourgogne style)",
       "Bitter almond finish possible"
     ],
     "Oak": "Careful use of oak, often aged in French barriques",
@@ -1300,7 +1300,7 @@
           "region": [
             "Burgenland"
           ],
-          "characteristics": "called Blauburgunder, dry red wines similar to Burgundy, aged in French barriques"
+          "characteristics": "called Blauburgunder, dry red wines similar to Bourgogne, aged in French barriques"
         },
         {
           "region": [
@@ -1358,22 +1358,22 @@
       "France": [
         {
           "region": [
-            "Burgundy",
+            "Bourgogne",
             "Côte d'Or"
           ],
           "characteristics": "worldwide archetype for Pinot Noir, 4,500 hectares of finest wines, cultivated since 100 AD, northernmost good red wine district"
         },
         {
           "region": [
-            "Burgundy",
+            "Bourgogne",
             "Côte de Beaune",
             "Beaune"
           ],
-          "characteristics": "historic center of Burgundy trade, complex wines with 15-20 year aging potential"
+          "characteristics": "historic center of Bourgogne trade, complex wines with 15-20 year aging potential"
         },
         {
           "region": [
-            "Burgundy",
+            "Bourgogne",
             "Côte de Nuits",
             "Gevrey-Chambertin"
           ],
@@ -1381,17 +1381,17 @@
         },
         {
           "region": [
-            "Burgundy",
+            "Bourgogne",
             "Côte Chalonnaise"
           ],
-          "characteristics": "southern Burgundy with 4,000 hectares, more accessible pricing"
+          "characteristics": "southern Bourgogne with 4,000 hectares, more accessible pricing"
         },
         {
           "region": [
-            "Burgundy",
+            "Bourgogne",
             "Mâconnais"
           ],
-          "characteristics": "southern extension of Burgundy, lighter styles"
+          "characteristics": "southern extension of Bourgogne, lighter styles"
         },
         {
           "region": [
@@ -1404,19 +1404,19 @@
             "Loire Valley",
             "Sancerre"
           ],
-          "characteristics": "red and rosé wines, lighter than Burgundy, refreshing when served chilled"
+          "characteristics": "red and rosé wines, lighter than Bourgogne, refreshing when served chilled"
         },
         {
           "region": [
             "Alsace"
           ],
-          "characteristics": "only red wine produced in Alsace, similar to Burgundy but usually consumed chilled, Rouge de Barr and Rouge d'Ottrott"
+          "characteristics": "only red wine produced in Alsace, similar to Bourgogne but usually consumed chilled, Rouge de Barr and Rouge d'Ottrott"
         },
         {
           "region": [
             "Jura"
           ],
-          "characteristics": "lighter wines across valley from Burgundy, often blended with Trousseau and Poulsard"
+          "characteristics": "lighter wines across valley from Bourgogne, often blended with Trousseau and Poulsard"
         }
       ],
       "Germany": [
@@ -1603,7 +1603,7 @@
             "Oregon",
             "Willamette Valley"
           ],
-          "characteristics": "same latitude as Burgundy, similar climate, established as world-class region after 1979 Wine Olympics, complex fresh red fruit"
+          "characteristics": "same latitude as Bourgogne, similar climate, established as world-class region after 1979 Wine Olympics, complex fresh red fruit"
         },
         {
           "region": [
@@ -1749,8 +1749,8 @@
       "High hydrological stress leads to high acidity",
       "Carbonic maceration softens acidity and enhances fruit expression",
       "Better suited to acidic soils which help soften naturally high acidity",
-      "Historically banned from Burgundy by Duke Philippe the Bold (1395) as 'disloyal Gaamez'",
-      "Philippe the Good reinforced ban (1455) to maintain Burgundy's reputation"
+      "Historically banned from Bourgogne by Duke Philippe the Bold (1395) as 'disloyal Gaamez'",
+      "Philippe the Good reinforced ban (1455) to maintain Bourgogne's reputation"
     ],
     "Aging": [
       "Most wines for early drinking",
@@ -1841,7 +1841,7 @@
         },
         {
           "region": [
-            "Burgundy",
+            "Bourgogne",
             "Bourgogne Passe-Tout-Grains"
           ],
           "characteristics": "blended with Pinot Noir in this regional appellation, minimum 30% Gamay required"
@@ -1862,6 +1862,119 @@
             "Willamette Valley"
           ],
           "characteristics": "introduced by Amity Vineyards (1988), Division Winemaking Co. largest producer, wines match Cru Beaujolais profiles, significant new plantings underway"
+        }
+      ]
+    }
+  },
+  "Mencía": {
+    "Aka": [
+      "Jaen",
+      "Jaén do Dão",
+      "Fernao Pires Tinta",
+      "Giao",
+      "Loureiro Tinto",
+      "Mencin",
+      "Negra",
+      "Negro",
+      "Mencia Roble",
+      "Tinto Mencia",
+      "Tinto Mollar",
+      "Jaén colorado"
+    ],
+    "Color": "Black",
+    "Climate": [
+      "Continental",
+      "Atlantic influence"
+    ],
+    "Acidity": [
+      "Medium to high"
+    ],
+    "Tannins": [
+      "Medium",
+      "Soft when from fertile plains",
+      "More structured from hillside vineyards"
+    ],
+    "Body": [
+      "Light to medium (traditional style)",
+      "Medium to full (modern concentrated style)"
+    ],
+    "Flavour": [
+      "Red fruit (strawberry, raspberry, cherry)",
+      "Floral notes (violet)",
+      "Herbal characteristics",
+      "Mineral notes from schist soils",
+      "Spice notes",
+      "Forest floor (aged wines)"
+    ],
+    "Oak": "Optional - modern producers use oak for concentrated styles",
+    "Characteristics": [
+      "Native to western Iberian Peninsula",
+      "Identical to Portugal's Jaen do Dão grape variety",
+      "Originated from crossing between Alfrocheiro and Patorra (Portuguese varieties)",
+      "Traditional wines: light, pale, fragrant for early consumption",
+      "Modern style: concentrated and complex from old vines on hillsides",
+      "Schist soils provide mineral character",
+      "High yields on fertile plains produce diluted wines",
+      "Old vines and careful vineyard management produce premium wines",
+      "Shares some aromas with Cabernet Franc but genetically distinct",
+      "Increasing popularity since 1990s"
+    ],
+    "Aging": [
+      "Traditional style: drink young",
+      "Modern concentrated style: can age 5-10 years"
+    ],
+    "Countries_and_Regions": {
+      "Spain": [
+        {
+          "region": [
+            "Galicia",
+            "Bierzo"
+          ],
+          "characteristics": "primary Spanish region, over 9,100 hectares planted, renowned for concentrated wines from old vines on hillside schist soils"
+        },
+        {
+          "region": [
+            "Galicia",
+            "Ribeira Sacra"
+          ],
+          "characteristics": "heroic viticulture on steep river canyon slopes, mineral-driven wines from schist and slate soils"
+        },
+        {
+          "region": [
+            "Galicia",
+            "Valdeorras"
+          ],
+          "characteristics": "continental climate influence, structured wines with mineral character"
+        },
+        {
+          "region": [
+            "Galicia",
+            "Monterrei"
+          ],
+          "characteristics": "southernmost Galician DO, warmer climate producing fuller-bodied wines"
+        },
+        {
+          "region": [
+            "Cantabria",
+            "Liébana"
+          ],
+          "characteristics": "small mountainous region, little-known DO producing unique mountain wines"
+        }
+      ],
+      "Portugal": [
+        {
+          "region": [
+            "Dão"
+          ],
+          "characteristics": "known as Jaen do Dão, 2,500 hectares planted, used in traditional Portuguese red blends, granite soils provide mineral structure"
+        }
+      ],
+      "United States": [
+        {
+          "region": [
+            "California"
+          ],
+          "characteristics": "experimental plantings, Ojai Vineyard debuted varietal in 2023 vintage, growing interest from noted winemakers"
         }
       ]
     }
@@ -6855,7 +6968,7 @@
     "Oak": "Typically unoaked for freshness, some premium Alsatian versions may see oak",
     "Characteristics": [
       "Color mutation of Pinot Noir - genetically nearly identical",
-      "Known since Middle Ages in Burgundy region",
+      "Known since Middle Ages in Bourgogne region",
       "Small pinecone-shaped clusters (pinot = pinecone)",
       "Wine colors range from deep golden yellow to copper to light pink",
       "Popular for skin-contact wine production",
@@ -6909,7 +7022,7 @@
         },
         {
           "region": [
-            "Burgundy"
+            "Bourgogne"
           ],
           "characteristics": "Historical home since Middle Ages, originally called Fromenteau, poor yields led to decline"
         }
@@ -7706,7 +7819,7 @@
       "Range from simple jug wines for immediate consumption to age-worthy wines",
       "Not very aromatic in youth, develops tertiary aromas with age",
       "Well-made examples can age and develop Burgundian characteristics",
-      "Can be similar to Chardonnay from Burgundy when aged",
+      "Can be similar to Chardonnay from Bourgogne when aged",
       "Some examples capable of long aging (10+ years)",
       "Old vine examples (150+ years) exist in Austria"
     ],
@@ -8122,7 +8235,7 @@
             "Tokaj-Hegyalja",
             "Mád"
           ],
-          "characteristics": "village level production of high-quality dry Furmint, introduced Úrágya 2000 single vineyard selection by István Szepsy in 2000, great minerality, complexity and structure comparable to finest Burgundy or Mosel whites, promising aging potential, almost 1200 hectares producing significant quantity expressing unique volcanic terroir"
+          "characteristics": "village level production of high-quality dry Furmint, introduced Úrágya 2000 single vineyard selection by István Szepsy in 2000, great minerality, complexity and structure comparable to finest Bourgogne or Mosel whites, promising aging potential, almost 1200 hectares producing significant quantity expressing unique volcanic terroir"
         },
         {
           "region": [
@@ -8244,6 +8357,88 @@
         }
       ]
     }
+  },
+  "Koshu": {
+    "Aka": [
+      "甲州"
+    ],
+    "Color": "Rose",
+    "Climate": [
+      "Continental", 
+      "Humid"
+    ],
+    "Acidity": [
+      "Moderate"
+    ],
+    "Tannins": [],
+    "Sweetness": [
+      "Dry",
+      "Off-dry"
+    ],
+    "Body": [
+      "Light",
+      "Medium"
+    ],
+    "Flavour": [
+      "Citrus",
+      "Peach", 
+      "Jasmine",
+      "Fresh",
+      "Clean",
+      "Delicate",
+      "Soft fruity bouquet"
+    ],
+    "Regions": [
+      {
+        "region": [
+          "Japan",
+          "Yamanashi Prefecture", 
+          "Koshu Valley"
+        ],
+        "characteristics": "indigenous hybrid variety, 95% of Japan's plantings, adapted to humid climate with thick skin, ~1000 years of cultivation history"
+      }
+    ]
+  },
+  "Muscat Bailey A": {
+    "Aka": [
+      "マスカット・ベーリーA"
+    ],
+    "Color": "Red",
+    "Climate": [
+      "Continental",
+      "Humid"
+    ],
+    "Acidity": [
+      "Moderate"
+    ],
+    "Tannins": [
+      "Low",
+      "Medium"
+    ],
+    "Sweetness": [
+      "Off-dry",
+      "Sweet"
+    ],
+    "Body": [
+      "Light",
+      "Medium"
+    ],
+    "Flavour": [
+      "Grape juice-like",
+      "Fruity",
+      "Sweet",
+      "Fresh berry",
+      "Red fruit"
+    ],
+    "Regions": [
+      {
+        "region": [
+          "Japan", 
+          "Yamanashi Prefecture"
+        ],
+        "characteristics": "hybrid variety developed by Zenbei Kawakami (1868-1944), cross between Bailey and Black Muscat, widely used for amakuchi (sweet) wines, recent developments in drier and barrel-aged styles"
+      }
+    ]
   },
   "Gewürztraminer": {
     "Aka": [
@@ -9725,7 +9920,7 @@
       "Prefers chalk, clay, and limestone soils - Grand Crus of Chablis on Kimmeridgian marl",
       "Limestone exposure affects wine style - deeper limestone creates richer wines",
       "Used extensively for sparkling wine production worldwide",
-      "34 different clonal varieties developed at University of Burgundy",
+      "34 different clonal varieties developed at University of Bourgogne",
       "Dijon clones bred for specific characteristics and adaptability",
       "Parent to several hybrid grapes including Chardonel",
       "Chardonnay Rose mutation exists with pink berries",
@@ -9738,7 +9933,7 @@
       "Young: fresh fruit, crisp acidity, mineral notes",
       "Medium-term aging: hazelnut, spice, complexity develops", 
       "Long-term aging: honey, nuts, licorice, mushroom, tertiary complexity",
-      "Chablis and white Burgundy: exceptional aging potential 10+ years",
+      "Chablis and white Bourgogne: exceptional aging potential 10+ years",
       "Premium examples: marzipan, steely flavors, mineral development",
       "Sparkling wines: toasty notes develop with extended lees contact",
       "Oak-aged styles: vanilla integration, smoky development",
@@ -9748,14 +9943,14 @@
       "France": [
         {
           "region": [
-            "Burgundy",
+            "Bourgogne",
             "Chablis"
           ],
           "characteristics": "purest expression of varietal character, Kimmeridgian marl limestone and fossilized oyster shells, unoaked style emphasizing terroir and high acidity, green apple-like acidity trademark, goût de pierre à fusil (gunflint) quality, 7 Grand Cru vineyards (Blanchots, Bougros, Les Clos, Grenouilles, Preuses, Valmur, Vaudésir), planted by Cistercians at Pontigny Abbey in 12th century, exceptional aging potential with wet stone and honeyed notes development"
         },
         {
           "region": [
-            "Burgundy",
+            "Bourgogne",
             "Côte d'Or",
             "Côte de Beaune"
           ],
@@ -9763,7 +9958,7 @@
         },
         {
           "region": [
-            "Burgundy",
+            "Bourgogne",
             "Côte d'Or",
             "Côte de Beaune",
             "Montrachet"
@@ -9772,7 +9967,7 @@
         },
         {
           "region": [
-            "Burgundy",
+            "Bourgogne",
             "Côte d'Or",
             "Côte de Beaune",
             "Chassagne-Montrachet"
@@ -9781,7 +9976,7 @@
         },
         {
           "region": [
-            "Burgundy",
+            "Bourgogne",
             "Côte d'Or",
             "Côte de Beaune",
             "Puligny-Montrachet"
@@ -9790,7 +9985,7 @@
         },
         {
           "region": [
-            "Burgundy",
+            "Bourgogne",
             "Côte d'Or",
             "Côte de Beaune",
             "Meursault"
@@ -9799,7 +9994,7 @@
         },
         {
           "region": [
-            "Burgundy",
+            "Bourgogne",
             "Côte d'Or",
             "Côte de Beaune",
             "Corton-Charlemagne"
@@ -9808,21 +10003,21 @@
         },
         {
           "region": [
-            "Burgundy",
+            "Bourgogne",
             "Côte Chalonnaise"
           ],
           "characteristics": "villages of Mercurey, Montagny-lès-Buxy, and Rully produce largest quantities, best examples rival Côte de Beaune quality"
         },
         {
           "region": [
-            "Burgundy",
+            "Bourgogne",
             "Mâconnais"
           ],
           "characteristics": "white wine production centered on Mâcon town, closest to New World style but not identical, Mâcon blanc meant for consumption within 2-3 years"
         },
         {
           "region": [
-            "Burgundy",
+            "Bourgogne",
             "Mâconnais",
             "Pouilly-Fuissé"
           ],
@@ -9830,7 +10025,7 @@
         },
         {
           "region": [
-            "Burgundy",
+            "Bourgogne",
             "Mâconnais",
             "Clessé"
           ],
@@ -9838,7 +10033,7 @@
         },
         {
           "region": [
-            "Burgundy",
+            "Bourgogne",
             "Beaujolais"
           ],
           "characteristics": "replacing Aligoté as main white grape, even replacing Gamay in some areas around Saint-Véran, Beaujolais blanc for early consumption"
@@ -9910,7 +10105,7 @@
           "region": [
             "California"
           ],
-          "characteristics": "dominant white variety overtaking Riesling in 1990, nearly 100,000 acres by 2005 (25% of world's total), first successful commercial production in Livermore Valley AVA, Wente Vineyards developed clone used throughout 1940s, Chateau Montelena victory over Burgundy in 1976 Judgment of Paris, trend toward rich buttery oaked styles, high alcohol levels 12-14% managed by reverse osmosis and spinning cones"
+          "characteristics": "dominant white variety overtaking Riesling in 1990, nearly 100,000 acres by 2005 (25% of world's total), first successful commercial production in Livermore Valley AVA, Wente Vineyards developed clone used throughout 1940s, Chateau Montelena victory over Bourgogne in 1976 Judgment of Paris, trend toward rich buttery oaked styles, high alcohol levels 12-14% managed by reverse osmosis and spinning cones"
         },
         {
           "region": [
@@ -9979,7 +10174,7 @@
             "Oregon",
             "Willamette Valley"
           ],
-          "characteristics": "cool climate region, introduction of Dijon clones from Burgundy helped adaptation, climates similar to Burgundy, success with newer clones"
+          "characteristics": "cool climate region, introduction of Dijon clones from Bourgogne helped adaptation, climates similar to Bourgogne, success with newer clones"
         },
         {
           "region": [
@@ -10150,7 +10345,7 @@
           "region": [
             "Trentino-Alto Adige/Südtirol"
           ],
-          "characteristics": "long history but confused with Pinot blanc, known as Gelber Weissburgunder (Golden White Burgundy) vs Pinot blanc as Weissburgunder (White Burgundy), first DOC granted in 1984 in South Tyrol province, Italy's fourth most planted white grape by 2000"
+          "characteristics": "long history but confused with Pinot blanc, known as Gelber Weissburgunder (Golden White Bourgogne) vs Pinot blanc as Weissburgunder (White Bourgogne), first DOC granted in 1984 in South Tyrol province, Italy's fourth most planted white grape by 2000"
         },
         {
           "region": [
@@ -11760,10 +11955,10 @@
     ],
     "Oak": "Usually unoaked, though some producers may use light oak",
     "Characteristics": [
-      "Second most popular white grape variety in Burgundy after Chardonnay",
+      "Second most popular white grape variety in Bourgogne after Chardonnay",
       "Ripens early with moderate yields",
       "Produces wines high in acidity that can be drunk young",
-      "Variety of secondary importance in Burgundy",
+      "Variety of secondary importance in Bourgogne",
       "Often loses territory to more prestigious grape varieties",
       "Relegated to less productive vineyard sections at tops and bottoms of slopes",
       "Vines were once inter-planted and field blended with Chardonnay for added acidity",
@@ -11781,20 +11976,20 @@
       "France": [
         {
           "region": [
-            "Burgundy"
+            "Bourgogne"
           ],
           "characteristics": "second most popular white grape variety after Chardonnay, with 1,700 hectares vs 12,800 hectares of Chardonnay. First recorded in 18th century"
         },
         {
           "region": [
-            "Burgundy",
+            "Bourgogne",
             "Bourgogne Aligoté AOC"
           ],
           "characteristics": "varietal appellation made exclusively from Aligoté grapes, yield limited to 60 hl/ha"
         },
         {
           "region": [
-            "Burgundy",
+            "Bourgogne",
             "Bouzeron",
             "Bouzeron-Aligoté AOC"
           ],
@@ -11802,28 +11997,28 @@
         },
         {
           "region": [
-            "Burgundy",
+            "Bourgogne",
             "Côte-d'Or"
           ],
           "characteristics": "found along fringe edges along Route Nationale 74"
         },
         {
           "region": [
-            "Burgundy",
+            "Bourgogne",
             "Mâconnais"
           ],
           "characteristics": "regional plantings"
         },
         {
           "region": [
-            "Burgundy",
+            "Bourgogne",
             "Côte Chalonnaise"
           ],
           "characteristics": "regional plantings"
         },
         {
           "region": [
-            "Burgundy",
+            "Bourgogne",
             "Crémant de Bourgogne"
           ],
           "characteristics": "sometimes included in Burgundian sparkling wine blend"
@@ -11849,7 +12044,7 @@
             "Stara Zagora Province",
             "Chirpan"
           ],
-          "characteristics": "primarily found here, prized for blending qualities and high acid. Quantity planted is more than twice that in Burgundy"
+          "characteristics": "primarily found here, prized for blending qualities and high acid. Quantity planted is more than twice that in Bourgogne"
         }
       ],
       "Eastern Europe": [
@@ -11924,9 +12119,8 @@
       ]
     }
   },
-  "Macabeo": {
+  "Macabeo / Viura": {
     "Aka": [
-      "Viura",
       "Macabeu", 
       "Alcañol", 
       "Alcañón", 
