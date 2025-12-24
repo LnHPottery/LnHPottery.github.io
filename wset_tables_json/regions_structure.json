@@ -1,7 +1,1441 @@
 {
-  "Argentina": {
-    "Mendoza": {
-
+  "France": {
+    "Alsace": {
+      "Location": "7.68/48.417/7.559",
+      "Grape": {
+        "Riesling": [
+          "dry",
+          "pronounced aromas and flavours (ripe citrus and stone fruit)",
+          "medium body",
+          "high acidity",
+          "elegant style",
+          "similar to German Riesling but typically drier"
+        ],
+        "Gewürztraminer": [
+          "aromatic",
+          "lychee",
+          "luscious and rich",
+          "pronounced spice and floral aromas",
+          "medium to full body",
+          "off-dry to sweet styles available"
+        ],
+        "Pinot gris": [
+          "extra-ripe",
+          "medium acidity",
+          "medium to full body",
+          "pronounced flavour",
+          "off-dry style common",
+          "richer than Italian Pinot Grigio"
+        ],
+        "Pinot blanc": [
+          "crisp and fresh",
+          "light to medium body",
+          "apple and citrus flavours",
+          "used in Crémant d'Alsace"
+        ],
+        "Muscat": [
+          "includes Muscat Ottonel, Muscat à Petit Grains Roses, and Muscat Blanc à Petit Grains",
+          "floral and grapey aromas",
+          "usually dry in Alsace",
+          "one of the four noble grapes for Grand Cru"
+        ],
+        "Pinot Noir": [
+          "light to medium-bodied red",
+          "used for red wines and rosé Crémant d'Alsace",
+          "bright red fruit flavours"
+        ],
+        "Auxerrois": [
+          "commonly found in Alsace AOP blends",
+          "soft and round",
+          "used in Crémant d'Alsace"
+        ],
+        "Silvaner": [
+          "lean and mineral",
+          "only allowed as single varietal in Grand Cru Zotzenberg",
+          "commonly found in blends"
+        ],
+        "Chardonnay": [
+          "used primarily in Crémant d'Alsace",
+          "not common for still wines"
+        ]
+      },
+      "Terroir": [
+        "51 unique Grand Cru AOPs",
+        "varied terroir including granitic, sandy, clay-limestone, and schist soils",
+        "each site has specific regulations for varieties, planting, yield, and harvesting",
+        "represents only 4% of regional production but highest quality"
+      ],
+      "Alsace AOP": {
+        "Location": "7.68/48.417/7.559",
+        "Grape": {
+          "Riesling": [
+            "100% varietal wines when grape listed on label",
+            "dry style predominant"
+          ],
+          "Gewürztraminer": [
+            "100% varietal wines when grape listed on label",
+            "aromatic and spicy"
+          ],
+          "Pinot gris": [
+            "100% varietal wines when grape listed on label",
+            "rich and full-bodied"
+          ],
+          "Edelzwicker": [
+            "blend of white grapes",
+            "everyday drinking wine"
+          ],
+          "Gentil": [
+            "premium blend",
+            "must contain at least 50% noble grapes"
+          ],
+          "Pinot blanc": [],
+          "Muscat": [],
+          "Pinot Noir": []
+        },
+        "Communes": {
+          "Bergheim": {
+            "Location": "7.68/48.417/7.559"
+          },
+          "Blienschwiller": {
+            "Location": "7.68/48.417/7.559"
+          },
+          "Saint-Hippolyte": {
+            "Location": "7.68/48.417/7.559"
+          },
+          "Côtes de Barr Scherwiller": {
+            "Location": "7.68/48.417/7.559"
+          },
+          "Côte de Rouffach": {
+            "Location": "7.68/48.417/7.559"
+          },
+          "Côteaux du Haut Koenigsbourg": {
+            "Location": "7.68/48.417/7.559"
+          },
+          "Vallée Noble": {
+            "Location": "7.68/48.417/7.559"
+          },
+          "Klevener de Heiligenstein": {
+            "Location": "7.68/48.417/7.559",
+            "Grape": {
+              "Savagnin Rose": [
+                "non-aromatic variant of Gewürztraminer",
+                "only grows in communes of Bourgheim, Gertwiller, Goxwiller, Heiligenstein and Obernai"
+              ]
+            }
+          },
+          "Val Saint-Grégoire": {
+            "Location": "7.68/48.417/7.559"
+          },
+          "Ottrott": {
+            "Location": "7.68/48.417/7.559"
+          },
+          "Wolxheim": {
+            "Location": "7.68/48.417/7.559"
+          },
+          "Rodern": {
+            "Location": "7.68/48.417/7.559"
+          }
+        }
+      },
+      "Crémant d'Alsace AOP": {
+        "Location": "7.68/48.417/7.559",
+        "Grape": {
+          "Pinot Noir": [
+            "100% for rosé Crémant",
+            "traditional Champagne method"
+          ],
+          "Pinot blanc": [
+            "primary grape for blanc Crémant",
+            "blended with other allowed varieties"
+          ],
+          "Riesling": [
+            "used in blanc Crémant blends"
+          ],
+          "Pinot gris": [
+            "used in blanc Crémant blends"
+          ],
+          "Auxerrois": [
+            "used in blanc Crémant blends"
+          ],
+          "Chardonnay": [
+            "used in blanc Crémant blends"
+          ]
+        }
+      },
+      "Alsace Grand Cru": {
+        "Location": "7.68/48.417/7.559",
+        "Grape": {
+          "Riesling": [
+            "one of four noble grapes",
+            "allowed in all 51 Grand Cru AOPs",
+            "terroir expression varies by site"
+          ],
+          "Gewürztraminer": [
+            "one of four noble grapes",
+            "allowed in all 51 Grand Cru AOPs"
+          ],
+          "Pinot gris": [
+            "one of four noble grapes",
+            "allowed in all 51 Grand Cru AOPs"
+          ],
+          "Muscat": [
+            "one of four noble grapes",
+            "allowed in all 51 Grand Cru AOPs"
+          ],
+          "Silvaner": [
+            "only allowed in Grand Cru Zotzenberg as single varietal"
+          ]
+        },
+        "Grand Cru Zotzenberg": {
+          "Location": "7.68/48.417/7.559",
+          "Grape": {
+            "Silvaner": [
+              "unique allowance for single varietal Silvaner",
+              "only Grand Cru site permitting this variety"
+            ],
+            "Riesling": [],
+            "Gewürztraminer": [],
+            "Pinot gris": [],
+            "Muscat": []
+          }
+        }
+      },
+      "Special Wine Styles": {
+        "Vendanges Tardives": {
+          "Grape": {
+            "Riesling": [
+              "late harvest dessert wine",
+              "made in part with noble rot grapes"
+            ],
+            "Gewürztraminer": [
+              "late harvest dessert wine",
+              "made in part with noble rot grapes"
+            ],
+            "Pinot gris": [
+              "late harvest dessert wine",
+              "made in part with noble rot grapes"
+            ],
+            "Muscat": [
+              "late harvest dessert wine",
+              "made in part with noble rot grapes"
+            ]
+          }
+        },
+        "Sélection de Grains Nobles": {
+          "Grape": {
+            "Riesling": [
+              "noble rot dessert wine",
+              "hand-selected botrytis-affected grapes",
+              "very sweet, similar to Tokaj Eszencia"
+            ],
+            "Gewürztraminer": [
+              "noble rot dessert wine",
+              "hand-selected botrytis-affected grapes",
+              "very sweet, similar to Tokaj Eszencia"
+            ],
+            "Pinot gris": [
+              "noble rot dessert wine",
+              "hand-selected botrytis-affected grapes",
+              "very sweet, similar to Tokaj Eszencia"
+            ],
+            "Muscat": [
+              "noble rot dessert wine",
+              "hand-selected botrytis-affected grapes",
+              "very sweet, similar to Tokaj Eszencia"
+            ]
+          }
+        },
+        "Pinot d'Alsace": {
+          "Grape": {
+            "Pinot Blanc": [
+              "blend of Pinot varieties",
+              "bright copper-colored white wine"
+            ],
+            "Pinot gris": [
+              "blend of Pinot varieties",
+              "bright copper-colored white wine"
+            ],
+            "Pinot Noir": [
+              "blend of Pinot varieties",
+              "vinified as white wine style"
+            ]
+          }
+        }
+      }
+    },
+    "Beaujolais": {
+      "Location": "9.22/46.0547/4.6152",
+      "Grape": {
+        "Gamay": [
+          "light red wine",
+          "fruit flavors: raspberry, tart cherry, cranberry",
+          "other flavors: mushroom, forest floor, smoke, violet, baker's yeast, banana, bubblegum",
+          "high acidity",
+          "low tannin",
+          "alcohol: 10-13% ABV",
+          "serving temp: slightly chilled at 54-58°F (12-14°C)",
+          "semi-carbonic maceration winemaking method"
+        ]
+      },
+      "Terroir": [
+        "34 miles long and 7-9 miles wide",
+        "divided by Nizerand River with different soils on each side",
+        "granite and schist (decomposed rock) to the North",
+        "clay-based soils (marl) to the South",
+        "all Cru vineyards located on Northern side"
+      ],
+      "Beaujolais AOP": {
+        "Location": "9.22/46.0547/4.6152",
+        "Grape": {
+          "Gamay": [
+            "biggest appellation with 96 winemaking villages",
+            "most villages located in the south",
+            "refreshing acidity and low tannin",
+            "fruity and grapey flavors",
+            "clay soils and flatland terrain",
+            "wide variance of quality",
+            "rosé style growing in popularity"
+          ]
+        },
+        "Beaujolais Supérieur": {
+          "Grape": {
+            "Gamay": [
+              "higher alcohol content",
+              "darker and more concentrated than regular Beaujolais",
+              "available in red and rosé styles"
+            ]
+          }
+        }
+      },
+      "Beaujolais Villages AOP": {
+        "Location": "9.22/46.0547/4.6152",
+        "Grape": {
+          "Gamay": [
+            "38 official village wines",
+            "30 village names can appear on label",
+            "deeper and darker in color and character",
+            "granite or schist soils",
+            "more mineral character",
+            "notes of strawberry and black currant"
+          ],
+          "Chardonnay": [
+            "white wines available",
+            "notes of pear, tropical fruits, and blanched almonds"
+          ]
+        },
+        "Villages": [
+          "Les Ardillats", "Beaujeu", "Blacé", "Cercié", "Charentay", "Chénas", 
+          "Chiroubles", "Denicé", "Emeringes", "Fleurie", "Juliénas", "Jullié", 
+          "Lancié", "Lantignié", "Marchampt", "Montmelas-Saint-Sorlin", "Odenas", 
+          "Le Perréon", "Pruzilly", "Romanèche-Thorins", "Quincié-en-Beaujolais", 
+          "Régnié-Durette", "Rivolet", "St-Amour-Bellevue", "St-Didier-sur-Beaujeu", 
+          "St-Etienne-des-Oullières", "St-Etienne-la-Varenne", "St-Symphorien-d'Ancelles", 
+          "St-Vérand", "St-Julien", "St-Lager", "Salles-Arbuissonnas-en-Beaujolais", 
+          "Vaux-en-Beaujolais", "Vauxrenard", "Villié-Morgon", "Chânes", 
+          "La Chapelle-de-Guinchay", "Leynes"
+        ]
+      },
+      "Cru Beaujolais": {
+        "Location": "9.22/46.0547/4.6152",
+        "Description": [
+          "10 Crus of Beaujolais",
+          "all in the north producing only red wines",
+          "more complex and known to age well",
+          "each has distinct personality - climate, soils, altitude, aspect"
+        ],
+        "Saint-Amour": {
+          "Location": "9.22/46.0547/4.6152",
+          "Grape": {
+            "Gamay": [
+              "borders Mâconnais of Burgundy",
+              "12 special climats can add their name to label",
+              "two styles: light, fruity, floral with violet and peach notes",
+              "bigger, spicier version that becomes more Pinot-like with age"
+            ]
+          },
+          "Notable Climats": [
+            "Les Champs Grillés", "En Paradis", "Les Bonnets", "Le Mas des Tines"
+          ]
+        },
+        "Juliénas": {
+          "Location": "9.22/46.0547/4.6152",
+          "Grape": {
+            "Gamay": [
+              "named after Julius Caesar",
+              "ancient Roman vineyard sites",
+              "granite, volcanic and clay soils",
+              "power, structure and aging ability",
+              "floral and fruity",
+              "aromas of strawberry, peach, violet and spicy cinnamon"
+            ]
+          }
+        },
+        "Chénas": {
+          "Location": "9.22/46.0547/4.6152",
+          "Grape": {
+            "Gamay": [
+              "smallest and rarest of the Crus",
+              "name refers to ancient oak forests",
+              "woodsy quality in wines",
+              "floral notes of rose and iris",
+              "silky tannins",
+              "nicknamed 'bouquet of flowers in a velvet basket'"
+            ]
+          }
+        },
+        "Moulin-à-Vent": {
+          "Location": "9.22/46.0547/4.6152",
+          "Grape": {
+            "Gamay": [
+              "dubbed 'The King of Beaujolais'",
+              "decomposed pink granite and soft flaky quartz soils",
+              "dark ruby/garnet color",
+              "most tannic and full-bodied wines of all Cru",
+              "young: plum, cherry and violet notes",
+              "aged up to 10 years: dried fruits, earthy truffles, meat and spice",
+              "more Pinot-like with age"
+            ]
+          }
+        },
+        "Fleurie": {
+          "Location": "12.63/46.19576/4.69524",
+          "Grape": {
+            "Gamay": [
+              "dubbed 'The Queen of Beaujolais'",
+              "higher altitude on steep slopes at foot of La Madone",
+              "lighter style and highly aromatic",
+              "feminine quality",
+              "roses, iris and violet aromas",
+              "ripe red fruits and peach",
+              "great place to start for Beaujolais beginners"
+            ]
+          }
+        },
+        "Chiroubles": {
+          "Location": "9.22/46.0547/4.6152",
+          "Grape": {
+            "Gamay": [
+              "lighter style of Beaujolais",
+              "highest altitudes of region (820-1480 feet)",
+              "coolest Cru and last to start harvest",
+              "refined, suave, silky, and elegant",
+              "perfumed aromas of peaches and raspberry",
+              "Lily of the Valley and baking spices",
+              "granite soil so hard they had to bore holes in rock"
+            ]
+          }
+        },
+        "Morgon": {
+          "Location": "9.22/46.0547/4.6152",
+          "Grape": {
+            "Gamay": [
+              "second largest of the Crus",
+              "six climats with slightly different styles",
+              "decomposed schist soil called 'roches pourries' (rotted rocks)",
+              "ripe cherry aromas from the soil",
+              "meant to age 5-10 years",
+              "young: fleshy palate of peach, apricot, cherry, and plum",
+              "develops into earthy wine reminiscent of Burgundian Pinot Noir"
+            ]
+          }
+        },
+        "Régnié": {
+          "Location": "9.22/46.0547/4.6152",
+          "Grape": {
+            "Gamay": [
+              "newest Cru of Beaujolais",
+              "hillside vineyards",
+              "terrific when young",
+              "aromatic peach, cherry, black currant, and raspberry flavor",
+              "more organic vineyards and winemakers than other Crus"
+            ]
+          }
+        },
+        "Côte de Brouilly": {
+          "Location": "9.22/46.0547/4.6152",
+          "Grape": {
+            "Gamay": [
+              "known as 'Elegant Wine on the Hill'",
+              "volcanic slopes of Mount Brouilly",
+              "unique flavor and delicate minerality",
+              "easy drinking wines",
+              "aromas of fresh grape juice and cranberries",
+              "silky mouthfeel and bright, refreshing acidity"
+            ]
+          }
+        },
+        "Brouilly": {
+          "Location": "9.22/46.0547/4.6152",
+          "Grape": {
+            "Gamay": [
+              "named after Brulius, famous Roman lieutenant",
+              "most southern of all Cru",
+              "slightly warmer temperatures",
+              "largest Cru",
+              "one of original areas allowed to sell to Parisian market (1769)",
+              "blue/black volcanic rock called Diorite (cornes vertes or green horns)",
+              "exuberant fruity aromas of jammy plum and strawberry",
+              "red currants and peach",
+              "meant to be enjoyed young"
+            ]
+          }
+        }
+      },
+      "Winemaking": {
+        "Semi-Carbonic Maceration": [
+          "whole clusters placed in vat without crushing",
+          "pressure crushes grapes at bottom",
+          "CO2 forces oxygen out of tank",
+          "enzymatic fermentation inside grape berries",
+          "4-8 days maceration period",
+          "responsible for banana, candied fruits, pear, raspberry and cranberry aromas"
+        ]
+      }
+    },
+    "Bordeaux": {
+      "Location": "7.82/44.952/-0.427",
+      "Grape": {
+        "Sémillon / semillon": [
+          "commonly blended with Sauvignon Blanc"
+        ],
+        "Cabernet sauvignon": []
+      },
+      "Left Bank": {
+        "Location": "7.82/44.952/-0.427",
+        "Graves": {
+          "Location": "9.38/44.6856/-0.5051",
+          "Grape": {
+            "Merlot": [],
+            "Sauvignon blanc": [
+              "more concentrated and complex",
+              "blends with Sémillon",
+              "often matured in oak"
+            ],
+            "Cabernet sauvignon": []
+          },
+          "Pessac-Léognan": {
+            "Location": "10.63/44.7732/-0.6191",
+            "Grape": {
+              "Merlot": [],
+              "Sauvignon blanc": [
+                "more concentrated and complex",
+                "blends with Sémillon",
+                "often matured in oak"
+              ],
+              "Cabernet sauvignon": []
+            }
+          },
+          "Sauternes": {
+            "Location": "11.16/44.5698/-0.3179",
+            "Grape": {
+              "Sémillon / semillon": [
+                "sweet wines made from grapes affected by botrytis"
+              ]
+            }
+          }
+        },
+        "Médoc": {
+          "Location": "8.6/45.2105/-0.8546",
+          "Grape": {
+            "Cabernet sauvignon": [],
+            "Merlot": []
+          },
+          "Haut-Médoc": {
+            "Location": "9.25/45.0789/-0.7672",
+            "Grape": {
+              "Cabernet sauvignon": [],
+              "Merlot": []
+            },
+            "Margaux": {
+              "Location": "11.19/45.0166/-0.6878",
+              "Grape": {
+                "Cabernet sauvignon": [],
+                "Merlot": []
+              }
+            },
+            "Pauillac": {
+              "Location": "10.89/45.2102/-0.8019",
+              "Grape": {
+                "Cabernet sauvignon": [],
+                "Merlot": []
+              }
+            }
+          }
+        }
+      },
+      "Right Bank": {
+        "Location": "7.82/44.952/-0.427",
+        "Pomerol": {
+          "Location": "11.8/44.91248/-0.21746",
+          "Grape": {
+            "Merlot": []
+          }
+        },
+        "Saint-Émilion": {
+          "Location": "11.2/44.8923/-0.1642",
+          "Grape": {
+            "Merlot": []
+          }
+        }
+      }
+    },
+    "Bourgogne": {
+      "Location": "7.15/47.028/4.3",
+      "Grape": {
+        "Chardonnay": [
+          "simple",
+          "apple and lemon",
+          "high acidity"
+        ],
+        "Pinot Noir": []
+      },
+      "Chablis": {
+        "Location": "10.16/47.8482/3.8161",
+        "Grape": {
+          "Chardonnay": [
+            "dry",
+            "high acidity",
+            "flavours: apple, lemon, wet stones",
+            "unoaked"
+          ]
+        }
+      },
+      "Côte d'Or": {
+        "Location": "9.09/47.1295/4.8683",
+        "Côte de Beaune": {
+          "Location": "12.07/47.0272/4.84198",
+          "Beaune": {
+            "Location": "12.07/47.0272/4.84198",
+            "Grape": {
+              "Pinot Noir": [
+                "more flavour intensity",
+                "complexity and length"
+              ]
+            }
+          },
+          "Meursault": {
+            "Location": "12.71/46.97172/4.77493",
+            "Grape": {
+              "Chardonnay": [
+                "oak or aging on lees is common"
+              ]
+            }
+          },
+          "Pommard": {
+            "Location": "12.37/47.01444/4.79365",
+            "Grape": {
+              "Pinot Noir": [
+                "more flavour intensity",
+                "complexity and length"
+              ]
+            }
+          },
+          "Puligny-Montrachet": {
+            "Location": "13.33/46.94781/4.76048",
+            "Grape": {
+              "Chardonnay": [
+                "oak or aging on lees is common"
+              ]
+            }
+          }
+        },
+        "Côte de Nuits": {
+          "Location": "10.42/47.1614/4.9595",
+          "Gevrey-Chambertin": {
+            "Location": "12.39/47.22561/4.98226",
+            "Grape": {
+              "Pinot Noir": [
+                "more flavour intensity",
+                "complexity and length"
+              ]
+            }
+          },
+          "Nuits-Saint-Georges": {
+            "Location": "11.3/47.1343/4.9415",
+            "Grape": {
+              "Pinot Noir": [
+                "more flavour intensity",
+                "complexity and length"
+              ]
+            }
+          }
+        }
+      },
+      "Mâconnais": {
+        "Location": "9.24/46.4516/4.7518",
+        "Mâcon": {
+          "Location": "9.24/46.4516/4.7638",
+          "Grape": {
+            "Chardonnay": [
+              "fruity",
+              "unoaked"
+            ]
+          }
+        },
+        "Pouilly-Fuissé": {
+          "Location": "11.89/46.28764/4.74519",
+          "Grape": {
+            "Chardonnay": [
+              "concentrated",
+              "often oaked"
+            ]
+          }
+        },
+        "Vosne-Romanée": {
+          "Location": "12.95/47.16126/4.97438",
+          "Grape": {
+            "Pinot Noir": [
+              "more flavour intensity",
+              "complexity and length"
+            ]
+          }
+        }
+      }
+    },
+    "Côtes du Rhône": {
+      "Location": "7.39/44.688/4.849",
+      "Grape": {
+        "Grenache / Garnacha": []
+      },
+      "Northern Rhône": {
+        "Location": "7.39/44.688/4.849",
+        "Grape": {
+          "Syrah / Shiraz": []
+        },
+        "Condrieu": {
+          "Location": "10.78/45.4159/4.7373",
+          "Grape": {
+            "Viognier": [
+              "single-varietal",
+              "light flavours of oak (vanilla)"
+            ]
+          }
+        },
+        "Crozes-Hermitage": {
+          "Location": "10.62/45.068/4.8772",
+          "Grape": {
+            "Syrah / Shiraz": [
+              "less intense",
+              "cheaper"
+            ]
+          }
+        },
+        "Côte-Rotie": {
+          "Location": "12.24/45.49855/4.80761",
+          "Grape": {
+            "Syrah / Shiraz": [
+              "complex and peppery",
+              "sometimes small amounts of Viognier"
+            ]
+          }
+        },
+        "Hermitage": {
+          "Location": "11.95/45.09108/4.85421",
+          "Grape": {
+            "Syrah / Shiraz": []
+          }
+        },
+        "Cornas": {
+          "Location": "13.28/44.96694/4.84375",
+          "Grape": {
+            "Syrah / Shiraz": [
+              "intense and tannic",
+              "needs aging"
+            ]
+          }
+        }
+      },
+      "Southern Rhône": {
+        "Location": "7.39/44.688/4.849",
+        "Châteauneuf-du-Pape": {
+          "Location": "10.44/44.0849/4.8356",
+          "Grape": {
+            "Grenache / Garnacha": [
+              "full-bodied",
+              "high alcohol levels"
+            ]
+          }
+        }
+      }
+    },
+    "Val de Loire": {
+      "Location": "6.75/47.241/0.891",
+      "Pouilly–Fumé": {
+        "Location": "10.54/47.2917/2.9773",
+        "Grape": {
+          "Sauvignon blanc": [
+            "dry",
+            "high acidity",
+            "green fruit (apple)",
+            "herbaceous notes (asparagus, grass)",
+            "sometimes wet stones"
+          ]
+        }
+      },
+      "Sancerre": {
+        "Location": "10.23/47.3122/2.7784",
+        "Grape": {
+          "Sauvignon blanc": [
+            "dry",
+            "high acidity",
+            "green fruit (apple)",
+            "herbaceous notes (asparagus, grass)",
+            "sometimes wet stones"
+          ]
+        }
+      },
+      "Touraine": {
+        "Location": "8.29/47.19/0.811",
+        "Grape": {
+          "Sauvignon blanc": [
+            "fruity",
+            "inexpensive"
+          ]
+        }
+      },
+      "Vouvray": {
+        "Location": "10.64/47.4333/0.7935",
+        "Grape": {
+          "Chenin blanc": [
+            "dry: fresh apple flavours",
+            "off-dry, medium labelled Demi-Sec",
+            "sweeter made from extra-ripe or botrytis-affected grapes with stone fruit or tropical fruit aromas",
+            "unoaked"
+          ],
+          "Cabernet sauvignon": [],
+          "Chardonnay": [],
+          "Merlot": []
+        }
+      }
+    },
+    "South of France": {
+      "Location": "7.09/43.406/3.267",
+      "Grape": {
+        "Sauvignon blanc": [
+          "dry",
+          "high acidity",
+          "tropical fruit flavours (passion fruit) and herbaceous notes (grass)"
+        ]
+      },
+      "Minervois AOC": {
+        "Location": "10.16/43.3126/2.6389",
+        "Grape": {
+          "Grenache / Garnacha": [
+            "blended"
+          ],
+          "Syrah / Shiraz": [
+            "blended"
+          ]
+        }
+      },
+      "Pays d'Oc IGP": {
+        "Location": "7.09/43.406/3.267",
+        "Grape": {
+          "Syrah / Shiraz": [
+            "single-varietal"
+          ]
+        }
+      }
+    }
+  },
+  "Austria": {
+    "Location": "13.33/47.7167/14.9167",
+    "Grape": {
+      "Grüner Veltliner": [
+        "Austria's most planted grape variety (32.6% of all vineyards)",
+        "medium-bodied dry white wine",
+        "high acidity",
+        "citrus, stone fruit, and white pepper flavors",
+        "food-friendly wine",
+        "natural crossing of Savagnin (Traminer) and St. Georgener-Rebe",
+        "can range from simple to age-worthy examples"
+      ],
+      "Riesling": [
+        "second most important white variety",
+        "very pure, mineral wines capable of long aging",
+        "dry style predominant",
+        "pronounced aromas of lime, peach, blossom and petrol"
+      ],
+      "Zweigelt": [
+        "most widely planted red grape in Austria",
+        "cross of St. Laurent and Blaufränkisch",
+        "cherry and blackberry flavors",
+        "medium body with soft tannins",
+        "early to medium-term consumption"
+      ],
+      "Blaufränkisch": [
+        "second most important red grape",
+        "late-ripening variety producing red wines rich in tannin",
+        "deeply colored wines with dark fruit aromas",
+        "can be oaked or unoaked",
+        "ages well"
+      ],
+      "Welschriesling": [
+        "versatile white variety",
+        "dry to sweet styles",
+        "used for both still and sparkling wines",
+        "susceptible to noble rot for dessert wines"
+      ],
+      "Pinot Noir": [
+        "called Blauburgunder",
+        "dry red wines similar to Burgundy",
+        "elegant style with mineral complexity"
+      ]
+    },
+    "Terroir": [
+      "continental climate with Pannonian influence",
+      "diverse soil types: loess, limestone, schist, granite, volcanic",
+      "four main wine regions: Niederösterreich, Burgenland, Steiermark, Wien",
+      "DAC (Districtus Austriae Controllatus) system for regional wines"
+    ],
+    "Niederösterreich (Lower Austria)": {
+      "Location": "15.75/48.5333/15.75",
+      "Description": [
+        "largest wine region in Austria",
+        "eight sub-regions with diverse terroir",
+        "focus on white wines, especially Grüner Veltliner and Riesling"
+      ],
+      "Wachau": {
+        "Location": "15.4167/48.3333/15.4167",
+        "Grape": {
+          "Grüner Veltliner": [
+            "very pure, mineral wines capable of long aging",
+            "terraced slopes along Danube River",
+            "stands comparison with great wines of world"
+          ],
+          "Riesling": [
+            "steep terraced slopes",
+            "mineral wines",
+            "world-class quality"
+          ]
+        },
+        "Classification": [
+          "Steinfeder: light wines under 11.5% alcohol",
+          "Federspiel: medium-bodied wines 11.5-12.5% alcohol",
+          "Smaragd: full-bodied wines over 12.5% alcohol"
+        ]
+      },
+      "Kremstal": {
+        "Location": "15.6167/48.4167/15.6167",
+        "Grape": {
+          "Grüner Veltliner": [
+            "steep slopes with mineral character",
+            "DAC region authorization"
+          ],
+          "Riesling": [
+            "mineral wines",
+            "planted alongside Grüner Veltliner"
+          ]
+        }
+      },
+      "Kamptal": {
+        "Location": "15.65/48.5667/15.65",
+        "Grape": {
+          "Grüner Veltliner": [
+            "steep slopes with mineral character",
+            "DAC region authorization"
+          ],
+          "Riesling": [
+            "steep slopes",
+            "mineral character"
+          ]
+        }
+      },
+      "Traisental": {
+        "Location": "15.75/48.35/15.75",
+        "Grape": {
+          "Grüner Veltliner": [
+            "smallest DAC region in Austria",
+            "planted alongside Riesling"
+          ],
+          "Riesling": [
+            "quality focus in small region"
+          ]
+        }
+      },
+      "Wagram": {
+        "Location": "15.9167/48.4333/15.9167",
+        "Grape": {
+          "Grüner Veltliner": [
+            "warm air currents from Pannonian Basin",
+            "more full-bodied wines with peach flavor notes"
+          ]
+        }
+      },
+      "Weinviertel": {
+        "Location": "16.3333/48.6667/16.3333",
+        "Grape": {
+          "Grüner Veltliner": [
+            "only permitted grape variety in this DAC region",
+            "over half of all Austrian Grüner Veltliner (8,529 hectares)",
+            "can produce high yields for simple wines or restricted yields for full-bodied examples",
+            "pepper, mineral, citrus notes"
+          ]
+        }
+      },
+      "Thermenregion": {
+        "Location": "16.25/47.9167/16.25",
+        "Grape": {
+          "Pinot Noir": [
+            "some of Austria's best Pinots",
+            "elegant style with mineral complexity"
+          ],
+          "Rotgipfler": [
+            "indigenous white variety",
+            "spicy, full-bodied wines"
+          ],
+          "Zierfandler": [
+            "indigenous white variety",
+            "high acidity, citrus flavors"
+          ]
+        }
+      },
+      "Carnuntum": {
+        "Location": "16.8833/48.1167/16.8833",
+        "Grape": {
+          "Zweigelt": [
+            "between Vienna and Neusiedlersee",
+            "slate-based soils near Spitzerberg"
+          ],
+          "Blaufränkisch": [
+            "grows well in region's slate-based soils",
+            "produces structured examples"
+          ]
+        }
+      }
+    },
+    "Burgenland": {
+      "Location": "16.5333/47.5/16.5333",
+      "Description": [
+        "eastern wine region bordering Hungary",
+        "continental climate with Pannonian influence",
+        "known for both red wines and sweet wines",
+        "Lake Neusiedl creates unique microclimate"
+      ],
+      "Neusiedlersee": {
+        "Location": "16.7667/47.8333/16.7667",
+        "Grape": {
+          "Zweigelt": [
+            "widely planted",
+            "warm moderating lake climate produces richer wines"
+          ],
+          "Blaufränkisch": [
+            "807 hectares planted",
+            "warm moderating lake climate produces richer, more full-bodied wines"
+          ],
+          "Welschriesling": [
+            "sweet wine production",
+            "noble rot conditions from lake humidity"
+          ]
+        }
+      },
+      "Neusiedlersee-Hügelland": {
+        "Location": "16.6167/47.8/16.6167",
+        "Grape": {
+          "Blaufränkisch": [
+            "962 hectares in hill country bordering lake",
+            "richer full-bodied style"
+          ],
+          "Grüner Veltliner": [
+            "882 hectares planted",
+            "hill country location, sweet wine production"
+          ]
+        }
+      },
+      "Mittelburgenland": {
+        "Location": "16.5/47.3333/16.5",
+        "Grape": {
+          "Blaufränkisch": [
+            "1,194 hectares in region nicknamed 'Blaufränkischland'",
+            "ideal due to dry warm eastern winds and hill sheltering",
+            "DAC Classic for light unoaked styles"
+          ]
+        }
+      },
+      "Südburgenland (Eisenberg)": {
+        "Location": "16.2833/47.1/16.2833",
+        "Grape": {
+          "Blaufränkisch": [
+            "grown in iron-rich soils producing distinctive varietal style",
+            "clay vineyard soils produce wines with more spice notes",
+            "Eisenberg DAC region"
+          ]
+        }
+      },
+      "Leithaberg": {
+        "Location": "16.6/47.7167/16.6",
+        "Grape": {
+          "Blaufränkisch": [
+            "slate and limestone hills around Leitha Mountains",
+            "must be 85% blend minimum with St. Laurent/Zweigelt/Pinot Noir",
+            "'nervy and elegant' character"
+          ],
+          "Grüner Veltliner": [
+            "DAC region",
+            "can be made as varietal or blended with Pinot Blanc, Chardonnay, Neuburger"
+          ]
+        }
+      }
+    },
+    "Steiermark (Styria)": {
+      "Location": "15.4333/47.0667/15.4333",
+      "Description": [
+        "southern wine region",
+        "cool climate influence",
+        "focus on white wines and light reds",
+        "known for Sauvignon Blanc and indigenous varieties"
+      ],
+      "Südsteiermark": {
+        "Location": "15.6333/46.7333/15.6333",
+        "Grape": {
+          "Sauvignon Blanc": [
+            "cool climate expressions",
+            "mineral character from limestone soils"
+          ],
+          "Welschriesling": [
+            "traditional variety",
+            "fresh, crisp style"
+          ],
+          "Gelber Muskateller": [
+            "aromatic white variety",
+            "floral and fruity character"
+          ]
+        }
+      },
+      "Weststeiermark": {
+        "Location": "15.2333/46.8167/15.2333",
+        "Grape": {
+          "Blauer Wildbacher": [
+            "indigenous variety for Schilcher rosé",
+            "high acidity, distinctive pink color",
+            "regional specialty"
+          ]
+        }
+      },
+      "Vulkanland Steiermark": {
+        "Location": "16.0833/46.8333/16.0833",
+        "Grape": {
+          "Welschriesling": [
+            "volcanic soils",
+            "mineral character"
+          ],
+          "Traminer": [
+            "aromatic variety",
+            "volcanic terroir expression"
+          ]
+        }
+      }
+    },
+    "Wien (Vienna)": {
+      "Location": "16.3667/48.2/16.3667",
+      "Description": [
+        "only capital city in the world with significant wine production",
+        "700 hectares of vineyards within city limits",
+        "known for Heuriger wine taverns",
+        "Gemischter Satz (field blend) specialty"
+      ],
+      "Grape": {
+        "Grüner Veltliner": [
+          "most planted variety in Vienna",
+          "fresh, easy-drinking style"
+        ],
+        "Riesling": [
+          "quality plantings",
+          "mineral character from limestone soils"
+        ],
+        "Gemischter Satz": [
+          "field blend of multiple grape varieties",
+          "planted and harvested together",
+          "traditional Viennese wine style",
+          "Vienna DAC designation"
+        ],
+        "Welschriesling": [
+          "traditional variety",
+          "used in blends and single varietals"
+        ]
+      }
+    },
+    "Sweet Wine Styles": {
+      "Prädikatswein": {
+        "Description": [
+          "quality wines with distinction",
+          "based on must weight at harvest",
+          "similar to German system but different requirements"
+        ],
+        "Spätlese": {
+          "Grape": {
+            "Riesling": [
+              "late harvest",
+              "concentrated flavors"
+            ],
+            "Grüner Veltliner": [
+              "late harvest style",
+              "richer texture"
+            ]
+          }
+        },
+        "Auslese": {
+          "Grape": {
+            "Welschriesling": [
+              "selected harvest",
+              "sweet wine production"
+            ],
+            "Riesling": [
+              "noble rot possible",
+              "concentrated sweetness"
+            ]
+          }
+        },
+        "Beerenauslese": {
+          "Grape": {
+            "Welschriesling": [
+              "berry selection",
+              "noble rot dessert wine"
+            ]
+          }
+        },
+        "Trockenbeerenauslese": {
+          "Grape": {
+            "Welschriesling": [
+              "dried berry selection",
+              "highest sweetness level",
+              "noble rot essential"
+            ]
+          }
+        }
+      },
+      "Ausbruch": {
+        "Location": "16.6667/47.8/16.6667",
+        "Description": [
+          "traditional sweet wine from Rust, Burgenland",
+          "between Beerenauslese and Trockenbeerenauslese in sweetness",
+          "historical designation dating to 17th century"
+        ],
+        "Grape": {
+          "Furmint": [
+            "21st century revival by Ausbruch winemakers",
+            "historically associated with sweet wine production"
+          ],
+          "Welschriesling": [
+            "traditional variety for Ausbruch",
+            "noble rot concentration"
+          ]
+        }
+      }
+    }
+  },
+  "Italy": {
+    "Campania": {
+      "Location": "7.64/40.753/14.784",
+      "Fiano di Avellino": {
+        "Grape": {
+          "Fiano": []
+        }
+      }
+    },
+    "Friuli-Venezia Giulia": {
+      "Location": "8.02/46.117/13.12",
+      "Grape": {
+        "Pinot grigio": [
+          "more complex",
+          "fuller-body"
+        ]
+      }
+    },
+    "Marche": {
+      "Location": "7.82/43.332/13.051",
+      "Verdicchio dei Castelli di Jesi": {
+        "Grape": {
+          "Verdicchio": []
+        }
+      }
+    },
+    "Piemonte": {
+      "Location": "7.02/45.231/9.192",
+      "Barbaresco": {
+        "Location": "11.48/44.7075/8.105",
+        "Grape": {
+          "Nebbiolo": []
+        }
+      },
+      "Gavi": {
+        "Location": "9.79/44.648/8.7733",
+        "Grape": {
+          "Cortese": []
+        }
+      },
+      "Langhe": {
+        "Location": "9.14/44.5794/7.9711",
+        "Grape": {
+          "Nebbiolo": [],
+          "Barbera": []
+        },
+        "Barolo": {
+          "Location": "11.41/44.6247/7.9542",
+          "Grape": {
+            "Nebbiolo": []
+          }
+        },
+        "Babera d'Alba": {
+          "Location": "7.02/45.231/9.192",
+          "Grape": {
+            "Barbera": []
+          }
+        }
+      },
+      "Monferrato": {
+        "Location": "8.63/44.8241/8.3906",
+        "Grape": {
+          "Barbera": []
+        },
+        "Barbera d'Asti": {
+          "Location": "8.74/44.851/8.2457",
+          "Grape": {
+            "Barbera": []
+          }
+        },
+        "Asti": {
+          "Location": "9.99/44.7101/8.2361",
+          "Grape": {
+            "Moscato / Muscat": [
+              "sweet sparkling wine"
+            ]
+          }
+        }
+      }
+    },
+    "Puglia": {
+      "Location": "6.95/41.019/16.727",
+      "Grape": {
+        "Zinfandel / Primitivo": [
+          "soft",
+          "fruity",
+          "dry"
+        ]
+      }
+    },
+    "Tuscany": {
+      "Brunello di Montalcino": {
+        "Grape": {
+          "Sangiovese": [
+            "powerful",
+            "full-bodied",
+            "very high tannins - must mature in oak"
+          ]
+        }
+      },
+      "Chianti": {
+        "Grape": {
+          "Sangiovese": []
+        }
+      },
+      "Montepulciano d'Abruzzo": {
+        "Grape": {
+          "Montepulciano": []
+        }
+      }
+    },
+    "Veneto": {
+      "Amarone della Valpolicella": {
+        "Grape": {
+          "Corvina": [
+            "partially dried fruits",
+            "dry to off-dry",
+            "high alcohol",
+            "high tannins",
+            "pronounced flavours and dried fruit (prunes, raisins, figs)"
+          ]
+        }
+      },
+      "Recioto della Valpolicella": {
+        "Grape": {
+          "Corvina": [
+            "sweet from partially dried grapes"
+          ]
+        }
+      },
+      "Recioto di Soave": {
+        "Grape": {
+          "Garganega": [
+            "sweet",
+            "appassimento"
+          ]
+        }
+      },
+      "Soave": {
+        "Grape": {
+          "Garganega": []
+        }
+      },
+      "Valpolicella": {
+        "Grape": {
+          "Corvina": []
+        }
+      },
+      "Veneto": {
+        "Grape": {
+          "Pinot grigio": [
+            "short finish",
+            "acceptable to good quality"
+          ]
+        }
+      },
+      "delle Venezie": {
+        "Grape": {
+          "Pinot grigio": [
+            "short finish",
+            "acceptable to good quality"
+          ]
+        }
+      }
+    }
+  },
+  "Spain": {
+    "Catalunya": {
+      "Grape": {
+        "Tempranillo": [
+          "from simple fruity and light to powerful oak-aged"
+        ]
+      },
+      "Priorat": {
+        "Grape": {
+          "Grenache / Garnacha": [
+            "old vines: the most powerful full-bodied"
+          ]
+        }
+      }
+    },
+    "Navarra": {
+      "Grape": {
+        "Grenache / Garnacha": [
+          "dry rosé wines"
+        ]
+      }
+    },
+    "Ribera del Duero": {
+      "Grape": {
+        "Tempranillo": [
+          "full-bodied",
+          "fresh black-fruit flavours"
+        ]
+      }
+    },
+    "Rioja": {
+      "Grape": {
+        "Grenache / Garnacha": [],
+        "Tempranillo": [
+          "sometimes blended with Garnacha"
+        ]
+      }
+    },
+    "Galicia": {
+      "Location": "7.95/42.8/-8.016",
+      "Rías Baixas": {
+        "Location": "8.12/42.395/-8.524",
+        "Grape": {
+          "Albariño": []
+        }
+      }
     }
   },
   "Australia": {
@@ -134,358 +1568,6 @@
       }
     }
   },
-  "Chile": {
-    "Casablanca Valley": {
-      "Grape": {
-        "Chardonnay": [],
-        "Pinot Noir": [
-          "flavours of cooked strawberries"
-        ],
-        "Sauvignon blanc": [],
-        "Carmenère": []
-      }
-    },
-    "Central Valley": {
-      "Grape": {
-        "Chardonnay": [],
-        "Merlot": [
-          "soft",
-          "medium-bodied"
-        ],
-        "Sauvignon blanc": []
-      },
-      "Colchagua Valley": {
-        "Grape": {
-          "Cabernet sauvignon": [
-            "distinctive herbal (mint) and herbaceous (green ball pepper)",
-            "black fruit",
-            "oak"
-          ]
-        }
-      },
-      "Maipo Valley": {
-        "Grape": {
-          "Cabernet sauvignon": [
-            "distinctive herbal (mint) and herbaceous (green ball pepper)",
-            "black fruit",
-            "oak"
-          ]
-        }
-      }
-    }
-  },
-  "France": {
-    "Alsace": {
-      "Alsace": {
-        "Grape": {
-          "Gewürztraminer": [],
-          "Pinot gris": [
-            "extra-ripe",
-            "medium acidity",
-            "medium to full body",
-            "pronounced flavour"
-          ],
-          "Riesling": [
-            "dry",
-            "pronounced aromas and flavours (ripe citrus and stone fruit)",
-            "medium body",
-            "high acidity"
-          ]
-        }
-      }
-    },
-    "Beaujolais": {
-      "Grape": {
-        "Gamay": []
-      },
-      "Fleurie": {
-        "Grape": {
-          "Gamay": []
-        }
-      }
-    },
-    "Bordeaux": {
-      "Grape": {
-        "Sémillon / semillon": [
-          "commonly blended with Sauvignon Blanc"
-        ],
-        "Cabernet sauvignon": []
-      },
-      "Left Bank": {
-        "Graves": {
-          "Grape": {
-            "Merlot": [],
-            "Sauvignon blanc": [
-              "more concentrated and complex",
-              "blends with Sémillon",
-              "often matured in oak"
-            ],
-            "Cabernet sauvignon": []
-          },
-          "Pessac-Léognan": {
-            "Merlot": [],
-            "Sauvignon blanc": [
-              "more concentrated and complex",
-              "blends with Sémillon",
-              "often matured in oak"
-            ],
-            "Cabernet sauvignon": []
-          },
-          "Sauternes": {
-            "Sémillon / semillon": [
-              "sweet wines made from grapes affected by botrytis"
-            ]
-          }
-        },
-        "Médoc": {
-          "Grape": {
-            "Cabernet sauvignon": [],
-            "Merlot": []
-          },
-          "Haut-Médoc": {
-            "Grape": {
-              "Cabernet sauvignon": [],
-              "Merlot": []
-            },
-            "Margaux": {
-              "Grape": {
-                "Cabernet sauvignon": [],
-                "Merlot": []
-              }
-            },
-            "Pauillac": {
-              "Grape": {
-                "Cabernet sauvignon": [],
-                "Merlot": []
-              }
-            }
-          }
-        }
-      },
-      "Right Bank": {
-        "Pomerol": {
-          "Grape": {
-            "Merlot": []
-          }
-        },
-        "Saint-Émilion": {
-          "Grape": {
-            "Merlot": []
-          }
-        }
-      }
-    },
-    "Burgundy": {
-      "Grape": {
-        "Chardonnay": [
-          "simple",
-          "apple and lemon",
-          "high acidity"
-        ],
-        "Pinot Noir": []
-      },
-      "Chablis": {
-        "Grape": {
-          "Chardonnay": [
-            "dry",
-            "high acidity",
-            "flavours: apple, lemon, wet stones",
-            "unoaked"
-          ]
-        }
-      },
-      "Côte d'Or": {
-        "Côte de Beaune": {
-          "Beaune": {
-            "Grape": {
-              "Pinot Noir": [
-                "more flavour intensity",
-                "complexity and length"
-              ]
-            }
-          },
-          "Meursault": {
-            "Grape": {
-              "Chardonnay": [
-                "oak or aging on lees is common"
-              ]
-            }
-          },
-          "Pommard": {
-            "Grape": {
-              "Pinot Noir": [
-                "more flavour intensity",
-                "complexity and length"
-              ]
-            }
-          },
-          "Puligny-Montrachet": {
-            "Grape": {
-              "Chardonnay": [
-                "oak or aging on lees is common"
-              ]
-            }
-          }
-        },
-        "Côte de Nuits": {
-          "Gevrey-Chambertin": {
-            "Grape": {
-              "Pinot Noir": [
-                "more flavour intensity",
-                "complexity and length"
-              ]
-            }
-          },
-          "Nuits-Saint-Georges": {
-            "Grape": {
-              "Pinot Noir": [
-                "more flavour intensity",
-                "complexity and length"
-              ]
-            }
-          }
-        }
-      },
-      "Mâconnais": {
-        "Mâcon": {
-          "Grape": {
-            "Chardonnay": [
-              "fruity",
-              "unoaked"
-            ]
-          }
-        },
-        "Pouilly-Fuissé": {
-          "Grape": {
-            "Chardonnay": [
-              "concentrated",
-              "often oaked"
-            ]
-          }
-        }
-      }
-    },
-    "Côtes du Rhône": {
-      "Grape": {
-        "Grenache / Garnacha": []
-      },
-      "Northern Rhône": {
-        "Grape": {
-          "Syrah / Shiraz": []
-        },
-        "Condrieu": {
-          "Grape": {
-            "Viognier": [
-              "single-varietal",
-              "light flavours of oak (vanilla)"
-            ]
-          }
-        },
-        "Crozes-Hermitage": {
-          "Grape": {
-            "Syrah / Shiraz": [
-              "less intense",
-              "cheaper"
-            ]
-          }
-        },
-        "Côte-Rotie": {
-          "Grape": {
-            "Syrah / Shiraz": [
-              "complex and peppery",
-              "sometimes small amounts of Viognier"
-            ]
-          }
-        },
-        "Hermitage": {
-          "Grape": {
-            "Syrah / Shiraz": []
-          }
-        }
-      },
-      "Southern Rhône": {
-        "Châteauneuf-du-Pape": {
-          "Grape": {
-            "Grenache / Garnacha": [
-              "full-bodied",
-              "high alcohol levels"
-            ]
-          }
-        }
-      }
-    },
-    "Loire Valley": {
-      "Pouilly–Fumé": {
-        "Grape": {
-          "Sauvignon blanc": [
-            "dry",
-            "high acidity",
-            "green fruit (apple)",
-            "herbaceous notes (asparagus, grass)",
-            "sometimes wet stones"
-          ]
-        }
-      },
-      "Sancerre": {
-        "Grape": {
-          "Sauvignon blanc": [
-            "dry",
-            "high acidity",
-            "green fruit (apple)",
-            "herbaceous notes (asparagus, grass)",
-            "sometimes wet stones"
-          ]
-        }
-      },
-      "Touraine": {
-        "Grape": {
-          "Sauvignon blanc": [
-            "fruity",
-            "inexpensive"
-          ]
-        }
-      },
-      "Vouvray": {
-        "Grape": {
-          "Chenin blanc": [
-            "dry: fresh apple flavours",
-            "off-dry, medium labelled Demi-Sec",
-            "sweeter made from extra-ripe or botrytis-affected grapes with stone fruit or tropical fruit aromas",
-            "unoaked"
-          ],
-          "Cabernet sauvignon": [],
-          "Chardonnay": [],
-          "Merlot": []
-        }
-      }
-    },
-    "South of France": {
-      "Grape": {
-        "Sauvignon blanc": [
-          "dry",
-          "high acidity",
-          "tropical fruit flavours (passion fruit) and herbaceous notes (grass)"
-        ]
-      },
-      "Minervois AOC": {
-        "Grape": {
-          "Grenache / Garnacha": [
-            "blended"
-          ],
-          "Syrah / Shiraz": [
-            "blended"
-          ]
-        }
-      },
-      "Pays d'Oc IGP": {
-        "Grape": {
-          "Syrah / Shiraz": [
-            "single-varietal"
-          ]
-        }
-      }
-    }
-  },
   "Germany": {
     "Mosel": {
       "Grape": {
@@ -517,136 +1599,6 @@
         "Furmint": [
           "Tokaji Aszú: sweet from grapes affected by botrytis"
         ]
-      }
-    }
-  },
-  "Italy": {
-    "Campania": {
-      "Fiano di Avellino": {
-        "Grape": {
-          "Fiano": []
-        }
-      }
-    },
-    "Friuli-Venezia Giulia": {
-      "Grape": {
-        "Pinot grigio": [
-          "more complex",
-          "fuller-body"
-        ]
-      }
-    },
-    "Marche": {
-      "Verdicchio dei Castelli di Jesi": {
-        "Grape": {
-          "Verdicchio": []
-        }
-      }
-    },
-    "Piemonte": {
-      "Barbaresco": {
-        "Grape": {
-          "Nebbiolo": []
-        }
-      },
-      "Barbera d'Asti": {
-        "Grape": {
-          "Barbera": []
-        }
-      },
-      "Barolo": {
-        "Grape": {
-          "Nebbiolo": []
-        }
-      },
-      "Gavi": {
-        "Grape": {
-          "Cortese": []
-        }
-      }
-    },
-    "Puglia": {
-      "Grape": {
-        "Zinfandel / Primitivo": [
-          "soft",
-          "fruity",
-          "dry"
-        ]
-      }
-    },
-    "Tuscany": {
-      "Brunello di Montalcino": {
-        "Grape": {
-          "Sangiovese": [
-            "powerful",
-            "full-bodied",
-            "very high tannins - must mature in oak"
-          ]
-        }
-      },
-      "Chianti": {
-        "Grape": {
-          "Sangiovese": []
-        }
-      },
-      "Montepulciano d'Abruzzo": {
-        "Grape": {
-          "Montepulciano": []
-        }
-      }
-    },
-    "Veneto": {
-      "Amarone della Valpolicella": {
-        "Grape": {
-          "Corvina": [
-            "partially dried fruits",
-            "dry to off-dry",
-            "high alcohol",
-            "high tannins",
-            "pronounced flavours and dried fruit (prunes, raisins, figs)"
-          ]
-        }
-      },
-      "Recioto della Valpolicella": {
-        "Grape": {
-          "Corvina": [
-            "sweet from partially dried grapes"
-          ]
-        }
-      },
-      "Recioto di Soave": {
-        "Grape": {
-          "Garganega": [
-            "sweet",
-            "appassimento"
-          ]
-        }
-      },
-      "Soave": {
-        "Grape": {
-          "Garganega": []
-        }
-      },
-      "Valpolicella": {
-        "Grape": {
-          "Corvina": []
-        }
-      },
-      "Veneto": {
-        "Grape": {
-          "Pinot grigio": [
-            "short finish",
-            "acceptable to good quality"
-          ]
-        }
-      },
-      "delle Venezie": {
-        "Grape": {
-          "Pinot grigio": [
-            "short finish",
-            "acceptable to good quality"
-          ]
-        }
       }
     }
   },
@@ -746,50 +1698,6 @@
             "vibrant red fruit"
           ]
         }
-      }
-    }
-  },
-  "Spain": {
-    "Catalunya": {
-      "Grape": {
-        "Tempranillo": [
-          "from simple fruity and light to powerful oak-aged"
-        ]
-      },
-      "Priorat": {
-        "Grape": {
-          "Grenache / Garnacha": [
-            "old vines: the most powerful full-bodied"
-          ]
-        }
-      }
-    },
-    "Navarra": {
-      "Grape": {
-        "Grenache / Garnacha": [
-          "dry rosé wines"
-        ]
-      }
-    },
-    "Ribera del Duero": {
-      "Grape": {
-        "Tempranillo": [
-          "full-bodied",
-          "fresh black-fruit flavours"
-        ]
-      }
-    },
-    "Rioja": {
-      "Grape": {
-        "Grenache / Garnacha": [],
-        "Tempranillo": [
-          "sometimes blended with Garnacha"
-        ]
-      }
-    },
-    "Rías Baixas": {
-      "Grape": {
-        "Albariño": []
       }
     }
   },
@@ -897,6 +1805,51 @@
           "red fruit flavours",
           "subtle oak flavours (smoke, cloves)"
         ]
+      }
+    }
+  },
+  "Argentina": {
+    "Mendoza": {
+
+    }
+  },
+  "Chile": {
+    "Casablanca Valley": {
+      "Grape": {
+        "Chardonnay": [],
+        "Pinot Noir": [
+          "flavours of cooked strawberries"
+        ],
+        "Sauvignon blanc": [],
+        "Carmenère": []
+      }
+    },
+    "Central Valley": {
+      "Grape": {
+        "Chardonnay": [],
+        "Merlot": [
+          "soft",
+          "medium-bodied"
+        ],
+        "Sauvignon blanc": []
+      },
+      "Colchagua Valley": {
+        "Grape": {
+          "Cabernet sauvignon": [
+            "distinctive herbal (mint) and herbaceous (green ball pepper)",
+            "black fruit",
+            "oak"
+          ]
+        }
+      },
+      "Maipo Valley": {
+        "Grape": {
+          "Cabernet sauvignon": [
+            "distinctive herbal (mint) and herbaceous (green ball pepper)",
+            "black fruit",
+            "oak"
+          ]
+        }
       }
     }
   }
